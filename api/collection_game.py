@@ -11,10 +11,10 @@ from api.misc import generate_random_string
 
 
 routes = [
-    Route('/CollectionGame/getStatus', get_status, methods=["POST"]),
-    Route('/CollectionGame/getCollection', get_collection, methods=["POST"]),
-    Route('/CollectionGame/getMyRank', get_my_rank, methods=["POST"]),
-    Route('/CollectionGame/getRanking', get_ranking, methods=["POST"]),
-    Route('/CollectionGame/start', start, methods=["POST"]),
-    Route('/CollectionGame/complete', complete, methods=["POST"]),
+    # Route('/CollectionGame/getStatus', get_status, methods=["POST"]),
+    # Route('/CollectionGame/getCollection', get_collection, methods=["POST"]),
+    # Route('/CollectionGame/getMyRank', get_my_rank, methods=["POST"]),
+    # Route('/CollectionGame/getRanking', get_ranking, methods=["POST"]),
+    # Route('/CollectionGame/start', start, methods=["POST"]),
+    # Route('/CollectionGame/complete', complete, methods=["POST"]),
 ]

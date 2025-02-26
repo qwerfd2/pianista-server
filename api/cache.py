@@ -61,8 +61,8 @@ async def init_cache_db():
 # ------------------------------------------
 # Tour Leaderboard
 
-async def get_my_tour_leaderboard_ranking(owner, packId, patternType, isMaster):
-    query = select([tour_cache]).where(tour_cache.c.packId == packId, tour_cache.c.patternType == patternType, tour_cache.c.master == isMaster)
+async def get_my_tour_leaderboard_ranking(owner, packId, patternType):
+    query = select([tour_cache]).where(tour_cache.c.packId == packId, tour_cache.c.patternType == patternType)
     start_rank = 0
     new_rank = 0
     result = await database.fetch_one(query)
@@ -72,7 +72,7 @@ async def get_my_tour_leaderboard_ranking(owner, packId, patternType, isMaster):
             if entry["owner"] == owner:
                 start_rank = index + 1  # Rankings are 1-based
 
-    new_lb = await generate_tour_leaderboard(packId, patternType, isMaster)
+    new_lb = await generate_tour_leaderboard(packId, patternType)
 
     # here
     for index, entry in enumerate(new_lb):
@@ -81,28 +81,26 @@ async def get_my_tour_leaderboard_ranking(owner, packId, patternType, isMaster):
 
     return [start_rank, new_rank]
 
-async def get_tour_leaderboard(packId, patternType, isMaster):
-    query = select([tour_cache]).where(tour_cache.c.packId == packId, tour_cache.c.patternType == patternType, tour_cache.c.master == isMaster)
+async def get_tour_leaderboard(packId, patternType):
+    query = select([tour_cache]).where(tour_cache.c.packId == packId, tour_cache.c.patternType == patternType)
     result = await database.fetch_one(query)
     if result:
         return json.loads(result["data"])
     else:
-        return await generate_tour_leaderboard(packId, patternType, isMaster)
+        return await generate_tour_leaderboard(packId, patternType)
 
-async def generate_tour_leaderboard(packId, patternType, isMaster):
+async def generate_tour_leaderboard(packId, patternType):
     if patternType == 0:
-        isMaster = False
         stage_data = TOUR_NORMAL_STAGE_DATA
     elif patternType == 1:
         stage_data = TOUR_HARD_STAGE_DATA
     else:
         patternType = 2
-        isMaster = False
         stage_data = TOUR_EASY_STAGE_DATA
 
     pi_list = [stage["pi"] for stage in stage_data if stage["pid"] == packId]
 
-    query = select([results]).where(results.c.patternId.in_(pi_list), results.c.master == isMaster)
+    query = select([results]).where(results.c.patternId.in_(pi_list))
     result_entries = await database.fetch_all(query)
 
     owner_data = {}
@@ -132,13 +130,12 @@ async def generate_tour_leaderboard(packId, patternType, isMaster):
             "packId": packId,
             "score": sum_score,
             "accuracy": sum_accuracy,
-            "updatedAt": data["updatedAt"],
-            "master": isMaster
+            "updatedAt": data["updatedAt"]
         })
 
     leaderboard.sort(key=lambda x: x["score"], reverse=True)
 
-    query = tour_cache.insert().values(data=leaderboard, patternType=patternType, packId=packId, master=isMaster)
+    query = tour_cache.insert().values(data=leaderboard, patternType=patternType, packId=packId)
     await database.execute(query)
 
     return leaderboard
@@ -183,8 +180,38 @@ async def cleanup_expired_sessions():
 async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
 
-async def start_game(user, patternId, mode):
-    return {}
+async def start_game(user, patternId, mode, var1, var2):
+    obj = {
+            "objectId": random.randint(1, 99999999),
+            "owner": user["id"],
+            "patternId": patternId,
+            "type": 1,
+            "exp": None,
+            "expContext": None,
+            "goldContext": None,
+            "pianoContext": [],
+            "score": None,
+            "statScore": None,
+            "pianoScore": None,
+            "star": None,
+            "accuracy": None,
+            "maxCombo": None,
+            "takeGold": None,
+            "allCombo": None,
+            "miss": None,
+            "tier1": None,
+            "tier2": None,
+            "tier3": None,
+            "tier4": None,
+            "status": 0,
+            "startAt": datetime.datetime.utcnow(),
+            "endAt": None
+        }
+    if mode == 0:
+        obj["type"] = var1
+        obj["stageId"] = var2
+
+    return obj
 
 async def complete_game(objectId, miss, fine, good, excellent, marvelous, maxCombo, isMaster):
     return {}

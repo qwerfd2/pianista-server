@@ -16,6 +16,8 @@ SSL_KEY = config("SSL_KEY", default=None)
 
 server_url = f"http://{HOST}:{PORT}/"
 
+server_url = f"https://pianista-cdn.pianista.io"
+
 from api.cdn import update_configs
 update_configs(server_url)
 
@@ -44,8 +46,13 @@ async def serve_file(request):
     for folder in allowed_folders:
         if path.startswith(folder):
             file_path = os.path.join(root_folder, path)
+            print(file_path)
             if os.path.isfile(file_path):
-                return FileResponse(file_path)
+                response = FileResponse(file_path)
+                response.headers["accepted-ranges"] = "bytes"
+                response.headers["x-amz-cf-pop"] = "NRT57-P3"
+                response.headers["x-amz-cf-id"] = "V2yGNNXOlpw0r5LurepznExa1wyh5bAAyJzMfpTJc-SoO1oFGnKViQ=="
+                return response
     return Response("", status_code=404)
 
 routes = [
@@ -74,4 +81,4 @@ async def shutdown():
 if __name__ == "__main__":
     import uvicorn
     ssl_context = (SSL_CERT, SSL_KEY) if SSL_CERT and SSL_KEY else None
-    uvicorn.run(app, host=HOST, port=PORT, ssl_certfile=SSL_CERT, ssl_keyfile=SSL_KEY)
+    uvicorn.run(app, host=HOST, port=PORT, ssl_certfile=SSL_CERT, ssl_keyfile=SSL_KEY, headers=[("server", "AmazonS3"), ("Content-Type", "application/json;charset=utf-8")])

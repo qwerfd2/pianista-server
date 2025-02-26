@@ -9,5 +9,5 @@ from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
 
 routes = [
-    Route('/PostBox/getStatus', get_status, methods=["POST"]),
+    # Route('/PostBox/getStatus', get_status, methods=["POST"]),
 ]

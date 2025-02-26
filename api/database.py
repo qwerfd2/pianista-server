@@ -10,7 +10,6 @@ from starlette.requests import Request
 import json
 
 from api.crypt import decrypt
-from api.templates import START_TOUR_STATUS
 
 DB_NAME = "player.db"
 DB_PATH = os.path.join(os.getcwd(), DB_NAME)
@@ -28,15 +27,15 @@ users = Table(
     Column("nickname", String(32), unique=True, nullable=True),
     Column("diamond", Integer, nullable=True),
     Column("gold", Integer, nullable=True),
-    Column("created_at", DateTime, default=datetime.datetime.utcnow),
-    Column("blocked", Boolean, nullable=False, default = False),
-    Column("clearCount", Integer, nullable=False, default = 0),
-    Column("composer", JSON, nullable=False, default='[]'),
-    Column("clear", JSON, nullable=False, default='[]'),
-    Column("piano", JSON, nullable=False, default='[]'),
-    Column("tour", JSON, nullable=False, default=START_TOUR_STATUS),
-    Column("item", JSON, nullable=False, default='[]'),
-    Column("mail", JSON, nullable=False, default='[]'),
+    Column("created_at", Integer),
+    Column("blocked", Boolean, default=False),
+    Column("clearCount", Integer, default = 0),
+    Column("composer", JSON, default='[]'),
+    Column("clear", JSON, default='[]'),
+    Column("piano", JSON, default='[]'),
+    Column("tour", JSON, default='[]'),
+    Column("item", JSON, default='[]'),
+    Column("mail", JSON, default='[]'),
 )
 
 sessions = Table(
@@ -58,7 +57,7 @@ results = Table(
     Column("accuracy", Float, nullable=False),
     Column("maxCombo", Integer, nullable=False),
     Column("allCombo", Boolean, nullable=False),
-    Column("updatedAt", DateTime, default=datetime.datetime.utcnow),
+    Column("updatedAt", Integer, default=datetime.datetime.utcnow),
     Column("master", Boolean, nullable=False)
 )
 
@@ -77,11 +76,9 @@ async def init_db():
 
 async def get_user_and_validate_session(request: Request):
     access_token = request.headers.get("X-Photon-AccessToken")
-    try:
-        decrypted_data = json.loads(decrypt(request.body().decode('utf-8')))
-    except Exception as e:
-        return None, None, None, {"code": -500}
-
+    body = await request.body()
+    decrypted_data = decrypt(body.decode('utf-8'))
+    print("1",decrypted_data)
     if not access_token:
         return decrypted_data, None, None, {"code": -100}
     else:

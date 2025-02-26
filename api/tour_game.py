@@ -28,7 +28,7 @@ async def get_status(request):
         "invoke": []
     }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 async def get_my_rank(request):
@@ -51,7 +51,7 @@ async def get_my_rank(request):
             "invoke": []
         }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 async def get_ranking(request):
@@ -75,7 +75,7 @@ async def get_ranking(request):
             "invoke": []
         }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 async def start_the_game(request):
@@ -91,7 +91,6 @@ async def start_the_game(request):
         items_used = decrypted_data[2]
 
         if tour_diff == 0:
-            isMaster = False
             stage_data = TOUR_NORMAL_STAGE_DATA
         elif tour_diff == 1:
             stage_data = TOUR_HARD_STAGE_DATA
@@ -102,9 +101,15 @@ async def start_the_game(request):
         # find patternId
         patternId = next((stage["pi"] for stage in stage_data if stage["c"] == tour_id), None)
 
-        response_data = await start_game(user, patternId, 0)
+        response_data = {
+            "result": {},
+            "code": 100,
+            "invoke": []
+        }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+        response_data["result"] = await start_game(user, patternId, 0, tour_diff, tour_id)
+
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 async def complete_the_game(request):
@@ -117,7 +122,7 @@ async def complete_the_game(request):
     else:
         response_data = await complete_game(decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[9])
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)      
 
 routes = [

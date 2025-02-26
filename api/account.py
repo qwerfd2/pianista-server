@@ -1,15 +1,18 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import json
-import datetime
+import time
 
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
+from api.templates import START_TOUR_STATUS
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
     
+    print("2", decrypted_data)
+
     if decrypted_data != []:
         response_data = {"code": -100}
     else:
@@ -21,7 +24,16 @@ async def create_authentication(request):
             userid=userId,
             password=password,
             diamond=1000, 
-            gold = 9999999
+            gold = 9999999,
+            blocked = False,
+            created_at = int(time.time() * 1000),
+            clearCount = 0,
+            composer = [],
+            clear = [],
+            piano = [],
+            tour = START_TOUR_STATUS,
+            item = [],
+            mail = []
         )
         await database.execute(query)
 
@@ -36,7 +48,7 @@ async def create_authentication(request):
             "invoke": []
         }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 async def create_user_begin(request):
@@ -49,7 +61,7 @@ async def create_user_begin(request):
         password = decrypted_data[2]
         nickname = decrypted_data[3]
 
-        if 6 <= len(nickname) <= 20:
+        if 2 <= len(nickname) <= 12:
             query = users.select().where(users.c.userid == userId, users.c.password == password, users.c.nickname == None)
             user = await database.fetch_one(query)
 
@@ -66,7 +78,7 @@ async def create_user_begin(request):
         else:
             response_data = {"code": -102}
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
     
 async def create_user_commit(request):
@@ -100,7 +112,7 @@ async def create_user_commit(request):
             response_data = {"code": -102}
 
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     
     return Response(encrypted_response)
     
@@ -133,7 +145,7 @@ async def login(request):
                 session = await database.fetch_one(query)
 
             response_data = {"result": {
-                                "sharedUser": {
+                                "shardedUser": {
                                     "objectId": user["id"],
                                     "shardId": 2,
                                     "authObjectId": session["id"],
@@ -147,14 +159,14 @@ async def login(request):
                                     "diamond": user["diamond"],
                                     "gold": user["gold"],
                                     "ticket": 10,
-                                    "lastTicketCharge": datetime.datetime.utcnow - datetime.timedelta(seconds=100),
-                                    "lastOnetimeBonus": None,
+                                    "lastTicketCharge": 0,
+                                    "lastOnetimeBonus": 0,
                                     "termsAgree": True,
                                     "welcomeGift": False,
-                                    "freeTicketEndAt": None,
-                                    "createdAt": user["created_at"],
+                                    "freeTicketEndAt": True,
+                                    "createdAt": 1740232040429,
                                     "blocked": user["blocked"],
-                                    "clearCount": user["clearCount"]
+                                    "clearCount": 0
                                 }
                             },
                             "code": 100,
@@ -162,16 +174,15 @@ async def login(request):
         else:
             response_data = {"code": -101}
 
-        encrypted_response = encrypt(json.dumps(response_data))
-    
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
     
 async def get_ad_count(request):
     body = await request.body()
     try:
-        response_data = {"result":[0,datetime.datetime.utcnow + datetime.timedelta(seconds=90000)],"code":100,"invoke":[]}
+        response_data = {"result":[0,int(time.time() * 1000) + 100000],"code":100,"invoke":[]}
 
-        encrypted_response = encrypt(json.dumps(response_data))
+        encrypted_response = encrypt(response_data)
         
         return Response(encrypted_response)
     except Exception as e:
@@ -183,7 +194,7 @@ async def get_game_item_list(request):
     try:
         response_data = {"result":[],"code":100,"invoke":[]}
 
-        encrypted_response = encrypt(json.dumps(response_data))
+        encrypted_response = encrypt(response_data)
         
         return Response(encrypted_response)
     except Exception as e:
@@ -200,14 +211,14 @@ async def get_subscription(request):
             "owner": user["id"],
             "holdDays": 0,
             "remainDays": 30,
-            "referenceDate": datetime.datetime.utcnow() - datetime.timedelta(seconds=90000),
+            "referenceDate": int(time.time() * 1000) - 100000,
             "pastDays": 0
         },
         "code": 100,
         "invoke": []
     }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
 
     return Response(encrypted_response)
 
@@ -215,7 +226,7 @@ routes = [
     Route('/Account/createAuthentication', create_authentication, methods=["POST"]),
     Route('/Account/createUserBegin', create_user_begin, methods=["POST"]),
     Route('/Account/createUserCommit', create_user_commit, methods=["POST"]),
-    Route('/Account/createUserCommit', login, methods=["POST"]),
+    Route('/Account/login', login, methods=["POST"]),
     Route('/Account/getAdCount', get_ad_count, methods=["POST"]),
     Route('/Account/getGameItemList', get_game_item_list, methods=["POST"]),
     Route('/Account/getSubscription', get_subscription, methods=["POST"]),

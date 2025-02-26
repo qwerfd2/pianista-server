@@ -9,7 +9,8 @@ from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
 
 routes = [
-    Route('/PianoInventory/getStatus', get_status, methods=["POST"]),
-    Route('/PianoInventory/upgrade', upgrade, methods=["POST"]),
-    Route('/PianoInventory/equip', equip, methods=["POST"]),
+    # Route('/PianoInventory/getStatus', get_status, methods=["POST"]),
+    # Route('/PianoInventory/upgrade', upgrade, methods=["POST"]),
+    # Route('/PianoInventory/equip', equip, methods=["POST"]),
+    # Route('/PianoInventory/takePiano', take_piano, methods=["POST"]),
 ]

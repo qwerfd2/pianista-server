@@ -4,7 +4,7 @@ import math
 from api.templates import PATTERN_DATA
 
 def generate_random_string(length: int) -> str:
-    return ''.join(secrets.choice('abcdefghijklmnopqrstuvwxyz0123456789') for _ in range(int))
+    return ''.join(secrets.choice('abcdefghijklmnopqrstuvwxyz0123456789') for _ in range(length))
 
 def get_score(trackid, miss, fine, good, excellent, marvelous):
 

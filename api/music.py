@@ -1,7 +1,7 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import json
-import datetime
+import time
 import math
 
 from api.database import database, users, sessions, get_user_and_validate_session
@@ -21,12 +21,12 @@ async def get_rotation_list(request):
             "music2":100018,
             "music3":100088,
             "resetCount":0,
-            "expiredAt":datetime.datetime.now() + datetime.timedelta(days=1),
+            "expiredAt":int(time.time() * 1000) + 100000,
         },
         "code": 100,
         "invoke": []
     }
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 async def get_status(request):
@@ -48,7 +48,7 @@ async def get_status(request):
         "invoke": []
     }
 
-    encrypted_response = encrypt(json.dumps(response_data))
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 routes = [
