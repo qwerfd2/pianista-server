@@ -23,8 +23,18 @@ from api.templates import init_templates
 init_templates()
 
 from api.database import database, init_db
+from api.cache import cache_database, init_cache_db
 from api.platform import routes as platform_routes
 from api.account import routes as account_routes
+from api.music import routes as music_routes
+from api.collection_game import routes as collection_routes
+from api.piano_inventory import routes as piano_routes
+from api.tour_game import routes as tour_routes
+from api.postbox import routes as postbox_routes
+from api.shop import routes as shop_routes
+from api.league import routes as league_routes
+
+from api.cache import start_cleanup_task
 
 root_folder = os.path.dirname(os.path.abspath(__file__))
 allowed_folders = ["bundle", "files", "data", "manifest"]
@@ -42,7 +52,7 @@ routes = [
     
 ]
 
-routes = routes + platform_routes + account_routes
+routes = routes + platform_routes + account_routes + music_routes + collection_routes + piano_routes + tour_routes + postbox_routes + shop_routes + league_routes
 
 routes.append(Route("/{path:path}", serve_file))
 
@@ -52,10 +62,14 @@ app = Starlette(debug=DEBUG, routes=routes)
 async def startup():
     await database.connect()
     await init_db()
+    await cache_database.connect()
+    await init_cache_db()
+    await start_cleanup_task()
 
 @app.on_event("shutdown")
 async def shutdown():
     await database.disconnect()
+    await cache_database.disconnect()
 
 if __name__ == "__main__":
     import uvicorn

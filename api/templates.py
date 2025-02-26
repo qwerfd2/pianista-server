@@ -13,8 +13,11 @@ TOUR_NORMAL_STAGE_DATA = []
 TOUR_HARD_STAGE_DATA = []
 TOUR_MASTER_STAGE_DATA = []
 
+START_TOUR_STATUS = []
+
 def init_templates():
     base_path = 'data/client/common/1'
+    start_base_path = 'start'
     print("[TEMPLATES] Initializing templates...")
 
     try:
@@ -48,8 +51,10 @@ def init_templates():
         with open(os.path.join(base_path, 'tourhardstagedata.json'), 'r', encoding='utf-8') as f:
             TOUR_HARD_STAGE_DATA = json.load(f)
 
-        with open(os.path.join(base_path, 'tourmasterstagedata.json'), 'r', encoding='utf-8') as f:
-            TOUR_MASTER_STAGE_DATA = json.load(f)
+        with open(os.path.join(start_base_path, 'start_tour_status.json'), 'r', encoding='utf-8') as f:
+            START_TOUR_STATUS = json.load(f)
+
+        
 
         print("[TEMPLATES] Templates initialized successfully.")
     
