@@ -21,7 +21,7 @@ async def get_rotation_list(request):
             "music2":100018,
             "music3":100088,
             "resetCount":0,
-            "expiredAt":int(time.time() * 1000) + 100000,
+            "expiredAt":int(time.time() * 1000) +9900000,
         },
         "code": 100,
         "invoke": []
@@ -32,12 +32,13 @@ async def get_rotation_list(request):
 async def get_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
     if error_response:
-        return Response(encrypt(json.dumps(error_response)))
+        return Response(encrypt(error_response))
     
     result_object = []
-    for composer in json.loads(user["composer"]):
-
-        composer["objectId"] = math.random(10000, 99999)
+    i = 0
+    for composer in user["composer"]:
+        i += 1
+        composer["objectId"] = i
         composer["owner"] = user["id"]
         result_object.append(composer)
         

@@ -6,7 +6,7 @@ import time
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
-from api.templates import START_TOUR_STATUS
+from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -28,9 +28,10 @@ async def create_authentication(request):
             blocked = False,
             created_at = int(time.time() * 1000),
             clearCount = 0,
-            composer = [],
+            composer = START_COMPOSER_STATUS,
+            collection = START_COLLECTION_STATUS,
             clear = [],
-            piano = [],
+            piano = START_PIANO_STATUS,
             tour = START_TOUR_STATUS,
             item = [],
             mail = []
@@ -91,7 +92,7 @@ async def create_user_commit(request):
         password = decrypted_data[2]
         nickname = decrypted_data[4]
 
-        if 6 <= len(nickname) <= 20:
+        if 2 <= len(nickname) <= 12:
             query = users.select().where(users.c.userid == userId, users.c.password == password, users.c.nickname == None)
             user = await database.fetch_one(query)
 
@@ -162,7 +163,7 @@ async def login(request):
                                     "lastTicketCharge": 0,
                                     "lastOnetimeBonus": 0,
                                     "termsAgree": True,
-                                    "welcomeGift": False,
+                                    "welcomeGift": True,
                                     "freeTicketEndAt": True,
                                     "createdAt": 1740232040429,
                                     "blocked": user["blocked"],
@@ -180,7 +181,7 @@ async def login(request):
 async def get_ad_count(request):
     body = await request.body()
     try:
-        response_data = {"result":[0,int(time.time() * 1000) + 100000],"code":100,"invoke":[]}
+        response_data = {"result":[0,int(time.time() * 1000) + 9900000],"code":100,"invoke":[]}
 
         encrypted_response = encrypt(response_data)
         

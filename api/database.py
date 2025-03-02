@@ -4,10 +4,10 @@ import sqlalchemy
 from sqlalchemy import Table, Column, Boolean, Float, Integer, String, JSON, DateTime
 from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.future import select
-import datetime
 from starlette.responses import JSONResponse, Response
 from starlette.requests import Request
 import json
+import time
 
 from api.crypt import decrypt
 
@@ -31,6 +31,7 @@ users = Table(
     Column("blocked", Boolean, default=False),
     Column("clearCount", Integer, default = 0),
     Column("composer", JSON, default='[]'),
+    Column('collection', JSON, default='[]'),
     Column("clear", JSON, default='[]'),
     Column("piano", JSON, default='[]'),
     Column("tour", JSON, default='[]'),
@@ -57,7 +58,7 @@ results = Table(
     Column("accuracy", Float, nullable=False),
     Column("maxCombo", Integer, nullable=False),
     Column("allCombo", Boolean, nullable=False),
-    Column("updatedAt", Integer, default=datetime.datetime.utcnow),
+    Column("updatedAt", Integer, default=(time.time() * 1000)),
     Column("master", Boolean, nullable=False)
 )
 

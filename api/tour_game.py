@@ -16,9 +16,10 @@ async def get_status(request):
         return Response(encrypt(json.dumps(error_response)))
     
     result_object = []
-    for tour in json.loads(user["tour"]):
-
-        tour["objectId"] = math.random(10000, 99999)
+    i = 0
+    for tour in user["tour"]:
+        i += 1
+        tour["objectId"] = i
         tour["owner"] = user["id"]
         result_object.append(tour)
         
@@ -43,10 +44,10 @@ async def get_my_rank(request):
         diff = decrypted_data[1]
         isMaster = decrypted_data[2]
 
-        rank_result = get_my_tour_leaderboard_ranking(user["id"], pack, diff, isMaster)
+        rank_start, rank_now = await get_my_tour_leaderboard_ranking(user["id"], pack, diff, isMaster)
 
         response_data = {
-            "result": rank_result,
+            "result": [rank_start, rank_now],
             "code": 100,
             "invoke": []
         }
@@ -67,7 +68,7 @@ async def get_ranking(request):
         diff = decrypted_data[1]
         isMaster = decrypted_data[2]
 
-        rank_result = get_tour_leaderboard(pack, diff, isMaster)
+        rank_result = await get_tour_leaderboard(pack, diff)
 
         response_data = {
             "result": rank_result,
@@ -120,8 +121,12 @@ async def complete_the_game(request):
     if len(decrypted_data) != 10:
         response_data = {"code": -100}
     else:
-        response_data = await complete_game(decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[9])
-
+        response_field = await complete_game(0, user, decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[7], decrypted_data[8], decrypted_data[9])
+        response_data = {
+            "result": response_field,
+            "code": 100,
+            "invoke": []
+        }
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)      
 
