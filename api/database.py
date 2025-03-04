@@ -50,7 +50,7 @@ sessions = Table(
 results = Table(
     "results",
     metadata,
-    Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("objectId", Integer, primary_key=True, autoincrement=True),
     Column("owner", Integer, nullable=False),
     Column("patternId", Integer, nullable=False),
     Column("score", Integer, nullable=False),

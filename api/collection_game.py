@@ -7,8 +7,8 @@ import math
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
-from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA
-from api.cache import tour_cache, get_my_tour_leaderboard_ranking, get_tour_leaderboard, start_game, complete_game
+from api.templates import PATTERN_DATA
+from api.cache import tour_cache, get_my_collection_leaderboard_ranking, get_collection_leaderboard, start_game, complete_game
 from api.database import database, results
 
 async def get_status(request):
@@ -26,7 +26,6 @@ async def get_status(request):
     # Add the results to result_object
     for i, result in enumerate(user_results, start=0):
         result_dict = dict(result)  # Convert the Record object to a dictionary
-        result_dict["objectId"] = i
         result_dict['owner'] = user['id']
         result_object.append(result_dict)
         
@@ -44,14 +43,13 @@ async def get_my_rank(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
 
-    if len(decrypted_data) != 3:
+    if len(decrypted_data) != 2:
         response_data = {"code": -100}
     else:
-        pack = decrypted_data[0]
-        diff = decrypted_data[1]
-        isMaster = decrypted_data[2]
+        patternId = decrypted_data[0]
+        isMaster = decrypted_data[1]
 
-        rank_start, rank_now = get_my_tour_leaderboard_ranking(user["id"], pack, diff, isMaster)
+        rank_start, rank_now = await get_my_collection_leaderboard_ranking(user["id"], patternId, isMaster)
 
         response_data = {
             "result": [rank_start, rank_now],
@@ -67,15 +65,14 @@ async def get_ranking(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    if len(decrypted_data) != 4:
+    if len(decrypted_data) != 3:
         response_data = {"code": -100}
     else:
 
-        pack = decrypted_data[0]
-        diff = decrypted_data[1]
+        patternId = decrypted_data[0]
         isMaster = decrypted_data[2]
 
-        rank_result = get_tour_leaderboard(pack, diff, isMaster)
+        rank_result = await get_collection_leaderboard(patternId)
 
         response_data = {
             "result": rank_result,
@@ -91,23 +88,11 @@ async def start_the_game(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    if len(decrypted_data) != 4:
+    if len(decrypted_data) != 3:
         response_data = {"code": -100}
     else:
-        tour_diff = decrypted_data[0]
-        tour_id = decrypted_data[1]
-        items_used = decrypted_data[2]
-
-        if tour_diff == 0:
-            stage_data = TOUR_NORMAL_STAGE_DATA
-        elif tour_diff == 1:
-            stage_data = TOUR_HARD_STAGE_DATA
-        else:
-            tour_diff = 2
-            stage_data = TOUR_EASY_STAGE_DATA
-
-        # find patternId
-        patternId = next((stage["pi"] for stage in stage_data if stage["c"] == tour_id), None)
+        patternId = decrypted_data[0]
+        items_used = decrypted_data[1]
 
         response_data = {
             "result": {},
@@ -115,7 +100,7 @@ async def start_the_game(request):
             "invoke": []
         }
 
-        response_data["result"] = await start_game(user, patternId, 0, tour_diff, tour_id)
+        response_data["result"] = await start_game(user, patternId, 1, False, patternId, None)
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -125,11 +110,16 @@ async def complete_the_game(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    if len(decrypted_data) != 10:
+    if len(decrypted_data) != 9:
         response_data = {"code": -100}
     else:
-        response_data = await complete_game(0, user, decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[7], decrypted_data[8], decrypted_data[9])
-
+        response_field = await complete_game(1, user, decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[7], decrypted_data[8], False)
+        response_code = response_field.get('code', 100)
+        response_data = {
+            "result": response_field,
+            "code": response_code,
+            "invoke": []
+        }
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)   
 

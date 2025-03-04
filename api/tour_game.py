@@ -90,13 +90,15 @@ async def start_the_game(request):
         tour_diff = decrypted_data[0]
         tour_id = decrypted_data[1]
         items_used = decrypted_data[2]
-
+        is_master = 1
         if tour_diff == 0:
             stage_data = TOUR_NORMAL_STAGE_DATA
         elif tour_diff == 1:
             stage_data = TOUR_HARD_STAGE_DATA
+        elif tour_diff == 2:
+            is_master = 2
+            stage_data = TOUR_MASTER_STAGE_DATA
         else:
-            tour_diff = 2
             stage_data = TOUR_EASY_STAGE_DATA
 
         # find patternId
@@ -108,7 +110,7 @@ async def start_the_game(request):
             "invoke": []
         }
 
-        response_data["result"] = await start_game(user, patternId, 0, tour_diff, tour_id)
+        response_data["result"] = await start_game(user, patternId, 0, is_master, tour_diff, tour_id)
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -122,9 +124,11 @@ async def complete_the_game(request):
         response_data = {"code": -100}
     else:
         response_field = await complete_game(0, user, decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[7], decrypted_data[8], decrypted_data[9])
+        response_code = 100
+        response_code = response_field.get('code', 100)
         response_data = {
             "result": response_field,
-            "code": 100,
+            "code": response_code,
             "invoke": []
         }
     encrypted_response = encrypt(response_data)

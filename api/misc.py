@@ -38,6 +38,10 @@ def get_user_piano_bonus(user):
 
     return piano_context
 
+def get_user_piano(user):
+    piano = next((piano for piano in user["piano"] if piano["equip"] == True), None)
+    return piano["pianoId"], piano["level"]
+
 
 def get_score(trackid, miss, fine, good, excellent, marvelous):
 

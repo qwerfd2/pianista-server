@@ -16,9 +16,9 @@ import time
 import random
 
 from api.crypt import decrypt
-from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA
+from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano
 
 # ------------------------------------------
 # Init
@@ -43,7 +43,6 @@ collection_cache = Table(
     metadata,
     Column("objectId", Integer, primary_key=True, autoincrement=True),
     Column("patternId", Integer, nullable=False),
-    Column("master", Boolean, nullable=False),
     Column("data", JSON, nullable=False),
 )
 
@@ -58,6 +57,20 @@ async def init_cache_db():
     
     await engine.dispose()
     print("[DB] Cache Database initialized successfully.")
+
+async def get_user_public_data(user_id):
+    query = users.select().where(users.c.id == user_id)
+    user = await database.fetch_one(query)
+
+    user_level = get_user_level(user)
+    pianoId, piano_level = get_user_piano(user)
+
+    return {
+        "nickname": user["nickname"],
+        "pianoId": pianoId,
+        "pianoLevel": piano_level,
+        "level": user_level,
+    }
 
 # ------------------------------------------
 # Tour Leaderboard
@@ -130,7 +143,9 @@ async def generate_tour_leaderboard(packId, patternType):
             "packId": packId,
             "score": sum_score,
             "accuracy": sum_accuracy,
-            "updatedAt": data["updatedAt"]
+            "updatedAt": data["updatedAt"],
+            "publicData": await get_user_public_data(owner),
+            "master": False
         })
 
     leaderboard.sort(key=lambda x: x["score"], reverse=True)
@@ -139,6 +154,80 @@ async def generate_tour_leaderboard(packId, patternType):
     await cache_database.execute(query)
 
     print(leaderboard)
+
+    return leaderboard
+
+
+# ------------------------------------------
+# Collection Leaderboard
+async def get_my_collection_leaderboard_ranking(owner, patternId, isMaster):
+    query = collection_cache.select().where(collection_cache.c.patternId == patternId)
+    start_rank = 0
+    new_rank = 0
+    result = await cache_database.fetch_one(query)
+    if result:
+        leaderboard = result["data"]
+        for index, entry in enumerate(leaderboard):
+            if entry["owner"] == owner:
+                start_rank = index + 1  # Rankings are 1-based
+
+    new_lb = await generate_collection_leaderboard(patternId)
+
+    # here
+    for index, entry in enumerate(new_lb):
+        if entry["owner"] == owner:
+            new_rank = index + 1  # Rankings are 1-based
+
+    return start_rank, new_rank
+
+async def get_collection_leaderboard(patternId):
+    query = collection_cache.select().where(collection_cache.c.patternId == patternId)
+    result = await cache_database.fetch_one(query)
+    if result:
+        return result["data"]
+    else:
+        return await generate_collection_leaderboard(patternId)
+
+async def generate_collection_leaderboard(patternId):
+
+    query = results.select().where(results.c.patternId == patternId)
+    result_entries = await database.fetch_all(query)
+
+    owner_data = {}
+    for result in result_entries:
+        owner = result["owner"]
+        if owner not in owner_data:
+            owner_data[owner] = {
+                "score": 0,
+                "accuracy": 0,
+                "count": 0,
+                "updatedAt": result["updatedAt"]
+            }
+        owner_data[owner]["score"] += result["score"]
+        owner_data[owner]["accuracy"] += result["accuracy"]
+        owner_data[owner]["count"] += 1
+        if result["updatedAt"] > owner_data[owner]["updatedAt"]:
+            owner_data[owner]["updatedAt"] = result["updatedAt"]
+
+    leaderboard = []
+    for owner, data in owner_data.items():
+        sum_score = data["score"]
+        sum_accuracy = data["accuracy"] / data["count"]
+        leaderboard.append({
+            "objectId": random.randint(1, 99999999),
+            "owner": owner,
+            "patternId": patternId,
+            "score": sum_score,
+            "accuracy": sum_accuracy,
+            "updatedAt": data["updatedAt"],
+            "publicData": await get_user_public_data(owner),
+            "master": False
+        })
+
+    leaderboard.sort(key=lambda x: x["score"], reverse=True)
+
+    query = collection_cache.insert().values(data=leaderboard, patternId=patternId)
+    await cache_database.execute(query)
 
     return leaderboard
 
@@ -168,7 +257,6 @@ def add_play_session(session_id, session_data, expiration=6000000):
             "data": session_data,
             "expires_at": int(time.time() * 1000) + expiration
         }
-        print("called")
         save_play_session()
 
 
@@ -203,7 +291,7 @@ async def cleanup_expired_sessions():
 async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
 
-async def start_game(user, patternId, mode, var1, var2):
+async def start_game(user, patternId, mode, master, var1, var2):
     obj = {
             "objectId": random.randint(1, 99999999),
             "owner": user["id"],
@@ -227,18 +315,21 @@ async def start_game(user, patternId, mode, var1, var2):
             "tier3": None,
             "tier4": None,
             "status": 0,
+            "master": master,
             "startAt": int(time.time() * 1000),
             "endAt": None
         }
     if mode == 0:
         obj["type"] = var1
         obj["stageId"] = var2
+    else:
+        obj["stageId"] = var1
 
     add_play_session(obj["objectId"], obj)
 
     return obj
 
-async def complete_game(mode, user, objectId, miss, fine, good, excellent, marvelous, maxCombo, speed, fade, isMaster):
+async def complete_game(mode, user, objectId, miss, fine, good, excellent, marvelous, maxCombo, speed, fade, smth):
     return_obj = get_play_session(objectId)
     if return_obj == None:
         return {"code": -400}
@@ -255,9 +346,14 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             break
     
     orig_score = get_score(return_obj["patternId"], miss, fine, good, excellent, marvelous)
+    if (orig_score < 0):
+        return {"code": orig_score}
+    
+    print(orig_score, return_obj["patternId"], miss, fine, good, excellent, marvelous, curComposer)
     pianoContext = get_user_piano_bonus(user)
     pianoScore = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 0), 0)
     statScore = math.floor(curComposer['stat'] * 0.001 * orig_score)
+    pianoScore = math.floor(pianoScore)
     accuracy = get_accuracy(miss, fine, good, excellent, marvelous)
     return_obj["accuracy"] = accuracy
     return_obj["pianoScore"] = pianoScore
@@ -267,8 +363,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     
     totalEXP = 0
     expContext = []
-
-
 
     if pattern["pty"] == 0: # normal
         base = 50
@@ -301,30 +395,71 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     takeGold = 0
     goldContext = []
 
-    if pattern["pty"] == 0: # normal
-        base = 50
-    elif pattern["pty"] == 1: # technical
-        base = 70
+    if mode != 0:
+        if pattern["pty"] == 0: # normal
+            base = 50
+        elif pattern["pty"] == 1: # technical
+            base = 70
+        else:
+            base = 30
+        goldContext.append([6002002, base])
+        takeGold += base
+        if (starCount == 5): # 5 star bonus
+            goldContext.append([6002003, 20])
+            takeGold += 20
+
+        if (accuracy >= 0.99): # technical bonus
+            goldContext.append([6002004, 20])
+            takeGold += 20
+
+        goldBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
+        goldContext.append([6003003, goldBoost])
+        takeGold += goldBoost
+        
+        goldContext.append([6003003, levelBoost])
+        goldContext.append([6002007, takeGold])
+        takeGold += takeGold
+        takeGold += levelBoost
+
     else:
-        base = 30
-    goldContext.append([6002002, base])
-    takeGold += base
-    if (starCount == 5): # 5 star bonus
-        goldContext.append([6002003, 20])
-        takeGold += 20
+        tour_award_gold = 0
+        tour_award_gem = 0
+        isMaster = (return_obj["type"] == 2)
+        if isMaster:
+            data_object = next((obj for obj in TOUR_MASTER_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
+            print("data found", data_object)
+            if data_object:
+                print("added")
+                tour_award_gold = data_object["gr"] if data_object["gr"] else 0
+                tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+        else:
+            diff = pattern["pty"]
+            do_easy = True
+            do_normal = False
+            do_hard = True
+            if diff == 0:
+                do_normal = True
+            elif diff == 1:
+                do_normal = True
+                do_hard = True
+            
+            data_object = next((obj for obj in TOUR_EASY_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
+            if data_object:
+                tour_award_gold = data_object["gr"] if data_object["gr"] else 0
+                tour_award_gem = data_object["jr"] if data_object["jr"] else 0
 
-    if (accuracy >= 0.99): # technical bonus
-        goldContext.append([6002004, 20])
-        takeGold += 20
 
-    goldBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
-    goldContext.append([6003003, goldBoost])
-    takeGold += goldBoost
-    
-    goldContext.append([6003003, levelBoost])
-    goldContext.append([6002007, takeGold])
-    takeGold += takeGold
-    takeGold += levelBoost
+            if do_hard:
+                data_object = next((obj for obj in TOUR_HARD_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
+                if data_object:
+                    tour_award_gold = data_object["gr"] if data_object["gr"] else 0
+                    tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+            if do_normal:
+                data_object = next((obj for obj in TOUR_NORMAL_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
+                if data_object:
+                    tour_award_gold = data_object["gr"] if data_object["gr"] else 0
+                    tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+
     return_obj["goldContext"] = goldContext
     return_obj["takeGold"] = takeGold
     
@@ -342,12 +477,14 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     return_obj["status"] = 1
     return_obj["endAt"] = int(time.time() * 1000)
 
+    # Update/add best score to results table
+
     query = results.select().where(results.c.owner == user["id"], results.c.patternId == return_obj["patternId"])
     existing_result = await database.fetch_one(query)
 
     if existing_result:
         if return_obj["score"] > existing_result["score"]:
-            query = results.update().where(results.c.id == existing_result["id"]).values(
+            query = results.update().where(results.c.objectId == existing_result["objectId"]).values(
                 score=return_obj["score"],
                 star=starCount,
                 accuracy=accuracy,
@@ -367,13 +504,20 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             maxCombo=maxCombo,
             allCombo=return_obj["allCombo"],
             updatedAt=int(time.time() * 1000),
-            master=isMaster
+            master=False
         )
         await database.execute(query)
+
+    # Add user gold and diamond
     
-    print(user['gold'], takeGold)
     user = dict(user)
-    user['gold'] += takeGold
+    if (mode != 0):
+        user['gold'] += takeGold
+    else:
+        user['gold'] += tour_award_gold
+        user['diamond'] += tour_award_gem
+
+    # Increment composer level
 
     for composer in user["composer"]:
         if composer['composerId'] == composerID:
@@ -384,13 +528,25 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                     composer['exp'] -= COMPOSER_STAT_DATA[composer['stat'] + 1]['e']
                 break
 
-    curComposer['exp'] += totalEXP
+    # Set clear collection status
+
+    for collection in user["collection"]:
+        if collection['patternId'] == return_obj["patternId"]:
+            if (collection['clear'] == False):
+                collection['clear'] = True
+                break
+
+    # Update these fields
 
     query = users.update().where(users.c.id == user["id"]).values(
         gold=user["gold"],
-        composer=user["composer"]
+        diamond=user["diamond"],
+        composer=user["composer"],
+        collection=user["collection"],
     )
     await database.execute(query)
+
+    # Keep temporary queue clean
 
     delete_play_session(objectId)
 

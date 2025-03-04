@@ -57,6 +57,9 @@ def init_templates():
         with open(os.path.join(base_path, 'tourhardstagedata.json'), 'r', encoding='utf-8') as f:
             TOUR_HARD_STAGE_DATA = json.load(f)
 
+        with open(os.path.join(base_path, 'tourmasterstagedata.json'), 'r', encoding='utf-8') as f:
+            TOUR_MASTER_STAGE_DATA = json.load(f)
+
         with open(os.path.join(base_path, 'composerstatdata.json'), 'r', encoding='utf-8') as f:
             COMPOSER_STAT_DATA = json.load(f)
 
