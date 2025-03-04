@@ -1,0 +1,6754 @@
+[
+    {
+        "c": 0,
+        "tx": "English"
+    },
+    {
+        "c": 1001,
+        "tx": "The game is under maintenance for update.\nThanks for your patience."
+    },
+    {
+        "c": 1002,
+        "tx": "Could not connected to the game server.\nPlease try again later."
+    },
+    {
+        "c": 1003,
+        "tx": "The Pianista is currently performing\nneccessay maintenance.\nPlease try again in a few minutes."
+    },
+    {
+        "c": 1004,
+        "tx": "The Pianista is under maintenance.\nPlease try again after {0} minutes."
+    },
+    {
+        "c": 1005,
+        "tx": "The game is under maintenance for update.\nThanks for your patience.\nStart time: {0} (GMT)\nScheduled end: {1} (GMT)"
+    },
+    {
+        "c": 10000,
+        "tx": "OK"
+    },
+    {
+        "c": 10001,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 10002,
+        "tx": "NEXT"
+    },
+    {
+        "c": 10003,
+        "tx": "BACK"
+    },
+    {
+        "c": 10004,
+        "tx": "DETAIL"
+    },
+    {
+        "c": 11000,
+        "tx": "MAX"
+    },
+    {
+        "c": 70000,
+        "tx": "{0} {1}"
+    },
+    {
+        "c": 70001,
+        "tx": "JEWEL"
+    },
+    {
+        "c": 70002,
+        "tx": "GOLD"
+    },
+    {
+        "c": 70003,
+        "tx": "MUSIC POINT"
+    },
+    {
+        "c": 70004,
+        "tx": "COMPOSER STAT RESET"
+    },
+    {
+        "c": 70005,
+        "tx": "MUSIC"
+    },
+    {
+        "c": 70006,
+        "tx": "SHUFFLE"
+    },
+    {
+        "c": 70007,
+        "tx": "CHANGE NAME"
+    },
+    {
+        "c": 70008,
+        "tx": "CHEST"
+    },
+    {
+        "c": 70009,
+        "tx": "COMPOSER STAT"
+    },
+    {
+        "c": 70010,
+        "tx": "PIANO"
+    },
+    {
+        "c": 70011,
+        "tx": "SHIELD"
+    },
+    {
+        "c": 70012,
+        "tx": "LIFE"
+    },
+    {
+        "c": 71000,
+        "tx": "FREE"
+    },
+    {
+        "c": 72000,
+        "tx": "PRESTIGE"
+    },
+    {
+        "c": 73000,
+        "tx": "THE CLASSIC"
+    },
+    {
+        "c": 73001,
+        "tx": "Mendelssohn - The Essential"
+    },
+    {
+        "c": 73002,
+        "tx": "Compilation of Ensemble"
+    },
+    {
+        "c": 73003,
+        "tx": "Compilation of Keyboard"
+    },
+    {
+        "c": 73004,
+        "tx": "Compilation of Ensemble #2"
+    },
+    {
+        "c": 73005,
+        "tx": "Compilation of Theatre"
+    },
+    {
+        "c": 73006,
+        "tx": "1st Anniversary"
+    },
+    {
+        "c": 73007,
+        "tx": "Compilation of Keyboard #2"
+    },
+    {
+        "c": 73008,
+        "tx": "Compilation of Keyboard #3"
+    },
+    {
+        "c": 73009,
+        "tx": "Compilation of Ensemble #3"
+    },
+    {
+        "c": 73010,
+        "tx": "Compilation of Keyboard #4"
+    },
+    {
+        "c": 73011,
+        "tx": "Compilation of Ensemble #4"
+    },
+    {
+        "c": 73012,
+        "tx": "Master of Arpeggios"
+    },
+    {
+        "c": 73013,
+        "tx": "Compilation of Keyboard #5"
+    },
+    {
+        "c": 73014,
+        "tx": "Compilation of Orchestra #1"
+    },
+    {
+        "c": 73015,
+        "tx": "The Sound of Spring"
+    },
+    {
+        "c": 73016,
+        "tx": "The Barocophile"
+    },
+    {
+        "c": 73017,
+        "tx": "2nd Anniversary"
+    },
+    {
+        "c": 73018,
+        "tx": "Virtuoso"
+    },
+    {
+        "c": 73019,
+        "tx": "Melodia in minor key"
+    },
+    {
+        "c": 73020,
+        "tx": "The Art of Opera"
+    },
+    {
+        "c": 73021,
+        "tx": "On Joy and Sorrow"
+    },
+    {
+        "c": 73022,
+        "tx": "The Night Before Christmas"
+    },
+    {
+        "c": 73023,
+        "tx": "The Art of Cello"
+    },
+    {
+        "c": 73024,
+        "tx": "Concerto Grandioso"
+    },
+    {
+        "c": 73025,
+        "tx": "Romantic Times"
+    },
+    {
+        "c": 73026,
+        "tx": "Harmonic Triangle"
+    },
+    {
+        "c": 73027,
+        "tx": "The Harbinger"
+    },
+    {
+        "c": 73028,
+        "tx": "Schubert - The Essential"
+    },
+    {
+        "c": 73029,
+        "tx": "Concerto Grandioso #2"
+    },
+    {
+        "c": 73030,
+        "tx": "The Art of Oboe"
+    },
+    {
+        "c": 73031,
+        "tx": "Tchaikovsky - The Essential"
+    },
+    {
+        "c": 73032,
+        "tx": "The Art of Sonata"
+    },
+    {
+        "c": 73033,
+        "tx": "Violin Concerto"
+    },
+    {
+        "c": 80001,
+        "tx": "NORMAL"
+    },
+    {
+        "c": 80002,
+        "tx": "TECHNICAL"
+    },
+    {
+        "c": 80003,
+        "tx": "MASTER"
+    },
+    {
+        "c": 80004,
+        "tx": "LIGHT"
+    },
+    {
+        "c": 81001,
+        "tx": "Marv."
+    },
+    {
+        "c": 81002,
+        "tx": "Excl."
+    },
+    {
+        "c": 81003,
+        "tx": "Good"
+    },
+    {
+        "c": 81004,
+        "tx": "Fair"
+    },
+    {
+        "c": 81005,
+        "tx": "Miss"
+    },
+    {
+        "c": 82001,
+        "tx": "Accuracy"
+    },
+    {
+        "c": 82002,
+        "tx": "Max Combo"
+    },
+    {
+        "c": 90000,
+        "tx": "BRONZE I"
+    },
+    {
+        "c": 90001,
+        "tx": "BRONZE II"
+    },
+    {
+        "c": 90002,
+        "tx": "BRONZE III"
+    },
+    {
+        "c": 90003,
+        "tx": "SILVER I"
+    },
+    {
+        "c": 90004,
+        "tx": "SILVER II"
+    },
+    {
+        "c": 90005,
+        "tx": "SILVER III"
+    },
+    {
+        "c": 90006,
+        "tx": "GOLD I"
+    },
+    {
+        "c": 90007,
+        "tx": "GOLD II"
+    },
+    {
+        "c": 90008,
+        "tx": "GOLD III"
+    },
+    {
+        "c": 90009,
+        "tx": "PLATINUM I"
+    },
+    {
+        "c": 90010,
+        "tx": "PLATINUM II"
+    },
+    {
+        "c": 90011,
+        "tx": "PLATINUM III"
+    },
+    {
+        "c": 90012,
+        "tx": "DIAMOND I"
+    },
+    {
+        "c": 90013,
+        "tx": "DIAMOND II"
+    },
+    {
+        "c": 90014,
+        "tx": "DIAMOND III"
+    },
+    {
+        "c": 90015,
+        "tx": "MASTER I"
+    },
+    {
+        "c": 90016,
+        "tx": "MASTER II"
+    },
+    {
+        "c": 90017,
+        "tx": "MASTER III"
+    },
+    {
+        "c": 90018,
+        "tx": "GRANDMASTER I"
+    },
+    {
+        "c": 90019,
+        "tx": "GRANDMASTER II"
+    },
+    {
+        "c": 90020,
+        "tx": "GRANDMASTER III"
+    },
+    {
+        "c": 101001,
+        "tx": "Minuet in G major, BWV Anh 114"
+    },
+    {
+        "c": 101002,
+        "tx": "Cantata, BWV 147, Jesu, Joy of Man's Desiring"
+    },
+    {
+        "c": 101003,
+        "tx": "Toccata and Fugue in D minor, BWV 565"
+    },
+    {
+        "c": 101004,
+        "tx": "\"Lascia ch’io pianga\" from Opera \"Rinaldo\" HWV.7 (Act II / Scene IV)"
+    },
+    {
+        "c": 101005,
+        "tx": "Suite No.2 in D major, HWV 349. Alla hornpipe"
+    },
+    {
+        "c": 101006,
+        "tx": "Concerto 4. Solomon, HWV 67. Arrival of the queen of Sheba"
+    },
+    {
+        "c": 101007,
+        "tx": "String Quartet No.17 In F major Op.3-5 \"Serenade\" - II. Andante Cantabile"
+    },
+    {
+        "c": 101008,
+        "tx": "Trumpet Concerto in Eb major - 1st movement "
+    },
+    {
+        "c": 101009,
+        "tx": "Trumpet Concerto in Eb major - 3rd movement "
+    },
+    {
+        "c": 101010,
+        "tx": "Mozart K.525 Serenade No.13 in G major, 4th movement, \"Eine Kleine Nachtmusik\" "
+    },
+    {
+        "c": 101011,
+        "tx": "Piano Sonata No.8 in A minor KV 310(300d) 3rd"
+    },
+    {
+        "c": 101012,
+        "tx": "Piano Sonata No.11 in A major, K. 331(300i). Rondo alla turca (Turkish March)"
+    },
+    {
+        "c": 101013,
+        "tx": "Piano Sonata No.8 in C minor, Op.13 \"Pathetique\" 2nd movement"
+    },
+    {
+        "c": 101014,
+        "tx": "Piano Sonata No.17 in D minor, Op.31, No.2 \"The Tempest\" 3rd movement"
+    },
+    {
+        "c": 101015,
+        "tx": "Piano Sonata No.14 in C# minor Op.27, No.2 \"Moonlight\" 3rd movement"
+    },
+    {
+        "c": 101016,
+        "tx": "Caprice for Solo Violin Op.1, No.24"
+    },
+    {
+        "c": 101017,
+        "tx": "Grandes etudes de Paganini S.141 No.3 \"La Campanella\""
+    },
+    {
+        "c": 101018,
+        "tx": "Standchen D.957, No.4"
+    },
+    {
+        "c": 101019,
+        "tx": "Marche Militaire Op.51, D.733 March No.1"
+    },
+    {
+        "c": 101020,
+        "tx": "Der Erlkonig Op.1, D.328"
+    },
+    {
+        "c": 101021,
+        "tx": "Nocturne in Eb Major Op.9, No.2"
+    },
+    {
+        "c": 101022,
+        "tx": "Etude Op.10, No.12 \"Revolutionary\""
+    },
+    {
+        "c": 101023,
+        "tx": "Etude Op.10, No.5 \"Black Keys\""
+    },
+    {
+        "c": 101024,
+        "tx": "La donna e mobile"
+    },
+    {
+        "c": 101025,
+        "tx": "La Traviata: Brindisi (The Drinking Song)"
+    },
+    {
+        "c": 101026,
+        "tx": "Il Trovatore - The Anvil Chorus"
+    },
+    {
+        "c": 101027,
+        "tx": "Waltz in Ab Major Op.39, No.15"
+    },
+    {
+        "c": 101028,
+        "tx": "Piano Sonata No.3 in F minor Op.5"
+    },
+    {
+        "c": 101029,
+        "tx": "Hungarian Dance No.5 in G Minor WoO.1"
+    },
+    {
+        "c": 101030,
+        "tx": "Humoresque Op.101 No.7"
+    },
+    {
+        "c": 101031,
+        "tx": "Slavonic Dance Op.72, No.2 in E minor \"Dumka\""
+    },
+    {
+        "c": 101032,
+        "tx": "Slavonic Dance Op.46, B.78, No.7 In C Minor \"Skocna\""
+    },
+    {
+        "c": 101033,
+        "tx": "Salut d'amour, Op.12"
+    },
+    {
+        "c": 101034,
+        "tx": "Pomp and Circumstance Op.39, March No.1"
+    },
+    {
+        "c": 101035,
+        "tx": "Suite Bergamasque, IV. Passepied"
+    },
+    {
+        "c": 101036,
+        "tx": "Valse Romantique L.71"
+    },
+    {
+        "c": 101037,
+        "tx": "Arabesque No.1, L.66"
+    },
+    {
+        "c": 101038,
+        "tx": "Piano Concerto No.2 in C minor, Op.18, 1st movement"
+    },
+    {
+        "c": 101039,
+        "tx": "Moments Musicaux Op.16 No.4"
+    },
+    {
+        "c": 101040,
+        "tx": "Flight of the Bumblebee (Rimsky-Korsakov)"
+    },
+    {
+        "c": 101041,
+        "tx": "L'Estro Armonico, Op.3, No.6"
+    },
+    {
+        "c": 101042,
+        "tx": "La Primavera from \"Le Quattro Stagioni\""
+    },
+    {
+        "c": 101043,
+        "tx": "L'inverno from \"Le Quattro stagioni\""
+    },
+    {
+        "c": 101044,
+        "tx": "Nocturne"
+    },
+    {
+        "c": 101045,
+        "tx": "The Lark from \"A Farewell to Saint Petersburg\""
+    },
+    {
+        "c": 101046,
+        "tx": "Ruslan and Lyudmila"
+    },
+    {
+        "c": 101047,
+        "tx": "Polka"
+    },
+    {
+        "c": 101048,
+        "tx": "Swan Lake, Op.20"
+    },
+    {
+        "c": 101049,
+        "tx": "March from \"The Nutcracker\""
+    },
+    {
+        "c": 101050,
+        "tx": "Piano Concerto No.1, Op.23, Mov. I"
+    },
+    {
+        "c": 101051,
+        "tx": "Bacchanale from Opera \"Samson et Dalila\" Op.47 (Act III / Scene II)"
+    },
+    {
+        "c": 101052,
+        "tx": "Danse Macabre in G minor Op.40"
+    },
+    {
+        "c": 101053,
+        "tx": "Songs Without Words, Op.62, No.6"
+    },
+    {
+        "c": 101054,
+        "tx": "Violin Concerto, Op.64"
+    },
+    {
+        "c": 101055,
+        "tx": "A Midsummer Night's Dream, I. Scherzo"
+    },
+    {
+        "c": 101056,
+        "tx": "Songs Without Words, Op.19, No.6"
+    },
+    {
+        "c": 101057,
+        "tx": "Symphony No.4, Mov. I"
+    },
+    {
+        "c": 101058,
+        "tx": "Symphony No.5, Mov. I"
+    },
+    {
+        "c": 101059,
+        "tx": "From the New World, Mov. IV"
+    },
+    {
+        "c": 101060,
+        "tx": "Symphony No.40, Mov. I"
+    },
+    {
+        "c": 101061,
+        "tx": "Minuet from \"L'arlesienne Suite No.2\""
+    },
+    {
+        "c": 101062,
+        "tx": "Farandole from \"L'arlesienne Suite No.2\""
+    },
+    {
+        "c": 101063,
+        "tx": "Hungarian Rhapsody No.2"
+    },
+    {
+        "c": 101064,
+        "tx": "Liebestraume, No.3"
+    },
+    {
+        "c": 101065,
+        "tx": "Transcendental Etude, IV. Mazeppa"
+    },
+    {
+        "c": 101066,
+        "tx": "Grande valse brillante, Op.18"
+    },
+    {
+        "c": 101067,
+        "tx": "Waltzes, Op.64, No.2"
+    },
+    {
+        "c": 101068,
+        "tx": "Spanish Dance, II. Zapateado"
+    },
+    {
+        "c": 101069,
+        "tx": "Zigeunerweisen, Op.20"
+    },
+    {
+        "c": 101070,
+        "tx": "An Der Schonen Blauen Donau, Op.314"
+    },
+    {
+        "c": 101071,
+        "tx": "Annen-Polka, Op.117"
+    },
+    {
+        "c": 101072,
+        "tx": "Fruhlingsstimmen, Op.410"
+    },
+    {
+        "c": 101073,
+        "tx": "The Marriage of Figaro"
+    },
+    {
+        "c": 101074,
+        "tx": "12 Variations on \"Ah, vous dirai-je maman\""
+    },
+    {
+        "c": 101075,
+        "tx": "Sonata Pathetique, Mov. III"
+    },
+    {
+        "c": 101076,
+        "tx": "Orchestral Suite No.3, II. Air"
+    },
+    {
+        "c": 101077,
+        "tx": "Habanera from \"Carmen Suite No.2\""
+    },
+    {
+        "c": 101078,
+        "tx": "Dance of the Sugarplum Fairy from \"The Nutcracker\""
+    },
+    {
+        "c": 101079,
+        "tx": "Chinese Dance from \"The Nutcracker\""
+    },
+    {
+        "c": 101080,
+        "tx": "Autumn from \"The Four Seasons\""
+    },
+    {
+        "c": 101081,
+        "tx": "Carmen Concert Fantasy, Op.25"
+    },
+    {
+        "c": 101082,
+        "tx": "Suite in D minor, III. Sarabande"
+    },
+    {
+        "c": 101083,
+        "tx": "3 Pieces, Op.2, No.1"
+    },
+    {
+        "c": 101084,
+        "tx": "12 Etudes, Op.8, No.12"
+    },
+    {
+        "c": 101085,
+        "tx": "Valse, Op.1"
+    },
+    {
+        "c": 101086,
+        "tx": "In the Hall of the Mountain King"
+    },
+    {
+        "c": 101087,
+        "tx": "Piano Concerto in A minor, Op.16, Mov.I"
+    },
+    {
+        "c": 101088,
+        "tx": "Moonlight, Mov. I"
+    },
+    {
+        "c": 101089,
+        "tx": "10 Preludes, Op.23, No.5"
+    },
+    {
+        "c": 101090,
+        "tx": "Keyboard Sonata in E Minor, Mov. I"
+    },
+    {
+        "c": 101091,
+        "tx": "6 Etudes, Op.111, No.6"
+    },
+    {
+        "c": 101092,
+        "tx": "Fantaisie-impromptu, Op.66"
+    },
+    {
+        "c": 101093,
+        "tx": "Morning Mood"
+    },
+    {
+        "c": 101094,
+        "tx": "Piano Concerto No.3, Op.30, Mov. I"
+    },
+    {
+        "c": 101095,
+        "tx": "Summer, Mov. III from \"The Four Seasons\""
+    },
+    {
+        "c": 101096,
+        "tx": "Music for the Royal Fireworks, IV. La Rejouissance"
+    },
+    {
+        "c": 101097,
+        "tx": "Valse-Fantasie"
+    },
+    {
+        "c": 101098,
+        "tx": "8 Klavierstucke, Op.76, II. Capriccio"
+    },
+    {
+        "c": 101099,
+        "tx": "Waltzes, Op.64, I. Minute Waltz"
+    },
+    {
+        "c": 101100,
+        "tx": "Suite Bergamasque, III. Clair de Lune"
+    },
+    {
+        "c": 101101,
+        "tx": "Piano Concerto No.16"
+    },
+    {
+        "c": 101102,
+        "tx": "Moments musicaux, IV. Moderato"
+    },
+    {
+        "c": 101103,
+        "tx": "Prelude from \"Carmen Suite No.1\""
+    },
+    {
+        "c": 101104,
+        "tx": "Chanson du Toreador from \"Carmen Suite No.2\""
+    },
+    {
+        "c": 101105,
+        "tx": "Pizzicato Polka (with Josef)"
+    },
+    {
+        "c": 101106,
+        "tx": "Requiem: Dies irae"
+    },
+    {
+        "c": 101107,
+        "tx": "The Carnival of the Animals, XIV. Finale"
+    },
+    {
+        "c": 101108,
+        "tx": "Harpsichord Concerto, BWV 1052"
+    },
+    {
+        "c": 101109,
+        "tx": "Symphony No.1, Op.55, II. Allegro molto"
+    },
+    {
+        "c": 101110,
+        "tx": "Dance of the Clowns"
+    },
+    {
+        "c": 101111,
+        "tx": "Symphony No.25"
+    },
+    {
+        "c": 101112,
+        "tx": "Waltz from \"The Sleeping Beauty\""
+    },
+    {
+        "c": 101113,
+        "tx": "Invention in A minor, BWV 784"
+    },
+    {
+        "c": 101114,
+        "tx": "Fur Elise, WoO 59"
+    },
+    {
+        "c": 101115,
+        "tx": "Un Sospiro"
+    },
+    {
+        "c": 101116,
+        "tx": "Prelude in C sharp minor, Op.3 No.2"
+    },
+    {
+        "c": 101117,
+        "tx": "Etudes, Op.10, No.4"
+    },
+    {
+        "c": 101118,
+        "tx": "Semiramide, Overture"
+    },
+    {
+        "c": 101119,
+        "tx": "Symphony No.94 in G major, Hob.I:94 \"Surprise\""
+    },
+    {
+        "c": 101120,
+        "tx": "String Quartet No.1 in G minor, Mov. I"
+    },
+    {
+        "c": 101121,
+        "tx": "L'italiana in Algeri, Overture"
+    },
+    {
+        "c": 101122,
+        "tx": "William Tell Overture: Finale"
+    },
+    {
+        "c": 101123,
+        "tx": "String Quartet in D major \"The Lark\""
+    },
+    {
+        "c": 101124,
+        "tx": "Serenade for Strings, Op.22, II. Tempo di valse"
+    },
+    {
+        "c": 101125,
+        "tx": "String Quartet No.14 in G major, K.387"
+    },
+    {
+        "c": 101126,
+        "tx": "Brandenburg Concerto No.3 in G major, Mov. I"
+    },
+    {
+        "c": 101127,
+        "tx": "Violin Sonata No.5 in F major, Op.24 \"Spring\""
+    },
+    {
+        "c": 101128,
+        "tx": "Les Barricades Mysterieuses"
+    },
+    {
+        "c": 101129,
+        "tx": "A New Ground, Z. T682"
+    },
+    {
+        "c": 101130,
+        "tx": "Les Petits Moulins a Vent"
+    },
+    {
+        "c": 101131,
+        "tx": "Abdelazer Suite: II. Rondeau"
+    },
+    {
+        "c": 101132,
+        "tx": "Le Reveil-Matin"
+    },
+    {
+        "c": 101133,
+        "tx": "String Quintet in E major, G.275 \"Minuetto\""
+    },
+    {
+        "c": 101134,
+        "tx": "Eine Kleine Nachtmusik, Mov. I"
+    },
+    {
+        "c": 101135,
+        "tx": "A Midsummer Night's Dream, V. Wedding March"
+    },
+    {
+        "c": 101136,
+        "tx": "Polonaise in A-flat major, Op.53 \"Heroic\""
+    },
+    {
+        "c": 101137,
+        "tx": "Waltz of the Flowers from \"The Nutcracker\""
+    },
+    {
+        "c": 101138,
+        "tx": "Piano Sonata, Op.7"
+    },
+    {
+        "c": 101139,
+        "tx": "Sonata No.20 in G major, Op.49 No.2"
+    },
+    {
+        "c": 101140,
+        "tx": "Fantasie in C major, D.760, Mov. IV"
+    },
+    {
+        "c": 101141,
+        "tx": "Scherzo in B-flat minor Op.31"
+    },
+    {
+        "c": 101142,
+        "tx": "Tarantella"
+    },
+    {
+        "c": 101143,
+        "tx": "Concerto for Violin and Oboe in C minor, BWV 1060: I. Allegro"
+    },
+    {
+        "c": 101144,
+        "tx": "Concerto Grosso in A minor, Op. 6 No. 4, HWV 322"
+    },
+    {
+        "c": 101145,
+        "tx": "Arpeggione Sonata, D. 821"
+    },
+    {
+        "c": 101146,
+        "tx": "Symphony No. 9, Op. 125"
+    },
+    {
+        "c": 101147,
+        "tx": "L'Estro Armonico, Op. 3, No. 10"
+    },
+    {
+        "c": 101148,
+        "tx": "Queen of the Night Aria from \"The Magic Flute\""
+    },
+    {
+        "c": 101149,
+        "tx": "Can-Can from \"Orpheus in the Underworld\""
+    },
+    {
+        "c": 101150,
+        "tx": "Largo Al Factotum from \"The Barber of Seville\""
+    },
+    {
+        "c": 101151,
+        "tx": "Tritsch-Tratsch-Polka, Op. 214"
+    },
+    {
+        "c": 101152,
+        "tx": "Rondo in A minor, K.511"
+    },
+    {
+        "c": 101153,
+        "tx": "Petite Suite, L. 65: II. Cortege"
+    },
+    {
+        "c": 101154,
+        "tx": "Waltz Op.69 No.2"
+    },
+    {
+        "c": 101155,
+        "tx": "Songs Without Words, Op.67: No.4 in C major"
+    },
+    {
+        "c": 101156,
+        "tx": "Sonata Pathetique, Mov. I"
+    },
+    {
+        "c": 101157,
+        "tx": "Nocturne 'La Separation'"
+    },
+    {
+        "c": 101158,
+        "tx": "Etude Op.25 No.11"
+    },
+    {
+        "c": 101159,
+        "tx": "Hungarian Rhapsody No.6"
+    },
+    {
+        "c": 101160,
+        "tx": "The Seasons, Op.37a: December"
+    },
+    {
+        "c": 101161,
+        "tx": "March of the Dwarfs, Op.54 No.3"
+    },
+    {
+        "c": 101162,
+        "tx": "The Carnival of the Animals: XIII. The Swan"
+    },
+    {
+        "c": 101163,
+        "tx": "Cello Sonata No. 1 in E minor, Op.38: II. Allegretto quasi menuetto"
+    },
+    {
+        "c": 101164,
+        "tx": "Cello Concerto No. 1 in C major, Hob.VIIb:1: I. Moderato"
+    },
+    {
+        "c": 101165,
+        "tx": "Cello Sonata No. 3 in A major, Op. 69: II. Scherzo"
+    },
+    {
+        "c": 101166,
+        "tx": "Cello Sonata in G minor, Op. 65: II. Scherzo"
+    },
+    {
+        "c": 101167,
+        "tx": "Brandenburg Concerto No. 4 in G major, Mov. I"
+    },
+    {
+        "c": 101168,
+        "tx": "L'Estro Armonico, Op. 3, No. 8"
+    },
+    {
+        "c": 101169,
+        "tx": "Piano Concerto No. 1, Op. 23, Mov. III"
+    },
+    {
+        "c": 101170,
+        "tx": "Brandenburg Concerto No. 3 in G major, Mov. III"
+    },
+    {
+        "c": 101171,
+        "tx": "Piano Concerto in A minor, Op. 16, Mov. III"
+    },
+    {
+        "c": 101172,
+        "tx": "Intermezzo in A major, Op. 118, No. 2"
+    },
+    {
+        "c": 101173,
+        "tx": "The Carnival of the Animals: XII. Fossils"
+    },
+    {
+        "c": 101174,
+        "tx": "Suite Bergamasque, II. Menuet"
+    },
+    {
+        "c": 101175,
+        "tx": "12 Etudes, Op. 8, No. 6"
+    },
+    {
+        "c": 101176,
+        "tx": "Piano Concerto No.1 in G minor, Op. 25"
+    },
+    {
+        "c": 101177,
+        "tx": "Piano Trio No. 2 in E-flat major, Op. 100"
+    },
+    {
+        "c": 101178,
+        "tx": "Piano Trio in G major, Mov. II"
+    },
+    {
+        "c": 101179,
+        "tx": "Piano Trio No. 1 in B major, Op. 8, Mov. II"
+    },
+    {
+        "c": 101180,
+        "tx": "Piano Trio No. 4, \"Dumky\" in E minor, Op. 90, Mov. V"
+    },
+    {
+        "c": 101181,
+        "tx": "Piano Trio No. 1 in D minor, Op. 49"
+    },
+    {
+        "c": 101182,
+        "tx": "Prelude Op.28, No.15 in D-flat major, \"Raindrop\""
+    },
+    {
+        "c": 101183,
+        "tx": "Suite Bergamasque, I. Prelude"
+    },
+    {
+        "c": 101184,
+        "tx": "10 Preludes, Op.23, No.6 in E-flat major"
+    },
+    {
+        "c": 101185,
+        "tx": "Prelude and Fugue in C minor, BWV 847"
+    },
+    {
+        "c": 101186,
+        "tx": "Prelude in F sharp minor, Op.28, No.8"
+    },
+    {
+        "c": 101187,
+        "tx": "Piano Quintet in A major, D.667, Mov. IV"
+    },
+    {
+        "c": 101188,
+        "tx": "Symphony No.5, D.485, Mov. III"
+    },
+    {
+        "c": 101189,
+        "tx": "Fantasie in C major, D.760, Mov. I"
+    },
+    {
+        "c": 101190,
+        "tx": "Piano Sonata in B-flat major, D.960, Mov. III"
+    },
+    {
+        "c": 101191,
+        "tx": "4 Impromptus No.2 in E-flat major, D.899"
+    },
+    {
+        "c": 101192,
+        "tx": "Violin Concerto in A minor, BWV 1041"
+    },
+    {
+        "c": 101193,
+        "tx": "Piano Concerto No.1 in E minor, Op. 11, Mov. III"
+    },
+    {
+        "c": 101194,
+        "tx": "Piano Concerto No.3 in D minor, Op. 30, Mov. III"
+    },
+    {
+        "c": 101195,
+        "tx": "Concerto for 4 Violins and Cello in B minor, RV 580"
+    },
+    {
+        "c": 101196,
+        "tx": "Piano Concerto No.2, Op. 44, Mov. III"
+    },
+    {
+        "c": 101197,
+        "tx": "Oboe Concerto in C major, Hob. VIIc:1, Mov. I"
+    },
+    {
+        "c": 101198,
+        "tx": "Trio for 2 Oboes and English Horn, Op. 87, Mov. IV"
+    },
+    {
+        "c": 101199,
+        "tx": "Oboe Concerto in C major, K314, Mov. III"
+    },
+    {
+        "c": 101200,
+        "tx": "Concerto for Oboe d'Amore, BWV 1055, Mov.III"
+    },
+    {
+        "c": 101201,
+        "tx": "Oboe Concerto in F major, RV 455, Mov. I"
+    },
+    {
+        "c": 101202,
+        "tx": "Miniature Overture from \"The Nutcracker\""
+    },
+    {
+        "c": 101203,
+        "tx": "Dance of the Reed Flutes from \"The Nutcracker\""
+    },
+    {
+        "c": 101204,
+        "tx": "Waltz of the Snowflakes from \"The Nutcracker\""
+    },
+    {
+        "c": 101205,
+        "tx": "Symphony No.1, Op. 13, Mov. I"
+    },
+    {
+        "c": 101206,
+        "tx": "Symphony No.1, Op. 13, Mov. III"
+    },
+    {
+        "c": 101207,
+        "tx": "Divertimento in G major, Hob.XVI:8, Mov. I"
+    },
+    {
+        "c": 101208,
+        "tx": "Piano Sonata No.1, Op.1, Mov. I"
+    },
+    {
+        "c": 101209,
+        "tx": "Piano Sonata, Op.7, Mov. IV"
+    },
+    {
+        "c": 101210,
+        "tx": "Piano Sonata No.8, Mov. I"
+    },
+    {
+        "c": 101211,
+        "tx": "Piano Sonata No.23, Op.57, Mov. III"
+    },
+    {
+        "c": 101212,
+        "tx": "Violin Concerto No.1, Op.6, Mov. III"
+    },
+    {
+        "c": 101213,
+        "tx": "Violin Concerto, Op.61, Mov. III"
+    },
+    {
+        "c": 101214,
+        "tx": "Violin Concerto in C major, RV 185, Mov. II"
+    },
+    {
+        "c": 101215,
+        "tx": "Violin Concerto in C major, Hob. VIIa:1, Mov. III"
+    },
+    {
+        "c": 101216,
+        "tx": "Violin Concerto, Op.53, Mov. III"
+    },
+    {
+        "c": 102001,
+        "tx": "Minuet, BWV Anh. 114"
+    },
+    {
+        "c": 102002,
+        "tx": "Jesu, Joy of Man's Desiring"
+    },
+    {
+        "c": 102003,
+        "tx": "Toccata and Fugue, BWV 565"
+    },
+    {
+        "c": 102004,
+        "tx": "Lascia Ch'io Pianga from \"Rinaldo\""
+    },
+    {
+        "c": 102005,
+        "tx": "Water Music, II. Alla hornpipe"
+    },
+    {
+        "c": 102006,
+        "tx": "Arrival of the Queen of Sheba"
+    },
+    {
+        "c": 102007,
+        "tx": "Serenade from String Quartet, Op.3, No.5"
+    },
+    {
+        "c": 102008,
+        "tx": "Trumpet Concerto, Mov. I"
+    },
+    {
+        "c": 102009,
+        "tx": "Trumpet Concerto, Mov. III"
+    },
+    {
+        "c": 102010,
+        "tx": "Eine Kleine Nachtmusik, Mov. IV"
+    },
+    {
+        "c": 102011,
+        "tx": "Piano Sonata No.8, Mov. III"
+    },
+    {
+        "c": 102012,
+        "tx": "Turkish March"
+    },
+    {
+        "c": 102013,
+        "tx": "Sonata Pathetique, Mov. II"
+    },
+    {
+        "c": 102014,
+        "tx": "The Tempest, Mov. III"
+    },
+    {
+        "c": 102015,
+        "tx": "Moonlight, Mov. III"
+    },
+    {
+        "c": 102016,
+        "tx": "Caprice No.24 (Franz Liszt)"
+    },
+    {
+        "c": 102017,
+        "tx": "La Campanella (Franz Liszt)"
+    },
+    {
+        "c": 102018,
+        "tx": "Serenade from \"Swan Song\""
+    },
+    {
+        "c": 102019,
+        "tx": "Three Marches Militaires, No.1"
+    },
+    {
+        "c": 102020,
+        "tx": "Der Erlkonig"
+    },
+    {
+        "c": 102021,
+        "tx": "Nocturne, Op.9, No.2"
+    },
+    {
+        "c": 102022,
+        "tx": "Revolutionary Etude"
+    },
+    {
+        "c": 102023,
+        "tx": "Black Key Etude"
+    },
+    {
+        "c": 102024,
+        "tx": "La Donna e Mobile from \"Rigoletto\""
+    },
+    {
+        "c": 102025,
+        "tx": "Brindisi from \"La Traviata\""
+    },
+    {
+        "c": 102026,
+        "tx": "Anvil Chorus from \"Il Trovatore\""
+    },
+    {
+        "c": 102027,
+        "tx": "Waltz, Op.39, No.15"
+    },
+    {
+        "c": 102028,
+        "tx": "Piano Sonata No.3, Op.5, Mov. I"
+    },
+    {
+        "c": 102029,
+        "tx": "Hungarian Dance No.5"
+    },
+    {
+        "c": 102030,
+        "tx": "Humoresque, Op.101, No.7"
+    },
+    {
+        "c": 102031,
+        "tx": "Slavonic Dances, Op.72, No.2"
+    },
+    {
+        "c": 102032,
+        "tx": "Slavonic Dances, Op.46, B.78, No.7"
+    },
+    {
+        "c": 102033,
+        "tx": "Salut d'Amour, Op.12"
+    },
+    {
+        "c": 102034,
+        "tx": "Pomp and Circumstance, Op.39, No.1"
+    },
+    {
+        "c": 102035,
+        "tx": "Suite Bergamasque, IV. Passepied"
+    },
+    {
+        "c": 102036,
+        "tx": "Valse Romantique"
+    },
+    {
+        "c": 102037,
+        "tx": "Arabesque No.1"
+    },
+    {
+        "c": 102038,
+        "tx": "Piano Concerto No.2, Op.18, Mov. I"
+    },
+    {
+        "c": 102039,
+        "tx": "Six Moments Musicaux, Op.16, No.4"
+    },
+    {
+        "c": 102040,
+        "tx": "Flight of the Bumblebee (Rimsky-Korsakov)"
+    },
+    {
+        "c": 102041,
+        "tx": "L'Estro Armonico, Op.3, No.6"
+    },
+    {
+        "c": 102042,
+        "tx": "Winter from \"The Four Seasons\""
+    },
+    {
+        "c": 102043,
+        "tx": "Spring from \"The Four Seasons\""
+    },
+    {
+        "c": 102044,
+        "tx": "Nocturne"
+    },
+    {
+        "c": 102045,
+        "tx": "The Lark"
+    },
+    {
+        "c": 102046,
+        "tx": "Ruslan and Lyudmila"
+    },
+    {
+        "c": 102047,
+        "tx": "Polka"
+    },
+    {
+        "c": 102048,
+        "tx": "Swan Lake, Op.20"
+    },
+    {
+        "c": 102049,
+        "tx": "March from \"The Nutcracker\""
+    },
+    {
+        "c": 102050,
+        "tx": "Piano Concerto No.1, Op.23, Mov. I"
+    },
+    {
+        "c": 102051,
+        "tx": "Bacchanale from \"Samson et Dalila, Op.47\""
+    },
+    {
+        "c": 102052,
+        "tx": "Danse Macabre, Op.40"
+    },
+    {
+        "c": 102053,
+        "tx": "Songs Without Words, Op.62, No.6"
+    },
+    {
+        "c": 102054,
+        "tx": "Violin Concerto, Op.64"
+    },
+    {
+        "c": 102055,
+        "tx": "A Midsummer Night's Dream, I. Scherzo"
+    },
+    {
+        "c": 102056,
+        "tx": "Songs Without Words, Op.19, No.6"
+    },
+    {
+        "c": 102057,
+        "tx": "Symphony No.4, Mov. I"
+    },
+    {
+        "c": 102058,
+        "tx": "Symphony No.5, Mov. I"
+    },
+    {
+        "c": 102059,
+        "tx": "From the New World, Mov. IV"
+    },
+    {
+        "c": 102060,
+        "tx": "Symphony No.40, Mov. I"
+    },
+    {
+        "c": 102061,
+        "tx": "Minuet from \"L'arlesienne Suite No.2\""
+    },
+    {
+        "c": 102062,
+        "tx": "Farandole from \"L'arlesienne Suite No.2\""
+    },
+    {
+        "c": 102063,
+        "tx": "Hungarian Rhapsody No.2"
+    },
+    {
+        "c": 102064,
+        "tx": "Liebestraume, No.3"
+    },
+    {
+        "c": 102065,
+        "tx": "Transcendental Etude, IV. Mazeppa"
+    },
+    {
+        "c": 102066,
+        "tx": "Grande valse brillante, Op.18"
+    },
+    {
+        "c": 102067,
+        "tx": "Waltzes, Op.64, No.2"
+    },
+    {
+        "c": 102068,
+        "tx": "Spanish Dance, II. Zapateado"
+    },
+    {
+        "c": 102069,
+        "tx": "Zigeunerweisen, Op.20"
+    },
+    {
+        "c": 102070,
+        "tx": "An Der Schonen Blauen Donau, Op.314"
+    },
+    {
+        "c": 102071,
+        "tx": "Annen-Polka, Op.117"
+    },
+    {
+        "c": 102072,
+        "tx": "Fruhlingsstimmen, Op.410"
+    },
+    {
+        "c": 102073,
+        "tx": "The Marriage of Figaro"
+    },
+    {
+        "c": 102074,
+        "tx": "12 Variations on \"Ah, vous dirai-je maman\""
+    },
+    {
+        "c": 102075,
+        "tx": "Sonata Pathetique, Mov. III"
+    },
+    {
+        "c": 102076,
+        "tx": "Orchestral Suite No.3, II. Air"
+    },
+    {
+        "c": 102077,
+        "tx": "Habanera from \"Carmen Suite No.2\""
+    },
+    {
+        "c": 102078,
+        "tx": "Dance of the Sugarplum Fairy from \"The Nutcracker\""
+    },
+    {
+        "c": 102079,
+        "tx": "Chinese Dance from \"The Nutcracker\""
+    },
+    {
+        "c": 102080,
+        "tx": "Autumn from \"The Four Seasons\""
+    },
+    {
+        "c": 102081,
+        "tx": "Carmen Concert Fantasy, Op.25"
+    },
+    {
+        "c": 102082,
+        "tx": "Suite in D minor, III. Sarabande"
+    },
+    {
+        "c": 102083,
+        "tx": "3 Pieces, Op.2, No.1"
+    },
+    {
+        "c": 102084,
+        "tx": "12 Etudes, Op.8, No.12"
+    },
+    {
+        "c": 102085,
+        "tx": "Valse, Op.1"
+    },
+    {
+        "c": 102086,
+        "tx": "In the Hall of the Mountain King"
+    },
+    {
+        "c": 102087,
+        "tx": "Piano Concerto in A minor, Op.16, Mov.I"
+    },
+    {
+        "c": 102088,
+        "tx": "Moonlight, Mov. I"
+    },
+    {
+        "c": 102089,
+        "tx": "10 Preludes, Op.23, No.5"
+    },
+    {
+        "c": 102090,
+        "tx": "Keyboard Sonata in E Minor, Mov.I"
+    },
+    {
+        "c": 102091,
+        "tx": "6 Etudes, Op.111, No.6"
+    },
+    {
+        "c": 102092,
+        "tx": "Fantaisie-impromptu, Op.66"
+    },
+    {
+        "c": 102093,
+        "tx": "Morning Mood"
+    },
+    {
+        "c": 102094,
+        "tx": "Piano Concerto No.3, Op.30, Mov. I"
+    },
+    {
+        "c": 102095,
+        "tx": "Summer, Mov. III from \"The Four Seasons\""
+    },
+    {
+        "c": 102096,
+        "tx": "Music for the Royal Fireworks, IV. La Rejouissance"
+    },
+    {
+        "c": 102097,
+        "tx": "Valse-Fantasie"
+    },
+    {
+        "c": 102098,
+        "tx": "8 Klavierstucke, Op.76, II. Capriccio"
+    },
+    {
+        "c": 102099,
+        "tx": "Waltzes, Op.64, I. Minute Waltz"
+    },
+    {
+        "c": 102100,
+        "tx": "Suite Bergamasque, III. Clair de Lune"
+    },
+    {
+        "c": 102101,
+        "tx": "Piano Sonata No.16"
+    },
+    {
+        "c": 102102,
+        "tx": "Moments musicaux, Mov. III"
+    },
+    {
+        "c": 102103,
+        "tx": "Prelude from \"Carmen Suite No.1\""
+    },
+    {
+        "c": 102104,
+        "tx": "Chanson du Toreador from \"Carmen Suite No.2\""
+    },
+    {
+        "c": 102105,
+        "tx": "Pizzicato Polka (with Josef)"
+    },
+    {
+        "c": 102106,
+        "tx": "Requiem: Dies irae"
+    },
+    {
+        "c": 102107,
+        "tx": "The Carnival of the Animals, XIV. Finale"
+    },
+    {
+        "c": 102108,
+        "tx": "Harpsichord Concerto, BWV 1052"
+    },
+    {
+        "c": 102109,
+        "tx": "Symphony No.1, Op.55, II. Allegro molto"
+    },
+    {
+        "c": 102110,
+        "tx": "Dance of the Clowns"
+    },
+    {
+        "c": 102111,
+        "tx": "Symphony No.25"
+    },
+    {
+        "c": 102112,
+        "tx": "Waltz from \"The Sleeping Beauty\""
+    },
+    {
+        "c": 102113,
+        "tx": "Invention in A minor, BWV 784"
+    },
+    {
+        "c": 102114,
+        "tx": "Fur Elise, WoO 59"
+    },
+    {
+        "c": 102115,
+        "tx": "Un Sospiro"
+    },
+    {
+        "c": 102116,
+        "tx": "Prelude in C sharp minor, Op.3 No.2"
+    },
+    {
+        "c": 102117,
+        "tx": "Etudes, Op.10, No.4"
+    },
+    {
+        "c": 102118,
+        "tx": "Semiramide, Overture"
+    },
+    {
+        "c": 102119,
+        "tx": "Symphony No.94 in G major, Hob.I:94 \"Surprise\""
+    },
+    {
+        "c": 102120,
+        "tx": "String Quartet No.1 in G minor, Mov. I"
+    },
+    {
+        "c": 102121,
+        "tx": "L'italiana in Algeri, Overture"
+    },
+    {
+        "c": 102122,
+        "tx": "William Tell Overture: Finale"
+    },
+    {
+        "c": 102123,
+        "tx": "String Quartet in D major \"The Lark\""
+    },
+    {
+        "c": 102124,
+        "tx": "Serenade for Strings, Op.22, II. Tempo di valse"
+    },
+    {
+        "c": 102125,
+        "tx": "String Quartet No.14 in G major, K.387"
+    },
+    {
+        "c": 102126,
+        "tx": "Brandenburg Concerto No.3 in G major, Mov. I"
+    },
+    {
+        "c": 102127,
+        "tx": "Violin Sonata No.5 in F major, Op.24 \"Spring\""
+    },
+    {
+        "c": 102128,
+        "tx": "Les Barricades Mysterieuses"
+    },
+    {
+        "c": 102129,
+        "tx": "A New Ground, Z. T682"
+    },
+    {
+        "c": 102130,
+        "tx": "Les Petits Moulins a Vent"
+    },
+    {
+        "c": 102131,
+        "tx": "Abdelazer Suite: II. Rondeau"
+    },
+    {
+        "c": 102132,
+        "tx": "Le Reveil-Matin"
+    },
+    {
+        "c": 102133,
+        "tx": "String Quintet in E major, G.275 \"Minuetto\""
+    },
+    {
+        "c": 102134,
+        "tx": "Eine Kleine Nachtmusik, Mov. I"
+    },
+    {
+        "c": 102135,
+        "tx": "A Midsummer Night's Dream, V. Wedding March"
+    },
+    {
+        "c": 102136,
+        "tx": "Polonaise in A-flat major, Op.53 \"Heroic\""
+    },
+    {
+        "c": 102137,
+        "tx": "Waltz of the Flowers from \"The Nutcracker\""
+    },
+    {
+        "c": 102138,
+        "tx": "Piano Sonata, Op.7"
+    },
+    {
+        "c": 102139,
+        "tx": "Sonata No.20 in G major, Op.49 No.2"
+    },
+    {
+        "c": 102140,
+        "tx": "Fantasie in C major, D.760, Mov. IV"
+    },
+    {
+        "c": 102141,
+        "tx": "Scherzo in B-flat minor Op.31"
+    },
+    {
+        "c": 102142,
+        "tx": "Tarantella"
+    },
+    {
+        "c": 102143,
+        "tx": "Concerto for Violin and Oboe in C minor, BWV 1060"
+    },
+    {
+        "c": 102144,
+        "tx": "Concerto Grosso in A minor, Op. 6 No. 4, HWV 322"
+    },
+    {
+        "c": 102145,
+        "tx": "Arpeggione Sonata, D. 821"
+    },
+    {
+        "c": 102146,
+        "tx": "Symphony No. 9, Op. 125"
+    },
+    {
+        "c": 102147,
+        "tx": "L'Estro Armonico, Op. 3, No. 10"
+    },
+    {
+        "c": 102148,
+        "tx": "Queen of the Night Aria from \"The Magic Flute\""
+    },
+    {
+        "c": 102149,
+        "tx": "Can-Can from \"Orpheus in the Underworld\""
+    },
+    {
+        "c": 102150,
+        "tx": "Largo Al Factotum from \"The Barber of Seville\""
+    },
+    {
+        "c": 102151,
+        "tx": "Tritsch-Tratsch-Polka, Op. 214"
+    },
+    {
+        "c": 102152,
+        "tx": "Rondo in A minor, K.511"
+    },
+    {
+        "c": 102153,
+        "tx": "Petite Suite, L. 65: II. Cortege"
+    },
+    {
+        "c": 102154,
+        "tx": "Waltz Op.69 No.2"
+    },
+    {
+        "c": 102155,
+        "tx": "Songs Without Words, Op.67: No.4 in C major"
+    },
+    {
+        "c": 102156,
+        "tx": "Sonata Pathetique, Mov. I"
+    },
+    {
+        "c": 102157,
+        "tx": "Nocturne 'La Separation'"
+    },
+    {
+        "c": 102158,
+        "tx": "Etude Op.25 No.11"
+    },
+    {
+        "c": 102159,
+        "tx": "Hungarian Rhapsody No.6"
+    },
+    {
+        "c": 102160,
+        "tx": "The Seasons, Op.37a: December"
+    },
+    {
+        "c": 102161,
+        "tx": "March of the Dwarfs, Op.54 No.3"
+    },
+    {
+        "c": 102162,
+        "tx": "The Carnival of the Animals: XIII. The Swan"
+    },
+    {
+        "c": 102163,
+        "tx": "Cello Sonata No. 1, Op.38: II. Allegretto quasi menuetto"
+    },
+    {
+        "c": 102164,
+        "tx": "Cello Concerto No. 1 in C major, Hob.VIIb:1: I. Moderato"
+    },
+    {
+        "c": 102165,
+        "tx": "Cello Sonata No. 3 in A major, Op. 69: II. Scherzo"
+    },
+    {
+        "c": 102166,
+        "tx": "Cello Sonata in G minor, Op. 65: II. Scherzo"
+    },
+    {
+        "c": 102167,
+        "tx": "Brandenburg Concerto No. 4 in G major, Mov. I"
+    },
+    {
+        "c": 102168,
+        "tx": "L'Estro Armonico, Op. 3, No. 8"
+    },
+    {
+        "c": 102169,
+        "tx": "Piano Concerto No. 1, Op. 23, Mov. III"
+    },
+    {
+        "c": 102170,
+        "tx": "Brandenburg Concerto No. 3 in G major, Mov. III"
+    },
+    {
+        "c": 102171,
+        "tx": "Piano Concerto in A minor, Op. 16, Mov. III"
+    },
+    {
+        "c": 102172,
+        "tx": "Intermezzo in A major, Op. 118, No. 2"
+    },
+    {
+        "c": 102173,
+        "tx": "The Carnival of the Animals: XII. Fossils"
+    },
+    {
+        "c": 102174,
+        "tx": "Suite Bergamasque, II. Menuet"
+    },
+    {
+        "c": 102175,
+        "tx": "12 Etudes, Op. 8, No. 6"
+    },
+    {
+        "c": 102176,
+        "tx": "Piano Concerto No.1 in G minor, Op. 25"
+    },
+    {
+        "c": 102177,
+        "tx": "Piano Trio No. 2 in E-flat major, Op. 100"
+    },
+    {
+        "c": 102178,
+        "tx": "Piano Trio in G major, Mov. II"
+    },
+    {
+        "c": 102179,
+        "tx": "Piano Trio No. 1 in B major, Op. 8, Mov. II"
+    },
+    {
+        "c": 102180,
+        "tx": "Piano Trio No. 4, \"Dumky\" in E minor, Op. 90, Mov. V"
+    },
+    {
+        "c": 102181,
+        "tx": "Piano Trio No. 1 in D minor, Op. 49"
+    },
+    {
+        "c": 102182,
+        "tx": "Prelude Op.28, No.15 in D-flat major, \"Raindrop\""
+    },
+    {
+        "c": 102183,
+        "tx": "Suite Bergamasque, I. Prelude"
+    },
+    {
+        "c": 102184,
+        "tx": "10 Preludes, Op.23, No.6 in E-flat major"
+    },
+    {
+        "c": 102185,
+        "tx": "Prelude and Fugue in C minor, BWV 847"
+    },
+    {
+        "c": 102186,
+        "tx": "Prelude in F sharp minor, Op.28, No.8"
+    },
+    {
+        "c": 102187,
+        "tx": "Piano Quintet in A major, D.667, Mov. IV"
+    },
+    {
+        "c": 102188,
+        "tx": "Symphony No.5, D.485, Mov. III"
+    },
+    {
+        "c": 102189,
+        "tx": "Fantasie in C major, D.760, Mov. I"
+    },
+    {
+        "c": 102190,
+        "tx": "Piano Sonata in B-flat major, D.960, Mov. III"
+    },
+    {
+        "c": 102191,
+        "tx": "4 Impromptus No.2 in E-flat major, D.899"
+    },
+    {
+        "c": 102192,
+        "tx": "Violin Concerto in A minor, BWV 1041"
+    },
+    {
+        "c": 102193,
+        "tx": "Piano Concerto No.1 in E minor, Op. 11, Mov. III"
+    },
+    {
+        "c": 102194,
+        "tx": "Piano Concerto No.3 in D minor, Op. 30, Mov. III"
+    },
+    {
+        "c": 102195,
+        "tx": "Concerto for 4 Violins and Cello in B minor, RV 580"
+    },
+    {
+        "c": 102196,
+        "tx": "Piano Concerto No.2, Op. 44, Mov. III"
+    },
+    {
+        "c": 102197,
+        "tx": "Oboe Concerto in C major, Hob. VIIc:1, Mov. I"
+    },
+    {
+        "c": 102198,
+        "tx": "Trio for 2 Oboes and English Horn, Op. 87, Mov. IV"
+    },
+    {
+        "c": 102199,
+        "tx": "Oboe Concerto in C major, K314, Mov. III"
+    },
+    {
+        "c": 102200,
+        "tx": "Concerto for Oboe d'Amore, BWV 1055, Mov.III"
+    },
+    {
+        "c": 102201,
+        "tx": "Oboe Concerto in F major, RV 455, Mov. I"
+    },
+    {
+        "c": 102202,
+        "tx": "Miniature Overture from \"The Nutcracker\""
+    },
+    {
+        "c": 102203,
+        "tx": "Dance of the Reed Flutes from \"The Nutcracker\""
+    },
+    {
+        "c": 102204,
+        "tx": "Waltz of the Snowflakes from \"The Nutcracker\""
+    },
+    {
+        "c": 102205,
+        "tx": "Symphony No.1, Op. 13, Mov. I"
+    },
+    {
+        "c": 102206,
+        "tx": "Symphony No.1, Op. 13, Mov. III"
+    },
+    {
+        "c": 102207,
+        "tx": "Divertimento in G major, Hob.XVI:8, Mov. I"
+    },
+    {
+        "c": 102208,
+        "tx": "Piano Sonata No.1, Op.1, Mov. I"
+    },
+    {
+        "c": 102209,
+        "tx": "Piano Sonata, Op.7, Mov. IV"
+    },
+    {
+        "c": 102210,
+        "tx": "Piano Sonata No.8, Mov. I"
+    },
+    {
+        "c": 102211,
+        "tx": "Piano Sonata No.23, Op.57, Mov. III"
+    },
+    {
+        "c": 102212,
+        "tx": "Violin Concerto No.1, Op.6, Mov. III"
+    },
+    {
+        "c": 102213,
+        "tx": "Violin Concerto, Op.61, Mov. III"
+    },
+    {
+        "c": 102214,
+        "tx": "Violin Concerto in C major, RV 185, Mov. II"
+    },
+    {
+        "c": 102215,
+        "tx": "Violin Concerto in C major, Hob. VIIa:1, Mov. III"
+    },
+    {
+        "c": 102216,
+        "tx": "Violin Concerto, Op.53, Mov. III"
+    },
+    {
+        "c": 103001,
+        "tx": "Minuet, BWV Anh. 114"
+    },
+    {
+        "c": 103002,
+        "tx": "Jesu,\nJoy of Man's Desiring"
+    },
+    {
+        "c": 103003,
+        "tx": "Toccata and Fugue,\nBWV 565"
+    },
+    {
+        "c": 103004,
+        "tx": "Lascia Ch'io Pianga\nfrom \"Rinaldo\""
+    },
+    {
+        "c": 103005,
+        "tx": "Water Music, II.\nAlla hornpipe"
+    },
+    {
+        "c": 103006,
+        "tx": "Arrival\nof the Queen of Sheba"
+    },
+    {
+        "c": 103007,
+        "tx": "Serenade from String Quartet,\nOp.3, No.5"
+    },
+    {
+        "c": 103008,
+        "tx": "Trumpet Concerto, Mov. I"
+    },
+    {
+        "c": 103009,
+        "tx": "Trumpet Concerto, Mov. III"
+    },
+    {
+        "c": 103010,
+        "tx": "Eine Kleine Nachtmusik,\nMov. IV"
+    },
+    {
+        "c": 103011,
+        "tx": "Piano Sonata No.8, Mov. III"
+    },
+    {
+        "c": 103012,
+        "tx": "Turkish March"
+    },
+    {
+        "c": 103013,
+        "tx": "Sonata Pathetique, Mov. II"
+    },
+    {
+        "c": 103014,
+        "tx": "The Tempest, Mov. III"
+    },
+    {
+        "c": 103015,
+        "tx": "Moonlight, Mov. III"
+    },
+    {
+        "c": 103016,
+        "tx": "Caprice No.24 (Franz Liszt)"
+    },
+    {
+        "c": 103017,
+        "tx": "La Campanella (Franz Liszt)"
+    },
+    {
+        "c": 103018,
+        "tx": "Serenade from \"Swan Song\""
+    },
+    {
+        "c": 103019,
+        "tx": "Three Marches Militaires, No.1"
+    },
+    {
+        "c": 103020,
+        "tx": "Der Erlkonig"
+    },
+    {
+        "c": 103021,
+        "tx": "Nocturne, Op.9, No.2"
+    },
+    {
+        "c": 103022,
+        "tx": "Revolutionary Etude"
+    },
+    {
+        "c": 103023,
+        "tx": "Black Key Etude"
+    },
+    {
+        "c": 103024,
+        "tx": "La Donna e Mobile\nfrom \"Rigoletto\""
+    },
+    {
+        "c": 103025,
+        "tx": "Brindisi from \"La Traviata\""
+    },
+    {
+        "c": 103026,
+        "tx": "Anvil Chorus\nfrom \"Il Trovatore\""
+    },
+    {
+        "c": 103027,
+        "tx": "Waltz, Op.39, No.15"
+    },
+    {
+        "c": 103028,
+        "tx": "Piano Sonata No.3,\nOp.5, Mov. I"
+    },
+    {
+        "c": 103029,
+        "tx": "Hungarian Dance No.5"
+    },
+    {
+        "c": 103030,
+        "tx": "Humoresque, Op.101, No.7"
+    },
+    {
+        "c": 103031,
+        "tx": "Slavonic Dances, Op.72,\nNo.2"
+    },
+    {
+        "c": 103032,
+        "tx": "Slavonic Dances, Op.46,\nB.78, No.7"
+    },
+    {
+        "c": 103033,
+        "tx": "Salut d'Amour, Op.12"
+    },
+    {
+        "c": 103034,
+        "tx": "Pomp and Circumstance,\nOp.39, No.1"
+    },
+    {
+        "c": 103035,
+        "tx": "Suite Bergamasque, IV.\nPassepied"
+    },
+    {
+        "c": 103036,
+        "tx": "Valse Romantique"
+    },
+    {
+        "c": 103037,
+        "tx": "Arabesque No.1"
+    },
+    {
+        "c": 103038,
+        "tx": "Piano Concerto No.2,\nOp.18, Mov. I"
+    },
+    {
+        "c": 103039,
+        "tx": "Six Moments Musicaux,\nOp.16, No.4"
+    },
+    {
+        "c": 103040,
+        "tx": "Flight of the Bumblebee\n(Rimsky-Korsakov)"
+    },
+    {
+        "c": 103041,
+        "tx": "L'Estro Armonico,\nOp.3, No.6"
+    },
+    {
+        "c": 103042,
+        "tx": "Winter from \n\"The Four Seasons\""
+    },
+    {
+        "c": 103043,
+        "tx": "Spring from \n\"The Four Seasons\""
+    },
+    {
+        "c": 103044,
+        "tx": "Nocturne"
+    },
+    {
+        "c": 103045,
+        "tx": "The Lark"
+    },
+    {
+        "c": 103046,
+        "tx": "Ruslan and Lyudmila"
+    },
+    {
+        "c": 103047,
+        "tx": "Polka"
+    },
+    {
+        "c": 103048,
+        "tx": "Swan Lake, Op.20"
+    },
+    {
+        "c": 103049,
+        "tx": "March\nfrom \"The Nutcracker\""
+    },
+    {
+        "c": 103050,
+        "tx": "Piano Concerto No.1, \nOp.23, Mov. I"
+    },
+    {
+        "c": 103051,
+        "tx": "Bacchanale from \n\"Samson et Dalila, Op.47\""
+    },
+    {
+        "c": 103052,
+        "tx": "Danse Macabre, Op.40"
+    },
+    {
+        "c": 103053,
+        "tx": "Songs Without Words, \nOp.62, No.6"
+    },
+    {
+        "c": 103054,
+        "tx": "Violin Concerto, Op.64"
+    },
+    {
+        "c": 103055,
+        "tx": "A Midsummer Night's Dream,\nI. Scherzo"
+    },
+    {
+        "c": 103056,
+        "tx": "Songs Without Words,\nOp.19, No.6"
+    },
+    {
+        "c": 103057,
+        "tx": "Symphony No.4, Mov. I"
+    },
+    {
+        "c": 103058,
+        "tx": "Symphony No.5, Mov. I"
+    },
+    {
+        "c": 103059,
+        "tx": "From the New World, Mov. IV"
+    },
+    {
+        "c": 103060,
+        "tx": "Symphony No.40, Mov. I"
+    },
+    {
+        "c": 103061,
+        "tx": "Minuet from \n\"L'arlesienne Suite No.2\""
+    },
+    {
+        "c": 103062,
+        "tx": "Farandole from \n\"L'arlesienne Suite No.2\""
+    },
+    {
+        "c": 103063,
+        "tx": "Hungarian Rhapsody No.2"
+    },
+    {
+        "c": 103064,
+        "tx": "Liebestraume, No.3"
+    },
+    {
+        "c": 103065,
+        "tx": "Transcendental Etude,\nIV. Mazeppa"
+    },
+    {
+        "c": 103066,
+        "tx": "Grande valse brillante, Op.18"
+    },
+    {
+        "c": 103067,
+        "tx": "Waltzes, Op.64, No.2"
+    },
+    {
+        "c": 103068,
+        "tx": "Spanish Dance, II. Zapateado"
+    },
+    {
+        "c": 103069,
+        "tx": "Zigeunerweisen, Op.20"
+    },
+    {
+        "c": 103070,
+        "tx": "An Der Schonen Blauen Donau,\nOp.314"
+    },
+    {
+        "c": 103071,
+        "tx": "Annen-Polka, Op.117"
+    },
+    {
+        "c": 103072,
+        "tx": "Fruhlingsstimmen, Op.410"
+    },
+    {
+        "c": 103073,
+        "tx": "The Marriage of Figaro"
+    },
+    {
+        "c": 103074,
+        "tx": "12 Variations on\n\"Ah, vous dirai-je maman\""
+    },
+    {
+        "c": 103075,
+        "tx": "Sonata Pathetique, Mov. III"
+    },
+    {
+        "c": 103076,
+        "tx": "Orchestral Suite No.3, II. Air"
+    },
+    {
+        "c": 103077,
+        "tx": "Habanera from\n\"Carmen Suite No.2\""
+    },
+    {
+        "c": 103078,
+        "tx": "Dance of the Sugarplum Fairy\nfrom \"The Nutcracker\""
+    },
+    {
+        "c": 103079,
+        "tx": "Chinese Dance from\n\"The Nutcracker\""
+    },
+    {
+        "c": 103080,
+        "tx": "Autumn from\n\"The Four Seasons\""
+    },
+    {
+        "c": 103081,
+        "tx": "Carmen Concert Fantasy, Op.25"
+    },
+    {
+        "c": 103082,
+        "tx": "Suite in D minor, III. Sarabande"
+    },
+    {
+        "c": 103083,
+        "tx": "3 Pieces, Op.2, No.1"
+    },
+    {
+        "c": 103084,
+        "tx": "12 Etudes, Op.8, No.12"
+    },
+    {
+        "c": 103085,
+        "tx": "Valse, Op.1"
+    },
+    {
+        "c": 103086,
+        "tx": "In the Hall of the Mountain King"
+    },
+    {
+        "c": 103087,
+        "tx": "Piano Concerto in A minor,\nOp.16, Mov.I"
+    },
+    {
+        "c": 103088,
+        "tx": "Moonlight, Mov. I"
+    },
+    {
+        "c": 103089,
+        "tx": "10 Preludes, Op.23, No.5"
+    },
+    {
+        "c": 103090,
+        "tx": "Keyboard Sonata in E Minor,\nMov.I"
+    },
+    {
+        "c": 103091,
+        "tx": "6 Etudes, Op.111, No.6"
+    },
+    {
+        "c": 103092,
+        "tx": "Fantaisie-impromptu, Op.66"
+    },
+    {
+        "c": 103093,
+        "tx": "Morning Mood"
+    },
+    {
+        "c": 103094,
+        "tx": "Piano Concerto No.3,\nOp.30, Mov. I"
+    },
+    {
+        "c": 103095,
+        "tx": "Summer, Mov. III\nfrom \"The Four Seasons\""
+    },
+    {
+        "c": 103096,
+        "tx": "Music for the Royal Fireworks,\nIV. La Rejouissance"
+    },
+    {
+        "c": 103097,
+        "tx": "Valse-Fantasie"
+    },
+    {
+        "c": 103098,
+        "tx": "8 Klavierstucke, Op.76,\nII. Capriccio"
+    },
+    {
+        "c": 103099,
+        "tx": "Waltzes, Op.64,\nI. Minute Waltz"
+    },
+    {
+        "c": 103100,
+        "tx": "Suite Bergamasque,\nIII. Clair de Lune"
+    },
+    {
+        "c": 103101,
+        "tx": "Piano Sonata No.16"
+    },
+    {
+        "c": 103102,
+        "tx": "Moments musicaux, Mov. III"
+    },
+    {
+        "c": 103103,
+        "tx": "Prelude\nfrom \"Carmen Suite No.1\""
+    },
+    {
+        "c": 103104,
+        "tx": "Chanson du Toreador\nfrom \"Carmen Suite No.2\""
+    },
+    {
+        "c": 103105,
+        "tx": "Pizzicato Polka (with Josef)"
+    },
+    {
+        "c": 103106,
+        "tx": "Requiem: Dies irae"
+    },
+    {
+        "c": 103107,
+        "tx": "The Carnival of the Animals,\nXIV. Finale"
+    },
+    {
+        "c": 103108,
+        "tx": "Harpsichord Concerto,\nBWV 1052"
+    },
+    {
+        "c": 103109,
+        "tx": "Symphony No.1, Op.55,\nII. Allegro molto"
+    },
+    {
+        "c": 103110,
+        "tx": "Dance of the Clowns"
+    },
+    {
+        "c": 103111,
+        "tx": "Symphony No.25"
+    },
+    {
+        "c": 103112,
+        "tx": "Waltz\nfrom \"The Sleeping Beauty\""
+    },
+    {
+        "c": 103113,
+        "tx": "Invention in A minor,\nBWV 784"
+    },
+    {
+        "c": 103114,
+        "tx": "Fur Elise, WoO 59"
+    },
+    {
+        "c": 103115,
+        "tx": "Un Sospiro"
+    },
+    {
+        "c": 103116,
+        "tx": "Prelude in C sharp minor,\nOp.3 No.2"
+    },
+    {
+        "c": 103117,
+        "tx": "Etudes, Op.10, No.4"
+    },
+    {
+        "c": 103118,
+        "tx": "Semiramide, Overture"
+    },
+    {
+        "c": 103119,
+        "tx": "Symphony No.94 in G major,\nHob.I:94 \"Surprise\""
+    },
+    {
+        "c": 103120,
+        "tx": "String Quartet No.1\nin G minor, Mov. I"
+    },
+    {
+        "c": 103121,
+        "tx": "L'italiana in Algeri,\nOverture"
+    },
+    {
+        "c": 103122,
+        "tx": "William Tell Overture:\nFinale"
+    },
+    {
+        "c": 103123,
+        "tx": "String Quartet in D major\n\"The Lark\""
+    },
+    {
+        "c": 103124,
+        "tx": "Serenade for Strings, Op.22,\nII. Tempo di valse"
+    },
+    {
+        "c": 103125,
+        "tx": "String Quartet No.14\nin G major, K.387"
+    },
+    {
+        "c": 103126,
+        "tx": "Brandenburg Concerto No.3\nin G major, Mov. I"
+    },
+    {
+        "c": 103127,
+        "tx": "Violin Sonata No.5\nin F major, Op.24 \"Spring\""
+    },
+    {
+        "c": 103128,
+        "tx": "Les Barricades\nMysterieuses"
+    },
+    {
+        "c": 103129,
+        "tx": "A New Ground, Z. T682"
+    },
+    {
+        "c": 103130,
+        "tx": "Les Petits Moulins a Vent"
+    },
+    {
+        "c": 103131,
+        "tx": "Abdelazer Suite:\nII. Rondeau"
+    },
+    {
+        "c": 103132,
+        "tx": "Le Reveil-Matin"
+    },
+    {
+        "c": 103133,
+        "tx": "String Quintet in E major,\nG.275 \"Minuetto\""
+    },
+    {
+        "c": 103134,
+        "tx": "Eine Kleine Nachtmusik, Mov. I"
+    },
+    {
+        "c": 103135,
+        "tx": "A Midsummer Night's Dream,\nV. Wedding March"
+    },
+    {
+        "c": 103136,
+        "tx": "Polonaise in A-flat major,\nOp.53 \"Heroic\""
+    },
+    {
+        "c": 103137,
+        "tx": "Waltz of the Flowers from\n\"The Nutcracker\""
+    },
+    {
+        "c": 103138,
+        "tx": "Piano Sonata, Op.7"
+    },
+    {
+        "c": 103139,
+        "tx": "Sonata No.20\nin G major, Op.49 No.2"
+    },
+    {
+        "c": 103140,
+        "tx": "Fantasie\nin C major, D.760, Mov. IV"
+    },
+    {
+        "c": 103141,
+        "tx": "Scherzo\nin B-flat minor Op.31"
+    },
+    {
+        "c": 103142,
+        "tx": "Tarantella"
+    },
+    {
+        "c": 103143,
+        "tx": "Concerto for Violin and Oboe\nin C minor, BWV 1060: I. Allegro"
+    },
+    {
+        "c": 103144,
+        "tx": "Concerto Grosso\nin A minor, Op. 6 No. 4, HWV 322"
+    },
+    {
+        "c": 103145,
+        "tx": "Arpeggione Sonata, D. 821"
+    },
+    {
+        "c": 103146,
+        "tx": "Symphony No. 9, Op. 125"
+    },
+    {
+        "c": 103147,
+        "tx": "L'Estro Armonico, Op. 3, No. 10"
+    },
+    {
+        "c": 103148,
+        "tx": "Queen of the Night Aria from\n\"The Magic Flute\""
+    },
+    {
+        "c": 103149,
+        "tx": "Can-Can from\n\"Orpheus in the Underworld\""
+    },
+    {
+        "c": 103150,
+        "tx": "Largo Al Factotum from\n\"The Barber of Seville\""
+    },
+    {
+        "c": 103151,
+        "tx": "Tritsch-Tratsch-Polka, Op. 214"
+    },
+    {
+        "c": 103152,
+        "tx": "Rondo in A minor, K.511"
+    },
+    {
+        "c": 103153,
+        "tx": "Petite Suite, L. 65: II. Cortege"
+    },
+    {
+        "c": 103154,
+        "tx": "Waltz Op.69 No.2"
+    },
+    {
+        "c": 103155,
+        "tx": "Songs Without Words\nOp.67: No.4 in C major"
+    },
+    {
+        "c": 103156,
+        "tx": "Sonata Pathetique, Mov. I"
+    },
+    {
+        "c": 103157,
+        "tx": "Nocturne 'La Separation'"
+    },
+    {
+        "c": 103158,
+        "tx": "Etude Op.25 No.11"
+    },
+    {
+        "c": 103159,
+        "tx": "Hungarian Rhapsody No.6"
+    },
+    {
+        "c": 103160,
+        "tx": "The Seasons,\nOp.37a: December"
+    },
+    {
+        "c": 103161,
+        "tx": "March of the Dwarfs,\nOp.54 No.3"
+    },
+    {
+        "c": 103162,
+        "tx": "The Carnival of the Animals:\nXIII. The Swan"
+    },
+    {
+        "c": 103163,
+        "tx": "Cello Sonata No. 1 in E minor,\nOp.38: II. Allegretto quasi menuetto"
+    },
+    {
+        "c": 103164,
+        "tx": "Cello Concerto No. 1 in C major,\nHob.VIIb:1: I. Moderato"
+    },
+    {
+        "c": 103165,
+        "tx": "Cello Sonata No. 3 in A major,\nOp. 69: II. Scherzo"
+    },
+    {
+        "c": 103166,
+        "tx": "Cello Sonata in G minor,\nOp. 65: II. Scherzo"
+    },
+    {
+        "c": 103167,
+        "tx": "Brandenburg Concerto No. 4\nin G major, Mov. I"
+    },
+    {
+        "c": 103168,
+        "tx": "L'Estro Armonico,\nOp. 3, No. 8"
+    },
+    {
+        "c": 103169,
+        "tx": "Piano Concerto No. 1,\nOp. 23, Mov. III"
+    },
+    {
+        "c": 103170,
+        "tx": "Brandenburg Concerto No. 3\nin G major, Mov. III"
+    },
+    {
+        "c": 103171,
+        "tx": "Piano Concerto in A minor,\nOp. 16, Mov. III"
+    },
+    {
+        "c": 103172,
+        "tx": "Intermezzo in A major,\nOp. 118, No. 2"
+    },
+    {
+        "c": 103173,
+        "tx": "The Carnival of the Animals:\nXII. Fossils"
+    },
+    {
+        "c": 103174,
+        "tx": "Suite Bergamasque,\nII. Menuet"
+    },
+    {
+        "c": 103175,
+        "tx": "12 Etudes, Op. 8, No. 6"
+    },
+    {
+        "c": 103176,
+        "tx": "Piano Concerto No.1\nin G minor, Op. 25"
+    },
+    {
+        "c": 103177,
+        "tx": "Piano Trio No. 2\nin E-flat major, Op. 100"
+    },
+    {
+        "c": 103178,
+        "tx": "Piano Trio in G major, Mov. II"
+    },
+    {
+        "c": 103179,
+        "tx": "Piano Trio No. 1\nin B major, Op. 8, Mov. II"
+    },
+    {
+        "c": 103180,
+        "tx": "Piano Trio No. 4,\n\"Dumky\" in E minor, Op. 90, Mov. V"
+    },
+    {
+        "c": 103181,
+        "tx": "Piano Trio No. 1\nin D minor, Op. 49"
+    },
+    {
+        "c": 103182,
+        "tx": "Prelude Op.28, No.15\nin D-flat major, \"Raindrop\""
+    },
+    {
+        "c": 103183,
+        "tx": "Suite Bergamasque,\nI. Prelude"
+    },
+    {
+        "c": 103184,
+        "tx": "10 Preludes, Op.23, No.6\nin E-flat major"
+    },
+    {
+        "c": 103185,
+        "tx": "Prelude and Fugue\nin C minor, BWV 847"
+    },
+    {
+        "c": 103186,
+        "tx": "Prelude in F sharp minor,\nOp.28, No.8"
+    },
+    {
+        "c": 103187,
+        "tx": "Piano Quintet in A major,\nD.667, Mov. IV"
+    },
+    {
+        "c": 103188,
+        "tx": "Symphony No.5,\nD.485, Mov. III"
+    },
+    {
+        "c": 103189,
+        "tx": "Fantasie in C major,\nD.760, Mov. I"
+    },
+    {
+        "c": 103190,
+        "tx": "Piano Sonata in B-flat major,\nD.960, Mov. III"
+    },
+    {
+        "c": 103191,
+        "tx": "4 Impromptus No.2\nin E-flat major, D.899"
+    },
+    {
+        "c": 103192,
+        "tx": "Violin Concerto in A minor,\nBWV 1041"
+    },
+    {
+        "c": 103193,
+        "tx": "Piano Concerto No.1\nin E minor, Op. 11, Mov. III"
+    },
+    {
+        "c": 103194,
+        "tx": "Piano Concerto No.3\nin D minor, Op. 30, Mov. III"
+    },
+    {
+        "c": 103195,
+        "tx": "Concerto for 4 Violins and Cello\nin B minor, RV 580"
+    },
+    {
+        "c": 103196,
+        "tx": "Piano Concerto No.2,\nOp. 44, Mov. III"
+    },
+    {
+        "c": 103197,
+        "tx": "Oboe Concerto in C major,\nHob. VIIc:1, Mov. I"
+    },
+    {
+        "c": 103198,
+        "tx": "Trio for 2 Oboes and\nEnglish Horn, Op. 87, Mov. IV"
+    },
+    {
+        "c": 103199,
+        "tx": "Oboe Concerto in C major,\nK314, Mov. III"
+    },
+    {
+        "c": 103200,
+        "tx": "Concerto for Oboe d'Amore,\nBWV 1055, Mov.III"
+    },
+    {
+        "c": 103201,
+        "tx": "Oboe Concerto in F major,\nRV 455, Mov. I"
+    },
+    {
+        "c": 103202,
+        "tx": "Miniature Overture\nfrom \"The Nutcracker\""
+    },
+    {
+        "c": 103203,
+        "tx": "Dance of the Reed Flutes\nfrom \"The Nutcracker\""
+    },
+    {
+        "c": 103204,
+        "tx": "Waltz of the Snowflakes\nfrom \"The Nutcracker\""
+    },
+    {
+        "c": 103205,
+        "tx": "Symphony No.1,\nOp. 13, Mov. I"
+    },
+    {
+        "c": 103206,
+        "tx": "Symphony No.1,\nOp. 13, Mov. III"
+    },
+    {
+        "c": 103207,
+        "tx": "Divertimento in G major,\nHob.XVI:8, Mov. I"
+    },
+    {
+        "c": 103208,
+        "tx": "Piano Sonata No.1,\nOp.1, Mov. I"
+    },
+    {
+        "c": 103209,
+        "tx": "Piano Sonata,\nOp.7, Mov. IV"
+    },
+    {
+        "c": 103210,
+        "tx": "Piano Sonata No.8, Mov. I"
+    },
+    {
+        "c": 103211,
+        "tx": "Piano Sonata No.23,\nOp.57, Mov. III"
+    },
+    {
+        "c": 103212,
+        "tx": "Violin Concerto No.1,\nOp.6, Mov. III"
+    },
+    {
+        "c": 103213,
+        "tx": "Violin Concerto,\nOp.61, Mov. III"
+    },
+    {
+        "c": 103214,
+        "tx": "Violin Concerto\nin C major, RV 185, Mov. II"
+    },
+    {
+        "c": 103215,
+        "tx": "Violin Concerto in C major,\nHob. VIIa:1, Mov. III"
+    },
+    {
+        "c": 103216,
+        "tx": "Violin Concerto,\nOp.53, Mov. III"
+    },
+    {
+        "c": 104001,
+        "tx": "MinuetBWV114"
+    },
+    {
+        "c": 104002,
+        "tx": "JesuJoyofMansDesiring"
+    },
+    {
+        "c": 104003,
+        "tx": "ToccataandFugueBWV565"
+    },
+    {
+        "c": 104004,
+        "tx": "Allahornpipe"
+    },
+    {
+        "c": 104005,
+        "tx": "LasciaChioPianga"
+    },
+    {
+        "c": 104006,
+        "tx": "ArrivalofthequeenofSheba"
+    },
+    {
+        "c": 104007,
+        "tx": "StringQuartetNo17Op3-5Serenade2nd"
+    },
+    {
+        "c": 104008,
+        "tx": "TrumpetConcerto1st"
+    },
+    {
+        "c": 104009,
+        "tx": "TrumpetConcerto3rd"
+    },
+    {
+        "c": 104010,
+        "tx": "EineKleineNachtmusik4th"
+    },
+    {
+        "c": 104011,
+        "tx": "TurkishMarch"
+    },
+    {
+        "c": 104012,
+        "tx": "PianoSonataNo8,3rd"
+    },
+    {
+        "c": 104013,
+        "tx": "Pathetique2nd"
+    },
+    {
+        "c": 104014,
+        "tx": "TheTempest3rd"
+    },
+    {
+        "c": 104015,
+        "tx": "Moonlight3rd"
+    },
+    {
+        "c": 104016,
+        "tx": "LaCampanella"
+    },
+    {
+        "c": 104017,
+        "tx": "CapriceforSoloViolinOp1No24"
+    },
+    {
+        "c": 104018,
+        "tx": "MarcheMilitaire"
+    },
+    {
+        "c": 104019,
+        "tx": "StandchenD957No4"
+    },
+    {
+        "c": 104020,
+        "tx": "DerErlkonig"
+    },
+    {
+        "c": 104021,
+        "tx": "NocturneOp9No2"
+    },
+    {
+        "c": 104022,
+        "tx": "Revolutionary"
+    },
+    {
+        "c": 104023,
+        "tx": "BlackKeys"
+    },
+    {
+        "c": 104024,
+        "tx": "Ladonnaemobile"
+    },
+    {
+        "c": 104025,
+        "tx": "Brindisi"
+    },
+    {
+        "c": 104026,
+        "tx": "TheAnvilChorus"
+    },
+    {
+        "c": 104027,
+        "tx": "WaltzOp39No15"
+    },
+    {
+        "c": 104028,
+        "tx": "HungarianDanceNo5"
+    },
+    {
+        "c": 104029,
+        "tx": "PianoSonataNo3Op5"
+    },
+    {
+        "c": 104030,
+        "tx": "HumoresqueOp101No7"
+    },
+    {
+        "c": 104031,
+        "tx": "SlavonicDanceOp72No2"
+    },
+    {
+        "c": 104032,
+        "tx": "SlavonicDanceOp46B78No7"
+    },
+    {
+        "c": 104033,
+        "tx": "Salutdamour"
+    },
+    {
+        "c": 104034,
+        "tx": "PompandCircumstanceOp39No1"
+    },
+    {
+        "c": 104035,
+        "tx": "ValseRomantique"
+    },
+    {
+        "c": 104036,
+        "tx": "SuiteBergamasquePassepied"
+    },
+    {
+        "c": 104037,
+        "tx": "ArabesqueNo1"
+    },
+    {
+        "c": 104038,
+        "tx": "FlightoftheBumblebee"
+    },
+    {
+        "c": 104039,
+        "tx": "PianoConcertoNo2Op181st"
+    },
+    {
+        "c": 104040,
+        "tx": "MomentsmusicauxOp16No4"
+    },
+    {
+        "c": 200001,
+        "tx": "BACH"
+    },
+    {
+        "c": 200002,
+        "tx": "HANDEL"
+    },
+    {
+        "c": 200003,
+        "tx": "HAYDN"
+    },
+    {
+        "c": 200004,
+        "tx": "MOZART"
+    },
+    {
+        "c": 200005,
+        "tx": "BEETHOVEN"
+    },
+    {
+        "c": 200006,
+        "tx": "PAGANINI"
+    },
+    {
+        "c": 200007,
+        "tx": "SCHUBERT"
+    },
+    {
+        "c": 200008,
+        "tx": "CHOPIN"
+    },
+    {
+        "c": 200009,
+        "tx": "VERDI"
+    },
+    {
+        "c": 200010,
+        "tx": "BRAHMS"
+    },
+    {
+        "c": 200011,
+        "tx": "DVORAK"
+    },
+    {
+        "c": 200012,
+        "tx": "ELGAR"
+    },
+    {
+        "c": 200013,
+        "tx": "DEBUSSY"
+    },
+    {
+        "c": 200014,
+        "tx": "RACHMANINOFF"
+    },
+    {
+        "c": 200015,
+        "tx": "VIVALDI"
+    },
+    {
+        "c": 200016,
+        "tx": "GLINKA"
+    },
+    {
+        "c": 200017,
+        "tx": "TCHAIKOVSKY"
+    },
+    {
+        "c": 200018,
+        "tx": "SAINT-SAENS"
+    },
+    {
+        "c": 200019,
+        "tx": "MENDELSSOHN"
+    },
+    {
+        "c": 200020,
+        "tx": "BIZET"
+    },
+    {
+        "c": 200021,
+        "tx": "LISZT"
+    },
+    {
+        "c": 200022,
+        "tx": "SARASATE"
+    },
+    {
+        "c": 200023,
+        "tx": "STRAUSS II"
+    },
+    {
+        "c": 200024,
+        "tx": "SCRIABIN"
+    },
+    {
+        "c": 200025,
+        "tx": "GRIEG"
+    },
+    {
+        "c": 200026,
+        "tx": "ROSSINI"
+    },
+    {
+        "c": 200027,
+        "tx": "COUPERIN"
+    },
+    {
+        "c": 200028,
+        "tx": "PURCELL"
+    },
+    {
+        "c": 200029,
+        "tx": "BOCCHERINI"
+    },
+    {
+        "c": 200030,
+        "tx": "OFFENBACH"
+    },
+    {
+        "c": 201001,
+        "tx": "Johann Sebastian Bach"
+    },
+    {
+        "c": 201002,
+        "tx": "Georg Friedrich Handel"
+    },
+    {
+        "c": 201003,
+        "tx": "Franz Joseph Haydn"
+    },
+    {
+        "c": 201004,
+        "tx": "Wolfgang Amadeus Mozart"
+    },
+    {
+        "c": 201005,
+        "tx": "Ludwig van Beethoven"
+    },
+    {
+        "c": 201006,
+        "tx": "Niccolo Paganini"
+    },
+    {
+        "c": 201007,
+        "tx": "Franz Schubert"
+    },
+    {
+        "c": 201008,
+        "tx": "Frederic Chopin"
+    },
+    {
+        "c": 201009,
+        "tx": "Giuseppe Verdi"
+    },
+    {
+        "c": 201010,
+        "tx": "Johannes Brahms"
+    },
+    {
+        "c": 201011,
+        "tx": "Antonin Dvorak"
+    },
+    {
+        "c": 201012,
+        "tx": "Edward Elgar"
+    },
+    {
+        "c": 201013,
+        "tx": "Claude Debussy"
+    },
+    {
+        "c": 201014,
+        "tx": "Sergei Rachmaninoff"
+    },
+    {
+        "c": 201015,
+        "tx": "Antonio Vivaldi"
+    },
+    {
+        "c": 201016,
+        "tx": "Mikhail Glinka"
+    },
+    {
+        "c": 201017,
+        "tx": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+        "c": 201018,
+        "tx": "Camille Saint-Saens"
+    },
+    {
+        "c": 201019,
+        "tx": "Felix Mendelssohn"
+    },
+    {
+        "c": 201020,
+        "tx": "Georges Bizet"
+    },
+    {
+        "c": 201021,
+        "tx": "Franz Liszt"
+    },
+    {
+        "c": 201022,
+        "tx": "Pablo de Sarasate"
+    },
+    {
+        "c": 201023,
+        "tx": "Johann Strauss II"
+    },
+    {
+        "c": 201024,
+        "tx": "Alexander Scriabin"
+    },
+    {
+        "c": 201025,
+        "tx": "Edvard Grieg"
+    },
+    {
+        "c": 201026,
+        "tx": "Gioachino Antonio Rossini"
+    },
+    {
+        "c": 201027,
+        "tx": "Francois Couperin"
+    },
+    {
+        "c": 201028,
+        "tx": "Henry Purcell"
+    },
+    {
+        "c": 201029,
+        "tx": "Ridolfo Luigi Boccherini"
+    },
+    {
+        "c": 201030,
+        "tx": "Jacques Offenbach"
+    },
+    {
+        "c": 202001,
+        "tx": "Eisenach"
+    },
+    {
+        "c": 202002,
+        "tx": "Halle"
+    },
+    {
+        "c": 202003,
+        "tx": "Rohrau"
+    },
+    {
+        "c": 202004,
+        "tx": "Salzburg"
+    },
+    {
+        "c": 202005,
+        "tx": "Bonn"
+    },
+    {
+        "c": 202006,
+        "tx": "Genoa"
+    },
+    {
+        "c": 202007,
+        "tx": "Vienna"
+    },
+    {
+        "c": 202008,
+        "tx": "Zelazowa Wola"
+    },
+    {
+        "c": 202009,
+        "tx": "Busseto"
+    },
+    {
+        "c": 202010,
+        "tx": "Hamburg"
+    },
+    {
+        "c": 202011,
+        "tx": "Nelahozeves"
+    },
+    {
+        "c": 202012,
+        "tx": "Broadheath"
+    },
+    {
+        "c": 202013,
+        "tx": "Saint-Germain-en-Laye"
+    },
+    {
+        "c": 202014,
+        "tx": "Onega"
+    },
+    {
+        "c": 202015,
+        "tx": "Venice"
+    },
+    {
+        "c": 202016,
+        "tx": "Smolensk"
+    },
+    {
+        "c": 202017,
+        "tx": "Votkinsk"
+    },
+    {
+        "c": 202018,
+        "tx": "Paris"
+    },
+    {
+        "c": 202019,
+        "tx": "Hamburg"
+    },
+    {
+        "c": 202020,
+        "tx": "Paris"
+    },
+    {
+        "c": 202021,
+        "tx": "Raiding"
+    },
+    {
+        "c": 202022,
+        "tx": "Pamplona"
+    },
+    {
+        "c": 202023,
+        "tx": "Vienna"
+    },
+    {
+        "c": 202024,
+        "tx": "Moscow"
+    },
+    {
+        "c": 202025,
+        "tx": "Bergen"
+    },
+    {
+        "c": 202026,
+        "tx": "Pesaro"
+    },
+    {
+        "c": 202027,
+        "tx": "France"
+    },
+    {
+        "c": 202028,
+        "tx": "England"
+    },
+    {
+        "c": 202029,
+        "tx": "Italy"
+    },
+    {
+        "c": 202030,
+        "tx": "Cologne"
+    },
+    {
+        "c": 203001,
+        "tx": "Leipzig"
+    },
+    {
+        "c": 203002,
+        "tx": "London"
+    },
+    {
+        "c": 203003,
+        "tx": "Vienna"
+    },
+    {
+        "c": 203004,
+        "tx": "Vienna"
+    },
+    {
+        "c": 203005,
+        "tx": "Vienna"
+    },
+    {
+        "c": 203006,
+        "tx": "Paris"
+    },
+    {
+        "c": 203007,
+        "tx": "Vienna"
+    },
+    {
+        "c": 203008,
+        "tx": "Paris"
+    },
+    {
+        "c": 203009,
+        "tx": "Milano"
+    },
+    {
+        "c": 203010,
+        "tx": "Vienna"
+    },
+    {
+        "c": 203011,
+        "tx": "Prague"
+    },
+    {
+        "c": 203012,
+        "tx": "London"
+    },
+    {
+        "c": 203013,
+        "tx": "Paris"
+    },
+    {
+        "c": 203014,
+        "tx": "New York"
+    },
+    {
+        "c": 203015,
+        "tx": "Venice"
+    },
+    {
+        "c": 203016,
+        "tx": "Saint Petersburg"
+    },
+    {
+        "c": 203017,
+        "tx": "Russia"
+    },
+    {
+        "c": 203018,
+        "tx": "Paris"
+    },
+    {
+        "c": 203019,
+        "tx": "Berlin"
+    },
+    {
+        "c": 203020,
+        "tx": "Paris"
+    },
+    {
+        "c": 203021,
+        "tx": "Budapest"
+    },
+    {
+        "c": 203022,
+        "tx": "Pamplona"
+    },
+    {
+        "c": 203023,
+        "tx": "Vienna"
+    },
+    {
+        "c": 203024,
+        "tx": "Moscow"
+    },
+    {
+        "c": 203025,
+        "tx": "Bergen"
+    },
+    {
+        "c": 203026,
+        "tx": "Naples"
+    },
+    {
+        "c": 203027,
+        "tx": "Paris"
+    },
+    {
+        "c": 203028,
+        "tx": "London"
+    },
+    {
+        "c": 203029,
+        "tx": "Madrid"
+    },
+    {
+        "c": 203030,
+        "tx": "Paris"
+    },
+    {
+        "c": 204001,
+        "tx": "He is generally regarded as one of the greatest composers of all time.\nBach's musical style fits in the conventions of his day, which is the final stage of the baroque style. He enriched established German styles through his mastery of counterpoint, harmonic and motivic organisation, and his adaptation of rhythms, forms, and textures from abroad, particularly from Italy and France. Religious music was at the centre of Bach's output for much of his life. The hundreds of sacred works he created are usually seen as manifesting not just his craft but a truly devout relationship with God.\nFugues are as characteristic to Bach's style, as, for instance, the Sonata form is characteristic to the composers of the Classical period."
+    },
+    {
+        "c": 204002,
+        "tx": "He produced several operas with the Royal Academy of Music in England before forming the New Royal Academy of Music in 1727. He is well known for his operas, oratorios, anthems, and organ concertos.\nHe is regarded as one of the greatest composers of the Baroque era, and composed more than forty operas in over thirty years, and since the late 1960s, with the revival of baroque music and historically informed musical performance, interest in Handel's operas has grown.\nHis funeral was given full state honours, and he was buried in Westminster Abbey in London."
+    },
+    {
+        "c": 204003,
+        "tx": "He was an Austrian composer of the Classical period. \nHe helped establish the forms and styles for the string quartet and the symphony. Also, Haydn's work was central to the development of what came to be called sonata form. Haydn wrote 107 symphonies in total, as well as 83 string quartets, 45 piano trios, 62 piano sonatas, 14 masses and 26 operas, amongst countless other scores."
+    },
+    {
+        "c": 204004,
+        "tx": "He showed prodigious ability from his earliest childhood. Already competent on keyboard and violin, he composed from the age of five and performed before European royalty. While Wolfgang was young, his family made several European journeys in which he and Nannerl performed as child prodigies. He composed many of his best-known symphonies, concertos, and operas, and portions of the Requiem, which was largely unfinished at the time of his death."
+    },
+    {
+        "c": 204005,
+        "tx": "He was a German composer and pianist. A crucial figure in the transition between the Classical and Romantic eras in Western art music, he remains one of the most famous and influential of all composers. Beethoven is reported to have dated his hearing loss from a fit he suffered in 1798 induced by a rage at the interruption of his work.\nIll health and increasing deafness caused a drop in productivity at the end of Beethoven's life, but he still managed to produce important works like his 'Late Quartets' in 1825, which were wildly inventive for the time. Many of his most admired works come from these last 15 years of his life."
+    },
+    {
+        "c": 204006,
+        "tx": "He was the most celebrated violin virtuoso of his time, and left his mark as one of the pillars of modern violin technique.\nGenerally speaking, Paganini's compositions were technically imaginative, and the timbre of the instrument was greatly expanded as a result of these works. He was one of the most famous virtuosi of his day, and is considered to be one of the greatest violinists ever, with absolute pitch and perfect intonation, expressive bowing techniques and new uses of staccato and pizzicato techniques."
+    },
+    {
+        "c": 204007,
+        "tx": "His output consists of over 600 secular vocal works (mainly Lieder), seven complete symphonies, sacred music, operas, incidental music and a large body of chamber and piano music.\nWhile Schubert was still struggling to hold down his full-time teaching post, he not only composed 145 lieder (songs), the Second and Third Symphonies, two sonatas and a series of miniatures for solo piano, two mass settings and other shorter choral works, four stage works, and a string quartet, in addition to various other projects. This period of intense creative activity remains one of the most inexplicable feats of productivity in musical history. "
+    },
+    {
+        "c": 204008,
+        "tx": "He gained and has maintained renown worldwide as a leading musician of his era, whose \"poetic genius was based on a professional technique that was without equal in his generation. \nAll of Chopin's compositions include the piano. Most are for solo piano, though he also wrote two piano concertos, a few chamber pieces, and some songs to Polish lyrics. His keyboard style is highly individual and often technically demanding; his own performances were noted for their nuance and sensitivity.\nInfluences on his composition style include Polish folk music, the classical tradition of J. S. Bach, Mozart and Schubert, as well as the Paris salons where he was a frequent guest. His innovations in style, musical form, and harmony, and his association of music with nationalism, were influential throughout and after the late Romantic period."
+    },
+    {
+        "c": 204009,
+        "tx": "Verdi's reputation as the greatest of all Italian opera composers is beyond dispute.\nVerdi was a master of theatrical effect and in evoking human passions through music, giving his works a timeless appeal. Many of his stirring melodies are still familiar worldwide. What makes him, with Puccini, the most popular of all opera composers is the ability to dream up glorious melodies with an innate understanding of the human voice, to express himself directly, to understand how the theatre works, and to score with technical brilliance, colour and originality"
+    },
+    {
+        "c": 204010,
+        "tx": "Johannes Brahms was a German composer and pianist who wrote symphonies, concerti, chamber music, piano works, and choral compositions. Widely considered one the 19th century's greatest composers and one of the leading musicians of the Romantic era, he premiered many of his own works. He can be viewed as the protagonist of the Classical tradition of Joseph Haydn, Mozart, and Beethoven in a period when the standards of this tradition were being questioned or overturned by the Romantics."
+    },
+    {
+        "c": 204011,
+        "tx": "Considered the greatest composer that the Czech nation ever produced, Antonin Dvorak wrote a career’s worth of classical works for orchestra, symphony, and choir that survive as some of the most majestic and acclaimed works of nineteenth-century Romantic music. Dvorak’s most lasting legacy to musical history, however, is the way in which he infused his work with melodies and elements from Bohemian folk tunes, Gypsy rhythms, and even African-American spirituals. The freshness of spirit and sense of delight that are hallmarks of Dvorak’s music, according to many scholars, are considered emblematic of the composer’s pleasant, unassuming personality and lifelong devotion to both family and a beloved home in the Czech countryside."
+    },
+    {
+        "c": 204012,
+        "tx": "Elgar's most fruitful period was the first decade of the twentieth century, during which he wrote some of his noblest, most expressive music, including the first four of his Pomp and Circumstance Marches; the first of these, subtitled \"Land of Hope and Glory\", became an unofficial second national anthem for the British Empire. To mark the coronation of King Edward VII, Elgar composed Land of Hope and Glory as a powerful finale to the Coronation Ode. It is one of the nation’s most popular pieces and is considered an unofficial national anthem. Following on from this triumph he was awarded a knighthood and special royal audiences."
+    },
+    {
+        "c": 204013,
+        "tx": "He was the most prominent figures associated with Impressionist music, though Debussy disliked the term when applied to his compositions. Debussy's music is noted for its sensory content and frequent usage of nontraditional tonalities. The prominent French literary style of his period was known as Symbolism, and this movement directly inspired Debussy both as a composer and as an active cultural participant. Today, Debussy is remembered as a musical legend, whose uniquely structured compositions have served as a base for musicians over the past century, and will undoubtedly continue to inspire musical creation for decades to come."
+    },
+    {
+        "c": 204014,
+        "tx": "He was a Russian virtuoso pianist, composer, and conductor of the late-Romantic period, some of whose works are among the most popular in the romantic repertoire. After the Russian Revolution, Rachmaninoff and his family left Russia and resided in the United States, first in New York City. He completed six compositions, including Rhapsody on a Theme of Paganini, Symphony No. 3, and Symphonic Dances. Early influences of Tchaikovsky, Rimsky-Korsakov, Balakirev, Mussorgsky, and other Russian composers gave way to a personal style notable for its song-like melodicism, expressiveness and his use of rich orchestral colors. The piano is featured prominently in Rachmaninoff's compositional output, and through his own skills as a performer he explored the expressive possibilities of the instrument."
+    },
+    {
+        "c": 204015,
+        "tx": "He was an Italian Baroque composer, virtuoso violinist, teacher and cleric. Born in Venice, he is recognized as one of the greatest Baroque composers, and his influence during his lifetime was widespread across Europe. He composed many instrumental concertos, for the violin and a variety of other instruments, as well as sacred choral works and more than forty operas. Vivaldi's work, including nearly 500 concertos, have influenced subsequent composers, including Johann Sebastian Bach."
+    },
+    {
+        "c": 204016,
+        "tx": "He was the first Russian composer to gain wide recognition within his own country, and is often regarded as the fountainhead of Russian classical music. Glinka's compositions were an important influence on future Russian composers, notably the members of The Five, who took Glinka's lead and produced a distinctive Russian style of music. His influence on the subsequent development of Russian music was immense and in particular on Balakirev, Rimsky-Korsakov, Tchaikovsky and Anton Rubinstein"
+    },
+    {
+        "c": 204017,
+        "tx": "He was the first Russian composer whose music made a lasting impression internationally, bolstered by his appearances as a guest conductor in Europe and the United States. Tchaikovsky studied music sporadically early in his life, but took a job as a government clerk. Hating the post, he turned to music and studied at the newly founded music school in St. Petersburg. Here his compositions garnered much attention and Tchaikovsky was hailed as the hope of Russia's musical future. The romantic in Tchaikovsky found its greatest outlet in his three great ballet scores, all of which are eternally popular. The Nutcracker is a perrenial Christmas favorite, and the well-known theme of the tragic Swan-Princess from Swan Lake seems to embody the intense, heartfelt, romanticized suffering which Tchaikovsky's music gives voice to so often. "
+    },
+    {
+        "c": 204018,
+        "tx": "He was notable for his pioneering efforts on behalf of French music, and he was a gifted pianist and organist as well as a writer of criticism, poetry, essays, and plays. Of his concerti and symphonies, in which he adapted the virtuosity of Franz Liszt’s style to French traditions of harmony and form, his Symphony No. 3 (Organ) is most often performed. Saint-Saëns held only one teaching post, at the École de Musique Classique et Religieuse in Paris, and remained there for less than five years. It was nevertheless important in the development of French music. Though he lived through the period of Wagner’s influence, Saint-Saëns remained unaffected by it and adhered to the classical models, upholding a conservative ideal of French music that emphasized polished craftsmanship and a sense of form. In his essays and memoirs, he described the contemporary musical scene in a shrewd and often ironic manner."
+    },
+    {
+        "c": 204019,
+        "tx": "In his music Mendelssohn largely observed Classical models and practices while initiating key aspects of Romanticism—the artistic movement that exalted feeling and the imagination above rigid forms and traditions. After a long period of relative denigration, his creative originality is now beiong recognised and re-evaluated. He revived classical approaches within the Romantic movement, whose excesses and manners he condemned as vulgar."
+    },
+    {
+        "c": 204020,
+        "tx": "He was recognised as an outstanding pianist, though he chose not to capitalise on this skill and rarely performed in public. Best known for his operas in a career cut short by his early death, Bizet achieved few successes before his final work, Carmen, which has become one of the most popular and frequently performed works in the entire opera repertoire. Many of his works received cool receptions on their premieres but are now considered central to the repertory of classical music."
+    },
+    {
+        "c": 204021,
+        "tx": "Liszt gained renown in Europe during the early nineteenth century for his prodigious virtuosic skill as a pianist. Liszt was not only the greatest piano virtuoso of his time but also a composer of enormous originality and a principal figure in the Romantic movement. As a composer he radically extended the technique of piano writing, giving the instrument not only brilliance but a full and rich, almost orchestral sound. Most of his compositions bear titles and are representations of some natural scene or of some poetic idea or work of literature or art.  Some of his most notable musical contributions were the invention of the symphonic poem, developing the concept of thematic transformation as part of his experiments in musical form, and making radical departures in harmony."
+    },
+    {
+        "c": 204022,
+        "tx": "Beginning his violin studies at the age of five, Sarasate gave his first performance at age eight and later studied at the Paris Conservatory. In 1859 he began the concert tours that made him famous throughout the world. His playing was particularly admired for sweetness and purity of tone, perfect intonation, and a flawless technique that appeared effortless. Many prominent composers, including Camille Saint-Saens, Max Bruch, Edouard Lalo, and Antonin Dvorak, wrote pieces for him. Sarasate is also known as a composer of virtuoso violin music, his most popular work being Zigeunerweisen, a fantasy in gypsy style for violin and orchestra."
+    },
+    {
+        "c": 204023,
+        "tx": "He was an Austrian composer of light music, particularly dance music and operettas. He composed over 500 waltzes, polkas, quadrilles, and other types of dance music, as well as several operettas and a ballet. In his lifetime, he was known as \"The Waltz King\", and was largely then responsible for the popularity of the waltz in Vienna during the 19th century. For more than 40 years, he directed the finest salon orchestras of 19th century Europe with a violin in one hand, a bow in the other, and inspired a dance craze to rival anything in nightclubs today. The social morals of a sexually repressive age were suspended as entwined couples swirled and chased around the dance floor, their high spirits intensified by the intoxicating flow of champagne and Strauss’s indelible melodies. "
+    },
+    {
+        "c": 204024,
+        "tx": "He was a Russian composer and pianist. Scriabin, who was influenced early in his life by the works of Frederic Chopin, composed works that are characterised by a highly tonal idiom. Later in his career, he developed a substantially atonal and much more dissonant musical system, which accorded with his personal brand of mysticism. He was influenced by synesthesia, and associated colours with the various harmonic tones of his atonal scale, while his colour-coded circle of fifths was also influenced by theosophy. He is considered by some to be the main Russian Symbolist composer."
+    },
+    {
+        "c": 204025,
+        "tx": "He was a Norwegian composer and pianist. He is widely considered one of the leading Romantic era composers, and his music is part of the standard classical repertoire worldwide. His use and development of Norwegian folk music in his own compositions brought the music of Norway to international consciousness, as well as helping to develop a national identity in Finland and Bohemia, respectively. the Peer Gynt Suite No.1 is the his most popular work, and of its four movements Morning and In the Hall of the Mountain King are among the most loved of all short orchestral compositions."
+    },
+    {
+        "c": 204026,
+        "tx": "He was an Italian composer noted for his operas, particularly his comic operas, of which The Barber of Seville and Semiramide are among the best known. Born in Pesaro, the son of a trumpeter and a singer, Rossini began to compose as a child. During the next 20 years, He wrote more than 40 operas for the stage that were performed in Venice, Milan, Ferrara, Naples and elsewhere. He set new standards for both comic and serious opera before retiring from large-scale composition."
+    },
+    {
+        "c": 204027,
+        "tx": "Francois Couperin was an French composer and harpsichordist, the most renowned of the Couperin dynasty among 17th~18th century musicians. Same as his uncle Louis, Francois is mostly known for his harpsichord music. He succeeded his teacher Thomelin, an organist at the Royal Chapel, with the title ‘Organiste Du Roi’, which means an organist appointed by the King. His most famous book \"The Art Of Playing The Harpsichord” guides through fingerings, touch, ornamentation and other features of keyboard technique. The book influenced J.S. Bach in adopting the fingering system, including the use of thumbs that Couperin set forth for playing the harpsichord."
+    },
+    {
+        "c": 204028,
+        "tx": "One of the most important English composers in 17th century, Purcell started his first composition at nine years old. After the marriage, he was appointed as an organist of the Chapel Royal and worked across various genres, ranging from the works closely linked to the court, such as symphony songs, to the Chapel Royal. Purcell died in 1695, around 35 or 36 years old; the music he composed for Queen Mary's funeral was actually performed at his funeral too. The whole public mourned and honored him as ‘one of the greatest masters of music all time.'"
+    },
+    {
+        "c": 204029,
+        "tx": "Luigi Boccherini was an Italian composer and cellist of the Classical era. He influenced the string quartet to grow as one of the musical genres and composed the first music for a quintet for strings. He produced more than 100 quartets, 100 quintets, 50 trios, and 50 chamber works in other forms. Boccherini's style is characterized by the Rococo charm, lightness, and optimism. He focused on the melodic and rhythmic invention, coupled with the heavy influences from the guitar tradition of Spain."
+    },
+    {
+        "c": 204030,
+        "tx": "Jacques Offenbach is a German-French composer of the Romantic period. He created a type of the light burlesque french comic opera. A Cologne-born cellist and conductor, Offenbach boasted his musical talent since his early age and gained international fame.\nIrrespective of the fame he earned, his focus and ambition was inclined towards a composition of comic pieces for the musical theatre. In his lifetime, Offenbach wrote nearly 100 operettas: the risky humour, often about sexual intrigues, together with Offenbach's facility for melody made them internationally well-known. Offenbach had a signature writing of the fluent and elegant style with a highly developed sense of characterization and satire. His best-known works has been continually revived in the twentieth century, and many of them continue to be staged in the the current century."
+    },
+    {
+        "c": 300001,
+        "tx": "BAROQUE ERA"
+    },
+    {
+        "c": 300002,
+        "tx": "CLASSICAL ERA"
+    },
+    {
+        "c": 300003,
+        "tx": "ROMANTIC ERA"
+    },
+    {
+        "c": 300004,
+        "tx": "MODERNIST ERA"
+    },
+    {
+        "c": 401000,
+        "tx": "Classic"
+    },
+    {
+        "c": 401001,
+        "tx": "Arrival"
+    },
+    {
+        "c": 401002,
+        "tx": "Hammock"
+    },
+    {
+        "c": 401003,
+        "tx": "Vineyards"
+    },
+    {
+        "c": 401004,
+        "tx": "Kitten's Recital"
+    },
+    {
+        "c": 401005,
+        "tx": "Grande Jatte"
+    },
+    {
+        "c": 401006,
+        "tx": "Normal6"
+    },
+    {
+        "c": 401007,
+        "tx": "Belief"
+    },
+    {
+        "c": 401008,
+        "tx": "Lisbeth"
+    },
+    {
+        "c": 401009,
+        "tx": "Dancers in Pink"
+    },
+    {
+        "c": 401010,
+        "tx": "Temeraire"
+    },
+    {
+        "c": 401011,
+        "tx": "Scream"
+    },
+    {
+        "c": 401012,
+        "tx": "Tech6"
+    },
+    {
+        "c": 401013,
+        "tx": "Parasol"
+    },
+    {
+        "c": 401014,
+        "tx": "Shipping"
+    },
+    {
+        "c": 401015,
+        "tx": "Winter Forest"
+    },
+    {
+        "c": 401016,
+        "tx": "Ship Battle"
+    },
+    {
+        "c": 401017,
+        "tx": "Oreithyia"
+    },
+    {
+        "c": 401018,
+        "tx": "Mas6"
+    },
+    {
+        "c": 401019,
+        "tx": "Moulin Rouge"
+    },
+    {
+        "c": 401020,
+        "tx": "By Fjord"
+    },
+    {
+        "c": 401021,
+        "tx": "Rainy Paris"
+    },
+    {
+        "c": 401022,
+        "tx": "Red Tree"
+    },
+    {
+        "c": 401023,
+        "tx": "Gleaners"
+    },
+    {
+        "c": 401024,
+        "tx": "Lilies"
+    },
+    {
+        "c": 401025,
+        "tx": "Kiss"
+    },
+    {
+        "c": 401026,
+        "tx": "Starry Night"
+    },
+    {
+        "c": 401027,
+        "tx": "Song of Angels"
+    },
+    {
+        "c": 401028,
+        "tx": "Night Watch"
+    },
+    {
+        "c": 401029,
+        "tx": "None"
+    },
+    {
+        "c": 401030,
+        "tx": "Butterfly Hunter"
+    },
+    {
+        "c": 401031,
+        "tx": "Liberty"
+    },
+    {
+        "c": 401900,
+        "tx": "Classic (Black Ver.)"
+    },
+    {
+        "c": 401901,
+        "tx": "Sunrise"
+    },
+    {
+        "c": 401902,
+        "tx": "Passion"
+    },
+    {
+        "c": 401903,
+        "tx": "The Hall of Fame"
+    },
+    {
+        "c": 401904,
+        "tx": "2nd Anniversary"
+    },
+    {
+        "c": 402000,
+        "tx": "Welcome"
+    },
+    {
+        "c": 402001,
+        "tx": "Trip I"
+    },
+    {
+        "c": 402002,
+        "tx": "Trip II"
+    },
+    {
+        "c": 402003,
+        "tx": "Trip III"
+    },
+    {
+        "c": 402004,
+        "tx": "Trip IV"
+    },
+    {
+        "c": 402005,
+        "tx": "Trip V"
+    },
+    {
+        "c": 402006,
+        "tx": "Trip VI"
+    },
+    {
+        "c": 402007,
+        "tx": "Journey I"
+    },
+    {
+        "c": 402008,
+        "tx": "Journey II"
+    },
+    {
+        "c": 402009,
+        "tx": "Journey III"
+    },
+    {
+        "c": 402010,
+        "tx": "Journey IV"
+    },
+    {
+        "c": 402011,
+        "tx": "Journey V"
+    },
+    {
+        "c": 402012,
+        "tx": "Journey VI"
+    },
+    {
+        "c": 402013,
+        "tx": "Odyssey I"
+    },
+    {
+        "c": 402014,
+        "tx": "Odyssey II"
+    },
+    {
+        "c": 402015,
+        "tx": "Odyssey III"
+    },
+    {
+        "c": 402016,
+        "tx": "Odyssey IV"
+    },
+    {
+        "c": 402017,
+        "tx": "Odyssey V"
+    },
+    {
+        "c": 402018,
+        "tx": "Odyssey VI"
+    },
+    {
+        "c": 402019,
+        "tx": "Repeat Sign I"
+    },
+    {
+        "c": 402020,
+        "tx": "Repeat Sign II"
+    },
+    {
+        "c": 402021,
+        "tx": "Repeat Sign III"
+    },
+    {
+        "c": 402022,
+        "tx": "Repeat Sign IV"
+    },
+    {
+        "c": 402023,
+        "tx": "Repeat Sign V"
+    },
+    {
+        "c": 402024,
+        "tx": "Excellence"
+    },
+    {
+        "c": 402025,
+        "tx": "Integrity"
+    },
+    {
+        "c": 402026,
+        "tx": "Superiority"
+    },
+    {
+        "c": 402027,
+        "tx": "Piano Lover"
+    },
+    {
+        "c": 402028,
+        "tx": "Muster Call"
+    },
+    {
+        "c": 402029,
+        "tx": "A Brave Man"
+    },
+    {
+        "c": 402030,
+        "tx": "Transcendental"
+    },
+    {
+        "c": 402031,
+        "tx": "The Poet of the Piano"
+    },
+    {
+        "c": 402900,
+        "tx": "Pioneer"
+    },
+    {
+        "c": 402901,
+        "tx": "Impression"
+    },
+    {
+        "c": 402902,
+        "tx": "Passion"
+    },
+    {
+        "c": 402903,
+        "tx": "Honor"
+    },
+    {
+        "c": 402904,
+        "tx": "Crystal"
+    },
+    {
+        "c": 402999,
+        "tx": "Hidden"
+    },
+    {
+        "c": 403000,
+        "tx": "A gift to celebrate a new pianist"
+    },
+    {
+        "c": 403001,
+        "tx": "Clear normal tour stage 10"
+    },
+    {
+        "c": 403002,
+        "tx": "Clear normal tour stage 20"
+    },
+    {
+        "c": 403003,
+        "tx": "Clear normal tour stage 30"
+    },
+    {
+        "c": 403004,
+        "tx": "Clear normal tour stage 40"
+    },
+    {
+        "c": 403005,
+        "tx": "Clear normal tour stage 50"
+    },
+    {
+        "c": 403006,
+        "tx": "Clear normal tour stage 60"
+    },
+    {
+        "c": 403007,
+        "tx": "Clear technical tour stage 10"
+    },
+    {
+        "c": 403008,
+        "tx": "Clear technical tour stage 20"
+    },
+    {
+        "c": 403009,
+        "tx": "Clear technical tour stage 30"
+    },
+    {
+        "c": 403010,
+        "tx": "Clear technical tour stage 40"
+    },
+    {
+        "c": 403011,
+        "tx": "Clear technical tour stage 50"
+    },
+    {
+        "c": 403012,
+        "tx": "Clear technical tour stage 60"
+    },
+    {
+        "c": 403013,
+        "tx": "Clear master tour stage 10"
+    },
+    {
+        "c": 403014,
+        "tx": "Clear master tour stage 20"
+    },
+    {
+        "c": 403015,
+        "tx": "Clear master tour stage 30"
+    },
+    {
+        "c": 403016,
+        "tx": "Clear master tour stage 40"
+    },
+    {
+        "c": 403017,
+        "tx": "Clear master tour stage 50"
+    },
+    {
+        "c": 403018,
+        "tx": "Clear master tour stage 60"
+    },
+    {
+        "c": 403019,
+        "tx": "Clear song 30 times in any mode"
+    },
+    {
+        "c": 403020,
+        "tx": "Clear song 150 times in any mode"
+    },
+    {
+        "c": 403021,
+        "tx": "Clear song 300 times in any mode"
+    },
+    {
+        "c": 403022,
+        "tx": "Clear song 500 times in any mode"
+    },
+    {
+        "c": 403023,
+        "tx": "Clear song 900 times in any mode"
+    },
+    {
+        "c": 403024,
+        "tx": "Collect 250 stars in normal tour"
+    },
+    {
+        "c": 403025,
+        "tx": "Collect 250 stars in technical tour"
+    },
+    {
+        "c": 403026,
+        "tx": "Collect 250 stars in master tour"
+    },
+    {
+        "c": 403027,
+        "tx": "Collect 18 Pianos"
+    },
+    {
+        "c": 403028,
+        "tx": "Find hidden condition to unlock"
+    },
+    {
+        "c": 403029,
+        "tx": "Find hidden condition to unlock"
+    },
+    {
+        "c": 403030,
+        "tx": "Find hidden condition to unlock"
+    },
+    {
+        "c": 403031,
+        "tx": "Find hidden condition to unlock"
+    },
+    {
+        "c": 403900,
+        "tx": "A Special gift to longtime partners"
+    },
+    {
+        "c": 403901,
+        "tx": "A Special gift for grand opening"
+    },
+    {
+        "c": 403902,
+        "tx": "A Special gift for v2.2 update"
+    },
+    {
+        "c": 403903,
+        "tx": "A dedicated gift for 'The Hall of Fame'"
+    },
+    {
+        "c": 403904,
+        "tx": "A Special gift for 2nd Anniversary"
+    },
+    {
+        "c": 403999,
+        "tx": "Find hidden condition to unlock"
+    },
+    {
+        "c": 404028,
+        "tx": "Collect 27 Pianos"
+    },
+    {
+        "c": 404029,
+        "tx": "Clear \"Der Erlkonig\""
+    },
+    {
+        "c": 404030,
+        "tx": "Clear \"La Campanella\" with speed 3 & Fade in"
+    },
+    {
+        "c": 404031,
+        "tx": "Clear \"Revolutionary Etude\" with combo 1143"
+    },
+    {
+        "c": 601001,
+        "tx": "Shield +1"
+    },
+    {
+        "c": 601002,
+        "tx": "Shield +2"
+    },
+    {
+        "c": 601003,
+        "tx": "Shield +3"
+    },
+    {
+        "c": 601004,
+        "tx": "Shield +4"
+    },
+    {
+        "c": 601005,
+        "tx": "Shield +5"
+    },
+    {
+        "c": 601006,
+        "tx": "Shield +6"
+    },
+    {
+        "c": 601007,
+        "tx": "Shield +7"
+    },
+    {
+        "c": 601008,
+        "tx": "Shield +8"
+    },
+    {
+        "c": 601009,
+        "tx": "Shield +9"
+    },
+    {
+        "c": 601010,
+        "tx": "Shield +10"
+    },
+    {
+        "c": 601101,
+        "tx": "HP MAX +5"
+    },
+    {
+        "c": 601102,
+        "tx": "HP MAX +10"
+    },
+    {
+        "c": 601103,
+        "tx": "HP MAX +15"
+    },
+    {
+        "c": 601104,
+        "tx": "HP MAX +20"
+    },
+    {
+        "c": 601105,
+        "tx": "HP MAX +25"
+    },
+    {
+        "c": 601106,
+        "tx": "HP MAX +30"
+    },
+    {
+        "c": 601107,
+        "tx": "HP MAX +35"
+    },
+    {
+        "c": 601108,
+        "tx": "HP MAX +40"
+    },
+    {
+        "c": 601109,
+        "tx": "HP MAX +45"
+    },
+    {
+        "c": 601110,
+        "tx": "HP MAX +50"
+    },
+    {
+        "c": 1000001,
+        "tx": "Can not use {0} as the first character."
+    },
+    {
+        "c": 1000002,
+        "tx": "Can not use two or more {0} continuously."
+    },
+    {
+        "c": 1000003,
+        "tx": " '{0}' is unsupported character."
+    },
+    {
+        "c": 1000004,
+        "tx": "Please check the number of characters."
+    },
+    {
+        "c": 1000005,
+        "tx": "The 'Pianist' name is already in use."
+    },
+    {
+        "c": 1000006,
+        "tx": "The 'Pianist' name is not available. Please try again."
+    },
+    {
+        "c": 1001001,
+        "tx": "CONNECT WITH FACEBOOK"
+    },
+    {
+        "c": 1001002,
+        "tx": "GUEST"
+    },
+    {
+        "c": 1002001,
+        "tx": "BECOME A PIANIST"
+    },
+    {
+        "c": 1002002,
+        "tx": "What is your pianist name?"
+    },
+    {
+        "c": 1002003,
+        "tx": "OK"
+    },
+    {
+        "c": 1002004,
+        "tx": "{0}~{1} Characters"
+    },
+    {
+        "c": 1003001,
+        "tx": "BECOME A PIANIST"
+    },
+    {
+        "c": 1003002,
+        "tx": "Your Pianist name is"
+    },
+    {
+        "c": 1003003,
+        "tx": "Are you sure?"
+    },
+    {
+        "c": 1003004,
+        "tx": "NEXT"
+    },
+    {
+        "c": 1003005,
+        "tx": "BACK"
+    },
+    {
+        "c": 1004001,
+        "tx": "IMPORTANT"
+    },
+    {
+        "c": 1004002,
+        "tx": "Press \"TERMS OF USE\" button to check the terms and privacy policy.\nIf you agree, press \"AGREE\" button."
+    },
+    {
+        "c": 1004003,
+        "tx": "TERMS OF USE"
+    },
+    {
+        "c": 1004004,
+        "tx": "AGREE"
+    },
+    {
+        "c": 1005001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 1005002,
+        "tx": "Login session expired, Please try logging in again."
+    },
+    {
+        "c": 1005003,
+        "tx": "OK"
+    },
+    {
+        "c": 2002001,
+        "tx": "HOW TO UNLOCK"
+    },
+    {
+        "c": 2002002,
+        "tx": "Clear the song on the normal tour."
+    },
+    {
+        "c": 2002003,
+        "tx": "OK"
+    },
+    {
+        "c": 2002101,
+        "tx": "HOW TO UNLOCK"
+    },
+    {
+        "c": 2002102,
+        "tx": "Clear the song on the technical tour."
+    },
+    {
+        "c": 2002103,
+        "tx": "OK"
+    },
+    {
+        "c": 2009001,
+        "tx": "PLAY"
+    },
+    {
+        "c": 4000001,
+        "tx": "BACK"
+    },
+    {
+        "c": 4001001,
+        "tx": "HOW TO PLAY"
+    },
+    {
+        "c": 4001002,
+        "tx": "NORMAL NOTE"
+    },
+    {
+        "c": 4001003,
+        "tx": "NEXT"
+    },
+    {
+        "c": 4001004,
+        "tx": "The note will appear and come down."
+    },
+    {
+        "c": 4001005,
+        "tx": "When the note is aligned with the line,\ntouch the note."
+    },
+    {
+        "c": 4002001,
+        "tx": "HOW TO PLAY"
+    },
+    {
+        "c": 4002002,
+        "tx": "HOLDING NOTE"
+    },
+    {
+        "c": 4002003,
+        "tx": "NEXT"
+    },
+    {
+        "c": 4002004,
+        "tx": "The note with tail line will appear\nand come down."
+    },
+    {
+        "c": 4002005,
+        "tx": "Hold it down until it is completed."
+    },
+    {
+        "c": 4003001,
+        "tx": "HOW TO PLAY"
+    },
+    {
+        "c": 4003002,
+        "tx": "GLISSANDO NOTE"
+    },
+    {
+        "c": 4003003,
+        "tx": "OK"
+    },
+    {
+        "c": 4003004,
+        "tx": "The shiny note will appear\nand come down."
+    },
+    {
+        "c": 4003005,
+        "tx": "When the notes appear in a row,\nuse a sliding motion."
+    },
+    {
+        "c": 5000000,
+        "tx": "SHOP"
+    },
+    {
+        "c": 5000001,
+        "tx": "SHOP"
+    },
+    {
+        "c": 5000002,
+        "tx": "Purchase successfully."
+    },
+    {
+        "c": 5000003,
+        "tx": "Purchase canceled."
+    },
+    {
+        "c": 5000004,
+        "tx": "Not enough {0}."
+    },
+    {
+        "c": 5000005,
+        "tx": "Network is unstable.\nPlease restart the app."
+    },
+    {
+        "c": 5000006,
+        "tx": "Sorry. This item does not exist."
+    },
+    {
+        "c": 5000007,
+        "tx": "Purchase failed.\n(1001007)"
+    },
+    {
+        "c": 5000008,
+        "tx": "Can not purchase."
+    },
+    {
+        "c": 5000009,
+        "tx": "Invalid payment method."
+    },
+    {
+        "c": 5000010,
+        "tx": "Puchase failed.\nIf you did not receive properly\nplease e-mail us to support@pianista.io"
+    },
+    {
+        "c": 5000011,
+        "tx": "Already buy this product. If your membership activate properly\nplease e-mail us to support@pianista.io"
+    },
+    {
+        "c": 5000012,
+        "tx": "Purchase canceled.\n(1001012)"
+    },
+    {
+        "c": 5000013,
+        "tx": "OK"
+    },
+    {
+        "c": 5000014,
+        "tx": "GO TO SHOP"
+    },
+    {
+        "c": 5000015,
+        "tx": "GET MUSIC POINT"
+    },
+    {
+        "c": 5001001,
+        "tx": "SHOP"
+    },
+    {
+        "c": 5001002,
+        "tx": "Would you like to buy\n{0}?"
+    },
+    {
+        "c": 5001003,
+        "tx": "BUY"
+    },
+    {
+        "c": 5001004,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 5002001,
+        "tx": "PURCHASED"
+    },
+    {
+        "c": 5002002,
+        "tx": "SUCCESSFULLY"
+    },
+    {
+        "c": 5002003,
+        "tx": "{0}"
+    },
+    {
+        "c": 5002004,
+        "tx": "OK"
+    },
+    {
+        "c": 5003001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 5003002,
+        "tx": "Free gift of the day being out of stock.\nAvailable at 15:00 (GMT)"
+    },
+    {
+        "c": 5003003,
+        "tx": "OK"
+    },
+    {
+        "c": 5004001,
+        "tx": "SHOP"
+    },
+    {
+        "c": 5004002,
+        "tx": "Would you like to watch video ads\nand get a MUSIC POINT?"
+    },
+    {
+        "c": 5004003,
+        "tx": "OK"
+    },
+    {
+        "c": 5004004,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 5005001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 5005002,
+        "tx": "You have enough MUSIC POINT.\nTry again when you have none."
+    },
+    {
+        "c": 5005003,
+        "tx": "OK"
+    },
+    {
+        "c": 5006001,
+        "tx": "REWARDS"
+    },
+    {
+        "c": 5006002,
+        "tx": "ADVERTISEMENT"
+    },
+    {
+        "c": 5006003,
+        "tx": "+{0}"
+    },
+    {
+        "c": 5006004,
+        "tx": "OK"
+    },
+    {
+        "c": 5007001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 5007002,
+        "tx": "Unable to complete ad view.\nPlease check your network and try again."
+    },
+    {
+        "c": 5007003,
+        "tx": "OK"
+    },
+    {
+        "c": 5008001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 5008002,
+        "tx": "The Ad network does not send videos.\nPlease try again after a while."
+    },
+    {
+        "c": 5008003,
+        "tx": "OK"
+    },
+    {
+        "c": 5009101,
+        "tx": "PRESTIGE MEMBERSHIP"
+    },
+    {
+        "c": 5009102,
+        "tx": "ALL SONG\nUNLOCK"
+    },
+    {
+        "c": 5009103,
+        "tx": "PLAY\nUNLIMITED"
+    },
+    {
+        "c": 5009104,
+        "tx": "DAILY ITEM REWARD"
+    },
+    {
+        "c": 5009105,
+        "tx": "EXP +100%"
+    },
+    {
+        "c": 5009106,
+        "tx": "GOLD +100%"
+    },
+    {
+        "c": 5009107,
+        "tx": "Free"
+    },
+    {
+        "c": 5009108,
+        "tx": "Prestige"
+    },
+    {
+        "c": 5009109,
+        "tx": "Free to Play"
+    },
+    {
+        "c": 5009110,
+        "tx": "All Song Unlock"
+    },
+    {
+        "c": 5009111,
+        "tx": "Play Unlimited"
+    },
+    {
+        "c": 5009112,
+        "tx": "Daily Item Reward"
+    },
+    {
+        "c": 5009113,
+        "tx": "Exp +100%"
+    },
+    {
+        "c": 5009114,
+        "tx": "Gold +100%"
+    },
+    {
+        "c": 6000001,
+        "tx": "PURCHASED"
+    },
+    {
+        "c": 6000002,
+        "tx": "SUCCESSFULLY"
+    },
+    {
+        "c": 6000003,
+        "tx": "OK"
+    },
+    {
+        "c": 6000004,
+        "tx": "REWARDS"
+    },
+    {
+        "c": 6000005,
+        "tx": "CONGRATULATION"
+    },
+    {
+        "c": 6000006,
+        "tx": "OK"
+    },
+    {
+        "c": 6000007,
+        "tx": "+{0}"
+    },
+    {
+        "c": 6000008,
+        "tx": "{0}"
+    },
+    {
+        "c": 6000009,
+        "tx": "Prestige Membership"
+    },
+    {
+        "c": 6001001,
+        "tx": "WELCOME TO PIANISTA"
+    },
+    {
+        "c": 6001002,
+        "tx": "We welcome you with the special gift.\nHere are 10 Music Points."
+    },
+    {
+        "c": 6001003,
+        "tx": "OK"
+    },
+    {
+        "c": 6002001,
+        "tx": "First Clear of the Day"
+    },
+    {
+        "c": 6002002,
+        "tx": "{0} Difficult Clear"
+    },
+    {
+        "c": 6002003,
+        "tx": "5 Star Bonus"
+    },
+    {
+        "c": 6002004,
+        "tx": "Technical Bonus"
+    },
+    {
+        "c": 6002005,
+        "tx": "Fade Bonus"
+    },
+    {
+        "c": 6002006,
+        "tx": "Piano Skin Bonus"
+    },
+    {
+        "c": 6003000,
+        "tx": "+{0}"
+    },
+    {
+        "c": 6003001,
+        "tx": "Max Level Bonus"
+    },
+    {
+        "c": 6003002,
+        "tx": "Composer Stat Bonus"
+    },
+    {
+        "c": 6003003,
+        "tx": "Piano Skin Bonus"
+    },
+    {
+        "c": 6003004,
+        "tx": "Straight Win Bonus"
+    },
+    {
+        "c": 6004001,
+        "tx": "STAGE CLEAR"
+    },
+    {
+        "c": 6004002,
+        "tx": "REWARDS"
+    },
+    {
+        "c": 6004003,
+        "tx": "+{0}"
+    },
+    {
+        "c": 6004004,
+        "tx": "OK"
+    },
+    {
+        "c": 6005001,
+        "tx": "STAGE CLEAR"
+    },
+    {
+        "c": 6005002,
+        "tx": "UNLOCK SONG"
+    },
+    {
+        "c": 6005003,
+        "tx": "You can play this song in \"Collection\" from now on."
+    },
+    {
+        "c": 6005004,
+        "tx": "OK"
+    },
+    {
+        "c": 6006001,
+        "tx": "STAGE CLEAR"
+    },
+    {
+        "c": 6006002,
+        "tx": "UNLOCK PIANO"
+    },
+    {
+        "c": 6006003,
+        "tx": "You can equip and upgrade this piano in \"Piano\" from now on."
+    },
+    {
+        "c": 6006004,
+        "tx": "OK"
+    },
+    {
+        "c": 6007001,
+        "tx": "ACHIEVEMENT SUCCESS"
+    },
+    {
+        "c": 6007002,
+        "tx": "UNLOCK PIANO"
+    },
+    {
+        "c": 6007003,
+        "tx": "OK"
+    },
+    {
+        "c": 7000000,
+        "tx": "Your Pianist name is"
+    },
+    {
+        "c": 7000001,
+        "tx": "CHANGE PIANIST NAME"
+    },
+    {
+        "c": 7000002,
+        "tx": "CONNECT WITH FACEBOOK"
+    },
+    {
+        "c": 7000003,
+        "tx": "FACEBOOK CONNECTED"
+    },
+    {
+        "c": 7000004,
+        "tx": "TERMS OF USE"
+    },
+    {
+        "c": 7000005,
+        "tx": "PRIVACY POLICY"
+    },
+    {
+        "c": 7000007,
+        "tx": "TUTORIAL"
+    },
+    {
+        "c": 7000008,
+        "tx": "SYNC SETTING"
+    },
+    {
+        "c": 7001001,
+        "tx": "CHANGE PIANIST NAME"
+    },
+    {
+        "c": 7001002,
+        "tx": "What is your pianist name?"
+    },
+    {
+        "c": 7001003,
+        "tx": "CHANGE"
+    },
+    {
+        "c": 7001004,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 7002001,
+        "tx": "CHANGE PIANIST NAME"
+    },
+    {
+        "c": 7002002,
+        "tx": "Your Pianist name is"
+    },
+    {
+        "c": 7002003,
+        "tx": "Are you sure?"
+    },
+    {
+        "c": 7002004,
+        "tx": "CHANGE"
+    },
+    {
+        "c": 7002005,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 7003001,
+        "tx": "CHANGE PIANIST NAME"
+    },
+    {
+        "c": 7003002,
+        "tx": "Pianist name is successfully changed."
+    },
+    {
+        "c": 7003003,
+        "tx": "OK"
+    },
+    {
+        "c": 7004001,
+        "tx": "Sign in with FACEBOOK"
+    },
+    {
+        "c": 7004002,
+        "tx": "Successfully Connected."
+    },
+    {
+        "c": 7004003,
+        "tx": "OK"
+    },
+    {
+        "c": 7005001,
+        "tx": "Sign in with FACEBOOK"
+    },
+    {
+        "c": 7005002,
+        "tx": "This Facebook Account already linked with another Pianist.\nGuest Pianist account will be deleted.\nAre you sure you want to sign in?\nif you want to connect with present account to facebook\nplease e-mail us to support@pianista.io."
+    },
+    {
+        "c": 7005003,
+        "tx": "OK"
+    },
+    {
+        "c": 7005004,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 7006001,
+        "tx": "Sign in with FACEBOOK"
+    },
+    {
+        "c": 7006002,
+        "tx": "Your Facebook linked account is\nsuccessfully restored."
+    },
+    {
+        "c": 7006003,
+        "tx": "OK"
+    },
+    {
+        "c": 7004011,
+        "tx": "Sign in with Apple"
+    },
+    {
+        "c": 7004012,
+        "tx": "Successfully Connected."
+    },
+    {
+        "c": 7004013,
+        "tx": "OK"
+    },
+    {
+        "c": 7005011,
+        "tx": "Sign in with Apple"
+    },
+    {
+        "c": 7005012,
+        "tx": "This Facebook Account already linked with another Pianist.\nGuest Pianist account will be deleted.\nAre you sure you want to sign in?\nif you want to connect with present account to facebook\nplease e-mail us to support@pianista.io."
+    },
+    {
+        "c": 7005013,
+        "tx": "OK"
+    },
+    {
+        "c": 7005014,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 7006011,
+        "tx": "Sign in with Apple"
+    },
+    {
+        "c": 7006012,
+        "tx": "Your Apple linked account is\nsuccessfully restored."
+    },
+    {
+        "c": 7006013,
+        "tx": "OK"
+    },
+    {
+        "c": 8000001,
+        "tx": "GOLDEN PLAY"
+    },
+    {
+        "c": 8000002,
+        "tx": "Play the given music and earn gold"
+    },
+    {
+        "c": 8000003,
+        "tx": "COLLECTION PLAY"
+    },
+    {
+        "c": 8000004,
+        "tx": "Select from a collection of songs"
+    },
+    {
+        "c": 8000005,
+        "tx": "COMPETITION PLAY"
+    },
+    {
+        "c": 8000006,
+        "tx": "International Piano Competition"
+    },
+    {
+        "c": 8000007,
+        "tx": "COMPETITION PLAY"
+    },
+    {
+        "c": 8000008,
+        "tx": "Please look forward to \"Competition Play!\"\nIf adequate number of people play this game, the Competition will start!"
+    },
+    {
+        "c": 8000009,
+        "tx": "OK"
+    },
+    {
+        "c": 8000010,
+        "tx": "TUTORIAL"
+    },
+    {
+        "c": 8000011,
+        "tx": "SHOP"
+    },
+    {
+        "c": 8000012,
+        "tx": "RANKING"
+    },
+    {
+        "c": 8000013,
+        "tx": "RANKING"
+    },
+    {
+        "c": 8000014,
+        "tx": "Open with the \"Competition Play\"."
+    },
+    {
+        "c": 8000015,
+        "tx": "OK"
+    },
+    {
+        "c": 9000000,
+        "tx": "LEVEL"
+    },
+    {
+        "c": 9000001,
+        "tx": "{0}"
+    },
+    {
+        "c": 9000002,
+        "tx": "/"
+    },
+    {
+        "c": 9000003,
+        "tx": "OK"
+    },
+    {
+        "c": 9001006,
+        "tx": "Already reached max level"
+    },
+    {
+        "c": 9002000,
+        "tx": "COMPOSER LEVEL"
+    },
+    {
+        "c": 9002001,
+        "tx": "{0}"
+    },
+    {
+        "c": 9002002,
+        "tx": "EXP"
+    },
+    {
+        "c": 9002003,
+        "tx": "{0}"
+    },
+    {
+        "c": 9002004,
+        "tx": "{0}"
+    },
+    {
+        "c": 9002005,
+        "tx": "{0} EXP"
+    },
+    {
+        "c": 9002006,
+        "tx": "LEVEL UP!"
+    },
+    {
+        "c": 9002007,
+        "tx": "Gained {0} EXP"
+    },
+    {
+        "c": 9002008,
+        "tx": "OK"
+    },
+    {
+        "c": 9002009,
+        "tx": "+{0}XP"
+    },
+    {
+        "c": 9002010,
+        "tx": "MAX"
+    },
+    {
+        "c": 9002011,
+        "tx": "LEVEL"
+    },
+    {
+        "c": 9003000,
+        "tx": "PIANIST LEVEL UP"
+    },
+    {
+        "c": 9003001,
+        "tx": "CONGRATULATION"
+    },
+    {
+        "c": 9003002,
+        "tx": "LEVEL {0}"
+    },
+    {
+        "c": 9003004,
+        "tx": "{0} LEVEL UP +{1}"
+    },
+    {
+        "c": 9003005,
+        "tx": "MAX MUSIC POINT"
+    },
+    {
+        "c": 9003006,
+        "tx": "Increase"
+    },
+    {
+        "c": 9003007,
+        "tx": "in {0} PIANIST LEVEL"
+    },
+    {
+        "c": 9003008,
+        "tx": "{0}"
+    },
+    {
+        "c": 9003009,
+        "tx": "{0}"
+    },
+    {
+        "c": 9003010,
+        "tx": "UPCOMING REWARD"
+    },
+    {
+        "c": 9004000,
+        "tx": "GOLD BONUS"
+    },
+    {
+        "c": 9004001,
+        "tx": "SCORE BONUS"
+    },
+    {
+        "c": 9004002,
+        "tx": "{0}%"
+    },
+    {
+        "c": 9004003,
+        "tx": "{0}"
+    },
+    {
+        "c": 9004004,
+        "tx": "{0}"
+    },
+    {
+        "c": 9004005,
+        "tx": "OK"
+    },
+    {
+        "c": 9005001,
+        "tx": "LEVEL BONUS"
+    },
+    {
+        "c": 9005002,
+        "tx": "From"
+    },
+    {
+        "c": 9005003,
+        "tx": "Active"
+    },
+    {
+        "c": 9005004,
+        "tx": "Biography"
+    },
+    {
+        "c": 12000001,
+        "tx": "SYNC SETTING"
+    },
+    {
+        "c": 12000002,
+        "tx": "DEFAULT"
+    },
+    {
+        "c": 12000003,
+        "tx": "APPLY"
+    },
+    {
+        "c": 12000101,
+        "tx": "TOUCH TIME"
+    },
+    {
+        "c": 12000102,
+        "tx": "Adjust the time between your operation and device reactions."
+    },
+    {
+        "c": 12000103,
+        "tx": "{0:+0.#0;-0.#0}"
+    },
+    {
+        "c": 12000106,
+        "tx": "sec"
+    },
+    {
+        "c": 12000201,
+        "tx": "MUSIC TIME"
+    },
+    {
+        "c": 12000202,
+        "tx": "Adjust the time between visual effect and music playing."
+    },
+    {
+        "c": 12000203,
+        "tx": "{0:+0.#0;-0.#0}"
+    },
+    {
+        "c": 12000206,
+        "tx": "sec"
+    },
+    {
+        "c": 12001001,
+        "tx": "SUCCESS"
+    },
+    {
+        "c": 12001002,
+        "tx": "Your setting is successfully applied.\nCheck differences through the test play."
+    },
+    {
+        "c": 12001003,
+        "tx": "TEST PLAY"
+    },
+    {
+        "c": 12001004,
+        "tx": "SKIP"
+    },
+    {
+        "c": 12002001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 12002002,
+        "tx": "Are you sure you want reset all to default?\nYou may lose your unsaved changes."
+    },
+    {
+        "c": 12002003,
+        "tx": "OK"
+    },
+    {
+        "c": 12002004,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 12003001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 12003002,
+        "tx": "Are you sure you want to exit?\nChanges are not saved yet."
+    },
+    {
+        "c": 12003003,
+        "tx": "OK"
+    },
+    {
+        "c": 12003004,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 12004001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 12004002,
+        "tx": "Test play was completed.\n(Press Retry to repeat the test song)"
+    },
+    {
+        "c": 12004003,
+        "tx": "OK"
+    },
+    {
+        "c": 12004004,
+        "tx": "RETRY"
+    },
+    {
+        "c": 12005001,
+        "tx": "TEST SONG"
+    },
+    {
+        "c": 12005002,
+        "tx": "Touch the note when it is aligned with the line.\nAnd check the judge and time."
+    },
+    {
+        "c": 12006001,
+        "tx": "Average"
+    },
+    {
+        "c": 12006002,
+        "tx": "{0}"
+    },
+    {
+        "c": 90000000,
+        "tx": "FATAL"
+    },
+    {
+        "c": 90000001,
+        "tx": "EXIT"
+    },
+    {
+        "c": 90001000,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 90001001,
+        "tx": "RESTART"
+    },
+    {
+        "c": 90002000,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 90002001,
+        "tx": "RETRY"
+    },
+    {
+        "c": 90002002,
+        "tx": "RESTART"
+    },
+    {
+        "c": 90003000,
+        "tx": "UPDATED"
+    },
+    {
+        "c": 90003001,
+        "tx": "Restart the app."
+    },
+    {
+        "c": 90003002,
+        "tx": "RESTART"
+    },
+    {
+        "c": 90004000,
+        "tx": "APP UPDATED"
+    },
+    {
+        "c": 90004001,
+        "tx": "The new version of the app was released."
+    },
+    {
+        "c": 90004002,
+        "tx": "DOWNLOAD"
+    },
+    {
+        "c": 90005000,
+        "tx": "The server is in maintenance mode.\nPlease connect after a while."
+    },
+    {
+        "c": 90005001,
+        "tx": "Connection timed out."
+    },
+    {
+        "c": 90005002,
+        "tx": "Network is unstable."
+    },
+    {
+        "c": 90005003,
+        "tx": "Data download was unsuccessful."
+    },
+    {
+        "c": 90006001,
+        "tx": "SAVE DATA WITH QUICKLOGIN"
+    },
+    {
+        "c": 90006002,
+        "tx": "Guest account can't restore \npurchase and gameplay data \nin cases like reinstall or new device. "
+    },
+    {
+        "c": 90006003,
+        "tx": "Link"
+    },
+    {
+        "c": 90006004,
+        "tx": "NO THANKS"
+    },
+    {
+        "c": 90007000,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 90007001,
+        "tx": "Are you sure you want to exit PIANISTA?"
+    },
+    {
+        "c": 90007002,
+        "tx": "LEAVE"
+    },
+    {
+        "c": 90007003,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 90100000,
+        "tx": "Now Tuning… {0}%"
+    },
+    {
+        "c": 90200001,
+        "tx": "CONTINUE"
+    },
+    {
+        "c": 90200002,
+        "tx": "LEAVE"
+    },
+    {
+        "c": 13000001,
+        "tx": "TOUR"
+    },
+    {
+        "c": 13000002,
+        "tx": "COLLECTION"
+    },
+    {
+        "c": 13000003,
+        "tx": "PIANO"
+    },
+    {
+        "c": 13000004,
+        "tx": "SHOP"
+    },
+    {
+        "c": 13000005,
+        "tx": "INFO"
+    },
+    {
+        "c": 13000006,
+        "tx": "N"
+    },
+    {
+        "c": 13000007,
+        "tx": "POSTBOX"
+    },
+    {
+        "c": 13000008,
+        "tx": "World Top"
+    },
+    {
+        "c": 13000009,
+        "tx": "League"
+    },
+    {
+        "c": 13001000,
+        "tx": "TOUR"
+    },
+    {
+        "c": 13001001,
+        "tx": "STAGE {0}"
+    },
+    {
+        "c": 13002000,
+        "tx": "CONTINUE"
+    },
+    {
+        "c": 14000000,
+        "tx": "level of difficulty"
+    },
+    {
+        "c": 14000001,
+        "tx": "NORMAL"
+    },
+    {
+        "c": 14000002,
+        "tx": "TECHNICAL"
+    },
+    {
+        "c": 14000003,
+        "tx": "MASTER"
+    },
+    {
+        "c": 14000004,
+        "tx": "MISSION"
+    },
+    {
+        "c": 14000005,
+        "tx": "REWARDS"
+    },
+    {
+        "c": 14000006,
+        "tx": "+{0}"
+    },
+    {
+        "c": 14000007,
+        "tx": "Unlock"
+    },
+    {
+        "c": 14000008,
+        "tx": "STAGE {0} CLEAR"
+    },
+    {
+        "c": 14000009,
+        "tx": "SELECT"
+    },
+    {
+        "c": 14000010,
+        "tx": "TECHNICAL ALL CLEAR"
+    },
+    {
+        "c": 14001000,
+        "tx": "Complete Song"
+    },
+    {
+        "c": 14001001,
+        "tx": "Miss {0}"
+    },
+    {
+        "c": 14001002,
+        "tx": "Combo"
+    },
+    {
+        "c": 14001003,
+        "tx": "Accuracy"
+    },
+    {
+        "c": 14001004,
+        "tx": "Scores"
+    },
+    {
+        "c": 14001005,
+        "tx": "Fade-"
+    },
+    {
+        "c": 14001006,
+        "tx": "Speed"
+    },
+    {
+        "c": 14001007,
+        "tx": "{0}"
+    },
+    {
+        "c": 14001008,
+        "tx": "{0:0.##}%"
+    },
+    {
+        "c": 14001009,
+        "tx": "/"
+    },
+    {
+        "c": 14001010,
+        "tx": "Off"
+    },
+    {
+        "c": 14001011,
+        "tx": "In"
+    },
+    {
+        "c": 14001012,
+        "tx": "Out"
+    },
+    {
+        "c": 14001013,
+        "tx": "{0}X"
+    },
+    {
+        "c": 14002000,
+        "tx": "SPEED"
+    },
+    {
+        "c": 14002001,
+        "tx": "FADE"
+    },
+    {
+        "c": 14002002,
+        "tx": "PIANO"
+    },
+    {
+        "c": 14002003,
+        "tx": "ITEMS"
+    },
+    {
+        "c": 14002004,
+        "tx": "OFF"
+    },
+    {
+        "c": 14002005,
+        "tx": "IN"
+    },
+    {
+        "c": 14002006,
+        "tx": "OUT"
+    },
+    {
+        "c": 14003000,
+        "tx": "LIFE"
+    },
+    {
+        "c": 14003001,
+        "tx": "SHIELD"
+    },
+    {
+        "c": 14003002,
+        "tx": "+{0}"
+    },
+    {
+        "c": 14003003,
+        "tx": "+{0}%"
+    },
+    {
+        "c": 14003004,
+        "tx": "PLAY"
+    },
+    {
+        "c": 14003005,
+        "tx": "NOT\nAVAILABLE"
+    },
+    {
+        "c": 14004000,
+        "tx": "BONUS\n+{0}"
+    },
+    {
+        "c": 14004001,
+        "tx": "RESULT"
+    },
+    {
+        "c": 14004002,
+        "tx": "FAILED..."
+    },
+    {
+        "c": 14004003,
+        "tx": "NEXT"
+    },
+    {
+        "c": 14005001,
+        "tx": "My"
+    },
+    {
+        "c": 14005002,
+        "tx": "Goal"
+    },
+    {
+        "c": 14006001,
+        "tx": "MUSIC PACK"
+    },
+    {
+        "c": 14006002,
+        "tx": "Pack Collected"
+    },
+    {
+        "c": 14006003,
+        "tx": "Clear Rate This Pack"
+    },
+    {
+        "c": 14006004,
+        "tx": "{0}%"
+    },
+    {
+        "c": 14006005,
+        "tx": "Include"
+    },
+    {
+        "c": 14006006,
+        "tx": "Songs"
+    },
+    {
+        "c": 14006007,
+        "tx": "SELECT"
+    },
+    {
+        "c": 14006008,
+        "tx": "UNLOCK"
+    },
+    {
+        "c": 14006009,
+        "tx": "STANDARD TOUR"
+    },
+    {
+        "c": 14006101,
+        "tx": "JOIN PRESTIGE"
+    },
+    {
+        "c": 14006201,
+        "tx": "PURCHASE"
+    },
+    {
+        "c": 14006202,
+        "tx": "Would you like to buy this Music Pack?\n\"{0}\""
+    },
+    {
+        "c": 14006203,
+        "tx": "BUY"
+    },
+    {
+        "c": 14006204,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 16000000,
+        "tx": "PIANO"
+    },
+    {
+        "c": 16000001,
+        "tx": "Score Bonus"
+    },
+    {
+        "c": 16000002,
+        "tx": "Gold Bonus"
+    },
+    {
+        "c": 16000003,
+        "tx": "EXP Bonus"
+    },
+    {
+        "c": 16000004,
+        "tx": "Life Bonus"
+    },
+    {
+        "c": 16000005,
+        "tx": "Shield Bonus"
+    },
+    {
+        "c": 16000101,
+        "tx": "+{0} Score"
+    },
+    {
+        "c": 16000102,
+        "tx": "+{0} Gold"
+    },
+    {
+        "c": 16000103,
+        "tx": "+{0} EXP"
+    },
+    {
+        "c": 16000104,
+        "tx": "+{0} Life"
+    },
+    {
+        "c": 16000105,
+        "tx": "+{0} Shield"
+    },
+    {
+        "c": 16000201,
+        "tx": "Normal Piano"
+    },
+    {
+        "c": 16000202,
+        "tx": "Rare Piano"
+    },
+    {
+        "c": 16000203,
+        "tx": "Epic Piano"
+    },
+    {
+        "c": 16000301,
+        "tx": "NORMAL"
+    },
+    {
+        "c": 16000302,
+        "tx": "RARE"
+    },
+    {
+        "c": 16000303,
+        "tx": "EPIC"
+    },
+    {
+        "c": 16002000,
+        "tx": "LEVEL"
+    },
+    {
+        "c": 16002001,
+        "tx": "{0}"
+    },
+    {
+        "c": 16002002,
+        "tx": "{0}"
+    },
+    {
+        "c": 16002003,
+        "tx": "{0}"
+    },
+    {
+        "c": 16002004,
+        "tx": "{0}"
+    },
+    {
+        "c": 16002005,
+        "tx": "CONDITION"
+    },
+    {
+        "c": 16002006,
+        "tx": "HIDDEN CONDITION"
+    },
+    {
+        "c": 16002007,
+        "tx": "EQUIP BONUS"
+    },
+    {
+        "c": 16002008,
+        "tx": "LOCKED"
+    },
+    {
+        "c": 16002009,
+        "tx": "TRY"
+    },
+    {
+        "c": 16002010,
+        "tx": "UPGRADE"
+    },
+    {
+        "c": 16002011,
+        "tx": "{0}"
+    },
+    {
+        "c": 16002012,
+        "tx": "EQUIP"
+    },
+    {
+        "c": 16002013,
+        "tx": "{0}"
+    },
+    {
+        "c": 16002014,
+        "tx": "/{0}"
+    },
+    {
+        "c": 16002015,
+        "tx": "MAX LEVEL"
+    },
+    {
+        "c": 16001004,
+        "tx": "EQUIPPED"
+    },
+    {
+        "c": 16001005,
+        "tx": "N"
+    },
+    {
+        "c": 16001006,
+        "tx": "PIANO"
+    },
+    {
+        "c": 16001007,
+        "tx": "ACHIEVEMENTS"
+    },
+    {
+        "c": 16001008,
+        "tx": "REGULAR"
+    },
+    {
+        "c": 16001009,
+        "tx": "{0}"
+    },
+    {
+        "c": 16001010,
+        "tx": "/{0}"
+    },
+    {
+        "c": 16001011,
+        "tx": "SPECIAL"
+    },
+    {
+        "c": 16001012,
+        "tx": "Sort by"
+    },
+    {
+        "c": 16001014,
+        "tx": "BASIC"
+    },
+    {
+        "c": 16001015,
+        "tx": "OWNED"
+    },
+    {
+        "c": 16001016,
+        "tx": "LOCKED"
+    },
+    {
+        "c": 17000000,
+        "tx": "TOP\n{0}%"
+    },
+    {
+        "c": 17000001,
+        "tx": "{0}"
+    },
+    {
+        "c": 17000002,
+        "tx": "{0}"
+    },
+    {
+        "c": 17000003,
+        "tx": "Lv. {0}"
+    },
+    {
+        "c": 17000004,
+        "tx": "{0}"
+    },
+    {
+        "c": 17000005,
+        "tx": "-"
+    },
+    {
+        "c": 17000006,
+        "tx": "Tour"
+    },
+    {
+        "c": 17000007,
+        "tx": "Song"
+    },
+    {
+        "c": 17001000,
+        "tx": "SONG RANKING"
+    },
+    {
+        "c": 17001001,
+        "tx": "Click for Details"
+    },
+    {
+        "c": 17002000,
+        "tx": "RANK"
+    },
+    {
+        "c": 17002001,
+        "tx": "PLAYER"
+    },
+    {
+        "c": 17002002,
+        "tx": "SCORE"
+    },
+    {
+        "c": 17002003,
+        "tx": "ACCURACY"
+    },
+    {
+        "c": 17002004,
+        "tx": "Top Rank"
+    },
+    {
+        "c": 17002005,
+        "tx": "My Rank"
+    },
+    {
+        "c": 17003001,
+        "tx": "RANK UP"
+    },
+    {
+        "c": 17003002,
+        "tx": "CONGRATULATION"
+    },
+    {
+        "c": 17003003,
+        "tx": "My Ranking"
+    },
+    {
+        "c": 17003004,
+        "tx": "Score"
+    },
+    {
+        "c": 17003005,
+        "tx": "{0}"
+    },
+    {
+        "c": 17003006,
+        "tx": "RANK"
+    },
+    {
+        "c": 17003007,
+        "tx": "SCORE"
+    },
+    {
+        "c": 17003008,
+        "tx": "{0}"
+    },
+    {
+        "c": 17003009,
+        "tx": "TOP {0}%"
+    },
+    {
+        "c": 17003010,
+        "tx": "OK"
+    },
+    {
+        "c": 17010000,
+        "tx": "TOP\n{0}%"
+    },
+    {
+        "c": 17010001,
+        "tx": "{0}"
+    },
+    {
+        "c": 17010002,
+        "tx": "{0}"
+    },
+    {
+        "c": 17010003,
+        "tx": "Lv. {0}"
+    },
+    {
+        "c": 17010004,
+        "tx": "{0}"
+    },
+    {
+        "c": 17010005,
+        "tx": "-"
+    },
+    {
+        "c": 17010006,
+        "tx": "Tour"
+    },
+    {
+        "c": 17010007,
+        "tx": "Song"
+    },
+    {
+        "c": 17011000,
+        "tx": "TOUR RANKING"
+    },
+    {
+        "c": 17011001,
+        "tx": "Click for Details"
+    },
+    {
+        "c": 17012000,
+        "tx": "RANK"
+    },
+    {
+        "c": 17012001,
+        "tx": "PLAYER"
+    },
+    {
+        "c": 17012002,
+        "tx": "SCORE"
+    },
+    {
+        "c": 17012003,
+        "tx": "ACCURACY"
+    },
+    {
+        "c": 17012004,
+        "tx": "Top Rank"
+    },
+    {
+        "c": 17012005,
+        "tx": "My Rank"
+    },
+    {
+        "c": 17012006,
+        "tx": "NORMAL"
+    },
+    {
+        "c": 17012007,
+        "tx": "TECHNICAL"
+    },
+    {
+        "c": 17012008,
+        "tx": "MASTER"
+    },
+    {
+        "c": 17013001,
+        "tx": "TOUR RANKING"
+    },
+    {
+        "c": 17013002,
+        "tx": "NORMAL"
+    },
+    {
+        "c": 17013003,
+        "tx": "TECHNICAL"
+    },
+    {
+        "c": 17013004,
+        "tx": "MASTER"
+    },
+    {
+        "c": 17013005,
+        "tx": "My Ranking"
+    },
+    {
+        "c": 17013006,
+        "tx": "Total Score"
+    },
+    {
+        "c": 17013007,
+        "tx": "{0}"
+    },
+    {
+        "c": 17013008,
+        "tx": "RANK"
+    },
+    {
+        "c": 17013009,
+        "tx": "SCORE"
+    },
+    {
+        "c": 17013010,
+        "tx": "{0}"
+    },
+    {
+        "c": 17013011,
+        "tx": "TOP {0}%"
+    },
+    {
+        "c": 17013012,
+        "tx": "OK"
+    },
+    {
+        "c": 18005001,
+        "tx": "Until"
+    },
+    {
+        "c": 18005002,
+        "tx": "{0}D {1}H"
+    },
+    {
+        "c": 19000001,
+        "tx": "POSTBOX"
+    },
+    {
+        "c": 19002001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 19002002,
+        "tx": "The message expired due to expiration date."
+    },
+    {
+        "c": 19002003,
+        "tx": "OK"
+    },
+    {
+        "c": 19003001,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 19003002,
+        "tx": "Postbox is full"
+    },
+    {
+        "c": 19003003,
+        "tx": "OK"
+    },
+    {
+        "c": 20001000,
+        "tx": "LEAGUE SCORE"
+    },
+    {
+        "c": 20001001,
+        "tx": "PLAY BONUS"
+    },
+    {
+        "c": 20001002,
+        "tx": "DIFFICULTY {0}"
+    },
+    {
+        "c": 20001003,
+        "tx": "ACCURACY {0}%"
+    },
+    {
+        "c": 20001004,
+        "tx": "ALL COMBO"
+    },
+    {
+        "c": 20001005,
+        "tx": "SPEED {0}"
+    },
+    {
+        "c": 20001006,
+        "tx": "FADE {0}"
+    },
+    {
+        "c": 20001007,
+        "tx": "IN"
+    },
+    {
+        "c": 20001008,
+        "tx": "OUT"
+    },
+    {
+        "c": 20001009,
+        "tx": "OFF"
+    },
+    {
+        "c": 20001010,
+        "tx": "OK"
+    },
+    {
+        "c": 20002000,
+        "tx": "RANK UP"
+    },
+    {
+        "c": 20002001,
+        "tx": "COMPOSER {0}"
+    },
+    {
+        "c": 20002002,
+        "tx": "OK"
+    },
+    {
+        "c": 20003000,
+        "tx": "RANK UP"
+    },
+    {
+        "c": 20003001,
+        "tx": "{0} LEAGUE"
+    },
+    {
+        "c": 20003002,
+        "tx": "OK"
+    },
+    {
+        "c": 21008000,
+        "tx": "CHANGE YOUR MESSAGE"
+    },
+    {
+        "c": 21008001,
+        "tx": "You can enter up to {0} characters."
+    },
+    {
+        "c": 21008002,
+        "tx": "CHANGE"
+    },
+    {
+        "c": 21008003,
+        "tx": "CANCEL"
+    },
+    {
+        "c": 20005000,
+        "tx": "REWARDS"
+    },
+    {
+        "c": 20005001,
+        "tx": "RANK UP "
+    },
+    {
+        "c": 20005002,
+        "tx": "{0} HAVE OVERTAKEN YOU"
+    },
+    {
+        "c": 20005003,
+        "tx": "DAILY COMPOSER ALL CLEARED "
+    },
+    {
+        "c": 20005004,
+        "tx": "LEAGUE RESULT"
+    },
+    {
+        "c": 20005005,
+        "tx": "MARBLE COLLECTED"
+    },
+    {
+        "c": 20006000,
+        "tx": "{1:D2}:{2:D2}:{3:D2}"
+    },
+    {
+        "c": 20007000,
+        "tx": "RESULT"
+    },
+    {
+        "c": 20007001,
+        "tx": "{0} LEAGUE"
+    },
+    {
+        "c": 20007002,
+        "tx": "OK"
+    },
+    {
+        "c": 20008000,
+        "tx": "YOUR GRADE IS"
+    },
+    {
+        "c": 20008001,
+        "tx": "PROMOTED"
+    },
+    {
+        "c": 20008002,
+        "tx": "YOUR GRADE IS"
+    },
+    {
+        "c": 20008003,
+        "tx": "DEMOTED"
+    },
+    {
+        "c": 20008004,
+        "tx": "OK"
+    },
+    {
+        "c": 20010001,
+        "tx": "Today's Composer"
+    },
+    {
+        "c": 20010002,
+        "tx": "FAVORITE"
+    },
+    {
+        "c": 20010003,
+        "tx": "NEW ARRIVAL"
+    },
+    {
+        "c": 20011001,
+        "tx": "Total Ranking"
+    },
+    {
+        "c": 20011002,
+        "tx": "Composer Ranking - {0}"
+    },
+    {
+        "c": 20012000,
+        "tx": "RANK"
+    },
+    {
+        "c": 20012001,
+        "tx": "USER"
+    },
+    {
+        "c": 20012004,
+        "tx": "SCORE"
+    },
+    {
+        "c": 20013000,
+        "tx": "TOTAL"
+    },
+    {
+        "c": 20013001,
+        "tx": "MY SCORE"
+    },
+    {
+        "c": 21008100,
+        "tx": "NOTICE"
+    },
+    {
+        "c": 21008101,
+        "tx": "Your message has been changed successfully."
+    },
+    {
+        "c": 21008102,
+        "tx": "OK"
+    },
+    {
+        "c": 20014000,
+        "tx": "SCORE"
+    },
+    {
+        "c": 20014001,
+        "tx": "RANK"
+    },
+    {
+        "c": 20014002,
+        "tx": "MY"
+    },
+    {
+        "c": 20006001,
+        "tx": "PLAY"
+    },
+    {
+        "c": 20001011,
+        "tx": "Difficulty Bonus +{0}"
+    },
+    {
+        "c": 20001012,
+        "tx": "Accuracy Bonus +{0}"
+    },
+    {
+        "c": 20001013,
+        "tx": "All Combo Bonus +{0}"
+    },
+    {
+        "c": 20001014,
+        "tx": "Speed Bonus +{0}"
+    },
+    {
+        "c": 20001015,
+        "tx": "Fade Bonus +{0}"
+    },
+    {
+        "c": 20005007,
+        "tx": "MARBLE ALL COLLECTED"
+    },
+    {
+        "c": 20020001,
+        "tx": "RANK"
+    },
+    {
+        "c": 20020002,
+        "tx": "PLAYER AND PRINCIPALS"
+    },
+    {
+        "c": 20020003,
+        "tx": "SCORE"
+    },
+    {
+        "c": 20020004,
+        "tx": "PLACEMENT"
+    },
+    {
+        "c": 20020005,
+        "tx": "PROMOTION"
+    },
+    {
+        "c": 20020006,
+        "tx": "DEMOTION"
+    },
+    {
+        "c": 20020007,
+        "tx": "REWARDS"
+    },
+    {
+        "c": 20020008,
+        "tx": "RANK{0}"
+    },
+    {
+        "c": 22000001,
+        "tx": "<color=#FFDD00>@</color>{0} Ranked No.1 in the league."
+    },
+    {
+        "c": 22000002,
+        "tx": "<color=#FFDD00>@</color>{0} Ranked No.2 in the league."
+    },
+    {
+        "c": 22000003,
+        "tx": "<color=#FFDD00>@</color>{0} Ranked No.3 in the league."
+    },
+    {
+        "c": 22000004,
+        "tx": "<color=#FFDD00>@</color>{0} soaring in the ranking."
+    },
+    {
+        "c": 22000005,
+        "tx": "<color=#FFDD00>@</color>{0} best {1} player."
+    },
+    {
+        "c": 22000006,
+        "tx": "<color=#FFDD00>@</color>{0} played all composer today."
+    },
+    {
+        "c": 22000007,
+        "tx": "<color=#FFDD00>@</color>{0} play 10 times in the league."
+    },
+    {
+        "c": 22000008,
+        "tx": "<color=#FFDD00>@</color>{0} play 20 times in the league."
+    },
+    {
+        "c": 22000009,
+        "tx": "<color=#FFDD00>@</color>{0} play 30 times in the league."
+    },
+    {
+        "c": 20000010,
+        "tx": "Ranked game is in progress fiercely."
+    },
+    {
+        "c": 20000011,
+        "tx": "Critically close to demotion."
+    },
+    {
+        "c": 20000012,
+        "tx": "Today's league is ending soon."
+    },
+    {
+        "c": 20000013,
+        "tx": "Welcome to the league!"
+    },
+    {
+        "c": 20000014,
+        "tx": "Piano Bonus +{0}"
+    },
+    {
+        "c": 20000015,
+        "tx": "Composer Level Bonus +{0}"
+    },
+    {
+        "c": 20000016,
+        "tx": "Standard"
+    },
+    {
+        "c": 20000017,
+        "tx": "Extra"
+    },
+    {
+        "c": 20000018,
+        "tx": "Daily Quest"
+    },
+    {
+        "c": 20000019,
+        "tx": "Clear and Get Music Points"
+    },
+    {
+        "c": 20000020,
+        "tx": "Marble"
+    },
+    {
+        "c": 20000021,
+        "tx": "Collect All Marble in Today"
+    },
+    {
+        "c": 20000022,
+        "tx": "Complete Today League"
+    },
+    {
+        "c": 20000023,
+        "tx": "Clear Today Composers"
+    },
+    {
+        "c": 20000024,
+        "tx": "{0} DAYS"
+    },
+    {
+        "c": 20000025,
+        "tx": "PRESTIGE MEMBERSHIP"
+    },
+    {
+        "c": 20000026,
+        "tx": "LOCKED"
+    },
+    {
+        "c": 20000027,
+        "tx": "NEW ARRIVAL"
+    },
+    {
+        "c": 20000030,
+        "tx": "BUY"
+    },
+    {
+        "c": 20000035,
+        "tx": "MY"
+    },
+    {
+        "c": 20000036,
+        "tx": "POSTBOX"
+    },
+    {
+        "c": 20000037,
+        "tx": "OK"
+    },
+    {
+        "c": 20000038,
+        "tx": "CLAIM"
+    },
+    {
+        "c": 20000039,
+        "tx": "CLAIM ALL"
+    },
+    {
+        "c": 20000040,
+        "tx": "You have not received any message."
+    },
+    {
+        "c": 20000041,
+        "tx": "Messages expires in 7 days."
+    },
+    {
+        "c": 20000042,
+        "tx": "Attachment"
+    },
+    {
+        "c": 20000043,
+        "tx": "Until "
+    },
+    {
+        "c": 20000044,
+        "tx": "{0}D"
+    },
+    {
+        "c": 20000045,
+        "tx": "{0}H {1}M"
+    },
+    {
+        "c": 20000046,
+        "tx": "Benefits"
+    },
+    {
+        "c": 20000047,
+        "tx": "PRESTIGE MEMBERSHIP"
+    },
+    {
+        "c": 20000048,
+        "tx": "Already in a Prestige Membership"
+    },
+    {
+        "c": 20000050,
+        "tx": "Purchase Membership and\nenjoy every benefits."
+    },
+    {
+        "c": 20000051,
+        "tx": "VIEW BENEFIT"
+    },
+    {
+        "c": 20000052,
+        "tx": "PRESTIGE"
+    },
+    {
+        "c": 20000053,
+        "tx": "[MUST EDIT] 1"
+    },
+    {
+        "c": 20000054,
+        "tx": "[MUST EDIT] 2"
+    },
+    {
+        "c": 20000055,
+        "tx": "[MUST EDIT] 3"
+    },
+    {
+        "c": 20000056,
+        "tx": "Access Every Song"
+    },
+    {
+        "c": 20000057,
+        "tx": "Access All Tourpack"
+    },
+    {
+        "c": 20000059,
+        "tx": "Play Music\nWithout Music Points"
+    },
+    {
+        "c": 20000060,
+        "tx": "Claim Free Items\nEveryday"
+    },
+    {
+        "c": 20000061,
+        "tx": "Get EXP Bonus\n+100%"
+    },
+    {
+        "c": 20000062,
+        "tx": "Get Gold Bonus\n+100%"
+    },
+    {
+        "c": 20000063,
+        "tx": "인사말을 입력하세요"
+    },
+    {
+        "c": 20000064,
+        "tx": "HOW TO UNLOCK"
+    },
+    {
+        "c": 20000065,
+        "tx": "Clear the song on the \"Tour Play\""
+    },
+    {
+        "c": 20000066,
+        "tx": "TRY"
+    },
+    {
+        "c": 20000067,
+        "tx": "CLOSE"
+    },
+    {
+        "c": 20000068,
+        "tx": "LEAGUE"
+    },
+    {
+        "c": 20000069,
+        "tx": "START"
+    },
+    {
+        "c": 20000070,
+        "tx": "LEAGUE NEWS"
+    },
+    {
+        "c": 20000071,
+        "tx": "{1} hours ago"
+    },
+    {
+        "c": 20000072,
+        "tx": "{1} hour ago"
+    },
+    {
+        "c": 20000073,
+        "tx": "{2} minutes ago"
+    },
+    {
+        "c": 20000074,
+        "tx": "{2} minute ago"
+    },
+    {
+        "c": 20000075,
+        "tx": "few ago"
+    },
+    {
+        "c": 30006001,
+        "tx": "Reach Accuracy {0}"
+    },
+    {
+        "c": 30006002,
+        "tx": "Clear Light Difficulty"
+    },
+    {
+        "c": 30006003,
+        "tx": "Play any song 5 times."
+    },
+    {
+        "c": 30006004,
+        "tx": "Play any song 10 times."
+    },
+    {
+        "c": 30006005,
+        "tx": "Play any song 20 times."
+    },
+    {
+        "c": 30006006,
+        "tx": "Clear Normal Difficulty"
+    },
+    {
+        "c": 30006007,
+        "tx": "Clear Technical Difficulty"
+    }
+]

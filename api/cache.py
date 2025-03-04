@@ -349,7 +349,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     if (orig_score < 0):
         return {"code": orig_score}
     
-    print(orig_score, return_obj["patternId"], miss, fine, good, excellent, marvelous, curComposer)
+    orig_score = math.floor(orig_score)
     pianoContext = get_user_piano_bonus(user)
     pianoScore = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 0), 0)
     statScore = math.floor(curComposer['stat'] * 0.001 * orig_score)
@@ -359,7 +359,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     return_obj["pianoScore"] = pianoScore
     starCount = get_star(return_obj["patternId"], accuracy)
     return_obj["statScore"] = statScore
-    return_obj["score"] = math.floor(orig_score + statScore + pianoScore)
+    return_obj["score"] = orig_score + statScore + pianoScore
     
     totalEXP = 0
     expContext = []
@@ -395,43 +395,42 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     takeGold = 0
     goldContext = []
 
-    if mode != 0:
-        if pattern["pty"] == 0: # normal
-            base = 50
-        elif pattern["pty"] == 1: # technical
-            base = 70
-        else:
-            base = 30
-        goldContext.append([6002002, base])
-        takeGold += base
-        if (starCount == 5): # 5 star bonus
-            goldContext.append([6002003, 20])
-            takeGold += 20
+    pity_give = False
 
-        if (accuracy >= 0.99): # technical bonus
-            goldContext.append([6002004, 20])
-            takeGold += 20
+    user = dict(user)
 
-        goldBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
-        goldContext.append([6003003, goldBoost])
-        takeGold += goldBoost
-        
-        goldContext.append([6003003, levelBoost])
-        goldContext.append([6002007, takeGold])
-        takeGold += takeGold
-        takeGold += levelBoost
-
-    else:
+    if mode == 0:
         tour_award_gold = 0
         tour_award_gem = 0
         isMaster = (return_obj["type"] == 2)
         if isMaster:
             data_object = next((obj for obj in TOUR_MASTER_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-            print("data found", data_object)
-            if data_object:
-                print("added")
+            is_challenge_done = True
+            if (miss > data_object['mv1']):
+                is_challenge_done = False
+            if (data_object['mt2'] == 1 and maxCombo < data_object['mv2']):
+                is_challenge_done = False
+            if (data_object['mt2'] == 3 and return_obj["score"] < data_object['mv2']):
+                is_challenge_done = False
+
+            if data_object and is_challenge_done:
                 tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                 tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+                is_challenge_done = False
+                # Increment tour clear count
+
+                for tour in user["tour"]:
+                    if tour["packId"] == data_object['pid']:
+                        if tour['masterLastStage'] < data_object['s']:
+                            tour['masterLastStage'] = data_object['s']
+                            tour["totalClearStage"] = data_object['s']
+                            break
+
+                user_tour_object = next((tour for tour in user["tour"] if tour["packId"] == data_object['pid']), None)
+                data_object['pid']
+
+            elif is_challenge_done != True:
+                pity_give = True
         else:
             diff = pattern["pty"]
             do_easy = True
@@ -459,6 +458,32 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 if data_object:
                     tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                     tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+    
+    if pity_give or mode != 0:
+        if pattern["pty"] == 0: # normal
+            base = 50
+        elif pattern["pty"] == 1: # technical
+            base = 70
+        else:
+            base = 30
+        goldContext.append([6002002, base])
+        takeGold += base
+        if (starCount == 5): # 5 star bonus
+            goldContext.append([6002003, 20])
+            takeGold += 20
+
+        if (accuracy >= 0.99): # technical bonus
+            goldContext.append([6002004, 20])
+            takeGold += 20
+
+        goldBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
+        goldContext.append([6003003, goldBoost])
+        takeGold += goldBoost
+        
+        goldContext.append([6003003, levelBoost])
+        goldContext.append([6002007, takeGold])
+        takeGold += takeGold
+        takeGold += levelBoost
 
     return_obj["goldContext"] = goldContext
     return_obj["takeGold"] = takeGold
@@ -510,7 +535,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
     # Add user gold and diamond
     
-    user = dict(user)
     if (mode != 0):
         user['gold'] += takeGold
     else:
@@ -543,6 +567,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         diamond=user["diamond"],
         composer=user["composer"],
         collection=user["collection"],
+        tour=user["tour"]
     )
     await database.execute(query)
 

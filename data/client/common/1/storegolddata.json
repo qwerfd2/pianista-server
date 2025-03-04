@@ -1,0 +1,80 @@
+[
+    {
+        "c": 1,
+        "i": 0,
+        "s": null,
+        "e": null,
+        "p": 10,
+        "pm": 1,
+        "it": 2,
+        "q": 2000,
+        "bq": 0,
+        "gt": 1,
+        "img": "https://pianista-cdn.pianista.io/files/resource/image/shop/v1.1/gold_01.png?v=220"
+    },
+    {
+        "c": 2,
+        "i": 1,
+        "s": null,
+        "e": null,
+        "p": 50,
+        "pm": 1,
+        "it": 2,
+        "q": 10000,
+        "bq": 1000,
+        "gt": 1,
+        "img": "https://pianista-cdn.pianista.io/files/resource/image/shop/v1.1/gold_02.png?v=220"
+    },
+    {
+        "c": 3,
+        "i": 2,
+        "s": null,
+        "e": null,
+        "p": 100,
+        "pm": 1,
+        "it": 2,
+        "q": 20000,
+        "bq": 2000,
+        "gt": 1,
+        "img": "https://pianista-cdn.pianista.io/files/resource/image/shop/v1.1/gold_03.png?v=220"
+    },
+    {
+        "c": 4,
+        "i": 3,
+        "s": null,
+        "e": null,
+        "p": 200,
+        "pm": 1,
+        "it": 2,
+        "q": 40000,
+        "bq": 8000,
+        "gt": 1,
+        "img": "https://pianista-cdn.pianista.io/files/resource/image/shop/v1.1/gold_04.png?v=220"
+    },
+    {
+        "c": 5,
+        "i": 4,
+        "s": null,
+        "e": null,
+        "p": 500,
+        "pm": 1,
+        "it": 2,
+        "q": 100000,
+        "bq": 30000,
+        "gt": 2,
+        "img": "https://pianista-cdn.pianista.io/files/resource/image/shop/v1.1/gold_05.png?v=220"
+    },
+    {
+        "c": 6,
+        "i": 5,
+        "s": null,
+        "e": null,
+        "p": 1000,
+        "pm": 1,
+        "it": 2,
+        "q": 200000,
+        "bq": 80000,
+        "gt": 2,
+        "img": "https://pianista-cdn.pianista.io/files/resource/image/shop/v1.1/gold_06.png?v=220"
+    }
+]
