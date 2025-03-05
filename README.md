@@ -24,7 +24,7 @@ Limited PostBox support (messages, attachment gems, coins, pianos, and items)
 
 League reimplementation with bots
 
-renaming
+renaming (which is actually free)
 
 ## Features that will not be supported
 
