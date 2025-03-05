@@ -18,7 +18,7 @@ import random
 from api.crypt import decrypt
 from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock
 
 # ------------------------------------------
 # Init
@@ -399,13 +399,15 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
     user = dict(user)
 
+    is_challenge_done = True
+
     if mode == 0:
         tour_award_gold = 0
         tour_award_gem = 0
         isMaster = (return_obj["type"] == 2)
         if isMaster:
             data_object = next((obj for obj in TOUR_MASTER_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-            is_challenge_done = True
+            
             if (miss > data_object['mv1']):
                 is_challenge_done = False
             if (data_object['mt2'] == 1 and maxCombo < data_object['mv2']):
@@ -432,37 +434,54 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             elif is_challenge_done != True:
                 pity_give = True
         else:
-            diff = pattern["pty"]
             do_easy = True
             do_normal = False
             do_hard = True
-            if diff == 0:
+            if pattern["pty"] == 0:
                 do_normal = True
-            elif diff == 1:
+                use_data = TOUR_NORMAL_STAGE_DATA
+            elif pattern["pty"] == 1:
                 do_normal = True
                 do_hard = True
+                use_data = TOUR_HARD_STAGE_DATA
+            else:
+                use_data = TOUR_EASY_STAGE_DATA
+
+            data_object = next((obj for obj in use_data if obj["pi"] == return_obj["patternId"]), None)
+
+            is_challenge_done
             
             data_object = next((obj for obj in TOUR_EASY_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-            if data_object:
+
+            if 'mv1' in data_object and data_object['mv1'] is not None:
+                if miss > data_object['mv1']:
+                    is_challenge_done = False
+            if 'mt2' in data_object and data_object['mt2'] is not None and 'mv2' in data_object and data_object['mv2']:
+                if (data_object['mt2'] == 1 and maxCombo < data_object['mv2']):
+                    is_challenge_done = False
+                if (data_object['mt2'] == 3 and return_obj["score"] < data_object['mv2']):
+                    is_challenge_done = False
+
+            if data_object and is_challenge_done:
+
                 tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                 tour_award_gem = data_object["jr"] if data_object["jr"] else 0
 
-
-            if do_hard:
-                data_object = next((obj for obj in TOUR_HARD_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-                if data_object:
-                    tour_award_gold = data_object["gr"] if data_object["gr"] else 0
-                    tour_award_gem = data_object["jr"] if data_object["jr"] else 0
-            if do_normal:
-                data_object = next((obj for obj in TOUR_NORMAL_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-                if data_object:
-                    tour_award_gold = data_object["gr"] if data_object["gr"] else 0
-                    tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+                if do_hard:
+                    data_object = next((obj for obj in TOUR_HARD_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
+                    if data_object:
+                        tour_award_gold = data_object["gr"] if data_object["gr"] else 0
+                        tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+                if do_normal:
+                    data_object = next((obj for obj in TOUR_NORMAL_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
+                    if data_object:
+                        tour_award_gold = data_object["gr"] if data_object["gr"] else 0
+                        tour_award_gem = data_object["jr"] if data_object["jr"] else 0
     
     if pity_give or mode != 0:
         if pattern["pty"] == 0: # normal
             base = 50
-        elif pattern["pty"] == 1: # technical
+        elif pattern["pty"] == 1 or pity_give: # technical / master fail
             base = 70
         else:
             base = 30
@@ -529,7 +548,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             maxCombo=maxCombo,
             allCombo=return_obj["allCombo"],
             updatedAt=int(time.time() * 1000),
-            master=False
+            master=isMaster
         )
         await database.execute(query)
 
@@ -540,6 +559,14 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     else:
         user['gold'] += tour_award_gold
         user['diamond'] += tour_award_gem
+
+        # Set clear collection status
+
+        for collection in user["collection"]:
+            if collection['patternId'] == return_obj["patternId"]:
+                if (collection['clear'] == False):
+                    collection['clear'] = True
+                    break
 
     # Increment composer level
 
@@ -552,13 +579,20 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                     composer['exp'] -= COMPOSER_STAT_DATA[composer['stat'] + 1]['e']
                 break
 
-    # Set clear collection status
+    # increment user clear count
 
-    for collection in user["collection"]:
-        if collection['patternId'] == return_obj["patternId"]:
-            if (collection['clear'] == False):
-                collection['clear'] = True
-                break
+    user['clearCount'] += 1
+
+    unlocked_piano = await get_piano_unlock(user, return_obj, pattern["pty"], isMaster, is_challenge_done, speed, fade)
+
+    if (len(unlocked_piano)):
+        for piano in unlocked_piano:
+            unlock_piano_object = {
+                "pianoId": piano,
+                "level": 1,
+                "equip": False
+            }
+            user['piano'].extend(unlock_piano_object)
 
     # Update these fields
 
@@ -567,7 +601,9 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         diamond=user["diamond"],
         composer=user["composer"],
         collection=user["collection"],
-        tour=user["tour"]
+        tour=user["tour"],
+        clearCount=user["clearCount"],
+        piano=user["piano"]
     )
     await database.execute(query)
 
