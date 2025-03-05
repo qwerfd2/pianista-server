@@ -24,6 +24,8 @@ Limited PostBox support (messages, attachment gems, coins, pianos, and items)
 
 League reimplementation with bots
 
+renaming
+
 ## Features that will not be supported
 
 Music point related functions (consume, recovery, reward)
