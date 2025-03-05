@@ -36,5 +36,7 @@ Prestige related function (IAP, time accumulation/decrement, item daily provisio
 
 Certain PostBox rewards (patterns, debug, music points)
 
+Apple and Facebook login methods
+
 League lobbies that contains more than 1 real player
 
