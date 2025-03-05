@@ -110,7 +110,7 @@ async def start_the_game(request):
             "invoke": []
         }
 
-        response_data["result"] = await start_game(user, patternId, 0, is_master, tour_diff, tour_id)
+        response_data["result"] = await start_game(user, patternId, 0, is_master, items_used, tour_diff, tour_id)
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)

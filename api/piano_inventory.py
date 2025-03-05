@@ -118,30 +118,28 @@ async def take_piano(request):
     if len(decrypted_data) != 3:
         response_data = {"code": -100}
     else:
-        if user['id'] != decrypted_data[0]:
-            response_data = {"code": -101}
-        else:
-            piano_id = decrypted_data[2]
-            piano = next((piano for piano in user['piano'] if piano["pianoId"] == piano_id), {})
-            if (piano != {}):
-                response_data = {"code": -102}
-            else:
-                piano = {
-                    "pianoId": piano_id,
-                    "level": 1,
-                    "equip": False
-                }
-                user['piano'].append(piano)
-                query = users.update().where(users.c.id == user["id"]).values(
-                    piano=user["piano"]
-                )
-                
-                response_data = {
-                    "result": {},
-                    "code": 100,
-                    "invoke": []
-                }
+        user = dict(user)
+        piano_id = decrypted_data[0]
+        piano = next((piano for piano in user['piano'] if piano["pianoId"] == piano_id), {})
+        print(piano)
+        if piano is None:
 
+            piano_obj = {
+                "pianoId": piano_id,
+                "level": 1,
+                "equip": False
+            }
+            user['piano'].append(piano_obj)
+            query = users.update().where(users.c.id == user["id"]).values(
+                piano=user["piano"]
+            )
+            await database.execute(query)
+            
+        response_data = {
+            "result": {},
+            "code": 100,
+            "invoke": []
+        }
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)

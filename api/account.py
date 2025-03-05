@@ -6,7 +6,7 @@ import time
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
-from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS
+from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -23,8 +23,8 @@ async def create_authentication(request):
         query = users.insert().values(
             userid=userId,
             password=password,
-            diamond=1000, 
-            gold = 9999999,
+            diamond=0, 
+            gold = 10000,
             blocked = False,
             created_at = int(time.time() * 1000),
             clearCount = 0,
@@ -34,7 +34,7 @@ async def create_authentication(request):
             piano = START_PIANO_STATUS,
             tour = START_TOUR_STATUS,
             item = [],
-            mail = []
+            mail = START_MAIL
         )
         await database.execute(query)
 
@@ -191,15 +191,24 @@ async def get_ad_count(request):
     
     
 async def get_game_item_list(request):
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+    if error_response:
+        return Response(encrypt(json.dumps(error_response)))
+    
     body = await request.body()
-    try:
-        response_data = {"result":[],"code":100,"invoke":[]}
+    item_object = []
+    i = 0
+    for item in user["item"]:
+        i += 1
+        item["objectId"] = i
+        item["owner"] = user["id"]
+        item_object.append(item)
 
-        encrypted_response = encrypt(response_data)
-        
-        return Response(encrypted_response)
-    except Exception as e:
-        return Response(encrypt(json.dumps({"code": -500})))
+    response_data = {"result":item_object,"code":100,"invoke":[]}
+
+    encrypted_response = encrypt(response_data)
+    return Response(encrypted_response)
+
     
 async def get_subscription(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -211,7 +220,7 @@ async def get_subscription(request):
             "objectId": 11805,
             "owner": user["id"],
             "holdDays": 0,
-            "remainDays": 30,
+            "remainDays": 365,
             "referenceDate": int(time.time() * 1000) - 100000,
             "pastDays": 0
         },

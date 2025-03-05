@@ -16,7 +16,7 @@ import time
 import random
 
 from api.crypt import decrypt
-from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA
+from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA
 from api.database import database, results, users
 from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock
 
@@ -291,7 +291,7 @@ async def cleanup_expired_sessions():
 async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
 
-async def start_game(user, patternId, mode, master, var1, var2):
+async def start_game(user, patternId, mode, master, items, var1, var2):
     obj = {
             "objectId": random.randint(1, 99999999),
             "owner": user["id"],
@@ -324,6 +324,36 @@ async def start_game(user, patternId, mode, master, var1, var2):
         obj["stageId"] = var2
     else:
         obj["stageId"] = var1
+
+    user = dict(user)
+    cost = 0
+    for item_code in items:
+        print("item code", item_code)
+        print("item found", item_code)
+        found = False
+        # Check if the user owns the item
+        for user_item in user["item"]:
+            if user_item["itemId"] == item_code:
+                # Reduce quantity by 1
+                print("found in user items")
+                found = True
+                user_item["quantity"] -= 1
+                if user_item["quantity"] <= 0:
+                    user['item'].remove(user_item)
+        if not found:
+            # Only support coins (why would you need to buy with gem?)
+            item = next((item for item in STORE_GAME_ITEM_DATA if item["c"] == item_code), None)
+            if item:
+                cost += item["p"]
+
+    if cost:
+        user['gold'] -= cost
+
+    query = users.update().where(users.c.id == user["id"]).values(
+        gold=user["gold"],
+        item=user["item"]
+    )
+    await database.execute(query)
 
     add_play_session(obj["objectId"], obj)
 
@@ -400,11 +430,12 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     user = dict(user)
 
     is_challenge_done = True
+    isMaster = return_obj["type"] == 2
 
     if mode == 0:
         tour_award_gold = 0
         tour_award_gem = 0
-        isMaster = (return_obj["type"] == 2)
+        
         if isMaster:
             data_object = next((obj for obj in TOUR_MASTER_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
             
@@ -448,10 +479,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 use_data = TOUR_EASY_STAGE_DATA
 
             data_object = next((obj for obj in use_data if obj["pi"] == return_obj["patternId"]), None)
-
-            is_challenge_done
-            
-            data_object = next((obj for obj in TOUR_EASY_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
 
             if 'mv1' in data_object and data_object['mv1'] is not None:
                 if miss > data_object['mv1']:
@@ -592,7 +619,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 "level": 1,
                 "equip": False
             }
-            user['piano'].extend(unlock_piano_object)
+            user['piano'].append(unlock_piano_object)
 
     # Update these fields
 

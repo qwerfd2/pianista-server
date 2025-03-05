@@ -157,12 +157,14 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
     # Add the results to result_object
     for i, result in enumerate(user_results, start=0):
         pattern = next((pattern for pattern in PATTERN_DATA if pattern["c"] == result["patternId"]), None)
-        if pattern['pty'] == 1 and pattern['master']:
-            master_stars += pattern['star']
+        if pattern['pty'] == 1 and result['master']:
+            master_stars += result['star']
         elif pattern['pty'] == 1:
-            tech_stars += pattern['star']
+            tech_stars += result['star']
         elif pattern['pty'] == 0:
-            normal_stars += pattern['star']
+            normal_stars += result['star']
+
+    print("normal, tech, master", normal_stars, tech_stars, master_stars)
 
     if normal_stars >= 250:
         target.append(400024)
@@ -183,11 +185,11 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
 
     # check special piano
 
-    if play_session['stageId'] == 612 and difficulty == 1 and play_session['maxCombo'] == 1143:
-        target.append(400030)
-
-    if play_session['stageId'] == 822 and difficulty == 1 and speed == 3 and fade == 2:
+    if play_session['stageId'] == 822 and difficulty == 1 and play_session['maxCombo'] == 1143:
         target.append(400031)
+
+    if play_session['stageId'] == 612 and difficulty == 1 and speed == 3 and fade == 1:
+        target.append(400030)
 
     # Check if the target is already unlocked
 
@@ -198,5 +200,7 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
 
         if piano_object == None:
             real_target.append(target_piano)
+
+    print(real_target)
 
     return real_target

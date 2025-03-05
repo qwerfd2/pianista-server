@@ -13,14 +13,16 @@ TOUR_NORMAL_STAGE_DATA = []
 TOUR_HARD_STAGE_DATA = []
 TOUR_MASTER_STAGE_DATA = []
 COMPOSER_STAT_DATA = []
+ITEM_DATA = []
 
 START_TOUR_STATUS = []
 START_COMPOSER_STATUS = []
 START_COLLECTION_STATUS = []
 START_PIANO_STATUS = []
+START_MAIL = []
 
 def init_templates():
-    global MUSIC_DATA, PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, STORE_GAME_ITEM_DATA, STORE_GOLD_DATA, STORE_TICKET_DATA, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, COMPOSER_STAT_DATA
+    global MUSIC_DATA, PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, STORE_GAME_ITEM_DATA, STORE_GOLD_DATA, STORE_TICKET_DATA, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, COMPOSER_STAT_DATA, ITEM_DATA
     global START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS
     base_path = 'data/client/common/1'
     start_base_path = 'start'
@@ -63,6 +65,9 @@ def init_templates():
         with open(os.path.join(base_path, 'composerstatdata.json'), 'r', encoding='utf-8') as f:
             COMPOSER_STAT_DATA = json.load(f)
 
+        with open(os.path.join(base_path, 'itemdata.json'), 'r', encoding='utf-8') as f:
+            ITEM_DATA = json.load(f)
+
 
 
         with open(os.path.join(start_base_path, 'start_tour_status.json'), 'r', encoding='utf-8') as f:
@@ -76,6 +81,9 @@ def init_templates():
 
         with open(os.path.join(start_base_path, 'start_piano_status.json'), 'r', encoding='utf-8') as f:
             START_PIANO_STATUS = json.load(f)
+
+        with open(os.path.join(start_base_path, 'start_mail.json'), 'r', encoding='utf-8') as f:
+            START_MAIL = json.load(f)
 
         print("[TEMPLATES] Templates initialized successfully.")
 

@@ -92,15 +92,16 @@ async def start_the_game(request):
         response_data = {"code": -100}
     else:
         patternId = decrypted_data[0]
-        items_used = decrypted_data[1]
+        items_used = decrypted_data[2]
 
         response_data = {
             "result": {},
             "code": 100,
             "invoke": []
         }
+        
 
-        response_data["result"] = await start_game(user, patternId, 1, False, patternId, None)
+        response_data["result"] = await start_game(user, patternId, 1, False, items_used, patternId, None)
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
