@@ -5,3 +5,38 @@ Sites to proxy: `https://pianista-api.pianista.io`
 Simply install official `apk` and set up proxy.
 
 Modify `config.env` to local IP:port.
+
+## Features that are supported
+
+Collection game play
+
+Tour game play
+
+Leaderboards and rankings
+
+Piano unlocks, upgrade, and equipment
+
+Static Prestige membership, which allows for unlimited play and all song unlocks
+
+Limited shop functionality (gem to coin)
+
+Limited PostBox support (messages, attachment gems, coins, pianos, and items)
+
+League reimplementation with bots
+
+renaming (which is actually free)
+
+## Features that will not be supported
+
+Music point related functions (consume, recovery, reward)
+
+Gem related functions (IAP, music pack purchases, music point purchases)
+
+Prestige related function (IAP, time accumulation/decrement, item daily provision)
+
+Certain PostBox rewards (patterns, debug, music points)
+
+Apple and Facebook login methods
+
+League lobbies that contains more than 1 real player
+
