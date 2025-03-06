@@ -42,34 +42,38 @@ async def upgrade(request):
         piano_id = decrypted_data[0]
         piano = next((piano for piano in user['piano'] if piano["pianoId"] == piano_id), {})
         if (piano == {}):
-            response_data = {"code": -101}
+            response_data = {"code": -100}
         else:
             user = dict(user)
-            cost = PIANO_UPGRADE_DATA[piano["level"] + 1]["p"]
-            if (cost == 0):
-                response_data = {"code": -102}
-            else:
-                if (user["gold"] < cost):
-                    response_data = {"code": -103}
+            if (piano["level"] >= len(PIANO_UPGRADE_DATA) - 1):
+                response_data = {"code": -101}
+            else:   
+                
+                cost = PIANO_UPGRADE_DATA[piano["level"] + 1]["p"]
+                if (cost == 0):
+                    response_data = {"code": -102}
                 else:
-                    cur_piano = {}
-                    user["gold"] -= cost
-                    for piano in user['piano']:
-                        if piano["pianoId"] == piano_id:
-                            piano["level"] += 1
-                            cur_piano = piano
-                            break
+                    if (user["gold"] < cost):
+                        response_data = {"code": -103}
+                    else:
+                        cur_piano = {}
+                        user["gold"] -= cost
+                        for piano in user['piano']:
+                            if piano["pianoId"] == piano_id:
+                                piano["level"] += 1
+                                cur_piano = piano
+                                break
 
-                    query = users.update().where(users.c.id == user["id"]).values(
-                        gold=user["gold"],
-                        piano=user["piano"]
-                    )
-                    await database.execute(query)
-                    response_data = {
-                        "result": cur_piano,
-                        "code": 100,
-                        "invoke": []
-                    }
+                        query = users.update().where(users.c.id == user["id"]).values(
+                            gold=user["gold"],
+                            piano=user["piano"]
+                        )
+                        await database.execute(query)
+                        response_data = {
+                            "result": cur_piano,
+                            "code": 100,
+                            "invoke": []
+                        }
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)

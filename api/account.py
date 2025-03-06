@@ -34,7 +34,8 @@ async def create_authentication(request):
             piano = START_PIANO_STATUS,
             tour = START_TOUR_STATUS,
             item = [],
-            mail = START_MAIL
+            mail = START_MAIL,
+            league = {"tier":1,"musicId1":None,"score1":None,"musicId2":None,"score2":None,"musicId3":None,"score3":None,"marbleId1":3,"marbleAchieve1":False,"marbleId2":4,"marbleAchieve2":False,"marbleId3":5,"marbleAchieve3":False,"bonusMarbleId":2,"bonusMarbleAchieve":False}
         )
         await database.execute(query)
 

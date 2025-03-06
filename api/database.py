@@ -37,6 +37,7 @@ users = Table(
     Column("tour", JSON, default='[]'),
     Column("item", JSON, default='[]'),
     Column("mail", JSON, default='[]'),
+    Column("league", JSON, default='[]'),
 )
 
 sessions = Table(

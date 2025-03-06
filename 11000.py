@@ -24,8 +24,9 @@ update_configs(server_url)
 from api.templates import init_templates
 init_templates()
 
-from api.cache import load_play_session
+from api.cache import load_play_session, load_league_session
 load_play_session()
+load_league_session()
 
 from api.database import database, init_db
 from api.cache import cache_database, init_cache_db

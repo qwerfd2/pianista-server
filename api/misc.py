@@ -1,5 +1,7 @@
 import secrets
 import math
+import random
+import time
 
 from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA
 from api.database import database, results
@@ -204,3 +206,33 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
     print(real_target)
 
     return real_target
+
+def get_random_score(rank):
+    config = [[540000,720000], [570000,740000], [600000,760000], [630000,780000], [660000,800000], [690000,820000], [720000,840000], [740000,860000], [760000,880000], [780000,900000], [800000,920000], [820000,940000], [840000,960000], [860000,980000], [880000,1000000], [900000,1050000], [920000,1100000], [940000,1150000], [960000,1200000], [980000,1250000], [1000000,1310000]]
+
+    min_score, max_score = config[rank]
+    random_score = random.randint(min_score, max_score)
+    
+    return random_score
+
+def get_rank_reward(rank, status):
+    rank += 1
+    config = [0,1,2,3,4,6,8,10,12,15,18,21,24,28,32,36,40,45,50,56,62,68]
+    if status == 0:
+        return 0
+    elif status == 1:
+        return config[rank - 1]
+    else:
+        return config[rank]
+    
+def add_mail(mail_object, subject, description, expire_days, item, amount):
+    mail_object.append({
+        "objectId": len(mail_object) + 1,
+        "subject": subject,
+        "description": description,
+        "expire": int((time.time() + (expire_days * 86400)) * 1000),
+        "status": 0,
+        "item": item,
+        "quantity": amount
+    })
+    return mail_object

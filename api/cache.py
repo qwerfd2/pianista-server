@@ -18,7 +18,7 @@ import random
 from api.crypt import decrypt
 from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score
 
 # ------------------------------------------
 # Init
@@ -231,6 +231,70 @@ async def generate_collection_leaderboard(patternId):
 
     return leaderboard
 
+# ------------------------------------------
+# League Data
+
+league_session = []
+league_end = 0
+league_count = 1
+
+def save_league_session():
+    print("[CACHE] League Bot ranking updated.")
+    with open("league_session.json", "w") as f:
+        json.dump({"end_at": league_end, "league_count": league_count, "data": league_session}, f)
+
+def load_league_session():
+    print("[CACHE] Loading league session...")
+    with lock:
+        global league_session, league_end, league_count
+        with open("league_session.json", "r") as f:
+            obj = json.load(f)
+            league_session = obj["data"]
+            league_count = obj["league_count"]
+            league_end = obj["end_at"]
+            print("[CACHE] League session loaded.")
+
+def generate_league_session():
+    league_session = []
+    for rank in range(1, 22):
+        rank_object = []
+        for player in range(9):
+            score1 = get_random_score(rank)
+            score2 = get_random_score(rank)
+            score3 = get_random_score(rank)
+            total_score = score1 + score2 + score3
+            rank_object.append({
+                "objectId": random.randint(1, 999999),
+                "owner": math.random.randint(10000000, 99999999),
+                "tier": rank,
+                "nextTier": None,
+                "leagueId":9999999,
+                "musicId1": 1,
+                "musicId2": 1,
+                "musicId3": 1,
+                "score1": score1,
+                "score2": score2,
+                "score3": score3,
+                "totalScore": total_score,
+                "marbleId1":3,
+                "marbleAchieve1":False,
+                "marbleId2":4,
+                "marbleAchieve2":False,
+                "marbleId3":5,
+                "marbleAchieve3":False,
+                "bonusMarbleId":2,
+                "bonusMarbleAchieve":False,
+                "updatedAt":int(time.time() * 1000),
+                "rewardProvide":False,
+                "playCount":0,
+
+            })
+        league_session.append(rank_object)
+    
+    save_league_session()
+
+def get_league_leaderboard():
+    return True
 # ------------------------------------------
 # Play session
 
