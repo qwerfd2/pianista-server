@@ -6,6 +6,7 @@ from starlette.applications import Starlette
 from starlette.routing import Route
 import os
 import json
+import asyncio
 
 config = Config("config.env")
 HOST = config("HOST", default="192.168.0.106")
@@ -26,7 +27,7 @@ init_templates()
 
 from api.cache import load_play_session, load_league_session
 load_play_session()
-load_league_session()
+asyncio.run(load_league_session())
 
 from api.database import database, init_db
 from api.cache import cache_database, init_cache_db, generate_league_session

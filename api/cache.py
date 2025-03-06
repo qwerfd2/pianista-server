@@ -18,7 +18,7 @@ import random
 from api.crypt import decrypt
 from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, START_LEAGUE
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_end_of_day
 
 # ------------------------------------------
 # Init
@@ -243,23 +243,20 @@ def save_league_session():
     with open("league_session.json", "w") as f:
         json.dump({"league_count": league_count, "league_id": league_id, "data": league_session}, f)
 
-def load_league_session():
+async def load_league_session():
     print("[CACHE] Loading league session...")
-    with lock:
-        global league_session, league_count, league_id
-        with open("league_session.json", "r") as f:
-            obj = json.load(f)
-            league_session = obj["data"]
-            league_id = obj["league_id"]
-            if obj['league_count'] != datetime.datetime.now().day:
-                print("[CACHE] League outdated, reloading.")
-                reset_league()
-            else:
-                print("[CACHE] League session loaded.")
+    global league_session, league_count, league_id
+    with open("league_session.json", "r") as f:
+        obj = json.load(f)
+        league_session = obj["data"]
+        league_id = obj["league_id"]
+        if obj['league_count'] != datetime.datetime.now().day:
+            print("[CACHE] League outdated, reloading.")
+            await reset_league()
+        else:
+            print("[CACHE] League session loaded.")
 
 async def reset_league():
-    # Get all the `user` in `users` table
-    # for each user,
     global league_id
 
     query = users.select()
@@ -269,8 +266,6 @@ async def reset_league():
         user = dict(user)
 
         leaderboard = get_league_leaderboard(user)
-
-        # Check if they've been promoted, dempoed, or stayed the same
         rank = 0
 
         for participant in leaderboard:
@@ -278,7 +273,6 @@ async def reset_league():
             if participant['owner'] == user['id']:
                 break
 
-        # If user is 1, 2, or 3 rank, promote. If 10, 9, or 8, demote. Else, stay the same
         tier = user['league']['tier']
         if (tier == 1):
             append = "st"
@@ -290,34 +284,29 @@ async def reset_league():
             append = "th"
 
         if (rank < 4 and user['league']['tier'] > 0):
-            user['mail'] = add_mail(user['mail'], "You have been promoted in League!", "Congratulation! You ranked in the " + rank + append + " place in the league.\nYou have been promoted to the previous league.\nKeep pushing forward!", 7, 1, get_rank_reward(tier, 2))
+            user['mail'] = add_mail(user['mail'], "You have been promoted in League!", "Congratulation! You ranked in the " + str(rank) + str(append) + " place in the league.\nYou have been promoted to the previous league.\nKeep pushing forward!", 7, 1, get_rank_reward(tier, 2))
             tier += 1
             
         elif (rank > 7 and user['league']['tier'] < 20):
-            user['mail'] = add_mail(user['mail'], "You have been demoted in League!", "Unfortunately, you ranked in the " + rank + "th place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!", 7, 2, 10)
+            user['mail'] = add_mail(user['mail'], "You have been demoted in League!", "Unfortunately, you ranked in the " + str(rank) + "th place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!", 7, 2, 10)
             tier -= 1
 
         else:
-            user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + rank + + append + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
-        
+            user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + str(rank) + + str(append) + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
 
-        user['league'] = START_LEAGUE
 
-        league_id += 1
-
-        user['league']['leagueId'] = league_id
-
-        query = users.update().where(users.c.id == user['id']).values(league=user['league'], mail=user['mail'])
+        query = users.update().where(users.c.id == user['id']).values(mail=user['mail'])
         await database.execute(query)
-
-    # Generate new league leaderboard by calling 
 
     generate_league_session()
 
 def generate_league_session():
-    global league_session, league_count
+    global league_session, league_count, league_id
 
     league_session = []
+    league_count = datetime.datetime.now().day
+    league_id += 1
+
     for rank in range(1, 22):
         rank_object = []
         for player in range(9):

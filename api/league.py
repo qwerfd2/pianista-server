@@ -3,23 +3,30 @@ from starlette.routing import Route
 import json
 import time
 import math
+import random
+import datetime
 
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
-from api.misc import generate_random_string
-from api.cache import start_game, complete_game, league_count, league_id, get_league_leaderboard
+from api.misc import generate_random_string, get_user_level, get_user_piano
+from api.cache import start_game, complete_game, league_count, league_id, get_league_leaderboard, reset_league
 
-def get_end_of_day():
-    now = time.time()
-    end_of_day = time.mktime(time.localtime(now)[:3] + (23, 59, 59, 0, 0, -1))
-    return int(end_of_day * 1000)
+async def check_season_off():
+    if league_count <= datetime.datetime.now().day:
+        await reset_league()
+
 
 async def get_group_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
 
-    response_data = {"result":{"objectId":928693,"tier":user['league']['tier'],"count":league_count,"endAt":get_end_of_day(),"seasonOff":False},"code":100,"invoke":[]}
+    response_data = {"result":{"objectId":user['league']['leagueId'],"tier":user['league']['tier'],"count":league_count,"endAt":user['league']['endAt'],"seasonOff":False},"code":100,"invoke":[]}
+
+    if (user['league']['endAt'] < int(time.time() * 1000)):
+        await check_season_off()
+        response_data["result"]["seasonOff"] = True
+        response_data["invoke"] = [{"name":"availableSeasonOff","params":[]}]
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -57,9 +64,84 @@ async def get_group_players(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
+    
+    if league_id != user['league']['leagueId']:
+        # This is an old league
+        leaderboard = user['league']['leaderboardCache']
 
-    response_data ={"result":{"groupPlayers": get_league_leaderboard(user),"feeds":[]},"code":100,"invoke":[]}
+    else:
+        leaderboard = get_league_leaderboard(user)
 
+        user = dict(user)
+
+        user['league']['leaderboardCache'] = leaderboard
+
+        query = users.update().where(users.c.id == user['id']).values(league=user['league'])
+        await database.execute(query)
+
+    response_data ={"result":{"groupPlayers": leaderboard,"feeds":[]},"code":100,"invoke":[]}
+
+    encrypted_response = encrypt(response_data)
+    return Response(encrypted_response)
+
+async def season_off(request):
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+    if error_response:
+        return Response(encrypt(json.dumps(error_response)))
+    
+    result_object = {}
+
+    rank = 0
+
+    for participant in user['league']['leaderboardCache']:
+        rank += 1
+        if participant['owner'] == user['id']:
+            break
+
+    user_tier = user['league']['tier']
+
+    if rank < 4:
+        # promote
+        if (user_tier < 21):
+            user_tier += 1
+    elif rank > 7:
+        # demote
+        if (user_tier > 1):
+            user_tier -= 1
+
+    score1 = user['league']['score1'] or 0
+    score2 = user['league']['score2'] or 0
+    score3 = user['league']['score3'] or 0
+    user_level = get_user_level(user)
+    piano_id, piano_level = get_user_piano(user)
+    
+    result_object["objectId"] = random.randint(1,99999)
+    result_object['owner'] = user['id']
+    result_object['tier'] = user['league']['tier']
+    result_object['nextTier'] = user_tier
+    result_object['leagueId'] = user['league']['leagueId']
+    result_object['musicId1'] = user['league']['musicId1']
+    result_object['musicId2'] = user['league']['musicId2']
+    result_object['musicId3'] = user['league']['musicId3']
+    result_object['score1'] = user['league']['score1']
+    result_object['score2'] = user['league']['score2']
+    result_object['score3'] = user['league']['score3']
+    result_object['totalScore'] = score1 + score2 + score3
+    result_object['marbleId1'] = user['league']['marbleId1']
+    result_object['marbleId2'] = user['league']['marbleId2']
+    result_object['marbleId3'] = user['league']['marbleId3']
+    result_object['marbleAchieve1'] = user['league']['marbleAchieve1']
+    result_object['marbleAchieve2'] = user['league']['marbleAchieve2']
+    result_object['marbleAchieve3'] = user['league']['marbleAchieve3']
+    result_object['bonusMarbleId'] = user['league']['bonusMarbleId']
+    result_object['bonusMarbleAchieve'] = user['league']['bonusMarbleAchieve']
+    result_object['updatedAt'] = user['league']['updatedAt']
+    result_object['playCount'] = user['league']['playCount']
+    result_object['rewardProvide'] = True
+    result_object['publicData'] = {"nickname":user['nickname'],"pianoId":piano_id,"pianoLevel":piano_level,"level":user_level}
+    
+    response_data = {"result":result_object,"code":100,"invoke":[]}
+    
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
@@ -119,4 +201,5 @@ routes = [
     Route('/League/takeComfortTicket', take_comfort_ticket, methods=["POST"]),
     Route('/League/start', start_the_game, methods=["POST"]),
     Route('/League/complete', complete_the_game, methods=["POST"]),
+    Route('/League/seasonOff', season_off, methods=["POST"]),
 ]

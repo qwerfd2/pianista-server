@@ -258,3 +258,8 @@ def all_songs_from_composer(cps):
         if song['cps'] == cps:
             songs.append(song['c'])
     return songs
+
+def get_end_of_day():
+    now = time.time()
+    end_of_day = time.mktime(time.localtime(now)[:3] + (23, 59, 59, 0, 0, -1))
+    return int(end_of_day * 1000)
