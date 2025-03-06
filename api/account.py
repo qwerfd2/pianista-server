@@ -6,7 +6,7 @@ import time
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
 from api.misc import generate_random_string
-from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL
+from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -35,7 +35,7 @@ async def create_authentication(request):
             tour = START_TOUR_STATUS,
             item = [],
             mail = START_MAIL,
-            league = {"tier":1,"musicId1":None,"score1":None,"musicId2":None,"score2":None,"musicId3":None,"score3":None,"marbleId1":3,"marbleAchieve1":False,"marbleId2":4,"marbleAchieve2":False,"marbleId3":5,"marbleAchieve3":False,"bonusMarbleId":2,"bonusMarbleAchieve":False}
+            league = START_LEAGUE,
         )
         await database.execute(query)
 
@@ -74,7 +74,7 @@ async def create_user_begin(request):
                 if not existing_nickname:
                     response_data = {"result": None, "code": 100, "invoke": []}
                 else:
-                    response_data = {"code": -101}
+                    response_data = {"code": -207}
             else:
                 response_data = {"code": -103}
         else:
@@ -107,7 +107,7 @@ async def create_user_commit(request):
 
                     response_data = {"result": None, "code": 100, "invoke": []}
                 else:
-                    response_data = {"code": -101}
+                    response_data = {"code": -207}
             else:
                 response_data = {"code": -103}
         else:
@@ -182,7 +182,7 @@ async def login(request):
 async def get_ad_count(request):
     body = await request.body()
     try:
-        response_data = {"result":[0,int(time.time() * 1000) + 9900000],"code":100,"invoke":[]}
+        response_data = {"result":[1,int(time.time() * 1000) - 9900000],"code":100,"invoke":[]}
 
         encrypted_response = encrypt(response_data)
         

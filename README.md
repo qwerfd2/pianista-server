@@ -28,15 +28,18 @@ renaming (which is actually free)
 
 ## Features that will not be supported
 
-Music point related functions (consume, recovery, reward)
+Music point related functions (consume, recovery, reward), since the currency has no use.
 
-Gem related functions (IAP, music pack purchases, music point purchases)
+Most gem related functions (IAP, music pack purchases, music point purchases), since the currency has no use when it comes to the above functions.
 
-Prestige related function (IAP, time accumulation/decrement, item daily provision)
+Prestige related function (IAP, time accumulation/decrement, item daily provision), since it is unlocked by default.
 
-Certain PostBox rewards (patterns, debug, music points)
+Certain PostBox rewards (patterns, debug, music points), since they are either have no use or is unlocked by default.
 
-Apple and Facebook login methods
+Apple and Facebook login methods, since there's no way to get the tokens.
 
-League lobbies that contains more than 1 real player
+League lobbies that contains more than 1 real player, since it is too hard(
 
+League daily rewards, since there is no way to change it to something other than music points, which is removed.
+
+League news feed, since it is not that important of a feature.

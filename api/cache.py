@@ -16,9 +16,9 @@ import time
 import random
 
 from api.crypt import decrypt
-from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA
+from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, START_LEAGUE
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward
 
 # ------------------------------------------
 # Init
@@ -235,26 +235,88 @@ async def generate_collection_leaderboard(patternId):
 # League Data
 
 league_session = []
-league_end = 0
-league_count = 1
+league_count = datetime.datetime.now().day
+league_id = 1
 
 def save_league_session():
     print("[CACHE] League Bot ranking updated.")
     with open("league_session.json", "w") as f:
-        json.dump({"end_at": league_end, "league_count": league_count, "data": league_session}, f)
+        json.dump({"league_count": league_count, "league_id": league_id, "data": league_session}, f)
 
 def load_league_session():
     print("[CACHE] Loading league session...")
     with lock:
-        global league_session, league_end, league_count
+        global league_session, league_count, league_id
         with open("league_session.json", "r") as f:
             obj = json.load(f)
             league_session = obj["data"]
-            league_count = obj["league_count"]
-            league_end = obj["end_at"]
-            print("[CACHE] League session loaded.")
+            league_id = obj["league_id"]
+            if obj['league_count'] != datetime.datetime.now().day:
+                print("[CACHE] League outdated, reloading.")
+                reset_league()
+            else:
+                print("[CACHE] League session loaded.")
+
+async def reset_league():
+    # Get all the `user` in `users` table
+    # for each user,
+    global league_id
+
+    query = users.select()
+    all_users = await database.fetch_all(query)
+
+    for user in all_users:
+        user = dict(user)
+
+        leaderboard = get_league_leaderboard(user)
+
+        # Check if they've been promoted, dempoed, or stayed the same
+        rank = 0
+
+        for participant in leaderboard:
+            rank += 1
+            if participant['owner'] == user['id']:
+                break
+
+        # If user is 1, 2, or 3 rank, promote. If 10, 9, or 8, demote. Else, stay the same
+        tier = user['league']['tier']
+        if (tier == 1):
+            append = "st"
+        elif (tier == 2):
+            append = "nd"
+        elif (tier == 3):
+            append = "rd"
+        else:
+            append = "th"
+
+        if (rank < 4 and user['league']['tier'] > 0):
+            user['mail'] = add_mail(user['mail'], "You have been promoted in League!", "Congratulation! You ranked in the " + rank + append + " place in the league.\nYou have been promoted to the previous league.\nKeep pushing forward!", 7, 1, get_rank_reward(tier, 2))
+            tier += 1
+            
+        elif (rank > 7 and user['league']['tier'] < 20):
+            user['mail'] = add_mail(user['mail'], "You have been demoted in League!", "Unfortunately, you ranked in the " + rank + "th place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!", 7, 2, 10)
+            tier -= 1
+
+        else:
+            user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + rank + + append + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
+        
+
+        user['league'] = START_LEAGUE
+
+        league_id += 1
+
+        user['league']['leagueId'] = league_id
+
+        query = users.update().where(users.c.id == user['id']).values(league=user['league'], mail=user['mail'])
+        await database.execute(query)
+
+    # Generate new league leaderboard by calling 
+
+    generate_league_session()
 
 def generate_league_session():
+    global league_session, league_count
+
     league_session = []
     for rank in range(1, 22):
         rank_object = []
@@ -262,16 +324,23 @@ def generate_league_session():
             score1 = get_random_score(rank)
             score2 = get_random_score(rank)
             score3 = get_random_score(rank)
+
+            schedule = next((sched for sched in LEAGUE_SCHEDULE_DATA if sched["c"] == league_count), None)
+
+            song_1 = random.choice(all_songs_from_composer(schedule['ci1']))
+            song_2 = random.choice(all_songs_from_composer(schedule['ci2']))
+            song_3 = random.choice(all_songs_from_composer(schedule['ci3']))
+
             total_score = score1 + score2 + score3
             rank_object.append({
                 "objectId": random.randint(1, 999999),
-                "owner": math.random.randint(10000000, 99999999),
+                "owner": random.randint(10000000, 99999999),
                 "tier": rank,
                 "nextTier": None,
-                "leagueId":9999999,
-                "musicId1": 1,
-                "musicId2": 1,
-                "musicId3": 1,
+                "leagueId":league_id,
+                "musicId1": song_1,
+                "musicId2": song_2,
+                "musicId3": song_3,
                 "score1": score1,
                 "score2": score2,
                 "score3": score3,
@@ -287,14 +356,52 @@ def generate_league_session():
                 "updatedAt":int(time.time() * 1000),
                 "rewardProvide":False,
                 "playCount":0,
-
+                "publicData": random_public_info(rank)
             })
+
         league_session.append(rank_object)
-    
+
     save_league_session()
 
-def get_league_leaderboard():
-    return True
+def get_league_leaderboard(user):
+    user_rank_index = user['league']['tier']
+    user_rank_index -= 1
+    leaderboard = league_session[user_rank_index].copy()
+    piano_id, piano_lvl = get_user_piano(user)
+
+    score1 = user['league']['score1'] or 0
+    score2 = user['league']['score2'] or 0
+    score3 = user['league']['score3'] or 0
+    leaderboard.append({
+        "objectId": random.randint(1, 999999),
+        "owner": user['id'],
+        "tier": user['league']['tier'],
+        "nextTier": None,
+        "leagueId":league_id,
+        "musicId1": user['league']['musicId1'],
+        "musicId2": user['league']['musicId2'],
+        "musicId3": user['league']['musicId3'],
+        "score1": user['league']['score1'],
+        "score2": user['league']['score2'],
+        "score3": user['league']['score3'],
+        "totalScore": score1 + score2 + score3,
+        "marbleId1": user['league']['marbleId1'],
+        "marbleAchieve1": user['league']['marbleAchieve1'],
+        "marbleId2":user['league']['marbleId2'],
+        "marbleAchieve2": user['league']['marbleAchieve2'],
+        "marbleId3":user['league']['marbleId3'],
+        "marbleAchieve3":user['league']['marbleAchieve3'],
+        "bonusMarbleId": user['league']['bonusMarbleId'],
+        "bonusMarbleAchieve": user['league']['bonusMarbleAchieve'],
+        "updatedAt": user['league']['updatedAt'],
+        "rewardProvide":False,
+        "playCount": user['league']['playCount'],
+        "publicData": {"nickname": user['nickname'], "pianoId": piano_id, "pianoLevel": piano_lvl, "level": get_user_level(user)}
+    })
+
+    leaderboard.sort(key=lambda x: x["totalScore"], reverse=True)
+    return leaderboard
+
 # ------------------------------------------
 # Play session
 
@@ -453,7 +560,34 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     return_obj["pianoScore"] = pianoScore
     starCount = get_star(return_obj["patternId"], accuracy)
     return_obj["statScore"] = statScore
-    return_obj["score"] = orig_score + statScore + pianoScore
+
+    all_combo = get_fc(miss, fine, good, excellent, marvelous, maxCombo)
+
+    if (mode != 2):
+        return_obj["score"] = orig_score + statScore + pianoScore
+    else:
+        # TODO
+        difficulty_bonus = [0,2000,5000,10000,30000,60000,90000,120000,150000,180000,210000]
+
+        accuracy_score = 0
+        if accuracy >= 0.90:
+            accuracy_score += 5000
+        if accuracy >= 0.93:
+            accuracy_score += 5000
+        if accuracy >= 0.96:
+            accuracy_score += 5000
+        if accuracy == 1.0:
+            accuracy_score += 5000
+
+        if all_combo:
+            accuracy_score += 20000
+
+        if fade:
+            accuracy_score += 10000
+
+        difficulty_score = difficulty_bonus[pattern["d"]]
+
+        return_obj["score"] = orig_score + statScore + pianoScore + accuracy_score + difficulty_score
     
     totalEXP = 0
     expContext = []
@@ -529,7 +663,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             elif is_challenge_done != True:
                 pity_give = True
         else:
-            do_easy = True
+
             do_normal = False
             do_hard = True
             if pattern["pty"] == 0:
@@ -598,7 +732,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     return_obj["goldContext"] = goldContext
     return_obj["takeGold"] = takeGold
     
-    return_obj["allCombo"] = get_fc(miss, fine, good, excellent, marvelous, maxCombo)
+    return_obj["allCombo"] = all_combo
     return_obj["exp"] = totalEXP
     return_obj["expContext"] = expContext
     return_obj["pianoContext"] = pianoContext
@@ -614,12 +748,27 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
     # Update/add best score to results table
 
-    query = results.select().where(results.c.owner == user["id"], results.c.patternId == return_obj["patternId"])
-    existing_result = await database.fetch_one(query)
+    if (mode != 2):
 
-    if existing_result:
-        if return_obj["score"] > existing_result["score"]:
-            query = results.update().where(results.c.objectId == existing_result["objectId"]).values(
+        query = results.select().where(results.c.owner == user["id"], results.c.patternId == return_obj["patternId"])
+        existing_result = await database.fetch_one(query)
+
+        if existing_result:
+            if return_obj["score"] > existing_result["score"]:
+                query = results.update().where(results.c.objectId == existing_result["objectId"]).values(
+                    score=return_obj["score"],
+                    star=starCount,
+                    accuracy=accuracy,
+                    maxCombo=maxCombo,
+                    allCombo=return_obj["allCombo"],
+                    updatedAt=int(time.time() * 1000),
+                    master=isMaster
+                )
+                await database.execute(query)
+        else:
+            query = results.insert().values(
+                owner=user["id"],
+                patternId=return_obj["patternId"],
                 score=return_obj["score"],
                 star=starCount,
                 accuracy=accuracy,
@@ -629,19 +778,29 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 master=isMaster
             )
             await database.execute(query)
+
     else:
-        query = results.insert().values(
-            owner=user["id"],
-            patternId=return_obj["patternId"],
-            score=return_obj["score"],
-            star=starCount,
-            accuracy=accuracy,
-            maxCombo=maxCombo,
-            allCombo=return_obj["allCombo"],
-            updatedAt=int(time.time() * 1000),
-            master=isMaster
-        )
-        await database.execute(query)
+        # do league specific saving
+        schedule = next((sched for sched in LEAGUE_SCHEDULE_DATA if sched["c"] == league_count), None)
+
+        if music['cps'] == schedule['ci1']:
+            if return_obj['score'] > (user['league']['score1'] or 0):
+                user['league']['musicId1'] = music['c']
+                user['league']['score1'] = return_obj['score']
+                user['league']['patternId1'] = return_obj['patternId']
+        if music['cps'] == schedule['ci2']:
+            if return_obj['score'] > (user['league']['score2'] or 0):
+                user['league']['musicId2'] = music['c']
+                user['league']['score2'] = return_obj['score']
+                user['league']['patternId2'] = return_obj['patternId']
+        if music['cps'] == schedule['ci3']:
+            if return_obj['score'] > (user['league']['score3'] or 0):
+                user['league']['musicId3'] = music['c']
+                user['league']['score3'] = return_obj['score']
+                user['league']['patternId3'] = return_obj['patternId']
+
+        user['league']['updatedAt'] = int(time.time() * 1000)
+        user['league']['playCount'] += 1
 
     # Add user gold and diamond
     
@@ -653,11 +812,19 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
         # Set clear collection status
 
+        chart_ids = [music['pty3']]
+
+        if pattern["pty"] == 0:
+            chart_ids.append(music['pty1'])
+        elif pattern["pty"] == 1:
+            chart_ids.append(music['pty1'])
+            chart_ids.append(music['pty2'])
+
+
         for collection in user["collection"]:
-            if collection['patternId'] == return_obj["patternId"]:
-                if (collection['clear'] == False):
+            if collection['patternId'] in chart_ids:
+                if not collection['clear']:
                     collection['clear'] = True
-                    break
 
     # Increment composer level
 
@@ -666,8 +833,8 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             if (composer['stat'] < 20):
                 composer['exp'] += totalEXP
                 if composer['exp'] >= COMPOSER_STAT_DATA[composer['stat'] + 1]['e']:
-                    composer['stat'] += 1
                     composer['exp'] -= COMPOSER_STAT_DATA[composer['stat'] + 1]['e']
+                    composer['stat'] += 1
                 break
 
     # increment user clear count
@@ -694,7 +861,8 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         collection=user["collection"],
         tour=user["tour"],
         clearCount=user["clearCount"],
-        piano=user["piano"]
+        piano=user["piano"],
+        league=user['league']
     )
     await database.execute(query)
 

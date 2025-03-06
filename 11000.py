@@ -29,7 +29,7 @@ load_play_session()
 load_league_session()
 
 from api.database import database, init_db
-from api.cache import cache_database, init_cache_db
+from api.cache import cache_database, init_cache_db, generate_league_session
 from api.platform import routes as platform_routes
 from api.account import routes as account_routes
 from api.music import routes as music_routes
@@ -41,6 +41,8 @@ from api.shop import routes as shop_routes
 from api.league import routes as league_routes
 
 from api.cache import start_cleanup_task
+
+#generate_league_session()
 
 root_folder = os.path.dirname(os.path.abspath(__file__))
 allowed_folders = ["bundle", "files", "data", "manifest"]

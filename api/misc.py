@@ -3,7 +3,7 @@ import math
 import random
 import time
 
-from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA
+from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, PUBLIC_USER_DATA, MUSIC_DATA
 from api.database import database, results
 
 def generate_random_string(length: int) -> str:
@@ -14,7 +14,7 @@ def get_user_level(user):
     for composer in user["composer"]:
         level += composer["stat"]
 
-    return level
+    return level - 29
 
 def get_user_piano_bonus(user):
     piano = next((piano for piano in user["piano"] if piano["equip"] == True), None)
@@ -208,8 +208,9 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
     return real_target
 
 def get_random_score(rank):
-    config = [[540000,720000], [570000,740000], [600000,760000], [630000,780000], [660000,800000], [690000,820000], [720000,840000], [740000,860000], [760000,880000], [780000,900000], [800000,920000], [820000,940000], [840000,960000], [860000,980000], [880000,1000000], [900000,1050000], [920000,1100000], [940000,1150000], [960000,1200000], [980000,1250000], [1000000,1310000]]
+    config = [[100000,680000], [150000,700000], [200000,720000], [250000,740000], [300000,760000], [350000,780000], [400000,800000], [450000,820000], [500000,840000], [550000,860000], [600000,880000], [650000,900000], [700000,920000], [750000,940000], [800000,960000], [850000,980000], [900000,1000000], [950000,1100000], [1000000,1200000], [1050000,1300000], [1100000,1310000]]
 
+    rank -= 1
     min_score, max_score = config[rank]
     random_score = random.randint(min_score, max_score)
     
@@ -236,3 +237,24 @@ def add_mail(mail_object, subject, description, expire_days, item, amount):
         "quantity": amount
     })
     return mail_object
+
+def random_public_info(rank):
+
+    piano_random = [[0,0],[1,3],[1,5],[1,7],[2,9],[3,11],[4,13],[6,15],[8,17],[10,19],[12,21],[14,23],[16,25],[18,27],[20,29],[22,30],[24,30],[26,30],[27,30],[28,30],[29,30],[30,30]]
+
+    level_random = [[0,0],[1,50],[5,100],[10,150],[20,190],[30,230],[50,270],[70,310],[90,340],[110,370],[140,390],[170,420],[200,450],[240,470],[280,490],[320,510],[360,530],[400,550],[440,570],[480,590],[520,600],[560,600]]
+
+    info = random.choice(PUBLIC_USER_DATA)
+
+    piano_level = random.randint(piano_random[rank][0], piano_random[rank][1])
+
+    user_level = random.randint(level_random[rank][0], level_random[rank][1])
+
+    return {"nickname":info['n'],"pianoId":info['p'],"pianoLevel":piano_level,"level":user_level}
+
+def all_songs_from_composer(cps):
+    songs = []
+    for song in MUSIC_DATA:
+        if song['cps'] == cps:
+            songs.append(song['c'])
+    return songs
