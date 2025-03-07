@@ -1,7 +1,6 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import time
-import json
 
 from api.crypt import encrypt, decrypt
 

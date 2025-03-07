@@ -1,14 +1,11 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import json
-import datetime
-import math
 
-from api.database import database, users, sessions, get_user_and_validate_session
-from api.crypt import encrypt, decrypt
-from api.misc import generate_random_string
-from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA
-from api.cache import tour_cache, get_my_tour_leaderboard_ranking, get_tour_leaderboard, start_game, complete_game
+from api.database import get_user_and_validate_session
+from api.crypt import encrypt
+from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA
+from api.cache import get_my_tour_leaderboard_ranking, get_tour_leaderboard, start_game, complete_game
 
 async def get_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)

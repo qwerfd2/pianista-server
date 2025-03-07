@@ -16,9 +16,9 @@ import time
 import random
 
 from api.crypt import decrypt
-from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, START_LEAGUE
+from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_end_of_day, get_league_rank, add_feed
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_league_rank, add_feed
 
 # ------------------------------------------
 # Init
@@ -277,16 +277,16 @@ async def reset_league():
         else:
             append = "th"
 
-        if (rank < 4 and user['league']['tier'] > 0):
+        if (rank < 4 and user['league']['tier'] <= 20):
             user['mail'] = add_mail(user['mail'], "You have been promoted in League!", "Congratulation! You ranked in the " + str(rank) + str(append) + " place in the league.\nYou have been promoted to the previous league.\nKeep pushing forward!", 7, 1, get_rank_reward(tier, 2))
             tier += 1
             
-        elif (rank > 7 and user['league']['tier'] < 20):
+        elif (rank > 7 and user['league']['tier'] > 0):
             user['mail'] = add_mail(user['mail'], "You have been demoted in League!", "Unfortunately, you ranked in the " + str(rank) + "th place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!", 7, 2, 10)
             tier -= 1
 
         else:
-            user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + str(rank) + + str(append) + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
+            user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + str(rank) + str(append) + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
 
 
         query = users.update().where(users.c.id == user['id']).values(mail=user['mail'])
@@ -790,8 +790,10 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
         if is_best:
             field_list = ["", "score1", "score2", "score3"]
-            score_list = [entry[field_list[is_best]] for entry in user['league']['leaderboardCache']]
-            if return_obj['score'] > min(score_list):
+            score_list = [entry[field_list[is_best]] for entry in user['league']['leaderboardCache'] if entry[field_list[is_best]] is not None]
+
+            print(score_list)
+            if return_obj['score'] > max(score_list):
                 user = add_feed(user, 5, music['cps'], league_id)
 
     # Add user gold and diamond

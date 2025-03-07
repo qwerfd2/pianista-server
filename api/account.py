@@ -4,7 +4,7 @@ import json
 import time
 
 from api.database import database, users, sessions, get_user_and_validate_session
-from api.crypt import encrypt, decrypt
+from api.crypt import encrypt
 from api.misc import generate_random_string
 from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE
 

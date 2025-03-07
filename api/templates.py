@@ -95,7 +95,6 @@ def init_templates():
 
         print("[TEMPLATES] Templates initialized successfully.")
 
-    
     except FileNotFoundError as e:
         print(f"Error: {e}")
     except json.JSONDecodeError as e:

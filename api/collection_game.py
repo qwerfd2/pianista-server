@@ -5,8 +5,7 @@ import datetime
 import math
 
 from api.database import database, users, sessions, get_user_and_validate_session
-from api.crypt import encrypt, decrypt
-from api.misc import generate_random_string
+from api.crypt import encrypt
 from api.templates import PATTERN_DATA
 from api.cache import tour_cache, get_my_collection_leaderboard_ranking, get_collection_leaderboard, start_game, complete_game
 from api.database import database, results

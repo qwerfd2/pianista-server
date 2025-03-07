@@ -1,13 +1,9 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import json
-import datetime
-import math
 
-from api.database import database, users, sessions, get_user_and_validate_session
-from api.crypt import encrypt, decrypt
-from api.misc import generate_random_string
-from api.templates import ITEM_DATA
+from api.database import database, users, get_user_and_validate_session
+from api.crypt import encrypt
 
 def add_gift(user, item, quantity):
     # you can actually gift pretty much everything. Currencies, charts, pianos, vip time, items, etc. But I will not add all of them here since most are rendered obsolete.

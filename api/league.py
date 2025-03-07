@@ -2,7 +2,6 @@ from starlette.responses import Response
 from starlette.routing import Route
 import json
 import time
-import math
 import random
 import datetime
 
@@ -37,10 +36,12 @@ async def join(request):
         return Response(encrypt(json.dumps(error_response)))
     
     user = dict(user)
+    tier = user['league']['tier']
     user['league'] = START_LEAGUE
     user['league']['updatedAt'] = int(time.time() * 1000)
     user['league']['endAt'] = get_end_of_day()
     user['league']['leagueId'] = league_id
+    user['league']['tier'] = tier
 
     query = users.update().where(users.c.id == user['id']).values(league=user['league'])
     await database.execute(query)
@@ -133,7 +134,7 @@ async def season_off(request):
 
     if rank < 4:
         # promote
-        if (user_tier < 21):
+        if (user_tier <= 20):
             user_tier += 1
     elif rank > 7:
         # demote
@@ -170,6 +171,11 @@ async def season_off(request):
     result_object['playCount'] = user['league']['playCount']
     result_object['rewardProvide'] = True
     result_object['publicData'] = {"nickname":user['nickname'],"pianoId":piano_id,"pianoLevel":piano_level,"level":user_level}
+
+    if (user_tier != user['league']['tier']):
+        user['league']['tier'] = user_tier
+        query = users.update().where(users.c.id == user['id']).values(league=user['league'])
+        await database.execute(query)
     
     response_data = {"result":result_object,"code":100,"invoke":[]}
     
