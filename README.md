@@ -6,6 +6,8 @@ Simply install official `apk` and set up proxy.
 
 Modify `config.env` to local IP:port.
 
+Install all dependencies, run `python 11000.py`.
+
 (client has `build` textAsset in `570e46b0868640144a2e9beacd712c93` but https is enforced)
 
 ## Features that are supported
