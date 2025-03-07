@@ -257,7 +257,6 @@ async def load_league_session():
             print("[CACHE] League session loaded.")
 
 async def reset_league():
-    global league_id
 
     query = users.select()
     all_users = await database.fetch_all(query)
@@ -354,7 +353,6 @@ def generate_league_session():
 
 def get_league_leaderboard(user):
     user_rank_index = user['league']['tier']
-    user_rank_index -= 1
     leaderboard = league_session[user_rank_index].copy()
     piano_id, piano_lvl = get_user_piano(user)
 
