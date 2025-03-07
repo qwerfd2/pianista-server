@@ -1,6 +1,6 @@
 ## Setup:
 
-Sites to proxy: `https://pianista-api.pianista.io`
+Sites to proxy: `https://pianista-cdn.pianista.io`
 
 Simply install official `apk` and set up proxy.
 
