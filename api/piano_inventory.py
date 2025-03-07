@@ -45,11 +45,11 @@ async def upgrade(request):
             response_data = {"code": -100}
         else:
             user = dict(user)
-            if (piano["level"] >= len(PIANO_UPGRADE_DATA) - 1):
+            if (piano["level"] >= len(PIANO_UPGRADE_DATA)):
                 response_data = {"code": -101}
             else:   
                 
-                cost = PIANO_UPGRADE_DATA[piano["level"] + 1]["p"]
+                cost = PIANO_UPGRADE_DATA[piano["level"]]["p"]
                 if (cost == 0):
                     response_data = {"code": -102}
                 else:

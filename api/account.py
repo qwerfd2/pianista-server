@@ -168,7 +168,7 @@ async def login(request):
                                     "freeTicketEndAt": True,
                                     "createdAt": 1740232040429,
                                     "blocked": user["blocked"],
-                                    "clearCount": 0
+                                    "clearCount": user['clearCount']
                                 }
                             },
                             "code": 100,

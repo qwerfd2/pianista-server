@@ -22,7 +22,7 @@ START_COMPOSER_STATUS = []
 START_COLLECTION_STATUS = []
 START_PIANO_STATUS = []
 START_MAIL = []
-START_LEAGUE = {"leagueId":1, "endAt":0,"tier":0,"musicId1":None,"score1":None,"patternId1": None,"musicId2":None,"score2":None,"patternId2": None,"musicId3":None,"score3":None,"marbleId1":3,"patternId3": None,"marbleAchieve1":False,"marbleId2":4,"marbleAchieve2":False,"marbleId3":5,"marbleAchieve3":False,"bonusMarbleId":2,"bonusMarbleAchieve":False, "updatedAt": 0, "playCount": 0, "leaderboardCache":[]}
+START_LEAGUE = {"leagueId":1, "endAt":0,"tier":0,"musicId1":None,"score1":None,"patternId1": None,"musicId2":None,"score2":None,"patternId2": None,"musicId3":None,"score3":None,"marbleId1":3,"patternId3": None,"marbleAchieve1":False,"marbleId2":4,"marbleAchieve2":False,"marbleId3":5,"marbleAchieve3":False,"bonusMarbleId":2,"bonusMarbleAchieve":False, "updatedAt": 0, "playCount": 0, "leaderboardCache":[],"feed":[]}
 
 def init_templates():
     global MUSIC_DATA, PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, STORE_GAME_ITEM_DATA, STORE_GOLD_DATA, STORE_TICKET_DATA, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, COMPOSER_STAT_DATA, ITEM_DATA, PUBLIC_USER_DATA, LEAGUE_SCHEDULE_DATA

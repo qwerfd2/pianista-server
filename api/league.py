@@ -8,7 +8,7 @@ import datetime
 
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt, decrypt
-from api.misc import generate_random_string, get_user_level, get_user_piano, get_end_of_day
+from api.misc import generate_random_string, get_user_level, get_user_piano, get_end_of_day, get_league_rank, add_feed
 from api.cache import start_game, complete_game, league_count, league_id, get_league_leaderboard, reset_league
 from api.templates import START_LEAGUE
 
@@ -84,12 +84,38 @@ async def get_group_players(request):
 
         user = dict(user)
 
+        old_leaderboard = user['league']['leaderboardCache']
+
         user['league']['leaderboardCache'] = leaderboard
+
+        all_played = next((feed for feed in user['league']['feed'] if feed["feedId"] == 6), None)
+
+        if (user['league']['score1'] and user['league']['score2'] and user['league']['score3']) and all_played == None:
+            user = add_feed(user, 6, None, league_id)
+
+        old_leaderboard_rank = get_league_rank(old_leaderboard, user['id'], 0)
+        new_leaderboard_rank = get_league_rank(leaderboard, user['id'], 0)
+        soaring = next((feed for feed in user['league']['feed'] if feed["feedId"] == 4), None)
+
+        if (old_leaderboard_rank - new_leaderboard_rank > 5) and (soaring == None):
+            user = add_feed(user, 4, None, league_id)
+        
+        third = next((feed for feed in user['league']['feed'] if feed["feedId"] == 3), None)
+        if (new_leaderboard_rank == 3) and (third == None):
+            user = add_feed(user, 3, None, league_id)
+
+        second = next((feed for feed in user['league']['feed'] if feed["feedId"] == 2), None)
+        if (new_leaderboard_rank == 2) and (second == None):
+            user = add_feed(user, 2, None, league_id)
+
+        first = next((feed for feed in user['league']['feed'] if feed["feedId"] == 1), None)
+        if (new_leaderboard_rank == 1) and (first == None):
+            user = add_feed(user, 1, None, league_id)
 
         query = users.update().where(users.c.id == user['id']).values(league=user['league'])
         await database.execute(query)
 
-    response_data ={"result":{"groupPlayers": leaderboard,"feeds":[]},"code":100,"invoke":[]}
+    response_data ={"result":{"groupPlayers": leaderboard,"feeds":user['league']['feed']},"code":100,"invoke":[]}
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -101,12 +127,7 @@ async def season_off(request):
     
     result_object = {}
 
-    rank = 0
-
-    for participant in user['league']['leaderboardCache']:
-        rank += 1
-        if participant['owner'] == user['id']:
-            break
+    rank = get_league_rank(user['league']['leaderboardCache'], user['id'], 0)
 
     user_tier = user['league']['tier']
 

@@ -263,3 +263,24 @@ def get_end_of_day():
     now = time.time()
     end_of_day = time.mktime(time.localtime(now)[:3] + (23, 59, 59, 0, 0, -1))
     return int(end_of_day * 1000)
+
+def get_league_rank(leaderboard, user_id, type):
+    rank = 0
+    sort_order = ["", "", "score1", "score2", "score3"]
+    if type:
+        leaderboard.sort(key=lambda x: x[sort_order[type]], reverse=True)
+
+    for participant in leaderboard:
+        rank += 1
+        if participant['owner'] == user_id:
+            break
+
+    return rank
+
+def add_feed(user, id, param1, league_id):
+    args_object = []
+    if param1:
+        args_object.append(param1)
+
+    user['league']['feed'].append({"feedId":len(user['league']['feed']) + 1,"createdAt":int(time.time() * 1000),"leagueId":league_id,"userObjectId":user["id"], 'feedId': id, "args": args_object})
+    return user

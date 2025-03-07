@@ -18,7 +18,7 @@ import random
 from api.crypt import decrypt
 from api.templates import START_TOUR_STATUS, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, START_LEAGUE
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_end_of_day
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_level, get_user_piano_bonus, get_fc, get_user_level, get_user_piano, get_piano_unlock, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_end_of_day, get_league_rank, add_feed
 
 # ------------------------------------------
 # Init
@@ -265,12 +265,7 @@ async def reset_league():
         user = dict(user)
 
         leaderboard = get_league_leaderboard(user)
-        rank = 0
-
-        for participant in leaderboard:
-            rank += 1
-            if participant['owner'] == user['id']:
-                break
+        rank = get_league_rank(leaderboard, user['id'], 0)
 
         tier = user['league']['tier']
         if (tier == 1):
@@ -769,25 +764,35 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     else:
         # do league specific saving
         schedule = next((sched for sched in LEAGUE_SCHEDULE_DATA if sched["c"] == league_count), None)
+        is_best = 0
 
         if music['cps'] == schedule['ci1']:
             if return_obj['score'] > (user['league']['score1'] or 0):
+                is_best = 1
                 user['league']['musicId1'] = music['c']
                 user['league']['score1'] = return_obj['score']
                 user['league']['patternId1'] = return_obj['patternId']
         if music['cps'] == schedule['ci2']:
             if return_obj['score'] > (user['league']['score2'] or 0):
+                is_best = 2
                 user['league']['musicId2'] = music['c']
                 user['league']['score2'] = return_obj['score']
                 user['league']['patternId2'] = return_obj['patternId']
         if music['cps'] == schedule['ci3']:
             if return_obj['score'] > (user['league']['score3'] or 0):
+                is_best = 3
                 user['league']['musicId3'] = music['c']
                 user['league']['score3'] = return_obj['score']
                 user['league']['patternId3'] = return_obj['patternId']
 
         user['league']['updatedAt'] = int(time.time() * 1000)
         user['league']['playCount'] += 1
+
+        if is_best:
+            field_list = ["", "score1", "score2", "score3"]
+            score_list = [entry[field_list[is_best]] for entry in user['league']['leaderboardCache']]
+            if return_obj['score'] > min(score_list):
+                user = add_feed(user, 5, music['cps'], league_id)
 
     # Add user gold and diamond
     

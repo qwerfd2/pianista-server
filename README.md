@@ -22,7 +22,7 @@ Limited shop functionality (gem to coin)
 
 Limited PostBox support (messages, attachment gems, coins, pianos, and items)
 
-League reimplementation with bots
+League reimplementation with bots, limited set of news feed
 
 renaming (which is actually free)
 
@@ -38,8 +38,6 @@ Certain PostBox rewards (patterns, debug, music points), since they are either h
 
 Apple and Facebook login methods, since there's no way to get the tokens.
 
-League lobbies that contains more than 1 real player, since it is too hard(
+League lobbies that contains more than 1 real player, since this is a server meant to run locally.
 
 League daily rewards, since there is no way to change it to something other than music points, which is removed.
-
-League news feed, since it is not that important of a feature.
