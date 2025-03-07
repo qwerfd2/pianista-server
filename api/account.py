@@ -25,7 +25,6 @@ async def create_authentication(request):
             password=password,
             diamond=0, 
             gold = 10000,
-            blocked = False,
             created_at = int(time.time() * 1000),
             clearCount = 0,
             composer = START_COMPOSER_STATUS,
@@ -167,7 +166,7 @@ async def login(request):
                                     "welcomeGift": True,
                                     "freeTicketEndAt": True,
                                     "createdAt": 1740232040429,
-                                    "blocked": user["blocked"],
+                                    "blocked": 0,
                                     "clearCount": user['clearCount']
                                 }
                             },

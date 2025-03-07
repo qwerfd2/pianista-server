@@ -28,7 +28,6 @@ users = Table(
     Column("diamond", Integer, nullable=True),
     Column("gold", Integer, nullable=True),
     Column("created_at", Integer),
-    Column("blocked", Boolean, default=False),
     Column("clearCount", Integer, default = 0),
     Column("composer", JSON, default='[]'),
     Column('collection', JSON, default='[]'),
