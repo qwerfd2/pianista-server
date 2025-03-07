@@ -1,3 +1,13 @@
+## Intro:
+
+A local server for mobile rhythm game `Pianista`, implemented using `starlette`.
+
+This project is for game preservation purposes only. Therefore, it is the author `qwerfd2`'s policy to only release them after the game's official server has shut down and no adiquate offline support has been provided to the players.
+
+For redundancy sake, various trusted members from the game community should be invited to test, or at least posess, the repository to eliminate single point of failure.
+
+It is the `author`'s expectation that these members do not use this repo to harm the game developer or reap personal gains from this work.
+
 ## Setup:
 
 Sites to proxy: `https://pianista-cdn.pianista.io`
