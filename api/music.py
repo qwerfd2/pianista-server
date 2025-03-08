@@ -3,7 +3,7 @@ from starlette.routing import Route
 import json
 import time
 
-from api.database import database, users, sessions, get_user_and_validate_session
+from api.database import get_user_and_validate_session
 from api.crypt import encrypt
 from api.cache import league_session
 
@@ -40,7 +40,6 @@ async def get_status(request):
         composer["objectId"] = i
         composer["owner"] = user["id"]
         result_object.append(composer)
-        
 
     response_data = {
         "result": result_object,

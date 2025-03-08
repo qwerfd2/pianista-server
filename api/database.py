@@ -4,7 +4,6 @@ import sqlalchemy
 from sqlalchemy import Table, Column, Boolean, Float, Integer, String, JSON
 from sqlalchemy.ext.asyncio import create_async_engine
 from starlette.requests import Request
-import json
 import time
 
 from api.crypt import decrypt
@@ -59,7 +58,6 @@ results = Table(
     Column("updatedAt", Integer, default=(time.time() * 1000)),
     Column("master", Boolean, nullable=False)
 )
-
 
 async def init_db():
     if not os.path.exists(DB_PATH):

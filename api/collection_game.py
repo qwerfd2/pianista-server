@@ -1,13 +1,10 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import json
-import datetime
-import math
 
-from api.database import database, users, sessions, get_user_and_validate_session
+from api.database import database, get_user_and_validate_session
 from api.crypt import encrypt
-from api.templates import PATTERN_DATA
-from api.cache import tour_cache, get_my_collection_leaderboard_ranking, get_collection_leaderboard, start_game, complete_game
+from api.cache import get_my_collection_leaderboard_ranking, get_collection_leaderboard, start_game, complete_game
 from api.database import database, results
 
 async def get_status(request):
@@ -20,7 +17,6 @@ async def get_status(request):
     # Find all rows in 'results' table with column 'owner' == user['id']
     query = results.select().where(results.c.owner == user["id"])
     user_results = await database.fetch_all(query)
-
 
     # Add the results to result_object
     for i, result in enumerate(user_results, start=0):
@@ -98,7 +94,6 @@ async def start_the_game(request):
             "code": 100,
             "invoke": []
         }
-        
 
         response_data["result"] = await start_game(user, patternId, 1, False, items_used, patternId, None)
 
@@ -128,7 +123,6 @@ async def get_collection(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    
     response_data = {
         "result": [],
         "code": 100,
@@ -143,7 +137,6 @@ async def get_collection(request):
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)   
-
 
 routes = [
      Route('/CollectionGame/getStatus', get_status, methods=["POST"]),

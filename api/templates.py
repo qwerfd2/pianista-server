@@ -77,7 +77,6 @@ def init_templates():
         with open(os.path.join(base_path, 'leaguescheduledata.json'), 'r', encoding='utf-8') as f:
             LEAGUE_SCHEDULE_DATA = json.load(f)
 
-
         with open(os.path.join(start_base_path, 'start_tour_status.json'), 'r', encoding='utf-8') as f:
             START_TOUR_STATUS = json.load(f)
 

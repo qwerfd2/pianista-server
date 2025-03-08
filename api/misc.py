@@ -38,16 +38,13 @@ def get_user_piano_bonus(user):
         value = (piano_data["od2"] + piano_upgrade_data["sd"])
 
     piano_context.append({"advantageType":advantage_2, "advantageValue":value})
-
     return piano_context
 
 def get_user_piano(user):
     piano = next((piano for piano in user["piano"] if piano["equip"] == True), None)
     return piano["pianoId"], piano["level"]
 
-
 def get_score(trackid, miss, fine, good, excellent, marvelous):
-
     pattern = next((item for item in PATTERN_DATA if item.get("c") == trackid), None)
     if pattern is None:
         return -1
@@ -75,7 +72,6 @@ def get_accuracy(miss, fine, good, excellent, marvelous):
     return accuracy
 
 def get_star(trackid, accuracy):
-
     pattern = next((item for item in PATTERN_DATA if item.get("c") == trackid), None)
     if pattern is None:
         return -1
@@ -148,7 +144,6 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
             target.append(piano[1])
 
     # total star count for difficulty TODO
-
     query = results.select().where(results.c.owner == user["id"])
     user_results = await database.fetch_all(query)
 
@@ -176,7 +171,6 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
         target.append(400026)
 
     # check total piano count
-
     if len(user['piano']) >= 18:
         target.append(400027)
 
@@ -184,7 +178,6 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
         target.append(400028)
 
     # check special piano
-
     if play_session['stageId'] == 822 and difficulty == 1 and play_session['maxCombo'] == 1143:
         target.append(400031)
 
@@ -208,7 +201,6 @@ def get_random_score(rank):
     rank -= 1
     min_score, max_score = config[rank]
     random_score = random.randint(min_score, max_score)
-    
     return random_score
 
 def get_rank_reward(rank, status):

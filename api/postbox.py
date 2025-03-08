@@ -87,17 +87,7 @@ async def get_item(request):
             response_data = {
                 "result": None,
                 "code": 100,
-                "invoke": [
-                    {
-                        "name": "itemTradeReceipt",
-                        "params": [
-                            {
-                                "itemId": item,
-                                "quantity": quantity
-                            }
-                        ]
-                    }
-                ]
+                "invoke": [{"name": "itemTradeReceipt","params": [{"itemId": item,"quantity": quantity}]}]
             }
 
     encrypted_response = encrypt(response_data)
@@ -124,7 +114,6 @@ async def get_item_all(request):
     for items in end_params:
         user = add_gift(user, items['itemId'], items['quantity'])
 
-
     query = users.update().where(users.c.id == user["id"]).values(
         diamond=user["diamond"],
         gold=user["gold"],
@@ -137,12 +126,7 @@ async def get_item_all(request):
     response_data = {
         "result": None,
         "code": 100,
-        "invoke": [
-            {
-                "name": "itemTradeReceipt",
-                "params": end_params
-            }
-        ]
+        "invoke": [{"name": "itemTradeReceipt","params": end_params}]
     }
 
     encrypted_response = encrypt(response_data)

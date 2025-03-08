@@ -177,15 +177,10 @@ async def login(request):
     return Response(encrypted_response)
     
 async def get_ad_count(request):
-    body = await request.body()
-    try:
-        response_data = {"result":[1,int(time.time() * 1000) - 9900000],"code":100,"invoke":[]}
+    response_data = {"result":[1,int(time.time() * 1000) - 9900000],"code":100,"invoke":[]}
 
-        encrypted_response = encrypt(response_data)
-        
-        return Response(encrypted_response)
-    except Exception as e:
-        return Response(encrypt(json.dumps({"code": -500})))
+    encrypted_response = encrypt(response_data)
+    return Response(encrypted_response)
     
     
 async def get_game_item_list(request):

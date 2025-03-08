@@ -1,12 +1,9 @@
 import os
 import databases
 import sqlalchemy
-from sqlalchemy import Table, Column, Boolean, Float, Integer, String, JSON, DateTime
+from sqlalchemy import Table, Column, Integer, JSON
 from sqlalchemy.ext.asyncio import create_async_engine
-from sqlalchemy.future import select
 import datetime
-from starlette.responses import JSONResponse, Response
-from starlette.requests import Request
 import json
 import datetime
 import asyncio
@@ -153,10 +150,7 @@ async def generate_tour_leaderboard(packId, patternType):
     query = tour_cache.insert().values(data=leaderboard, patternType=patternType, packId=packId)
     await cache_database.execute(query)
 
-    print(leaderboard)
-
     return leaderboard
-
 
 # ------------------------------------------
 # Collection Leaderboard
@@ -173,7 +167,6 @@ async def get_my_collection_leaderboard_ranking(owner, patternId, isMaster):
 
     new_lb = await generate_collection_leaderboard(patternId)
 
-    # here
     for index, entry in enumerate(new_lb):
         if entry["owner"] == owner:
             new_rank = index + 1  # Rankings are 1-based
@@ -287,7 +280,6 @@ async def reset_league():
 
         else:
             user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + str(rank) + str(append) + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
-
 
         query = users.update().where(users.c.id == user['id']).values(mail=user['mail'])
         await database.execute(query)
@@ -403,7 +395,6 @@ def load_play_session():
             print("[CACHE] Play sessions loaded.")
 
 def add_play_session(session_id, session_data, expiration=6000000):
-    
     with lock:
         global play_sessions
         play_sessions[str(session_id)] = {
@@ -411,7 +402,6 @@ def add_play_session(session_id, session_data, expiration=6000000):
             "expires_at": int(time.time() * 1000) + expiration
         }
         save_play_session()
-
 
 # Get play session from cache
 def get_play_session(session_id):
@@ -439,7 +429,7 @@ async def cleanup_expired_sessions():
             for session_id in expired_sessions:
                 del play_sessions[str(session_id)]
         save_play_session()
-        await asyncio.sleep(120)
+        await asyncio.sleep(240)
 
 async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
@@ -506,7 +496,6 @@ async def start_game(user, patternId, mode, master, items, var1, var2):
     await database.execute(query)
 
     add_play_session(obj["objectId"], obj)
-
     return obj
 
 async def complete_game(mode, user, objectId, miss, fine, good, excellent, marvelous, maxCombo, speed, fade, smth):
@@ -545,7 +534,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     if (mode != 2):
         return_obj["score"] = orig_score + statScore + pianoScore
     else:
-        # TODO
         difficulty_bonus = [0,2000,5000,10000,30000,60000,90000,120000,150000,180000,210000]
 
         accuracy_score = 0
@@ -726,7 +714,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     return_obj["endAt"] = int(time.time() * 1000)
 
     # Update/add best score to results table
-
     if (mode != 2):
 
         query = results.select().where(results.c.owner == user["id"], results.c.patternId == return_obj["patternId"])
@@ -794,7 +781,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 user = add_feed(user, 5, music['cps'], league_id)
 
     # Add user gold and diamond
-    
     if (mode != 0):
         user['gold'] += takeGold
     else:
@@ -802,7 +788,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         user['diamond'] += tour_award_gem
 
         # Set clear collection status
-
         chart_ids = [music['pty3']]
 
         if pattern["pty"] == 0:
@@ -811,14 +796,12 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             chart_ids.append(music['pty1'])
             chart_ids.append(music['pty2'])
 
-
         for collection in user["collection"]:
             if collection['patternId'] in chart_ids:
                 if not collection['clear']:
                     collection['clear'] = True
 
     # Increment composer level
-
     for composer in user["composer"]:
         if composer['composerId'] == composerID:
             if (composer['stat'] < 20):
@@ -829,7 +812,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 break
 
     # increment user clear count
-
     user['clearCount'] += 1
 
     unlocked_piano = await get_piano_unlock(user, return_obj, pattern["pty"], isMaster, is_challenge_done, speed, fade)
@@ -844,7 +826,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             user['piano'].append(unlock_piano_object)
 
     # Update these fields
-
     query = users.update().where(users.c.id == user["id"]).values(
         gold=user["gold"],
         diamond=user["diamond"],
@@ -858,7 +839,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     await database.execute(query)
 
     # Keep temporary queue clean
-
     delete_play_session(objectId)
 
     return return_obj

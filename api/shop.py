@@ -6,7 +6,6 @@ from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
 from api.templates import STORE_GOLD_DATA
 
-
 async def buy_gold(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
     if error_response:
@@ -40,7 +39,6 @@ async def buy_gold(request):
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
-
 
 routes = [
   Route('/Shop/buyGold', buy_gold, methods=["POST"]),

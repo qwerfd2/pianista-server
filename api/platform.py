@@ -21,10 +21,7 @@ async def get_timestamp(request):
         }
     
     encrypted_response = encrypt(response_data)
-    
     return Response(encrypted_response)
-
-
     
 routes = [
     Route('/Platform/getTimestamp', get_timestamp, methods=["POST"])
