@@ -14,12 +14,11 @@ DEBUG = config("DEBUG", cast=bool, default=False)
 SSL_CERT = config("SSL_CERT", default=None)
 SSL_KEY = config("SSL_KEY", default=None)
 
-server_url = f"http://{HOST}:{PORT}/"
+#server_url = f"http://{HOST}:{PORT}/"
+#server_url = f"https://pianista-cdn.pianista.io"
 
-server_url = f"https://pianista-cdn.pianista.io"
-
-from api.cdn import update_configs
-update_configs(server_url)
+#from api.cdn import update_configs
+#update_configs(server_url)
 
 from api.templates import init_templates
 init_templates()
