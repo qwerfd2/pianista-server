@@ -23,7 +23,8 @@ SSL_KEY = config("SSL_KEY", default=None)
 from api.templates import init_templates
 init_templates()
 
-from api.cache import load_play_session, load_league_session
+from api.cache import load_league_session
+from api.play import load_play_session
 load_play_session()
 asyncio.run(load_league_session())
 
@@ -39,7 +40,7 @@ from api.postbox import routes as postbox_routes
 from api.shop import routes as shop_routes
 from api.league import routes as league_routes
 
-from api.cache import start_cleanup_task
+from api.play import start_cleanup_task
 
 #generate_league_session()
 

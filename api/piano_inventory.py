@@ -2,7 +2,7 @@ from starlette.responses import Response
 from starlette.routing import Route
 import json
 
-from api.database import database, users, sessions, get_user_and_validate_session
+from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
 from api.templates import PIANO_UPGRADE_DATA
 

@@ -5,7 +5,8 @@ import json
 from api.database import get_user_and_validate_session
 from api.crypt import encrypt
 from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA
-from api.cache import get_my_tour_leaderboard_ranking, get_tour_leaderboard, start_game, complete_game
+from api.cache import get_my_tour_leaderboard_ranking, get_tour_leaderboard
+from api.play import start_game, complete_game
 
 async def get_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)

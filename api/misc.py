@@ -253,7 +253,7 @@ def get_end_of_day():
 
 def get_league_rank(leaderboard, user_id, type):
     rank = 0
-    sort_order = ["", "", "score1", "score2", "score3"]
+    sort_order = ["", "score1", "score2", "score3"]
     if type:
         leaderboard.sort(key=lambda x: x[sort_order[type]], reverse=True)
 

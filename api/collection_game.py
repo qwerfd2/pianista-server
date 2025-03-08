@@ -4,7 +4,8 @@ import json
 
 from api.database import database, get_user_and_validate_session
 from api.crypt import encrypt
-from api.cache import get_my_collection_leaderboard_ranking, get_collection_leaderboard, start_game, complete_game
+from api.cache import get_my_collection_leaderboard_ranking, get_collection_leaderboard
+from api.play import start_game, complete_game
 from api.database import database, results
 
 async def get_status(request):
