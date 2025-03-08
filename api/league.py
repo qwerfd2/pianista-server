@@ -3,7 +3,6 @@ from starlette.routing import Route
 import json
 import time
 import random
-import datetime
 
 from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt

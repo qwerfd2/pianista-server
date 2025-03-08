@@ -112,7 +112,6 @@ async def create_user_commit(request):
 
 
     encrypted_response = encrypt(response_data)
-    
     return Response(encrypted_response)
     
 async def login(request):
@@ -182,7 +181,6 @@ async def get_ad_count(request):
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
     
-    
 async def get_game_item_list(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
     if error_response:
@@ -201,7 +199,6 @@ async def get_game_item_list(request):
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
-
     
 async def get_subscription(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -222,7 +219,53 @@ async def get_subscription(request):
     }
 
     encrypted_response = encrypt(response_data)
+    return Response(encrypted_response)
 
+async def change_nickname_begin(request):
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+
+    if len(decrypted_data) != 1:
+        response_data = {"code": -100}
+    else:
+        nickname = decrypted_data[0]
+
+        if 2 <= len(nickname) <= 12:
+            query = users.select().where(users.c.nickname == nickname)
+            exist_user = await database.fetch_one(query)
+
+            if exist_user is None:
+                response_data = {"result": None, "code": 100, "invoke": []}
+            else:
+                response_data = {"code": -207}
+        else:
+            response_data = {"code": -102}
+
+    encrypted_response = encrypt(response_data)
+    return Response(encrypted_response)
+    
+async def change_nickname_commit(request):
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+
+    if len(decrypted_data) != 1:
+        response_data = {"code": -100}
+    else:
+        nickname = decrypted_data[0]
+
+        if 2 <= len(nickname) <= 12:
+            query = users.select().where(users.c.nickname == nickname)
+            exist_user = await database.fetch_one(query)
+
+            if exist_user is None:
+                query = users.update().where(users.c.id == user["id"]).values(nickname=nickname)
+                await database.execute(query)
+                response_data = {"result": None, "code": 100, "invoke": []}
+
+            else:
+                response_data = {"code": -207}
+        else:
+            response_data = {"code": -102}
+
+    encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
 routes = [
@@ -233,4 +276,6 @@ routes = [
     Route('/Account/getAdCount', get_ad_count, methods=["POST"]),
     Route('/Account/getGameItemList', get_game_item_list, methods=["POST"]),
     Route('/Account/getSubscription', get_subscription, methods=["POST"]),
+    Route('/Account/changeNicknameBegin', change_nickname_begin, methods=["POST"]),
+    Route('/Account/changeNicknameCommit', change_nickname_commit, methods=["POST"]),
 ]
