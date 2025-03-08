@@ -44,7 +44,7 @@ from api.cache import start_cleanup_task
 #generate_league_session()
 
 root_folder = os.path.dirname(os.path.abspath(__file__))
-allowed_folders = ["bundle", "files", "data", "manifest"]
+allowed_folders = ["bundle", "resource", "data", "manifest"]
 
 async def serve_file(request):
     path = request.path_params['path']
