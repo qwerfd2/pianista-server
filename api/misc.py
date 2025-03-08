@@ -143,7 +143,7 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
         if user['clearCount'] >= piano[0]:
             target.append(piano[1])
 
-    # total star count for difficulty TODO
+    # total star count for difficulty
     query = results.select().where(results.c.owner == user["id"])
     user_results = await database.fetch_all(query)
 

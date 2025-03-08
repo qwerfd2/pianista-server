@@ -591,7 +591,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     goldContext = []
 
     pity_give = False
-
     user = dict(user)
 
     is_challenge_done = True
@@ -614,7 +613,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             if data_object and is_challenge_done:
                 tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                 tour_award_gem = data_object["jr"] if data_object["jr"] else 0
-                is_challenge_done = False
                 # Increment tour clear count
 
                 for tour in user["tour"]:
@@ -623,9 +621,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                             tour['masterLastStage'] = data_object['s']
                             tour["totalClearStage"] = data_object['s']
                             break
-
-                user_tour_object = next((tour for tour in user["tour"] if tour["packId"] == data_object['pid']), None)
-                data_object['pid']
 
             elif is_challenge_done != True:
                 pity_give = True
@@ -776,7 +771,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             field_list = ["", "score1", "score2", "score3"]
             score_list = [entry[field_list[is_best]] for entry in user['league']['leaderboardCache'] if entry[field_list[is_best]] is not None]
 
-            print(score_list)
             if return_obj['score'] > max(score_list):
                 user = add_feed(user, 5, music['cps'], league_id)
 
@@ -796,10 +790,11 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             chart_ids.append(music['pty1'])
             chart_ids.append(music['pty2'])
 
-        for collection in user["collection"]:
-            if collection['patternId'] in chart_ids:
-                if not collection['clear']:
-                    collection['clear'] = True
+        if not isMaster:
+            for collection in user["collection"]:
+                if collection['patternId'] in chart_ids:
+                    if not collection['clear']:
+                        collection['clear'] = True
 
     # Increment composer level
     for composer in user["composer"]:

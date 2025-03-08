@@ -22,6 +22,8 @@ Install all dependencies, run `python 11000.py`.
 
 ## Features that are supported
 
+Config files and CDN (unused) delivery
+
 Collection game play
 
 Tour game play
@@ -55,3 +57,5 @@ Apple and Facebook login methods, since there's no way to get the tokens.
 League lobbies that contains more than 1 real player, since this is a server meant to run locally.
 
 League daily rewards, since there is no way to change it to something other than music points, which is removed.
+
+Security and efficiency (I mean it)

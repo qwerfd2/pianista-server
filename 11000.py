@@ -5,7 +5,6 @@ from starlette.config import Config
 from starlette.applications import Starlette
 from starlette.routing import Route
 import os
-import json
 import asyncio
 
 config = Config("config.env")
@@ -53,7 +52,6 @@ async def serve_file(request):
     for folder in allowed_folders:
         if path.startswith(folder):
             file_path = os.path.join(root_folder, path)
-            print(file_path)
             if os.path.isfile(file_path):
                 response = FileResponse(file_path)
                 response.headers["accepted-ranges"] = "bytes"
@@ -62,9 +60,7 @@ async def serve_file(request):
                 return response
     return Response("", status_code=404)
 
-routes = [
-    
-]
+routes = []
 
 routes = routes + platform_routes + account_routes + music_routes + collection_routes + piano_routes + tour_routes + postbox_routes + shop_routes + league_routes
 
