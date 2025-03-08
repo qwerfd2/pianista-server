@@ -166,8 +166,6 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
         elif pattern['pty'] == 0:
             normal_stars += result['star']
 
-    print("normal, tech, master", normal_stars, tech_stars, master_stars)
-
     if normal_stars >= 250:
         target.append(400024)
     
@@ -194,7 +192,6 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
         target.append(400030)
 
     # Check if the target is already unlocked
-
     real_target = []
 
     for target_piano in target:
@@ -202,8 +199,6 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
 
         if piano_object == None:
             real_target.append(target_piano)
-
-    print(real_target)
 
     return real_target
 
@@ -282,5 +277,5 @@ def add_feed(user, id, param1, league_id):
     if param1:
         args_object.append(param1)
 
-    user['league']['feed'].append({"feedId":len(user['league']['feed']) + 1,"createdAt":int(time.time() * 1000),"leagueId":league_id,"userObjectId":user["id"], 'feedId': id, "args": args_object})
+    user['league']['feed'].append({"objectId":len(user['league']['feed']) + 1,"createdAt":int(time.time() * 1000),"leagueId":league_id,"userObjectId":user["id"], 'feedId': id, "args": args_object})
     return user

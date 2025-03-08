@@ -10,8 +10,6 @@ from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLEC
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
-    
-    print("2", decrypted_data)
 
     if decrypted_data != []:
         response_data = {"code": -100}

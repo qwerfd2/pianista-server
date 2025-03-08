@@ -5,15 +5,11 @@ import time
 import random
 import datetime
 
-from api.database import database, users, sessions, get_user_and_validate_session
-from api.crypt import encrypt, decrypt
-from api.misc import generate_random_string, get_user_level, get_user_piano, get_end_of_day, get_league_rank, add_feed
-from api.cache import start_game, complete_game, league_count, league_id, get_league_leaderboard, reset_league
+from api.database import database, users, get_user_and_validate_session
+from api.crypt import encrypt
+from api.misc import get_user_level, get_user_piano, get_end_of_day, get_league_rank, add_feed
+from api.cache import start_game, complete_game, league_count, league_id, get_league_leaderboard
 from api.templates import START_LEAGUE
-
-async def check_season_off():
-    if league_count <= datetime.datetime.now().day:
-        await reset_league()
 
 async def get_group_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -23,7 +19,6 @@ async def get_group_status(request):
     response_data = {"result":{"objectId":user['league']['leagueId'],"tier":user['league']['tier'],"count":league_count,"endAt":user['league']['endAt'],"seasonOff":False},"code":100,"invoke":[]}
 
     if (user['league']['endAt'] < int(time.time() * 1000)):
-        await check_season_off()
         response_data["result"]["seasonOff"] = True
         response_data["invoke"] = [{"name":"availableSeasonOff","params":[]}]
 
@@ -77,7 +72,6 @@ async def get_group_players(request):
     
     if league_id != user['league']['leagueId']:
         # This is an old league
-        print("outdated league", league_id, user['league']['leagueId'])
         leaderboard = user['league']['leaderboardCache']
 
     else:

@@ -77,7 +77,6 @@ async def get_user_and_validate_session(request: Request):
     access_token = request.headers.get("X-Photon-AccessToken")
     body = await request.body()
     decrypted_data = decrypt(body.decode('utf-8'))
-    print("1",decrypted_data)
     if not access_token:
         return decrypted_data, None, None, {"code": -100}
     else:

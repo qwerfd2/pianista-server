@@ -481,14 +481,11 @@ async def start_game(user, patternId, mode, master, items, var1, var2):
     user = dict(user)
     cost = 0
     for item_code in items:
-        print("item code", item_code)
-        print("item found", item_code)
         found = False
         # Check if the user owns the item
         for user_item in user["item"]:
             if user_item["itemId"] == item_code:
-                # Reduce quantity by 1
-                print("found in user items")
+                # Reduce user item quantity by 1
                 found = True
                 user_item["quantity"] -= 1
                 if user_item["quantity"] <= 0:

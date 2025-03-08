@@ -122,9 +122,8 @@ async def take_piano(request):
         user = dict(user)
         piano_id = decrypted_data[0]
         piano = next((piano for piano in user['piano'] if piano["pianoId"] == piano_id), {})
-        print(piano)
-        if piano is None:
 
+        if piano is None:
             piano_obj = {
                 "pianoId": piano_id,
                 "level": 1,
