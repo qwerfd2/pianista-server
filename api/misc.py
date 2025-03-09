@@ -26,18 +26,18 @@ def get_user_piano_bonus(user):
     score_bonus = (piano_data["od1"] + piano_upgrade_data["sc"])
     piano_context.append({"advantageType":0, "advantageValue":score_bonus})
 
-    advantage_2 = piano_data["o2"]
+    advantage = piano_data["o2"]
 
-    if (advantage_2 == 1): # coin
+    if (advantage == 1): # gold
         value = (piano_data["od2"] + piano_upgrade_data["gd"])
-    elif (advantage_2 == 2): # exp
+    elif (advantage == 2): # exp
         value = (piano_data["od2"] + piano_upgrade_data["ex"])
-    elif (advantage_2 == 3): # life
+    elif (advantage == 3): # life
         value = (piano_data["od2"] + piano_upgrade_data["en"])
     else: # shield
         value = (piano_data["od2"] + piano_upgrade_data["sd"])
 
-    piano_context.append({"advantageType":advantage_2, "advantageValue":value})
+    piano_context.append({"advantageType":advantage, "advantageValue":value})
     return piano_context
 
 def get_user_piano(user):

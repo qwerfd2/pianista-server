@@ -88,6 +88,7 @@ async def equip(request):
         if (piano == {}):
             response_data = {"code": -101}
         else:
+            user = dict(user)
             found = False
             for piano in user['piano']:
                 if piano["pianoId"] == piano_id:
@@ -102,6 +103,7 @@ async def equip(request):
                 query = users.update().where(users.c.id == user["id"]).values(
                     piano=user["piano"]
                 )
+                query = await database.execute(query)
                 
                 response_data = {
                     "result": {},

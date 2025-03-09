@@ -212,20 +212,34 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         expContext.append([6002005, 10])
         totalEXP += 10
 
+
     expBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
-    expContext.append([6002006, expBoost])
-    totalEXP += expBoost
+    if expBoost:
+        expContext.append([6002006, expBoost])
+        totalEXP += expBoost
     levelBoost = math.floor(curComposer["stat"] * 0.01 * totalEXP)
-    expContext.append([6003003, levelBoost])
-    expContext.append([6002007, totalEXP])
-    totalEXP += totalEXP
+    expContext.append([6003002, levelBoost])
     totalEXP += levelBoost
+
+    user = dict(user)
+
+    if user['clear'] == []:
+        # first clear of the day
+        first_clear_bonus = 10
+        user['clear'] = [1]
+
+    if first_clear_bonus:
+        expContext.append([6002001, first_clear_bonus])
+        totalEXP += first_clear_bonus
+
+    bonus = math.floor(totalEXP / 2)
+    expContext.append([6002007, bonus])
+    totalEXP += bonus
 
     takeGold = 0
     goldContext = []
 
     pity_give = False
-    user = dict(user)
 
     is_challenge_done = True
     isMaster = return_obj["type"] == 2
@@ -318,7 +332,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             base = 70
         else:
             base = 30
-        goldContext.append([6002002, base])
+
         takeGold += base
         if (starCount == 5): # 5 star bonus
             goldContext.append([6002003, 20])
@@ -328,14 +342,21 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             goldContext.append([6002004, 20])
             takeGold += 20
 
-        goldBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
-        goldContext.append([6003003, goldBoost])
-        takeGold += goldBoost
+        goldBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 1), 0)
+        if goldBoost:
+            goldContext.append([6003003, goldBoost])
+            takeGold += goldBoost
         
-        goldContext.append([6003003, levelBoost])
-        goldContext.append([6002007, takeGold])
-        takeGold += takeGold
+        goldContext.append([6003002, levelBoost])
         takeGold += levelBoost
+
+        if first_clear_bonus:
+            goldContext.append([6002001, first_clear_bonus])
+            takeGold += first_clear_bonus
+
+        bonus = math.floor(takeGold / 2)
+        goldContext.append([6002007, bonus])
+        takeGold += bonus
 
     return_obj["goldContext"] = goldContext
     return_obj["takeGold"] = takeGold
@@ -474,6 +495,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         tour=user["tour"],
         clearCount=user["clearCount"],
         piano=user["piano"],
+        clear=user["clear"],
         league=user['league']
     )
     await database.execute(query)

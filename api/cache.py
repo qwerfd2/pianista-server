@@ -246,12 +246,13 @@ async def load_league_session():
             print("[CACHE] League session loaded.")
 
 async def reset_league():
-
     query = users.select()
     all_users = await database.fetch_all(query)
 
     for user in all_users:
         user = dict(user)
+
+        user['clear'] = []
 
         leaderboard = get_league_leaderboard(user)
         rank = get_league_rank(leaderboard, user['id'], 0)
@@ -277,7 +278,7 @@ async def reset_league():
         else:
             user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + str(rank) + str(append) + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
 
-        query = users.update().where(users.c.id == user['id']).values(mail=user['mail'])
+        query = users.update().where(users.c.id == user['id']).values(mail=user['mail'], clear=user['clear'])
         await database.execute(query)
 
     generate_league_session()

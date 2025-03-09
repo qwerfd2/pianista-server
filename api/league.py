@@ -7,7 +7,7 @@ import random
 from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
 from api.misc import get_user_level, get_user_piano, get_end_of_day, get_league_rank, add_feed
-from api.cache import league_count, league_id, get_league_leaderboard
+from api.cache import league_count, league_id, get_league_leaderboard, load_league_session
 from api.play import start_game, complete_game
 from api.templates import START_LEAGUE
 
@@ -19,6 +19,7 @@ async def get_group_status(request):
     response_data = {"result":{"objectId":user['league']['leagueId'],"tier":user['league']['tier'],"count":league_count,"endAt":user['league']['endAt'],"seasonOff":False},"code":100,"invoke":[]}
 
     if (user['league']['endAt'] < int(time.time() * 1000)):
+        await load_league_session()
         response_data["result"]["seasonOff"] = True
         response_data["invoke"] = [{"name":"availableSeasonOff","params":[]}]
 
