@@ -244,7 +244,12 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             if (data_object['mt2'] == 3 and return_obj["score"] < data_object['mv2']):
                 is_challenge_done = False
 
-            if data_object and is_challenge_done:
+            tour_object = next(tour for tour in user["tour"] if tour["packId"] == data_object['pid'])
+            is_already_completed = False
+            if tour_object['masterLastStage'] >= data_object['s']:
+                is_already_completed = True
+
+            if data_object and is_challenge_done and not is_already_completed:
                 tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                 tour_award_gem = data_object["jr"] if data_object["jr"] else 0
                 # Increment tour clear count
@@ -256,7 +261,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                             tour["totalClearStage"] = data_object['s']
                             break
 
-            elif is_challenge_done != True:
+            elif data_object and (is_challenge_done != True or is_already_completed):
                 pity_give = True
         else:
 
@@ -283,7 +288,12 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 if (data_object['mt2'] == 3 and return_obj["score"] < data_object['mv2']):
                     is_challenge_done = False
 
-            if data_object and is_challenge_done:
+            tour_object = next(tour for tour in user["collection"] if tour["patternId"] == return_obj["patternId"])
+            is_already_completed = False
+            if tour_object['clear']:
+                is_already_completed = True
+
+            if data_object and is_challenge_done and not is_already_completed:
 
                 tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                 tour_award_gem = data_object["jr"] if data_object["jr"] else 0
@@ -298,6 +308,8 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                     if data_object:
                         tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                         tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+            elif data_object and (is_challenge_done != True or is_already_completed):
+                pity_give = True
     
     if pity_give or mode != 0:
         if pattern["pty"] == 0: # normal
@@ -409,9 +421,8 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 user = add_feed(user, 5, music['cps'], league_id)
 
     # Add user gold and diamond
-    if (mode != 0):
-        user['gold'] += takeGold
-    else:
+    user['gold'] += takeGold
+    if (mode == 0):
         user['gold'] += tour_award_gold
         user['diamond'] += tour_award_gem
 
