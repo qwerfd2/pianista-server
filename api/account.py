@@ -25,6 +25,7 @@ async def create_authentication(request):
             gold = 10000,
             created_at = int(time.time() * 1000),
             clearCount = 0,
+            daily = 0,
             composer = START_COMPOSER_STATUS,
             collection = START_COLLECTION_STATUS,
             clear = [],

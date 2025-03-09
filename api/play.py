@@ -223,10 +223,11 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
     user = dict(user)
 
-    if user['clear'] == []:
+    first_clear_bonus = 0
+    if user['daily'] == 0:
         # first clear of the day
         first_clear_bonus = 10
-        user['clear'] = [1]
+        user['daily'] = 1
 
     if first_clear_bonus:
         expContext.append([6002001, first_clear_bonus])
@@ -495,7 +496,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         tour=user["tour"],
         clearCount=user["clearCount"],
         piano=user["piano"],
-        clear=user["clear"],
+        daily=user['daily'],
         league=user['league']
     )
     await database.execute(query)
