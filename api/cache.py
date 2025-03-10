@@ -9,7 +9,7 @@ import datetime
 import time
 import random
 
-from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, LEAGUE_SCHEDULE_DATA
+from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, LEAGUE_SCHEDULE_DATA, LOCALIZATION_DATA
 from api.database import database, results, users
 from api.misc import get_user_level, get_user_level, get_user_piano, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_league_rank
 
@@ -268,15 +268,32 @@ async def reset_league():
             append = "th"
 
         if (rank < 4 and user['league']['tier'] <= 20):
-            user['mail'] = add_mail(user['mail'], "You have been promoted in League!", "Congratulation! You ranked in the " + str(rank) + str(append) + " place in the league.\nYou have been promoted to the previous league.\nKeep pushing forward!", 7, 1, get_rank_reward(tier, 2))
+            str_title = 30001000
+            str_body_start = 30001003
+            str_body_end = 30001006
+            reward = get_rank_reward(tier, 2)
             tier += 1
             
         elif (rank > 7 and user['league']['tier'] > 0):
-            user['mail'] = add_mail(user['mail'], "You have been demoted in League!", "Unfortunately, you ranked in the " + str(rank) + "th place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!", 7, 2, 10)
+            str_title = 30001001
+            str_body_start = 30001004
+            str_body_end = 30001007
+            reward = 1
             tier -= 1
 
         else:
-            user['mail'] = add_mail(user['mail'], "you stayed in the same League!", "You ranked in the " + str(rank) + str(append) + " place in the league.\nYour league has remained consistent.\nKeep it going!", 7, 1, get_rank_reward(tier, 1))
+            str_title = 30001002
+            str_body_start = 30001005
+            str_body_end = 30001008
+            reward = get_rank_reward(tier, 1)
+
+        rank_str = str(rank) + append
+
+        str_title = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_title), "LOCALE_MISSING")
+        str_body_start = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_body_start), "LOCALE_MISSING")
+        str_body_end = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_body_end), "LOCALE_MISSING")
+
+        user['mail'] = add_mail(user['mail'], str_title, str_body_start + rank_str + str_body_end, 7, 1, reward)
 
         query = users.update().where(users.c.id == user['id']).values(mail=user['mail'], daily=user['daily'])
         await database.execute(query)
