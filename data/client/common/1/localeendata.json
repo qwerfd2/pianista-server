@@ -1,51 +1,51 @@
 [
     {
         "c": 0,
-        "tx": "English"
+        "tx": "中文"
     },
     {
         "c": 1001,
-        "tx": "The game is under maintenance in preparation for an update.\nThanks for your patience."
+        "tx": "游戏为准备更新正在维护中。感谢您的耐心等待。"
     },
     {
         "c": 1002,
-        "tx": "Could not connect to the game server.\nPlease try again later."
+        "tx": "无法连接到游戏服务器，请稍后再试。"
     },
     {
         "c": 1003,
-        "tx": "Pianista is currently performing\nneccessary maintenance.\nPlease try again in a few minutes."
+        "tx": "Pianista 目前正在进行必要的维护，请稍后再试。"
     },
     {
         "c": 1004,
-        "tx": "Pianista is under maintenance.\nPlease try again after {0} minutes."
+        "tx": "Pianista 正在维护中。请在{0}分钟后重试。"
     },
     {
         "c": 1005,
-        "tx": "The game is under maintenance for an update.\nThanks for your patience.\nStart time: {0} (GMT)\nScheduled end: {1} (GMT)"
+        "tx": "游戏为准备更新正在维护中。感谢您的耐心等待。\n开始时间: {0} (GMT)\n计划结束时间: {1} (GMT)"
     },
     {
         "c": 10000,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 10001,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 10002,
-        "tx": "NEXT"
+        "tx": "下一个"
     },
     {
         "c": 10003,
-        "tx": "BACK"
+        "tx": "返回"
     },
     {
         "c": 10004,
-        "tx": "DETAIL"
+        "tx": "详细"
     },
     {
         "c": 11000,
-        "tx": "MAX"
+        "tx": "最大值"
     },
     {
         "c": 70000,
@@ -53,195 +53,195 @@
     },
     {
         "c": 70001,
-        "tx": "JEWEL"
+        "tx": "宝石"
     },
     {
         "c": 70002,
-        "tx": "GOLD"
+        "tx": "金币"
     },
     {
         "c": 70003,
-        "tx": "MUSIC POINT"
+        "tx": "音符"
     },
     {
         "c": 70004,
-        "tx": "COMPOSER STAT RESET"
+        "tx": "作曲家经验重置"
     },
     {
         "c": 70005,
-        "tx": "MUSIC"
+        "tx": "音乐"
     },
     {
         "c": 70006,
-        "tx": "SHUFFLE"
+        "tx": "随机"
     },
     {
         "c": 70007,
-        "tx": "CHANGE NAME"
+        "tx": "更改昵称"
     },
     {
         "c": 70008,
-        "tx": "CHEST"
+        "tx": "宝箱"
     },
     {
         "c": 70009,
-        "tx": "COMPOSER STAT"
+        "tx": "作曲家经验"
     },
     {
         "c": 70010,
-        "tx": "PIANO"
+        "tx": "钢琴"
     },
     {
         "c": 70011,
-        "tx": "SHIELD"
+        "tx": "盾牌"
     },
     {
         "c": 70012,
-        "tx": "LIFE"
+        "tx": "生命"
     },
     {
         "c": 71000,
-        "tx": "FREE"
+        "tx": "免费"
     },
     {
         "c": 72000,
-        "tx": "PRESTIGE"
+        "tx": "尊贵会员"
     },
     {
         "c": 73000,
-        "tx": "THE CLASSIC"
+        "tx": "经典之选"
     },
     {
         "c": 73001,
-        "tx": "Mendelssohn - The Essential"
+        "tx": "门德尔松 - 精选集"
     },
     {
         "c": 73002,
-        "tx": "Compilation of Ensemble"
+        "tx": "合奏曲精选集"
     },
     {
         "c": 73003,
-        "tx": "Compilation of Keyboard"
+        "tx": "键盘乐精选集"
     },
     {
         "c": 73004,
-        "tx": "Compilation of Ensemble #2"
+        "tx": "合奏曲精选集 #2"
     },
     {
         "c": 73005,
-        "tx": "Compilation of Theatre"
+        "tx": "音乐剧精选集"
     },
     {
         "c": 73006,
-        "tx": "1st Anniversary"
+        "tx": "一周年精选集"
     },
     {
         "c": 73007,
-        "tx": "Compilation of Keyboard #2"
+        "tx": "键盘乐精选集 #2"
     },
     {
         "c": 73008,
-        "tx": "Compilation of Keyboard #3"
+        "tx": "键盘乐精选集 #3"
     },
     {
         "c": 73009,
-        "tx": "Compilation of Ensemble #3"
+        "tx": "合奏曲精选集 #3"
     },
     {
         "c": 73010,
-        "tx": "Compilation of Keyboard #4"
+        "tx": "键盘乐精选集 #4"
     },
     {
         "c": 73011,
-        "tx": "Compilation of Ensemble #4"
+        "tx": "合奏曲精选集 #4"
     },
     {
         "c": 73012,
-        "tx": "Master of Arpeggios"
+        "tx": "琶音MASTER"
     },
     {
         "c": 73013,
-        "tx": "Compilation of Keyboard #5"
+        "tx": "键盘乐精选集 #5"
     },
     {
         "c": 73014,
-        "tx": "Compilation of Orchestra #1"
+        "tx": "管弦乐精选集 #1"
     },
     {
         "c": 73015,
-        "tx": "The Sound of Spring"
+        "tx": "春之声"
     },
     {
         "c": 73016,
-        "tx": "The Barocophile"
+        "tx": "醉爱巴洛克"
     },
     {
         "c": 73017,
-        "tx": "2nd Anniversary"
+        "tx": "二周年精选集"
     },
     {
         "c": 73018,
-        "tx": "Virtuoso"
+        "tx": "精湛演绎"
     },
     {
         "c": 73019,
-        "tx": "Melodia in minor key"
+        "tx": "小调旋律"
     },
     {
         "c": 73020,
-        "tx": "The Art of Opera"
+        "tx": "歌剧艺术"
     },
     {
         "c": 73021,
-        "tx": "On Joy and Sorrow"
+        "tx": "悲喜交加"
     },
     {
         "c": 73022,
-        "tx": "The Night Before Christmas"
+        "tx": "平安夜"
     },
     {
         "c": 73023,
-        "tx": "The Art of Cello"
+        "tx": "大提琴艺术"
     },
     {
         "c": 73024,
-        "tx": "Concerto Grandioso"
+        "tx": "宏大协奏曲"
     },
     {
         "c": 73025,
-        "tx": "Romantic Times"
+        "tx": "浪漫时代"
     },
     {
         "c": 73026,
-        "tx": "Harmonic Triangle"
+        "tx": "谐音金三角"
     },
     {
         "c": 73027,
-        "tx": "The Harbinger"
+        "tx": "预言家"
     },
     {
         "c": 73028,
-        "tx": "Schubert - The Essential"
+        "tx": "舒伯特 - 精选集"
     },
     {
         "c": 73029,
-        "tx": "Concerto Grandioso #2"
+        "tx": "宏大协奏曲 #2"
     },
     {
         "c": 73030,
-        "tx": "The Art of Oboe"
+        "tx": "双簧管艺术"
     },
     {
         "c": 73031,
-        "tx": "Tchaikovsky - The Essential"
+        "tx": "柴可夫斯基 - 精选集"
     },
     {
         "c": 73032,
-        "tx": "The Art of Sonata"
+        "tx": "奏鸣曲艺术"
     },
     {
         "c": 73033,
-        "tx": "Violin Concerto"
+        "tx": "小提琴协奏曲"
     },
     {
         "c": 80001,
@@ -261,91 +261,91 @@
     },
     {
         "c": 81001,
-        "tx": "Marv."
+        "tx": "完美"
     },
     {
         "c": 81002,
-        "tx": "Excl."
+        "tx": "优良"
     },
     {
         "c": 81003,
-        "tx": "Good"
+        "tx": "完好"
     },
     {
         "c": 81004,
-        "tx": "Fair"
+        "tx": "一般"
     },
     {
         "c": 81005,
-        "tx": "Miss"
+        "tx": "失误"
     },
     {
         "c": 82001,
-        "tx": "Accuracy"
+        "tx": "准确度"
     },
     {
         "c": 82002,
-        "tx": "Max Combo"
+        "tx": "最高连击"
     },
     {
         "c": 90000,
-        "tx": "BRONZE I"
+        "tx": "青铜 I"
     },
     {
         "c": 90001,
-        "tx": "BRONZE II"
+        "tx": "青铜 II"
     },
     {
         "c": 90002,
-        "tx": "BRONZE III"
+        "tx": "青铜 III"
     },
     {
         "c": 90003,
-        "tx": "SILVER I"
+        "tx": "白银 I"
     },
     {
         "c": 90004,
-        "tx": "SILVER II"
+        "tx": "白银 II"
     },
     {
         "c": 90005,
-        "tx": "SILVER III"
+        "tx": "白银 III"
     },
     {
         "c": 90006,
-        "tx": "GOLD I"
+        "tx": "黄金 I"
     },
     {
         "c": 90007,
-        "tx": "GOLD II"
+        "tx": "黄金 II"
     },
     {
         "c": 90008,
-        "tx": "GOLD III"
+        "tx": "黄金 III"
     },
     {
         "c": 90009,
-        "tx": "PLATINUM I"
+        "tx": "铂金 I"
     },
     {
         "c": 90010,
-        "tx": "PLATINUM II"
+        "tx": "铂金 II"
     },
     {
         "c": 90011,
-        "tx": "PLATINUM III"
+        "tx": "铂金 III"
     },
     {
         "c": 90012,
-        "tx": "DIAMOND I"
+        "tx": "钻石 I"
     },
     {
         "c": 90013,
-        "tx": "DIAMOND II"
+        "tx": "钻石 II"
     },
     {
         "c": 90014,
-        "tx": "DIAMOND III"
+        "tx": "钻石 III"
     },
     {
         "c": 90015,
@@ -361,2607 +361,2607 @@
     },
     {
         "c": 90018,
-        "tx": "GRANDMASTER I"
+        "tx": "宗师 I"
     },
     {
         "c": 90019,
-        "tx": "GRANDMASTER II"
+        "tx": "宗师 II"
     },
     {
         "c": 90020,
-        "tx": "GRANDMASTER III"
+        "tx": "宗师 III"
     },
     {
         "c": 101001,
-        "tx": "Minuet in G major, BWV Anh 114"
+        "tx": "G大调小步舞曲，BWV Anh 114"
     },
     {
         "c": 101002,
-        "tx": "Cantata, BWV 147, Jesu, Joy of Man's Desiring"
+        "tx": "康塔塔，BWV 147，耶稣，人类渴望的喜悦"
     },
     {
         "c": 101003,
-        "tx": "Toccata and Fugue in D minor, BWV 565"
+        "tx": "D小调托卡塔与赋格，BWV 565"
     },
     {
         "c": 101004,
-        "tx": "\"Lascia ch’io pianga\" from Opera \"Rinaldo\" HWV.7 (Act II / Scene IV)"
+        "tx": "《让我哭泣》选自歌剧《里纳尔多》HWV.7（第二幕/第四场）"
     },
     {
         "c": 101005,
-        "tx": "Suite No.2 in D major, HWV 349. Alla hornpipe"
+        "tx": "D大调第二组曲，HWV 349。号角管"
     },
     {
         "c": 101006,
-        "tx": "Concerto 4. Solomon, HWV 67. Arrival of the queen of Sheba"
+        "tx": "第四协奏曲。所罗门，HWV 67。示巴女王的到来"
     },
     {
         "c": 101007,
-        "tx": "String Quartet No.17 In F major Op.3-5 \"Serenade\" - II. Andante Cantabile"
+        "tx": "F大调第17号弦乐四重奏，作品3-5《小夜曲》- 第二乐章"
     },
     {
         "c": 101008,
-        "tx": "Trumpet Concerto in Eb major - 1st movement "
+        "tx": "降E大调小号协奏曲 - 第一乐章"
     },
     {
         "c": 101009,
-        "tx": "Trumpet Concerto in Eb major - 3rd movement "
+        "tx": "降E大调小号协奏曲 - 第三乐章"
     },
     {
         "c": 101010,
-        "tx": "Mozart K.525 Serenade No.13 in G major, 4th movement, \"Eine Kleine Nachtmusik\" "
+        "tx": "莫扎特K.525 G大调第13号小夜曲，第四乐章，《小夜曲》"
     },
     {
         "c": 101011,
-        "tx": "Piano Sonata No.8 in A minor KV 310(300d) 3rd"
+        "tx": "A小调第8号钢琴奏鸣曲，KV 310（300d）第三乐章"
     },
     {
         "c": 101012,
-        "tx": "Piano Sonata No.11 in A major, K. 331(300i). Rondo alla turca (Turkish March)"
+        "tx": "A大调第11号钢琴奏鸣曲，K. 331（300i）。土耳其进行曲"
     },
     {
         "c": 101013,
-        "tx": "Piano Sonata No.8 in C minor, Op.13 \"Pathetique\" 2nd movement"
+        "tx": "C小调第8号钢琴奏鸣曲，作品13《悲怆》第二乐章"
     },
     {
         "c": 101014,
-        "tx": "Piano Sonata No.17 in D minor, Op.31, No.2 \"The Tempest\" 3rd movement"
+        "tx": "D小调第17号钢琴奏鸣曲，作品31，第2号《暴风雨》第三乐章"
     },
     {
         "c": 101015,
-        "tx": "Piano Sonata No.14 in C# minor Op.27, No.2 \"Moonlight\" 3rd movement"
+        "tx": "升C小调第14号钢琴奏鸣曲，作品27，第2号《月光》第三乐章"
     },
     {
         "c": 101016,
-        "tx": "Caprice for Solo Violin Op.1, No.24"
+        "tx": "小提琴独奏随想曲，作品1，第24号"
     },
     {
         "c": 101017,
-        "tx": "Grandes etudes de Paganini S.141 No.3 \"La Campanella\""
+        "tx": "帕格尼尼大练习曲S.141第3号《钟声》"
     },
     {
         "c": 101018,
-        "tx": "Standchen D.957, No.4"
+        "tx": "小夜曲D.957，第4号"
     },
     {
         "c": 101019,
-        "tx": "Marche Militaire Op.51, D.733 March No.1"
+        "tx": "军队进行曲，作品51，D.733第一号"
     },
     {
         "c": 101020,
-        "tx": "Der Erlkonig Op.1, D.328"
+        "tx": "魔王，作品1，D.328"
     },
     {
         "c": 101021,
-        "tx": "Nocturne in Eb Major Op.9, No.2"
+        "tx": "降E大调夜曲，作品9，第2号"
     },
     {
         "c": 101022,
-        "tx": "Etude Op.10, No.12 \"Revolutionary\""
+        "tx": "练习曲，作品10，第12号《革命》"
     },
     {
         "c": 101023,
-        "tx": "Etude Op.10, No.5 \"Black Keys\""
+        "tx": "练习曲，作品10，第5号《黑键》"
     },
     {
         "c": 101024,
-        "tx": "La donna e mobile"
+        "tx": "女人善变"
     },
     {
         "c": 101025,
-        "tx": "La Traviata: Brindisi (The Drinking Song)"
+        "tx": "茶花女：饮酒歌"
     },
     {
         "c": 101026,
-        "tx": "Il Trovatore - The Anvil Chorus"
+        "tx": "游吟诗人 - 铁砧合唱"
     },
     {
         "c": 101027,
-        "tx": "Waltz in Ab Major Op.39, No.15"
+        "tx": "降A大调圆舞曲，作品39，第15号"
     },
     {
         "c": 101028,
-        "tx": "Piano Sonata No.3 in F minor Op.5"
+        "tx": "F小调第3号钢琴奏鸣曲，作品5"
     },
     {
         "c": 101029,
-        "tx": "Hungarian Dance No.5 in G Minor WoO.1"
+        "tx": "G小调匈牙利舞曲第5号，WoO.1"
     },
     {
         "c": 101030,
-        "tx": "Humoresque Op.101 No.7"
+        "tx": "幽默曲，作品101，第7号"
     },
     {
         "c": 101031,
-        "tx": "Slavonic Dance Op.72, No.2 in E minor \"Dumka\""
+        "tx": "E小调斯拉夫舞曲，作品72，第2号《杜姆卡》"
     },
     {
         "c": 101032,
-        "tx": "Slavonic Dance Op.46, B.78, No.7 In C Minor \"Skocna\""
+        "tx": "C小调斯拉夫舞曲，作品46，B.78，第7号《斯科茨纳》"
     },
     {
         "c": 101033,
-        "tx": "Salut d'amour, Op.12"
+        "tx": "爱的礼赞，作品12"
     },
     {
         "c": 101034,
-        "tx": "Pomp and Circumstance Op.39, March No.1"
+        "tx": "威风凛凛进行曲，作品39，第1号"
     },
     {
         "c": 101035,
-        "tx": "Suite Bergamasque, IV. Passepied"
+        "tx": "贝加马斯克组曲，第四乐章：帕斯皮耶"
     },
     {
         "c": 101036,
-        "tx": "Valse Romantique L.71"
+        "tx": "浪漫圆舞曲，L.71"
     },
     {
         "c": 101037,
-        "tx": "Arabesque No.1, L.66"
+        "tx": "阿拉贝斯克第一号，L.66"
     },
     {
         "c": 101038,
-        "tx": "Piano Concerto No.2 in C minor, Op.18, 1st movement"
+        "tx": "C小调第二钢琴协奏曲，作品18，第一乐章"
     },
     {
         "c": 101039,
-        "tx": "Moments Musicaux Op.16 No.4"
+        "tx": "音乐瞬间，作品16，第4号"
     },
     {
         "c": 101040,
-        "tx": "Flight of the Bumblebee (Rimsky-Korsakov)"
+        "tx": "野蜂飞舞（里姆斯基-科萨科夫）"
     },
     {
         "c": 101041,
-        "tx": "L'Estro Armonico, Op.3, No.6"
+        "tx": "和谐的灵感，作品3，第6号"
     },
     {
         "c": 101042,
-        "tx": "La Primavera from \"Le Quattro Stagioni\""
+        "tx": "《四季》之春"
     },
     {
         "c": 101043,
-        "tx": "L'inverno from \"Le Quattro stagioni\""
+        "tx": "《四季》之冬"
     },
     {
         "c": 101044,
-        "tx": "Nocturne"
+        "tx": "夜曲"
     },
     {
         "c": 101045,
-        "tx": "The Lark from \"A Farewell to Saint Petersburg\""
+        "tx": "《告别圣彼得堡》之云雀"
     },
     {
         "c": 101046,
-        "tx": "Ruslan and Lyudmila"
+        "tx": "鲁斯兰与柳德米拉"
     },
     {
         "c": 101047,
-        "tx": "Polka"
+        "tx": "波尔卡"
     },
     {
         "c": 101048,
-        "tx": "Swan Lake, Op.20"
+        "tx": "天鹅湖，作品20"
     },
     {
         "c": 101049,
-        "tx": "March from \"The Nutcracker\""
+        "tx": "《胡桃夹子》进行曲"
     },
     {
         "c": 101050,
-        "tx": "Piano Concerto No.1, Op.23, Mov. I"
+        "tx": "第一钢琴协奏曲，作品23，第一乐章"
     },
     {
         "c": 101051,
-        "tx": "Bacchanale from Opera \"Samson et Dalila\" Op.47 (Act III / Scene II)"
+        "tx": "《参孙与达利拉》中的巴卡纳尔舞曲，作品47（第三幕/第二场）"
     },
     {
         "c": 101052,
-        "tx": "Danse Macabre in G minor Op.40"
+        "tx": "G小调骷髅之舞，作品40"
     },
     {
         "c": 101053,
-        "tx": "Songs Without Words, Op.62, No.6"
+        "tx": "无词歌，作品62，第6号"
     },
     {
         "c": 101054,
-        "tx": "Violin Concerto, Op.64"
+        "tx": "小提琴协奏曲，作品64"
     },
     {
         "c": 101055,
-        "tx": "A Midsummer Night's Dream, I. Scherzo"
+        "tx": "仲夏夜之梦，第一乐章：谐谑曲"
     },
     {
         "c": 101056,
-        "tx": "Songs Without Words, Op.19, No.6"
+        "tx": "无词歌，作品19，第6号"
     },
     {
         "c": 101057,
-        "tx": "Symphony No.4, Mov. I"
+        "tx": "第四交响曲，第一乐章"
     },
     {
         "c": 101058,
-        "tx": "Symphony No.5, Mov. I"
+        "tx": "第五交响曲，第一乐章"
     },
     {
         "c": 101059,
-        "tx": "From the New World, Mov. IV"
+        "tx": "《新世界》交响曲，第四乐章"
     },
     {
         "c": 101060,
-        "tx": "Symphony No.40, Mov. I"
+        "tx": "第四十交响曲，第一乐章"
     },
     {
         "c": 101061,
-        "tx": "Minuet from \"L'arlesienne Suite No.2\""
+        "tx": "《阿莱城的姑娘》第二组曲中的小步舞曲"
     },
     {
         "c": 101062,
-        "tx": "Farandole from \"L'arlesienne Suite No.2\""
+        "tx": "《阿莱城的姑娘》第二组曲中的法兰多尔舞曲"
     },
     {
         "c": 101063,
-        "tx": "Hungarian Rhapsody No.2"
+        "tx": "第二号匈牙利狂想曲"
     },
     {
         "c": 101064,
-        "tx": "Liebestraume, No.3"
+        "tx": "爱的梦，第三号"
     },
     {
         "c": 101065,
-        "tx": "Transcendental Etude, IV. Mazeppa"
+        "tx": "超技练习曲，第四号《马捷帕》"
     },
     {
         "c": 101066,
-        "tx": "Grande valse brillante, Op.18"
+        "tx": "辉煌大圆舞曲，作品18"
     },
     {
         "c": 101067,
-        "tx": "Waltzes, Op.64, No.2"
+        "tx": "圆舞曲，作品64，第2号"
     },
     {
         "c": 101068,
-        "tx": "Spanish Dance, II. Zapateado"
+        "tx": "西班牙舞曲，第二号：踢踏舞"
     },
     {
         "c": 101069,
-        "tx": "Zigeunerweisen, Op.20"
+        "tx": "流浪者之歌，作品20"
     },
     {
         "c": 101070,
-        "tx": "An Der Schonen Blauen Donau, Op.314"
+        "tx": "美丽的蓝色多瑙河，作品314"
     },
     {
         "c": 101071,
-        "tx": "Annen-Polka, Op.117"
+        "tx": "安娜波尔卡，作品117"
     },
     {
         "c": 101072,
-        "tx": "Fruhlingsstimmen, Op.410"
+        "tx": "春之声圆舞曲，作品410"
     },
     {
         "c": 101073,
-        "tx": "The Marriage of Figaro"
+        "tx": "费加罗的婚礼"
     },
     {
         "c": 101074,
-        "tx": "12 Variations on \"Ah, vous dirai-je maman\""
+        "tx": "《啊，妈妈，你可知道》十二变奏曲"
     },
     {
         "c": 101075,
-        "tx": "Sonata Pathetique, Mov. III"
+        "tx": "悲怆奏鸣曲，第三乐章"
     },
     {
         "c": 101076,
-        "tx": "Orchestral Suite No.3, II. Air"
+        "tx": "第三号管弦乐组曲，第二乐章：凌空"
     },
     {
         "c": 101077,
-        "tx": "Habanera from \"Carmen Suite No.2\""
+        "tx": "《卡门》第二组曲中的哈巴涅拉舞曲"
     },
     {
         "c": 101078,
-        "tx": "Dance of the Sugarplum Fairy from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的糖果仙子舞曲"
     },
     {
         "c": 101079,
-        "tx": "Chinese Dance from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的中国舞曲"
     },
     {
         "c": 101080,
-        "tx": "Autumn from \"The Four Seasons\""
+        "tx": "《四季》之秋"
     },
     {
         "c": 101081,
-        "tx": "Carmen Concert Fantasy, Op.25"
+        "tx": "卡门幻想曲，作品25"
     },
     {
         "c": 101082,
-        "tx": "Suite in D minor, III. Sarabande"
+        "tx": "D小调组曲，第三乐章：萨拉班德舞曲"
     },
     {
         "c": 101083,
-        "tx": "3 Pieces, Op.2, No.1"
+        "tx": "三首作品，作品2，第一号"
     },
     {
         "c": 101084,
-        "tx": "12 Etudes, Op.8, No.12"
+        "tx": "十二首练习曲，作品8，第12号"
     },
     {
         "c": 101085,
-        "tx": "Valse, Op.1"
+        "tx": "圆舞曲，作品1"
     },
     {
         "c": 101086,
-        "tx": "In the Hall of the Mountain King"
+        "tx": "山魔王的宫殿"
     },
     {
         "c": 101087,
-        "tx": "Piano Concerto in A minor, Op.16, Mov.I"
+        "tx": "A小调钢琴协奏曲，作品16，第一乐章"
     },
     {
         "c": 101088,
-        "tx": "Moonlight, Mov. I"
+        "tx": "月光奏鸣曲，第一乐章"
     },
     {
         "c": 101089,
-        "tx": "10 Preludes, Op.23, No.5"
+        "tx": "十首前奏曲，作品23，第5号"
     },
     {
         "c": 101090,
-        "tx": "Keyboard Sonata in E Minor, Mov. I"
+        "tx": "E小调键盘奏鸣曲，第一乐章"
     },
     {
         "c": 101091,
-        "tx": "6 Etudes, Op.111, No.6"
+        "tx": "六首练习曲，作品111，第6号"
     },
     {
         "c": 101092,
-        "tx": "Fantaisie-impromptu, Op.66"
+        "tx": "幻想即兴曲，作品66"
     },
     {
         "c": 101093,
-        "tx": "Morning Mood"
+        "tx": "晨景"
     },
     {
         "c": 101094,
-        "tx": "Piano Concerto No.3, Op.30, Mov. I"
+        "tx": "第三钢琴协奏曲，作品30，第一乐章"
     },
     {
         "c": 101095,
-        "tx": "Summer, Mov. III from \"The Four Seasons\""
+        "tx": "《四季》之夏，第三乐章"
     },
     {
         "c": 101096,
-        "tx": "Music for the Royal Fireworks, IV. La Rejouissance"
+        "tx": "皇家焰火音乐，第四乐章：欢乐"
     },
     {
         "c": 101097,
-        "tx": "Valse-Fantasie"
+        "tx": "圆舞曲幻想曲"
     },
     {
         "c": 101098,
-        "tx": "8 Klavierstucke, Op.76, II. Capriccio"
+        "tx": "八首钢琴小品，作品76，第二号：随想曲"
     },
     {
         "c": 101099,
-        "tx": "Waltzes, Op.64, I. Minute Waltz"
+        "tx": "圆舞曲，作品64，第一号：一分钟圆舞曲"
     },
     {
         "c": 101100,
-        "tx": "Suite Bergamasque, III. Clair de Lune"
+        "tx": "贝加马斯克组曲，第三乐章：月光"
     },
     {
         "c": 101101,
-        "tx": "Piano Concerto No.16"
+        "tx": "第16号钢琴协奏曲"
     },
     {
         "c": 101102,
-        "tx": "Moments musicaux, IV. Moderato"
+        "tx": "音乐瞬间，第四乐章：中庸"
     },
     {
         "c": 101103,
-        "tx": "Prelude from \"Carmen Suite No.1\""
+        "tx": "《卡门》第一组曲中的前奏曲"
     },
     {
         "c": 101104,
-        "tx": "Chanson du Toreador from \"Carmen Suite No.2\""
+        "tx": "《卡门》第二组曲中的斗牛士之歌"
     },
     {
         "c": 101105,
-        "tx": "Pizzicato Polka (with Josef)"
+        "tx": "拨弦波尔卡（与约瑟夫）"
     },
     {
         "c": 101106,
-        "tx": "Requiem: Dies irae"
+        "tx": "安魂曲：震怒之日"
     },
     {
         "c": 101107,
-        "tx": "The Carnival of the Animals, XIV. Finale"
+        "tx": "动物狂欢节，第十四乐章：终曲"
     },
     {
         "c": 101108,
-        "tx": "Harpsichord Concerto, BWV 1052"
+        "tx": "羽管键琴协奏曲，BWV 1052"
     },
     {
         "c": 101109,
-        "tx": "Symphony No.1, Op.55, II. Allegro molto"
+        "tx": "第一交响曲，作品55，第二乐章：快板"
     },
     {
         "c": 101110,
-        "tx": "Dance of the Clowns"
+        "tx": "小丑之舞"
     },
     {
         "c": 101111,
-        "tx": "Symphony No.25"
+        "tx": "第二十五交响曲"
     },
     {
         "c": 101112,
-        "tx": "Waltz from \"The Sleeping Beauty\""
+        "tx": "《睡美人》圆舞曲"
     },
     {
         "c": 101113,
-        "tx": "Invention in A minor, BWV 784"
+        "tx": "A小调创意曲，BWV 784"
     },
     {
         "c": 101114,
-        "tx": "Fur Elise, WoO 59"
+        "tx": "献给爱丽丝，WoO 59"
     },
     {
         "c": 101115,
-        "tx": "Un Sospiro"
+        "tx": "叹息"
     },
     {
         "c": 101116,
-        "tx": "Prelude in C sharp minor, Op.3 No.2"
+        "tx": "升C小调前奏曲，作品3，第2号"
     },
     {
         "c": 101117,
-        "tx": "Etudes, Op.10, No.4"
+        "tx": "练习曲，作品10，第4号"
     },
     {
         "c": 101118,
-        "tx": "Semiramide, Overture"
+        "tx": "《塞米拉米德》序曲"
     },
     {
         "c": 101119,
-        "tx": "Symphony No.94 in G major, Hob.I:94 \"Surprise\""
+        "tx": "G大调第94号交响曲，《惊愕》"
     },
     {
         "c": 101120,
-        "tx": "String Quartet No.1 in G minor, Mov. I"
+        "tx": "G小调第一弦乐四重奏，第一乐章"
     },
     {
         "c": 101121,
-        "tx": "L'italiana in Algeri, Overture"
+        "tx": "《阿尔及尔的意大利女郎》序曲"
     },
     {
         "c": 101122,
-        "tx": "William Tell Overture: Finale"
+        "tx": "《威廉·退尔》序曲：终曲"
     },
     {
         "c": 101123,
-        "tx": "String Quartet in D major \"The Lark\""
+        "tx": "D大调弦乐四重奏《云雀》"
     },
     {
         "c": 101124,
-        "tx": "Serenade for Strings, Op.22, II. Tempo di valse"
+        "tx": "弦乐小夜曲，作品22，第二乐章：圆舞曲"
     },
     {
         "c": 101125,
-        "tx": "String Quartet No.14 in G major, K.387"
+        "tx": "G大调第14号弦乐四重奏，K.387"
     },
     {
         "c": 101126,
-        "tx": "Brandenburg Concerto No.3 in G major, Mov. I"
+        "tx": "G大调第三勃兰登堡协奏曲，第一乐章"
     },
     {
         "c": 101127,
-        "tx": "Violin Sonata No.5 in F major, Op.24 \"Spring\""
+        "tx": "F大调第五小提琴奏鸣曲，作品24《春天》"
     },
     {
         "c": 101128,
-        "tx": "Les Barricades Mysterieuses"
+        "tx": "神秘的障碍"
     },
     {
         "c": 101129,
-        "tx": "A New Ground, Z. T682"
+        "tx": "新大陆，Z. T682"
     },
     {
         "c": 101130,
-        "tx": "Les Petits Moulins a Vent"
+        "tx": "小风车"
     },
     {
         "c": 101131,
-        "tx": "Abdelazer Suite: II. Rondeau"
+        "tx": "阿卜杜拉泽尔组曲：第二乐章：回旋曲"
     },
     {
         "c": 101132,
-        "tx": "Le Reveil-Matin"
+        "tx": "晨钟"
     },
     {
         "c": 101133,
-        "tx": "String Quintet in E major, G.275 \"Minuetto\""
+        "tx": "E大调弦乐五重奏，G.275《小步舞曲》"
     },
     {
         "c": 101134,
-        "tx": "Eine Kleine Nachtmusik, Mov. I"
+        "tx": "小夜曲，第一乐章"
     },
     {
         "c": 101135,
-        "tx": "A Midsummer Night's Dream, V. Wedding March"
+        "tx": "仲夏夜之梦，第五乐章：婚礼进行曲"
     },
     {
         "c": 101136,
-        "tx": "Polonaise in A-flat major, Op.53 \"Heroic\""
+        "tx": "降A大调波兰舞曲，作品53《英雄》"
     },
     {
         "c": 101137,
-        "tx": "Waltz of the Flowers from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的花之圆舞曲"
     },
     {
         "c": 101138,
-        "tx": "Piano Sonata, Op.7"
+        "tx": "钢琴奏鸣曲，作品7"
     },
     {
         "c": 101139,
-        "tx": "Sonata No.20 in G major, Op.49 No.2"
+        "tx": "G大调第20号奏鸣曲，作品49，第2号"
     },
     {
         "c": 101140,
-        "tx": "Fantasie in C major, D.760, Mov. IV"
+        "tx": "C大调幻想曲，D.760，第四乐章"
     },
     {
         "c": 101141,
-        "tx": "Scherzo in B-flat minor Op.31"
+        "tx": "降B小调谐谑曲，作品31"
     },
     {
         "c": 101142,
-        "tx": "Tarantella"
+        "tx": "塔兰泰拉舞曲"
     },
     {
         "c": 101143,
-        "tx": "Concerto for Violin and Oboe in C minor, BWV 1060: I. Allegro"
+        "tx": "C小调小提琴与双簧管协奏曲，BWV 1060：第一乐章：快板"
     },
     {
         "c": 101144,
-        "tx": "Concerto Grosso in A minor, Op. 6 No. 4, HWV 322"
+        "tx": "A小调大协奏曲，作品6，第4号，HWV 322"
     },
     {
         "c": 101145,
-        "tx": "Arpeggione Sonata, D. 821"
+        "tx": "阿佩乔尼奏鸣曲，D. 821"
     },
     {
         "c": 101146,
-        "tx": "Symphony No. 9, Op. 125"
+        "tx": "第九交响曲，作品125"
     },
     {
         "c": 101147,
-        "tx": "L'Estro Armonico, Op. 3, No. 10"
+        "tx": "和谐的灵感，作品3，第10号"
     },
     {
         "c": 101148,
-        "tx": "Queen of the Night Aria from \"The Magic Flute\""
+        "tx": "夜后咏叹调，选自《魔笛》"
     },
     {
         "c": 101149,
-        "tx": "Can-Can from \"Orpheus in the Underworld\""
+        "tx": "康康舞曲，选自《地狱中的奥菲欧》"
     },
     {
         "c": 101150,
-        "tx": "Largo Al Factotum from \"The Barber of Seville\""
+        "tx": "快给大忙人让路，选自《塞维利亚的理发师》"
     },
     {
         "c": 101151,
-        "tx": "Tritsch-Tratsch-Polka, Op. 214"
+        "tx": "闲聊波尔卡，作品214"
     },
     {
         "c": 101152,
-        "tx": "Rondo in A minor, K.511"
+        "tx": "A小调回旋曲，K.511"
     },
     {
         "c": 101153,
-        "tx": "Petite Suite, L. 65: II. Cortege"
+        "tx": "小组曲，L. 65：第二乐章：送葬"
     },
     {
         "c": 101154,
-        "tx": "Waltz Op.69 No.2"
+        "tx": "圆舞曲，作品69，第2号"
     },
     {
         "c": 101155,
-        "tx": "Songs Without Words, Op.67: No.4 in C major"
+        "tx": "无词歌，作品67：第4号，C大调"
     },
     {
         "c": 101156,
-        "tx": "Sonata Pathetique, Mov. I"
+        "tx": "悲怆奏鸣曲，第一乐章"
     },
     {
         "c": 101157,
-        "tx": "Nocturne 'La Separation'"
+        "tx": "夜曲《离别》"
     },
     {
         "c": 101158,
-        "tx": "Etude Op.25 No.11"
+        "tx": "练习曲，作品25，第11号"
     },
     {
         "c": 101159,
-        "tx": "Hungarian Rhapsody No.6"
+        "tx": "匈牙利狂想曲第6号"
     },
     {
         "c": 101160,
-        "tx": "The Seasons, Op.37a: December"
+        "tx": "四季，作品37a：十二月"
     },
     {
         "c": 101161,
-        "tx": "March of the Dwarfs, Op.54 No.3"
+        "tx": "侏儒进行曲，作品54，第3号"
     },
     {
         "c": 101162,
-        "tx": "The Carnival of the Animals: XIII. The Swan"
+        "tx": "动物狂欢节：第十三乐章：天鹅"
     },
     {
         "c": 101163,
-        "tx": "Cello Sonata No. 1 in E minor, Op.38: II. Allegretto quasi menuetto"
+        "tx": "E小调第一大提琴奏鸣曲，作品38：第二乐章：小步舞曲"
     },
     {
         "c": 101164,
-        "tx": "Cello Concerto No. 1 in C major, Hob.VIIb:1: I. Moderato"
+        "tx": "C大调第一大提琴协奏曲，Hob.VIIb:1：第一乐章：中庸"
     },
     {
         "c": 101165,
-        "tx": "Cello Sonata No. 3 in A major, Op. 69: II. Scherzo"
+        "tx": "A大调第三大提琴奏鸣曲，作品69：第二乐章：谐谑曲"
     },
     {
         "c": 101166,
-        "tx": "Cello Sonata in G minor, Op. 65: II. Scherzo"
+        "tx": "G小调大提琴奏鸣曲，作品65：第二乐章：谐谑曲"
     },
     {
         "c": 101167,
-        "tx": "Brandenburg Concerto No. 4 in G major, Mov. I"
+        "tx": "G大调第四勃兰登堡协奏曲，第一乐章"
     },
     {
         "c": 101168,
-        "tx": "L'Estro Armonico, Op. 3, No. 8"
+        "tx": "和谐的灵感，作品3，第8号"
     },
     {
         "c": 101169,
-        "tx": "Piano Concerto No. 1, Op. 23, Mov. III"
+        "tx": "第一钢琴协奏曲，作品23，第三乐章"
     },
     {
         "c": 101170,
-        "tx": "Brandenburg Concerto No. 3 in G major, Mov. III"
+        "tx": "G大调第三勃兰登堡协奏曲，第三乐章"
     },
     {
         "c": 101171,
-        "tx": "Piano Concerto in A minor, Op. 16, Mov. III"
+        "tx": "A小调钢琴协奏曲，作品16，第三乐章"
     },
     {
         "c": 101172,
-        "tx": "Intermezzo in A major, Op. 118, No. 2"
+        "tx": "A大调间奏曲，作品118，第2号"
     },
     {
         "c": 101173,
-        "tx": "The Carnival of the Animals: XII. Fossils"
+        "tx": "动物狂欢节：第十二乐章：化石"
     },
     {
         "c": 101174,
-        "tx": "Suite Bergamasque, II. Menuet"
+        "tx": "贝加马斯克组曲，第二乐章：小步舞曲"
     },
     {
         "c": 101175,
-        "tx": "12 Etudes, Op. 8, No. 6"
+        "tx": "十二首练习曲，作品8，第6号"
     },
     {
         "c": 101176,
-        "tx": "Piano Concerto No.1 in G minor, Op. 25"
+        "tx": "G小调第一钢琴协奏曲，作品25"
     },
     {
         "c": 101177,
-        "tx": "Piano Trio No. 2 in E-flat major, Op. 100"
+        "tx": "降E大调第二钢琴三重奏，作品100"
     },
     {
         "c": 101178,
-        "tx": "Piano Trio in G major, Mov. II"
+        "tx": "G大调钢琴三重奏，第二乐章"
     },
     {
         "c": 101179,
-        "tx": "Piano Trio No. 1 in B major, Op. 8, Mov. II"
+        "tx": "B大调第一钢琴三重奏，作品8，第二乐章"
     },
     {
         "c": 101180,
-        "tx": "Piano Trio No. 4, \"Dumky\" in E minor, Op. 90, Mov. V"
+        "tx": "E小调第四钢琴三重奏《杜姆卡》，作品90，第五乐章"
     },
     {
         "c": 101181,
-        "tx": "Piano Trio No. 1 in D minor, Op. 49"
+        "tx": "D小调第一钢琴三重奏，作品49"
     },
     {
         "c": 101182,
-        "tx": "Prelude Op.28, No.15 in D-flat major, \"Raindrop\""
+        "tx": "降D大调前奏曲《雨滴》，作品28，第15号"
     },
     {
         "c": 101183,
-        "tx": "Suite Bergamasque, I. Prelude"
+        "tx": "贝加马斯克组曲，第一乐章：前奏曲"
     },
     {
         "c": 101184,
-        "tx": "10 Preludes, Op.23, No.6 in E-flat major"
+        "tx": "十首前奏曲，作品23，第6号，降E大调"
     },
     {
         "c": 101185,
-        "tx": "Prelude and Fugue in C minor, BWV 847"
+        "tx": "C小调前奏曲与赋格，BWV 847"
     },
     {
         "c": 101186,
-        "tx": "Prelude in F sharp minor, Op.28, No.8"
+        "tx": "升F小调前奏曲，作品28，第8号"
     },
     {
         "c": 101187,
-        "tx": "Piano Quintet in A major, D.667, Mov. IV"
+        "tx": "A大调钢琴五重奏，D.667，第四乐章"
     },
     {
         "c": 101188,
-        "tx": "Symphony No.5, D.485, Mov. III"
+        "tx": "第五交响曲，D.485，第三乐章"
     },
     {
         "c": 101189,
-        "tx": "Fantasie in C major, D.760, Mov. I"
+        "tx": "C大调幻想曲，D.760，第一乐章"
     },
     {
         "c": 101190,
-        "tx": "Piano Sonata in B-flat major, D.960, Mov. III"
+        "tx": "降B大调钢琴奏鸣曲，D.960，第三乐章"
     },
     {
         "c": 101191,
-        "tx": "4 Impromptus No.2 in E-flat major, D.899"
+        "tx": "四首即兴曲，降E大调，D.899，第二号"
     },
     {
         "c": 101192,
-        "tx": "Violin Concerto in A minor, BWV 1041"
+        "tx": "A小调小提琴协奏曲，BWV 1041"
     },
     {
         "c": 101193,
-        "tx": "Piano Concerto No.1 in E minor, Op. 11, Mov. III"
+        "tx": "E小调第一钢琴协奏曲，作品11，第三乐章"
     },
     {
         "c": 101194,
-        "tx": "Piano Concerto No.3 in D minor, Op. 30, Mov. III"
+        "tx": "D小调第三钢琴协奏曲，作品30，第三乐章"
     },
     {
         "c": 101195,
-        "tx": "Concerto for 4 Violins and Cello in B minor, RV 580"
+        "tx": "B小调四小提琴与大提琴协奏曲，RV 580"
     },
     {
         "c": 101196,
-        "tx": "Piano Concerto No.2, Op. 44, Mov. III"
+        "tx": "第二钢琴协奏曲，作品44，第三乐章"
     },
     {
         "c": 101197,
-        "tx": "Oboe Concerto in C major, Hob. VIIc:1, Mov. I"
+        "tx": "C大调双簧管协奏曲，Hob. VIIc:1，第一乐章"
     },
     {
         "c": 101198,
-        "tx": "Trio for 2 Oboes and English Horn, Op. 87, Mov. IV"
+        "tx": "两双簧管与英国管三重奏，作品87，第四乐章"
     },
     {
         "c": 101199,
-        "tx": "Oboe Concerto in C major, K314, Mov. III"
+        "tx": "C大调双簧管协奏曲，K314，第三乐章"
     },
     {
         "c": 101200,
-        "tx": "Concerto for Oboe d'Amore, BWV 1055, Mov.III"
+        "tx": "D小调双簧管协奏曲，BWV 1055，第三乐章"
     },
     {
         "c": 101201,
-        "tx": "Oboe Concerto in F major, RV 455, Mov. I"
+        "tx": "F大调双簧管协奏曲，RV 455，第一乐章"
     },
     {
         "c": 101202,
-        "tx": "Miniature Overture from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的小序曲"
     },
     {
         "c": 101203,
-        "tx": "Dance of the Reed Flutes from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的芦笛舞曲"
     },
     {
         "c": 101204,
-        "tx": "Waltz of the Snowflakes from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的雪花圆舞曲"
     },
     {
         "c": 101205,
-        "tx": "Symphony No.1, Op. 13, Mov. I"
+        "tx": "第一交响曲，作品13，第一乐章"
     },
     {
         "c": 101206,
-        "tx": "Symphony No.1, Op. 13, Mov. III"
+        "tx": "第一交响曲，作品13，第三乐章"
     },
     {
         "c": 101207,
-        "tx": "Divertimento in G major, Hob.XVI:8, Mov. I"
+        "tx": "G大调嬉游曲，Hob.XVI:8，第一乐章"
     },
     {
         "c": 101208,
-        "tx": "Piano Sonata No.1, Op.1, Mov. I"
+        "tx": "第一钢琴奏鸣曲，作品1，第一乐章"
     },
     {
         "c": 101209,
-        "tx": "Piano Sonata, Op.7, Mov. IV"
+        "tx": "钢琴奏鸣曲，作品7，第四乐章"
     },
     {
         "c": 101210,
-        "tx": "Piano Sonata No.8, Mov. I"
+        "tx": "第八钢琴奏鸣曲，第一乐章"
     },
     {
         "c": 101211,
-        "tx": "Piano Sonata No.23, Op.57, Mov. III"
+        "tx": "第二十三钢琴奏鸣曲，作品57，第三乐章"
     },
     {
         "c": 101212,
-        "tx": "Violin Concerto No.1, Op.6, Mov. III"
+        "tx": "第一小提琴协奏曲，作品6，第三乐章"
     },
     {
         "c": 101213,
-        "tx": "Violin Concerto, Op.61, Mov. III"
+        "tx": "小提琴协奏曲，作品61，第三乐章"
     },
     {
         "c": 101214,
-        "tx": "Violin Concerto in C major, RV 185, Mov. II"
+        "tx": "C大调小提琴协奏曲，RV 185，第二乐章"
     },
     {
         "c": 101215,
-        "tx": "Violin Concerto in C major, Hob. VIIa:1, Mov. III"
+        "tx": "C大调小提琴协奏曲，Hob. VIIa:1，第三乐章"
     },
     {
         "c": 101216,
-        "tx": "Violin Concerto, Op.53, Mov. III"
+        "tx": "小提琴协奏曲，作品53，第三乐章"
     },
     {
         "c": 102001,
-        "tx": "Minuet, BWV Anh. 114"
+        "tx": "G大调小步舞曲，BWV Anh 114"
     },
     {
         "c": 102002,
-        "tx": "Jesu, Joy of Man's Desiring"
+        "tx": "康塔塔，耶稣，人类渴望的喜悦"
     },
     {
         "c": 102003,
-        "tx": "Toccata and Fugue, BWV 565"
+        "tx": "D小调托卡塔与赋格，BWV 565"
     },
     {
         "c": 102004,
-        "tx": "Lascia Ch'io Pianga from \"Rinaldo\""
+        "tx": "《让我哭泣》选自歌剧《里纳尔多》"
     },
     {
         "c": 102005,
-        "tx": "Water Music, II. Alla hornpipe"
+        "tx": "D大调第二组曲，HWV 349。号角管"
     },
     {
         "c": 102006,
-        "tx": "Arrival of the Queen of Sheba"
+        "tx": "第四协奏曲。所罗门，示巴女王的到来"
     },
     {
         "c": 102007,
-        "tx": "Serenade from String Quartet, Op.3, No.5"
+        "tx": "F大调第17号弦乐四重奏，第二乐章"
     },
     {
         "c": 102008,
-        "tx": "Trumpet Concerto, Mov. I"
+        "tx": "降E大调小号协奏曲 - 第一乐章"
     },
     {
         "c": 102009,
-        "tx": "Trumpet Concerto, Mov. III"
+        "tx": "降E大调小号协奏曲 - 第三乐章"
     },
     {
         "c": 102010,
-        "tx": "Eine Kleine Nachtmusik, Mov. IV"
+        "tx": "莫扎特K.525 G大调第13号小夜曲，第四乐章"
     },
     {
         "c": 102011,
-        "tx": "Piano Sonata No.8, Mov. III"
+        "tx": "A小调第8号钢琴奏鸣曲，第三乐章"
     },
     {
         "c": 102012,
-        "tx": "Turkish March"
+        "tx": "A大调第11号钢琴奏鸣曲，土耳其进行曲"
     },
     {
         "c": 102013,
-        "tx": "Sonata Pathetique, Mov. II"
+        "tx": "C小调第8号钢琴奏鸣曲，《悲怆》第二乐章"
     },
     {
         "c": 102014,
-        "tx": "The Tempest, Mov. III"
+        "tx": "D小调第17号钢琴奏鸣曲，《暴风雨》第三乐章"
     },
     {
         "c": 102015,
-        "tx": "Moonlight, Mov. III"
+        "tx": "升C小调第14号钢琴奏鸣曲，《月光》第三乐章"
     },
     {
         "c": 102016,
-        "tx": "Caprice No.24 (Franz Liszt)"
+        "tx": "小提琴独奏随想曲，作品1，第24号"
     },
     {
         "c": 102017,
-        "tx": "La Campanella (Franz Liszt)"
+        "tx": "帕格尼尼大练习曲S.141第3号《钟声》"
     },
     {
         "c": 102018,
-        "tx": "Serenade from \"Swan Song\""
+        "tx": "小夜曲D.957，第4号"
     },
     {
         "c": 102019,
-        "tx": "Three Marches Militaires, No.1"
+        "tx": "军队进行曲，作品51，D.733第一号"
     },
     {
         "c": 102020,
-        "tx": "Der Erlkonig"
+        "tx": "魔王，作品1，D.328"
     },
     {
         "c": 102021,
-        "tx": "Nocturne, Op.9, No.2"
+        "tx": "降E大调夜曲，作品9，第2号"
     },
     {
         "c": 102022,
-        "tx": "Revolutionary Etude"
+        "tx": "练习曲，作品10，第12号《革命》"
     },
     {
         "c": 102023,
-        "tx": "Black Key Etude"
+        "tx": "练习曲，作品10，第5号《黑键》"
     },
     {
         "c": 102024,
-        "tx": "La Donna e Mobile from \"Rigoletto\""
+        "tx": "女人善变"
     },
     {
         "c": 102025,
-        "tx": "Brindisi from \"La Traviata\""
+        "tx": "茶花女：饮酒歌"
     },
     {
         "c": 102026,
-        "tx": "Anvil Chorus from \"Il Trovatore\""
+        "tx": "游吟诗人 - 铁砧合唱"
     },
     {
         "c": 102027,
-        "tx": "Waltz, Op.39, No.15"
+        "tx": "降A大调圆舞曲，作品39，第15号"
     },
     {
         "c": 102028,
-        "tx": "Piano Sonata No.3, Op.5, Mov. I"
+        "tx": "F小调第3号钢琴奏鸣曲，作品5"
     },
     {
         "c": 102029,
-        "tx": "Hungarian Dance No.5"
+        "tx": "G小调匈牙利舞曲第5号"
     },
     {
         "c": 102030,
-        "tx": "Humoresque, Op.101, No.7"
+        "tx": "幽默曲，作品101，第7号"
     },
     {
         "c": 102031,
-        "tx": "Slavonic Dances, Op.72, No.2"
+        "tx": "E小调斯拉夫舞曲，《杜姆卡》"
     },
     {
         "c": 102032,
-        "tx": "Slavonic Dances, Op.46, B.78, No.7"
+        "tx": "C小调斯拉夫舞曲，《斯科茨纳》"
     },
     {
         "c": 102033,
-        "tx": "Salut d'Amour, Op.12"
+        "tx": "爱的礼赞，作品12"
     },
     {
         "c": 102034,
-        "tx": "Pomp and Circumstance, Op.39, No.1"
+        "tx": "威风凛凛进行曲，作品39，第1号"
     },
     {
         "c": 102035,
-        "tx": "Suite Bergamasque, IV. Passepied"
+        "tx": "贝加马斯克组曲，第四乐章：帕斯皮耶"
     },
     {
         "c": 102036,
-        "tx": "Valse Romantique"
+        "tx": "浪漫圆舞曲，L.71"
     },
     {
         "c": 102037,
-        "tx": "Arabesque No.1"
+        "tx": "阿拉贝斯克第一号，L.66"
     },
     {
         "c": 102038,
-        "tx": "Piano Concerto No.2, Op.18, Mov. I"
+        "tx": "C小调第二钢琴协奏曲，作品18，第一乐章"
     },
     {
         "c": 102039,
-        "tx": "Six Moments Musicaux, Op.16, No.4"
+        "tx": "音乐瞬间，作品16，第4号"
     },
     {
         "c": 102040,
-        "tx": "Flight of the Bumblebee (Rimsky-Korsakov)"
+        "tx": "野蜂飞舞（里姆斯基-科萨科夫）"
     },
     {
         "c": 102041,
-        "tx": "L'Estro Armonico, Op.3, No.6"
+        "tx": "和谐的灵感，作品3，第6号"
     },
     {
         "c": 102042,
-        "tx": "Winter from \"The Four Seasons\""
+        "tx": "《四季》之春"
     },
     {
         "c": 102043,
-        "tx": "Spring from \"The Four Seasons\""
+        "tx": "《四季》之冬"
     },
     {
         "c": 102044,
-        "tx": "Nocturne"
+        "tx": "夜曲"
     },
     {
         "c": 102045,
-        "tx": "The Lark"
+        "tx": "《告别圣彼得堡》之云雀"
     },
     {
         "c": 102046,
-        "tx": "Ruslan and Lyudmila"
+        "tx": "鲁斯兰与柳德米拉"
     },
     {
         "c": 102047,
-        "tx": "Polka"
+        "tx": "波尔卡"
     },
     {
         "c": 102048,
-        "tx": "Swan Lake, Op.20"
+        "tx": "天鹅湖，作品20"
     },
     {
         "c": 102049,
-        "tx": "March from \"The Nutcracker\""
+        "tx": "《胡桃夹子》进行曲"
     },
     {
         "c": 102050,
-        "tx": "Piano Concerto No.1, Op.23, Mov. I"
+        "tx": "第一钢琴协奏曲，作品23，第一乐章"
     },
     {
         "c": 102051,
-        "tx": "Bacchanale from \"Samson et Dalila, Op.47\""
+        "tx": "《参孙与达利拉》中的巴卡纳尔舞曲"
     },
     {
         "c": 102052,
-        "tx": "Danse Macabre, Op.40"
+        "tx": "G小调骷髅之舞，作品40"
     },
     {
         "c": 102053,
-        "tx": "Songs Without Words, Op.62, No.6"
+        "tx": "无词歌，作品62，第6号"
     },
     {
         "c": 102054,
-        "tx": "Violin Concerto, Op.64"
+        "tx": "小提琴协奏曲，作品64"
     },
     {
         "c": 102055,
-        "tx": "A Midsummer Night's Dream, I. Scherzo"
+        "tx": "仲夏夜之梦，第一乐章：谐谑曲"
     },
     {
         "c": 102056,
-        "tx": "Songs Without Words, Op.19, No.6"
+        "tx": "无词歌，作品19，第6号"
     },
     {
         "c": 102057,
-        "tx": "Symphony No.4, Mov. I"
+        "tx": "第四交响曲，第一乐章"
     },
     {
         "c": 102058,
-        "tx": "Symphony No.5, Mov. I"
+        "tx": "第五交响曲，第一乐章"
     },
     {
         "c": 102059,
-        "tx": "From the New World, Mov. IV"
+        "tx": "《新世界》交响曲，第四乐章"
     },
     {
         "c": 102060,
-        "tx": "Symphony No.40, Mov. I"
+        "tx": "第四十交响曲，第一乐章"
     },
     {
         "c": 102061,
-        "tx": "Minuet from \"L'arlesienne Suite No.2\""
+        "tx": "《阿莱城的姑娘》第二组曲中的小步舞曲"
     },
     {
         "c": 102062,
-        "tx": "Farandole from \"L'arlesienne Suite No.2\""
+        "tx": "《阿莱城的姑娘》第二组曲中的法兰多尔舞曲"
     },
     {
         "c": 102063,
-        "tx": "Hungarian Rhapsody No.2"
+        "tx": "第二号匈牙利狂想曲"
     },
     {
         "c": 102064,
-        "tx": "Liebestraume, No.3"
+        "tx": "爱的梦，第三号"
     },
     {
         "c": 102065,
-        "tx": "Transcendental Etude, IV. Mazeppa"
+        "tx": "超技练习曲，第四号《马捷帕》"
     },
     {
         "c": 102066,
-        "tx": "Grande valse brillante, Op.18"
+        "tx": "辉煌大圆舞曲，作品18"
     },
     {
         "c": 102067,
-        "tx": "Waltzes, Op.64, No.2"
+        "tx": "圆舞曲，作品64，第2号"
     },
     {
         "c": 102068,
-        "tx": "Spanish Dance, II. Zapateado"
+        "tx": "西班牙舞曲，第二号：踢踏舞"
     },
     {
         "c": 102069,
-        "tx": "Zigeunerweisen, Op.20"
+        "tx": "流浪者之歌，作品20"
     },
     {
         "c": 102070,
-        "tx": "An Der Schonen Blauen Donau, Op.314"
+        "tx": "美丽的蓝色多瑙河，作品314"
     },
     {
         "c": 102071,
-        "tx": "Annen-Polka, Op.117"
+        "tx": "安娜波尔卡，作品117"
     },
     {
         "c": 102072,
-        "tx": "Fruhlingsstimmen, Op.410"
+        "tx": "春之声圆舞曲，作品410"
     },
     {
         "c": 102073,
-        "tx": "The Marriage of Figaro"
+        "tx": "费加罗的婚礼"
     },
     {
         "c": 102074,
-        "tx": "12 Variations on \"Ah, vous dirai-je maman\""
+        "tx": "《啊，妈妈，你可知道》十二变奏曲"
     },
     {
         "c": 102075,
-        "tx": "Sonata Pathetique, Mov. III"
+        "tx": "悲怆奏鸣曲，第三乐章"
     },
     {
         "c": 102076,
-        "tx": "Orchestral Suite No.3, II. Air"
+        "tx": "第三号管弦乐组曲，第二乐章：凌空"
     },
     {
         "c": 102077,
-        "tx": "Habanera from \"Carmen Suite No.2\""
+        "tx": "《卡门》第二组曲中的哈巴涅拉舞曲"
     },
     {
         "c": 102078,
-        "tx": "Dance of the Sugarplum Fairy from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的糖果仙子舞曲"
     },
     {
         "c": 102079,
-        "tx": "Chinese Dance from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的中国舞曲"
     },
     {
         "c": 102080,
-        "tx": "Autumn from \"The Four Seasons\""
+        "tx": "《四季》之秋"
     },
     {
         "c": 102081,
-        "tx": "Carmen Concert Fantasy, Op.25"
+        "tx": "卡门幻想曲，作品25"
     },
     {
         "c": 102082,
-        "tx": "Suite in D minor, III. Sarabande"
+        "tx": "D小调组曲，第三乐章：萨拉班德舞曲"
     },
     {
         "c": 102083,
-        "tx": "3 Pieces, Op.2, No.1"
+        "tx": "三首作品，作品2，第一号"
     },
     {
         "c": 102084,
-        "tx": "12 Etudes, Op.8, No.12"
+        "tx": "十二首练习曲，作品8，第12号"
     },
     {
         "c": 102085,
-        "tx": "Valse, Op.1"
+        "tx": "圆舞曲，作品1"
     },
     {
         "c": 102086,
-        "tx": "In the Hall of the Mountain King"
+        "tx": "山魔王的宫殿"
     },
     {
         "c": 102087,
-        "tx": "Piano Concerto in A minor, Op.16, Mov.I"
+        "tx": "A小调钢琴协奏曲，作品16，第一乐章"
     },
     {
         "c": 102088,
-        "tx": "Moonlight, Mov. I"
+        "tx": "月光奏鸣曲，第一乐章"
     },
     {
         "c": 102089,
-        "tx": "10 Preludes, Op.23, No.5"
+        "tx": "十首前奏曲，作品23，第5号"
     },
     {
         "c": 102090,
-        "tx": "Keyboard Sonata in E Minor, Mov.I"
+        "tx": "E小调键盘奏鸣曲，第一乐章"
     },
     {
         "c": 102091,
-        "tx": "6 Etudes, Op.111, No.6"
+        "tx": "六首练习曲，作品111，第6号"
     },
     {
         "c": 102092,
-        "tx": "Fantaisie-impromptu, Op.66"
+        "tx": "幻想即兴曲，作品66"
     },
     {
         "c": 102093,
-        "tx": "Morning Mood"
+        "tx": "晨景"
     },
     {
         "c": 102094,
-        "tx": "Piano Concerto No.3, Op.30, Mov. I"
+        "tx": "第三钢琴协奏曲，作品30，第一乐章"
     },
     {
         "c": 102095,
-        "tx": "Summer, Mov. III from \"The Four Seasons\""
+        "tx": "《四季》之夏，第三乐章"
     },
     {
         "c": 102096,
-        "tx": "Music for the Royal Fireworks, IV. La Rejouissance"
+        "tx": "皇家焰火音乐，第四乐章：欢乐"
     },
     {
         "c": 102097,
-        "tx": "Valse-Fantasie"
+        "tx": "圆舞曲幻想曲"
     },
     {
         "c": 102098,
-        "tx": "8 Klavierstucke, Op.76, II. Capriccio"
+        "tx": "八首钢琴小品，作品76，第二号：随想曲"
     },
     {
         "c": 102099,
-        "tx": "Waltzes, Op.64, I. Minute Waltz"
+        "tx": "圆舞曲，作品64，第一号：一分钟圆舞曲"
     },
     {
         "c": 102100,
-        "tx": "Suite Bergamasque, III. Clair de Lune"
+        "tx": "贝加马斯克组曲，第三乐章：月光"
     },
     {
         "c": 102101,
-        "tx": "Piano Sonata No.16"
+        "tx": "第16号钢琴协奏曲"
     },
     {
         "c": 102102,
-        "tx": "Moments musicaux, Mov. III"
+        "tx": "音乐瞬间，第四乐章：中庸"
     },
     {
         "c": 102103,
-        "tx": "Prelude from \"Carmen Suite No.1\""
+        "tx": "《卡门》第一组曲中的前奏曲"
     },
     {
         "c": 102104,
-        "tx": "Chanson du Toreador from \"Carmen Suite No.2\""
+        "tx": "《卡门》第二组曲中的斗牛士之歌"
     },
     {
         "c": 102105,
-        "tx": "Pizzicato Polka (with Josef)"
+        "tx": "拨弦波尔卡（与约瑟夫）"
     },
     {
         "c": 102106,
-        "tx": "Requiem: Dies irae"
+        "tx": "安魂曲：震怒之日"
     },
     {
         "c": 102107,
-        "tx": "The Carnival of the Animals, XIV. Finale"
+        "tx": "动物狂欢节，第十四乐章：终曲"
     },
     {
         "c": 102108,
-        "tx": "Harpsichord Concerto, BWV 1052"
+        "tx": "羽管键琴协奏曲，BWV 1052"
     },
     {
         "c": 102109,
-        "tx": "Symphony No.1, Op.55, II. Allegro molto"
+        "tx": "第一交响曲，作品55，第二乐章：快板"
     },
     {
         "c": 102110,
-        "tx": "Dance of the Clowns"
+        "tx": "小丑之舞"
     },
     {
         "c": 102111,
-        "tx": "Symphony No.25"
+        "tx": "第二十五交响曲"
     },
     {
         "c": 102112,
-        "tx": "Waltz from \"The Sleeping Beauty\""
+        "tx": "《睡美人》圆舞曲"
     },
     {
         "c": 102113,
-        "tx": "Invention in A minor, BWV 784"
+        "tx": "A小调创意曲，BWV 784"
     },
     {
         "c": 102114,
-        "tx": "Fur Elise, WoO 59"
+        "tx": "献给爱丽丝，WoO 59"
     },
     {
         "c": 102115,
-        "tx": "Un Sospiro"
+        "tx": "叹息"
     },
     {
         "c": 102116,
-        "tx": "Prelude in C sharp minor, Op.3 No.2"
+        "tx": "升C小调前奏曲，作品3，第2号"
     },
     {
         "c": 102117,
-        "tx": "Etudes, Op.10, No.4"
+        "tx": "练习曲，作品10，第4号"
     },
     {
         "c": 102118,
-        "tx": "Semiramide, Overture"
+        "tx": "《塞米拉米德》序曲"
     },
     {
         "c": 102119,
-        "tx": "Symphony No.94 in G major, Hob.I:94 \"Surprise\""
+        "tx": "G大调第94号交响曲，《惊愕》"
     },
     {
         "c": 102120,
-        "tx": "String Quartet No.1 in G minor, Mov. I"
+        "tx": "G小调第一弦乐四重奏，第一乐章"
     },
     {
         "c": 102121,
-        "tx": "L'italiana in Algeri, Overture"
+        "tx": "《阿尔及尔的意大利女郎》序曲"
     },
     {
         "c": 102122,
-        "tx": "William Tell Overture: Finale"
+        "tx": "《威廉·退尔》序曲：终曲"
     },
     {
         "c": 102123,
-        "tx": "String Quartet in D major \"The Lark\""
+        "tx": "D大调弦乐四重奏《云雀》"
     },
     {
         "c": 102124,
-        "tx": "Serenade for Strings, Op.22, II. Tempo di valse"
+        "tx": "弦乐小夜曲，作品22，第二乐章：圆舞曲"
     },
     {
         "c": 102125,
-        "tx": "String Quartet No.14 in G major, K.387"
+        "tx": "G大调第14号弦乐四重奏，K.387"
     },
     {
         "c": 102126,
-        "tx": "Brandenburg Concerto No.3 in G major, Mov. I"
+        "tx": "G大调第三勃兰登堡协奏曲，第一乐章"
     },
     {
         "c": 102127,
-        "tx": "Violin Sonata No.5 in F major, Op.24 \"Spring\""
+        "tx": "F大调第五小提琴奏鸣曲，作品24《春天》"
     },
     {
         "c": 102128,
-        "tx": "Les Barricades Mysterieuses"
+        "tx": "神秘的障碍"
     },
     {
         "c": 102129,
-        "tx": "A New Ground, Z. T682"
+        "tx": "新大陆，Z. T682"
     },
     {
         "c": 102130,
-        "tx": "Les Petits Moulins a Vent"
+        "tx": "小风车"
     },
     {
         "c": 102131,
-        "tx": "Abdelazer Suite: II. Rondeau"
+        "tx": "阿卜杜拉泽尔组曲：第二乐章：回旋曲"
     },
     {
         "c": 102132,
-        "tx": "Le Reveil-Matin"
+        "tx": "晨钟"
     },
     {
         "c": 102133,
-        "tx": "String Quintet in E major, G.275 \"Minuetto\""
+        "tx": "E大调弦乐五重奏，G.275《小步舞曲》"
     },
     {
         "c": 102134,
-        "tx": "Eine Kleine Nachtmusik, Mov. I"
+        "tx": "小夜曲，第一乐章"
     },
     {
         "c": 102135,
-        "tx": "A Midsummer Night's Dream, V. Wedding March"
+        "tx": "仲夏夜之梦，第五乐章：婚礼进行曲"
     },
     {
         "c": 102136,
-        "tx": "Polonaise in A-flat major, Op.53 \"Heroic\""
+        "tx": "降A大调波兰舞曲，作品53《英雄》"
     },
     {
         "c": 102137,
-        "tx": "Waltz of the Flowers from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的花之圆舞曲"
     },
     {
         "c": 102138,
-        "tx": "Piano Sonata, Op.7"
+        "tx": "钢琴奏鸣曲，作品7"
     },
     {
         "c": 102139,
-        "tx": "Sonata No.20 in G major, Op.49 No.2"
+        "tx": "G大调第20号奏鸣曲，作品49，第2号"
     },
     {
         "c": 102140,
-        "tx": "Fantasie in C major, D.760, Mov. IV"
+        "tx": "C大调幻想曲，D.760，第四乐章"
     },
     {
         "c": 102141,
-        "tx": "Scherzo in B-flat minor Op.31"
+        "tx": "降B小调谐谑曲，作品31"
     },
     {
         "c": 102142,
-        "tx": "Tarantella"
+        "tx": "塔兰泰拉舞曲"
     },
     {
         "c": 102143,
-        "tx": "Concerto for Violin and Oboe in C minor, BWV 1060"
+        "tx": "C小调小提琴与双簧管协奏曲，第一乐章：快板"
     },
     {
         "c": 102144,
-        "tx": "Concerto Grosso in A minor, Op. 6 No. 4, HWV 322"
+        "tx": "A小调大协奏曲，作品6，第4号"
     },
     {
         "c": 102145,
-        "tx": "Arpeggione Sonata, D. 821"
+        "tx": "阿佩乔尼奏鸣曲，D. 821"
     },
     {
         "c": 102146,
-        "tx": "Symphony No. 9, Op. 125"
+        "tx": "第九交响曲，作品125"
     },
     {
         "c": 102147,
-        "tx": "L'Estro Armonico, Op. 3, No. 10"
+        "tx": "和谐的灵感，作品3，第10号"
     },
     {
         "c": 102148,
-        "tx": "Queen of the Night Aria from \"The Magic Flute\""
+        "tx": "夜后咏叹调，选自《魔笛》"
     },
     {
         "c": 102149,
-        "tx": "Can-Can from \"Orpheus in the Underworld\""
+        "tx": "康康舞曲，选自《地狱中的奥菲欧》"
     },
     {
         "c": 102150,
-        "tx": "Largo Al Factotum from \"The Barber of Seville\""
+        "tx": "快给大忙人让路，选自《塞维利亚的理发师》"
     },
     {
         "c": 102151,
-        "tx": "Tritsch-Tratsch-Polka, Op. 214"
+        "tx": "闲聊波尔卡，作品214"
     },
     {
         "c": 102152,
-        "tx": "Rondo in A minor, K.511"
+        "tx": "A小调回旋曲，K.511"
     },
     {
         "c": 102153,
-        "tx": "Petite Suite, L. 65: II. Cortege"
+        "tx": "小组曲，L. 65：第二乐章：送葬"
     },
     {
         "c": 102154,
-        "tx": "Waltz Op.69 No.2"
+        "tx": "圆舞曲，作品69，第2号"
     },
     {
         "c": 102155,
-        "tx": "Songs Without Words, Op.67: No.4 in C major"
+        "tx": "无词歌，作品67：第4号，C大调"
     },
     {
         "c": 102156,
-        "tx": "Sonata Pathetique, Mov. I"
+        "tx": "悲怆奏鸣曲，第一乐章"
     },
     {
         "c": 102157,
-        "tx": "Nocturne 'La Separation'"
+        "tx": "夜曲《离别》"
     },
     {
         "c": 102158,
-        "tx": "Etude Op.25 No.11"
+        "tx": "练习曲，作品25，第11号"
     },
     {
         "c": 102159,
-        "tx": "Hungarian Rhapsody No.6"
+        "tx": "匈牙利狂想曲第6号"
     },
     {
         "c": 102160,
-        "tx": "The Seasons, Op.37a: December"
+        "tx": "四季，作品37a：十二月"
     },
     {
         "c": 102161,
-        "tx": "March of the Dwarfs, Op.54 No.3"
+        "tx": "侏儒进行曲，作品54，第3号"
     },
     {
         "c": 102162,
-        "tx": "The Carnival of the Animals: XIII. The Swan"
+        "tx": "动物狂欢节：第十三乐章：天鹅"
     },
     {
         "c": 102163,
-        "tx": "Cello Sonata No. 1, Op.38: II. Allegretto quasi menuetto"
+        "tx": "E小调第一大提琴奏鸣曲，第二乐章：小步舞曲"
     },
     {
         "c": 102164,
-        "tx": "Cello Concerto No. 1 in C major, Hob.VIIb:1: I. Moderato"
+        "tx": "C大调第一大提琴协奏曲，第一乐章：中庸"
     },
     {
         "c": 102165,
-        "tx": "Cello Sonata No. 3 in A major, Op. 69: II. Scherzo"
+        "tx": "A大调第三大提琴奏鸣曲，第二乐章：谐谑曲"
     },
     {
         "c": 102166,
-        "tx": "Cello Sonata in G minor, Op. 65: II. Scherzo"
+        "tx": "G小调大提琴奏鸣曲，第二乐章：谐谑曲"
     },
     {
         "c": 102167,
-        "tx": "Brandenburg Concerto No. 4 in G major, Mov. I"
+        "tx": "G大调第四勃兰登堡协奏曲，第一乐章"
     },
     {
         "c": 102168,
-        "tx": "L'Estro Armonico, Op. 3, No. 8"
+        "tx": "和谐的灵感，作品3，第8号"
     },
     {
         "c": 102169,
-        "tx": "Piano Concerto No. 1, Op. 23, Mov. III"
+        "tx": "第一钢琴协奏曲，作品23，第三乐章"
     },
     {
         "c": 102170,
-        "tx": "Brandenburg Concerto No. 3 in G major, Mov. III"
+        "tx": "G大调第三勃兰登堡协奏曲，第三乐章"
     },
     {
         "c": 102171,
-        "tx": "Piano Concerto in A minor, Op. 16, Mov. III"
+        "tx": "A小调钢琴协奏曲，作品16，第三乐章"
     },
     {
         "c": 102172,
-        "tx": "Intermezzo in A major, Op. 118, No. 2"
+        "tx": "A大调间奏曲，作品118，第2号"
     },
     {
         "c": 102173,
-        "tx": "The Carnival of the Animals: XII. Fossils"
+        "tx": "动物狂欢节：第十二乐章：化石"
     },
     {
         "c": 102174,
-        "tx": "Suite Bergamasque, II. Menuet"
+        "tx": "贝加马斯克组曲，第二乐章：小步舞曲"
     },
     {
         "c": 102175,
-        "tx": "12 Etudes, Op. 8, No. 6"
+        "tx": "十二首练习曲，作品8，第6号"
     },
     {
         "c": 102176,
-        "tx": "Piano Concerto No.1 in G minor, Op. 25"
+        "tx": "G小调第一钢琴协奏曲，作品25"
     },
     {
         "c": 102177,
-        "tx": "Piano Trio No. 2 in E-flat major, Op. 100"
+        "tx": "降E大调第二钢琴三重奏，作品100"
     },
     {
         "c": 102178,
-        "tx": "Piano Trio in G major, Mov. II"
+        "tx": "G大调钢琴三重奏，第二乐章"
     },
     {
         "c": 102179,
-        "tx": "Piano Trio No. 1 in B major, Op. 8, Mov. II"
+        "tx": "B大调第一钢琴三重奏，作品8，第二乐章"
     },
     {
         "c": 102180,
-        "tx": "Piano Trio No. 4, \"Dumky\" in E minor, Op. 90, Mov. V"
+        "tx": "E小调第四钢琴三重奏《杜姆卡》，第五乐章"
     },
     {
         "c": 102181,
-        "tx": "Piano Trio No. 1 in D minor, Op. 49"
+        "tx": "D小调第一钢琴三重奏，作品49"
     },
     {
         "c": 102182,
-        "tx": "Prelude Op.28, No.15 in D-flat major, \"Raindrop\""
+        "tx": "降D大调前奏曲《雨滴》，作品28，第15号"
     },
     {
         "c": 102183,
-        "tx": "Suite Bergamasque, I. Prelude"
+        "tx": "贝加马斯克组曲，第一乐章：前奏曲"
     },
     {
         "c": 102184,
-        "tx": "10 Preludes, Op.23, No.6 in E-flat major"
+        "tx": "十首前奏曲，作品23，第6号，降E大调"
     },
     {
         "c": 102185,
-        "tx": "Prelude and Fugue in C minor, BWV 847"
+        "tx": "C小调前奏曲与赋格，BWV 847"
     },
     {
         "c": 102186,
-        "tx": "Prelude in F sharp minor, Op.28, No.8"
+        "tx": "升F小调前奏曲，作品28，第8号"
     },
     {
         "c": 102187,
-        "tx": "Piano Quintet in A major, D.667, Mov. IV"
+        "tx": "A大调钢琴五重奏，D.667，第四乐章"
     },
     {
         "c": 102188,
-        "tx": "Symphony No.5, D.485, Mov. III"
+        "tx": "第五交响曲，D.485，第三乐章"
     },
     {
         "c": 102189,
-        "tx": "Fantasie in C major, D.760, Mov. I"
+        "tx": "C大调幻想曲，D.760，第一乐章"
     },
     {
         "c": 102190,
-        "tx": "Piano Sonata in B-flat major, D.960, Mov. III"
+        "tx": "降B大调钢琴奏鸣曲，D.960，第三乐章"
     },
     {
         "c": 102191,
-        "tx": "4 Impromptus No.2 in E-flat major, D.899"
+        "tx": "四首即兴曲，降E大调，D.899，第二号"
     },
     {
         "c": 102192,
-        "tx": "Violin Concerto in A minor, BWV 1041"
+        "tx": "A小调小提琴协奏曲，BWV 1041"
     },
     {
         "c": 102193,
-        "tx": "Piano Concerto No.1 in E minor, Op. 11, Mov. III"
+        "tx": "E小调第一钢琴协奏曲，作品11，第三乐章"
     },
     {
         "c": 102194,
-        "tx": "Piano Concerto No.3 in D minor, Op. 30, Mov. III"
+        "tx": "D小调第三钢琴协奏曲，作品30，第三乐章"
     },
     {
         "c": 102195,
-        "tx": "Concerto for 4 Violins and Cello in B minor, RV 580"
+        "tx": "B小调四小提琴与大提琴协奏曲"
     },
     {
         "c": 102196,
-        "tx": "Piano Concerto No.2, Op. 44, Mov. III"
+        "tx": "第二钢琴协奏曲，作品44，第三乐章"
     },
     {
         "c": 102197,
-        "tx": "Oboe Concerto in C major, Hob. VIIc:1, Mov. I"
+        "tx": "C大调双簧管协奏曲，第一乐章"
     },
     {
         "c": 102198,
-        "tx": "Trio for 2 Oboes and English Horn, Op. 87, Mov. IV"
+        "tx": "两双簧管与英国管三重奏，第四乐章"
     },
     {
         "c": 102199,
-        "tx": "Oboe Concerto in C major, K314, Mov. III"
+        "tx": "C大调双簧管协奏曲，K314，第三乐章"
     },
     {
         "c": 102200,
-        "tx": "Concerto for Oboe d'Amore, BWV 1055, Mov.III"
+        "tx": "D小调双簧管协奏曲，第三乐章"
     },
     {
         "c": 102201,
-        "tx": "Oboe Concerto in F major, RV 455, Mov. I"
+        "tx": "F大调双簧管协奏曲，第一乐章"
     },
     {
         "c": 102202,
-        "tx": "Miniature Overture from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的小序曲"
     },
     {
         "c": 102203,
-        "tx": "Dance of the Reed Flutes from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的芦笛舞曲"
     },
     {
         "c": 102204,
-        "tx": "Waltz of the Snowflakes from \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的雪花圆舞曲"
     },
     {
         "c": 102205,
-        "tx": "Symphony No.1, Op. 13, Mov. I"
+        "tx": "第一交响曲，作品13，第一乐章"
     },
     {
         "c": 102206,
-        "tx": "Symphony No.1, Op. 13, Mov. III"
+        "tx": "第一交响曲，作品13，第三乐章"
     },
     {
         "c": 102207,
-        "tx": "Divertimento in G major, Hob.XVI:8, Mov. I"
+        "tx": "G大调嬉游曲，第一乐章"
     },
     {
         "c": 102208,
-        "tx": "Piano Sonata No.1, Op.1, Mov. I"
+        "tx": "第一钢琴奏鸣曲，作品1，第一乐章"
     },
     {
         "c": 102209,
-        "tx": "Piano Sonata, Op.7, Mov. IV"
+        "tx": "钢琴奏鸣曲，作品7，第四乐章"
     },
     {
         "c": 102210,
-        "tx": "Piano Sonata No.8, Mov. I"
+        "tx": "第八钢琴奏鸣曲，第一乐章"
     },
     {
         "c": 102211,
-        "tx": "Piano Sonata No.23, Op.57, Mov. III"
+        "tx": "第二十三钢琴奏鸣曲，作品57，第三乐章"
     },
     {
         "c": 102212,
-        "tx": "Violin Concerto No.1, Op.6, Mov. III"
+        "tx": "第一小提琴协奏曲，作品6，第三乐章"
     },
     {
         "c": 102213,
-        "tx": "Violin Concerto, Op.61, Mov. III"
+        "tx": "小提琴协奏曲，作品61，第三乐章"
     },
     {
         "c": 102214,
-        "tx": "Violin Concerto in C major, RV 185, Mov. II"
+        "tx": "C大调小提琴协奏曲，RV 185，第二乐章"
     },
     {
         "c": 102215,
-        "tx": "Violin Concerto in C major, Hob. VIIa:1, Mov. III"
+        "tx": "C大调小提琴协奏曲，第三乐章"
     },
     {
         "c": 102216,
-        "tx": "Violin Concerto, Op.53, Mov. III"
+        "tx": "小提琴协奏曲，作品53，第三乐章"
     },
     {
         "c": 103001,
-        "tx": "Minuet, BWV Anh. 114"
+        "tx": "G大调小步舞曲，\nBWV Anh 114"
     },
     {
         "c": 103002,
-        "tx": "Jesu,\nJoy of Man's Desiring"
+        "tx": "康塔塔，BWV 147，\n耶稣，人类渴望的喜悦"
     },
     {
         "c": 103003,
-        "tx": "Toccata and Fugue,\nBWV 565"
+        "tx": "D小调托卡塔与赋格，\nBWV 565"
     },
     {
         "c": 103004,
-        "tx": "Lascia Ch'io Pianga\nfrom \"Rinaldo\""
+        "tx": "《让我哭泣》选自歌剧\n《里纳尔多》"
     },
     {
         "c": 103005,
-        "tx": "Water Music, II.\nAlla hornpipe"
+        "tx": "D大调第二组曲，HWV 349。\n号角管"
     },
     {
         "c": 103006,
-        "tx": "Arrival\nof the Queen of Sheba"
+        "tx": "第四协奏曲。所罗门，HWV 67。\n示巴女王的到来"
     },
     {
         "c": 103007,
-        "tx": "Serenade from String Quartet,\nOp.3, No.5"
+        "tx": "F大调第17号弦乐四重奏，\n《小夜曲》- 第二乐章"
     },
     {
         "c": 103008,
-        "tx": "Trumpet Concerto, Mov. I"
+        "tx": "降E大调小号协奏曲 -\n第一乐章"
     },
     {
         "c": 103009,
-        "tx": "Trumpet Concerto, Mov. III"
+        "tx": "降E大调小号协奏曲 -\n第三乐章"
     },
     {
         "c": 103010,
-        "tx": "Eine Kleine Nachtmusik,\nMov. IV"
+        "tx": "莫扎特K.525 G大调第13号小夜曲，\n第四乐章"
     },
     {
         "c": 103011,
-        "tx": "Piano Sonata No.8, Mov. III"
+        "tx": "A小调第8号钢琴奏鸣曲，\n第三乐章"
     },
     {
         "c": 103012,
-        "tx": "Turkish March"
+        "tx": "A大调第11号钢琴奏鸣曲，\n土耳其进行曲"
     },
     {
         "c": 103013,
-        "tx": "Sonata Pathetique, Mov. II"
+        "tx": "C小调第8号钢琴奏鸣曲，\n《悲怆》第二乐章"
     },
     {
         "c": 103014,
-        "tx": "The Tempest, Mov. III"
+        "tx": "D小调第17号钢琴奏鸣曲，\n《暴风雨》第三乐章"
     },
     {
         "c": 103015,
-        "tx": "Moonlight, Mov. III"
+        "tx": "升C小调第14号钢琴奏鸣曲，\n《月光》第三乐章"
     },
     {
         "c": 103016,
-        "tx": "Caprice No.24 (Franz Liszt)"
+        "tx": "小提琴独奏随想曲，\n作品1，第24号"
     },
     {
         "c": 103017,
-        "tx": "La Campanella (Franz Liszt)"
+        "tx": "帕格尼尼大练习曲S.141\n第3号《钟声》"
     },
     {
         "c": 103018,
-        "tx": "Serenade from \"Swan Song\""
+        "tx": "小夜曲D.957，第4号"
     },
     {
         "c": 103019,
-        "tx": "Three Marches Militaires, No.1"
+        "tx": "军队进行曲，作品51，\nD.733第一号"
     },
     {
         "c": 103020,
-        "tx": "Der Erlkonig"
+        "tx": "魔王，作品1，D.328"
     },
     {
         "c": 103021,
-        "tx": "Nocturne, Op.9, No.2"
+        "tx": "降E大调夜曲，\n作品9，第2号"
     },
     {
         "c": 103022,
-        "tx": "Revolutionary Etude"
+        "tx": "练习曲，作品10，第12号\n《革命》"
     },
     {
         "c": 103023,
-        "tx": "Black Key Etude"
+        "tx": "练习曲，作品10，第5号\n《黑键》"
     },
     {
         "c": 103024,
-        "tx": "La Donna e Mobile\nfrom \"Rigoletto\""
+        "tx": "女人善变"
     },
     {
         "c": 103025,
-        "tx": "Brindisi from \"La Traviata\""
+        "tx": "茶花女：饮酒歌"
     },
     {
         "c": 103026,
-        "tx": "Anvil Chorus\nfrom \"Il Trovatore\""
+        "tx": "游吟诗人 - 铁砧合唱"
     },
     {
         "c": 103027,
-        "tx": "Waltz, Op.39, No.15"
+        "tx": "降A大调圆舞曲，\n作品39，第15号"
     },
     {
         "c": 103028,
-        "tx": "Piano Sonata No.3,\nOp.5, Mov. I"
+        "tx": "F小调第3号钢琴奏鸣曲，\n作品5"
     },
     {
         "c": 103029,
-        "tx": "Hungarian Dance No.5"
+        "tx": "G小调匈牙利舞曲第5号"
     },
     {
         "c": 103030,
-        "tx": "Humoresque, Op.101, No.7"
+        "tx": "幽默曲，作品101，第7号"
     },
     {
         "c": 103031,
-        "tx": "Slavonic Dances, Op.72,\nNo.2"
+        "tx": "E小调斯拉夫舞曲，\n《杜姆卡》"
     },
     {
         "c": 103032,
-        "tx": "Slavonic Dances, Op.46,\nB.78, No.7"
+        "tx": "C小调斯拉夫舞曲，\n《斯科茨纳》"
     },
     {
         "c": 103033,
-        "tx": "Salut d'Amour, Op.12"
+        "tx": "爱的礼赞，作品12"
     },
     {
         "c": 103034,
-        "tx": "Pomp and Circumstance,\nOp.39, No.1"
+        "tx": "威风凛凛进行曲，\n作品39，第1号"
     },
     {
         "c": 103035,
-        "tx": "Suite Bergamasque, IV.\nPassepied"
+        "tx": "贝加马斯克组曲，\n第四乐章：帕斯皮耶"
     },
     {
         "c": 103036,
-        "tx": "Valse Romantique"
+        "tx": "浪漫圆舞曲，L.71"
     },
     {
         "c": 103037,
-        "tx": "Arabesque No.1"
+        "tx": "阿拉贝斯克第一号，L.66"
     },
     {
         "c": 103038,
-        "tx": "Piano Concerto No.2,\nOp.18, Mov. I"
+        "tx": "C小调第二钢琴协奏曲，\n作品18，第一乐章"
     },
     {
         "c": 103039,
-        "tx": "Six Moments Musicaux,\nOp.16, No.4"
+        "tx": "音乐瞬间，\n作品16，第4号"
     },
     {
         "c": 103040,
-        "tx": "Flight of the Bumblebee\n(Rimsky-Korsakov)"
+        "tx": "野蜂飞舞\n（里姆斯基-科萨科夫）"
     },
     {
         "c": 103041,
-        "tx": "L'Estro Armonico,\nOp.3, No.6"
+        "tx": "和谐的灵感，\n作品3，第6号"
     },
     {
         "c": 103042,
-        "tx": "Winter from \n\"The Four Seasons\""
+        "tx": "《四季》之春"
     },
     {
         "c": 103043,
-        "tx": "Spring from \n\"The Four Seasons\""
+        "tx": "《四季》之冬"
     },
     {
         "c": 103044,
-        "tx": "Nocturne"
+        "tx": "夜曲"
     },
     {
         "c": 103045,
-        "tx": "The Lark"
+        "tx": "《告别圣彼得堡》之云雀"
     },
     {
         "c": 103046,
-        "tx": "Ruslan and Lyudmila"
+        "tx": "鲁斯兰与柳德米拉"
     },
     {
         "c": 103047,
-        "tx": "Polka"
+        "tx": "波尔卡"
     },
     {
         "c": 103048,
-        "tx": "Swan Lake, Op.20"
+        "tx": "天鹅湖，作品20"
     },
     {
         "c": 103049,
-        "tx": "March\nfrom \"The Nutcracker\""
+        "tx": "《胡桃夹子》进行曲"
     },
     {
         "c": 103050,
-        "tx": "Piano Concerto No.1, \nOp.23, Mov. I"
+        "tx": "第一钢琴协奏曲，\n作品23，第一乐章"
     },
     {
         "c": 103051,
-        "tx": "Bacchanale from \n\"Samson et Dalila, Op.47\""
+        "tx": "《参孙与达利拉》中的\n巴卡纳尔舞曲"
     },
     {
         "c": 103052,
-        "tx": "Danse Macabre, Op.40"
+        "tx": "G小调骷髅之舞，作品40"
     },
     {
         "c": 103053,
-        "tx": "Songs Without Words, \nOp.62, No.6"
+        "tx": "无词歌，作品62，第6号"
     },
     {
         "c": 103054,
-        "tx": "Violin Concerto, Op.64"
+        "tx": "小提琴协奏曲，作品64"
     },
     {
         "c": 103055,
-        "tx": "A Midsummer Night's Dream,\nI. Scherzo"
+        "tx": "仲夏夜之梦，\n第一乐章：谐谑曲"
     },
     {
         "c": 103056,
-        "tx": "Songs Without Words,\nOp.19, No.6"
+        "tx": "无词歌，作品19，第6号"
     },
     {
         "c": 103057,
-        "tx": "Symphony No.4, Mov. I"
+        "tx": "第四交响曲，第一乐章"
     },
     {
         "c": 103058,
-        "tx": "Symphony No.5, Mov. I"
+        "tx": "第五交响曲，第一乐章"
     },
     {
         "c": 103059,
-        "tx": "From the New World, Mov. IV"
+        "tx": "《新世界》交响曲，\n第四乐章"
     },
     {
         "c": 103060,
-        "tx": "Symphony No.40, Mov. I"
+        "tx": "第四十交响曲，第一乐章"
     },
     {
         "c": 103061,
-        "tx": "Minuet from \n\"L'arlesienne Suite No.2\""
+        "tx": "《阿莱城的姑娘》第二组曲中的\n小步舞曲"
     },
     {
         "c": 103062,
-        "tx": "Farandole from \n\"L'arlesienne Suite No.2\""
+        "tx": "《阿莱城的姑娘》第二组曲中的\n法兰多尔舞曲"
     },
     {
         "c": 103063,
-        "tx": "Hungarian Rhapsody No.2"
+        "tx": "第二号匈牙利狂想曲"
     },
     {
         "c": 103064,
-        "tx": "Liebestraume, No.3"
+        "tx": "爱的梦，第三号"
     },
     {
         "c": 103065,
-        "tx": "Transcendental Etude,\nIV. Mazeppa"
+        "tx": "超技练习曲，第四号《马捷帕》"
     },
     {
         "c": 103066,
-        "tx": "Grande valse brillante, Op.18"
+        "tx": "辉煌大圆舞曲，作品18"
     },
     {
         "c": 103067,
-        "tx": "Waltzes, Op.64, No.2"
+        "tx": "圆舞曲，作品64，第2号"
     },
     {
         "c": 103068,
-        "tx": "Spanish Dance, II. Zapateado"
+        "tx": "西班牙舞曲，第二号：踢踏舞"
     },
     {
         "c": 103069,
-        "tx": "Zigeunerweisen, Op.20"
+        "tx": "流浪者之歌，作品20"
     },
     {
         "c": 103070,
-        "tx": "An Der Schonen Blauen Donau,\nOp.314"
+        "tx": "美丽的蓝色多瑙河，作品314"
     },
     {
         "c": 103071,
-        "tx": "Annen-Polka, Op.117"
+        "tx": "安娜波尔卡，作品117"
     },
     {
         "c": 103072,
-        "tx": "Fruhlingsstimmen, Op.410"
+        "tx": "春之声圆舞曲，作品410"
     },
     {
         "c": 103073,
-        "tx": "The Marriage of Figaro"
+        "tx": "费加罗的婚礼"
     },
     {
         "c": 103074,
-        "tx": "12 Variations on\n\"Ah, vous dirai-je maman\""
+        "tx": "《啊，妈妈，你可知道》十二变奏曲"
     },
     {
         "c": 103075,
-        "tx": "Sonata Pathetique, Mov. III"
+        "tx": "悲怆奏鸣曲，第三乐章"
     },
     {
         "c": 103076,
-        "tx": "Orchestral Suite No.3, II. Air"
+        "tx": "第三号管弦乐组曲，\n第二乐章：凌空"
     },
     {
         "c": 103077,
-        "tx": "Habanera from\n\"Carmen Suite No.2\""
+        "tx": "《卡门》第二组曲中的\n哈巴涅拉舞曲"
     },
     {
         "c": 103078,
-        "tx": "Dance of the Sugarplum Fairy\nfrom \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的\n糖果仙子舞曲"
     },
     {
         "c": 103079,
-        "tx": "Chinese Dance from\n\"The Nutcracker\""
+        "tx": "《胡桃夹子》中的\n中国舞曲"
     },
     {
         "c": 103080,
-        "tx": "Autumn from\n\"The Four Seasons\""
+        "tx": "《四季》之秋"
     },
     {
         "c": 103081,
-        "tx": "Carmen Concert Fantasy, Op.25"
+        "tx": "卡门幻想曲，作品25"
     },
     {
         "c": 103082,
-        "tx": "Suite in D minor, III. Sarabande"
+        "tx": "D小调组曲，第三乐章：\n萨拉班德舞曲"
     },
     {
         "c": 103083,
-        "tx": "3 Pieces, Op.2, No.1"
+        "tx": "三首作品，作品2，第一号"
     },
     {
         "c": 103084,
-        "tx": "12 Etudes, Op.8, No.12"
+        "tx": "十二首练习曲，\n作品8，第12号"
     },
     {
         "c": 103085,
-        "tx": "Valse, Op.1"
+        "tx": "圆舞曲，作品1"
     },
     {
         "c": 103086,
-        "tx": "In the Hall of the Mountain King"
+        "tx": "山魔王的宫殿"
     },
     {
         "c": 103087,
-        "tx": "Piano Concerto in A minor,\nOp.16, Mov.I"
+        "tx": "A小调钢琴协奏曲，\n作品16，第一乐章"
     },
     {
         "c": 103088,
-        "tx": "Moonlight, Mov. I"
+        "tx": "月光奏鸣曲，第一乐章"
     },
     {
         "c": 103089,
-        "tx": "10 Preludes, Op.23, No.5"
+        "tx": "十首前奏曲，作品23，第5号"
     },
     {
         "c": 103090,
-        "tx": "Keyboard Sonata in E Minor,\nMov.I"
+        "tx": "E小调键盘奏鸣曲，\n第一乐章"
     },
     {
         "c": 103091,
-        "tx": "6 Etudes, Op.111, No.6"
+        "tx": "六首练习曲，\n作品111，第6号"
     },
     {
         "c": 103092,
-        "tx": "Fantaisie-impromptu, Op.66"
+        "tx": "幻想即兴曲，作品66"
     },
     {
         "c": 103093,
-        "tx": "Morning Mood"
+        "tx": "晨景"
     },
     {
         "c": 103094,
-        "tx": "Piano Concerto No.3,\nOp.30, Mov. I"
+        "tx": "第三钢琴协奏曲，\n作品30，第一乐章"
     },
     {
         "c": 103095,
-        "tx": "Summer, Mov. III\nfrom \"The Four Seasons\""
+        "tx": "《四季》之夏，第三乐章"
     },
     {
         "c": 103096,
-        "tx": "Music for the Royal Fireworks,\nIV. La Rejouissance"
+        "tx": "皇家焰火音乐，\n第四乐章：欢乐"
     },
     {
         "c": 103097,
-        "tx": "Valse-Fantasie"
+        "tx": "圆舞曲幻想曲"
     },
     {
         "c": 103098,
-        "tx": "8 Klavierstucke, Op.76,\nII. Capriccio"
+        "tx": "八首钢琴小品，作品76，第二号：\n随想曲"
     },
     {
         "c": 103099,
-        "tx": "Waltzes, Op.64,\nI. Minute Waltz"
+        "tx": "圆舞曲，作品64，第一号：\n一分钟圆舞曲"
     },
     {
         "c": 103100,
-        "tx": "Suite Bergamasque,\nIII. Clair de Lune"
+        "tx": "贝加马斯克组曲，第三乐章：\n月光"
     },
     {
         "c": 103101,
-        "tx": "Piano Sonata No.16"
+        "tx": "第16号钢琴协奏曲"
     },
     {
         "c": 103102,
-        "tx": "Moments musicaux, Mov. III"
+        "tx": "音乐瞬间，第四乐章：中庸"
     },
     {
         "c": 103103,
-        "tx": "Prelude\nfrom \"Carmen Suite No.1\""
+        "tx": "《卡门》第一组曲中的前奏曲"
     },
     {
         "c": 103104,
-        "tx": "Chanson du Toreador\nfrom \"Carmen Suite No.2\""
+        "tx": "《卡门》第二组曲中的\n斗牛士之歌"
     },
     {
         "c": 103105,
-        "tx": "Pizzicato Polka (with Josef)"
+        "tx": "拨弦波尔卡（与约瑟夫）"
     },
     {
         "c": 103106,
-        "tx": "Requiem: Dies irae"
+        "tx": "安魂曲：震怒之日"
     },
     {
         "c": 103107,
-        "tx": "The Carnival of the Animals,\nXIV. Finale"
+        "tx": "动物狂欢节，第十四乐章：\n终曲"
     },
     {
         "c": 103108,
-        "tx": "Harpsichord Concerto,\nBWV 1052"
+        "tx": "羽管键琴协奏曲，BWV 1052"
     },
     {
         "c": 103109,
-        "tx": "Symphony No.1, Op.55,\nII. Allegro molto"
+        "tx": "第一交响曲，作品55，第二乐章：\n快板"
     },
     {
         "c": 103110,
-        "tx": "Dance of the Clowns"
+        "tx": "小丑之舞"
     },
     {
         "c": 103111,
-        "tx": "Symphony No.25"
+        "tx": "第二十五交响曲"
     },
     {
         "c": 103112,
-        "tx": "Waltz\nfrom \"The Sleeping Beauty\""
+        "tx": "《睡美人》圆舞曲"
     },
     {
         "c": 103113,
-        "tx": "Invention in A minor,\nBWV 784"
+        "tx": "A小调创意曲，BWV 784"
     },
     {
         "c": 103114,
-        "tx": "Fur Elise, WoO 59"
+        "tx": "献给爱丽丝，WoO 59"
     },
     {
         "c": 103115,
-        "tx": "Un Sospiro"
+        "tx": "叹息"
     },
     {
         "c": 103116,
-        "tx": "Prelude in C sharp minor,\nOp.3 No.2"
+        "tx": "升C小调前奏曲，作品3，第2号"
     },
     {
         "c": 103117,
-        "tx": "Etudes, Op.10, No.4"
+        "tx": "练习曲，作品10，第4号"
     },
     {
         "c": 103118,
-        "tx": "Semiramide, Overture"
+        "tx": "《塞米拉米德》序曲"
     },
     {
         "c": 103119,
-        "tx": "Symphony No.94 in G major,\nHob.I:94 \"Surprise\""
+        "tx": "G大调第94号交响曲，《惊愕》"
     },
     {
         "c": 103120,
-        "tx": "String Quartet No.1\nin G minor, Mov. I"
+        "tx": "G小调第一弦乐四重奏，第一乐章"
     },
     {
         "c": 103121,
-        "tx": "L'italiana in Algeri,\nOverture"
+        "tx": "《阿尔及尔的意大利女郎》序曲"
     },
     {
         "c": 103122,
-        "tx": "William Tell Overture:\nFinale"
+        "tx": "《威廉·退尔》序曲：终曲"
     },
     {
         "c": 103123,
-        "tx": "String Quartet in D major\n\"The Lark\""
+        "tx": "D大调弦乐四重奏《云雀》"
     },
     {
         "c": 103124,
-        "tx": "Serenade for Strings, Op.22,\nII. Tempo di valse"
+        "tx": "弦乐小夜曲，作品22，\n第二乐章：圆舞曲"
     },
     {
         "c": 103125,
-        "tx": "String Quartet No.14\nin G major, K.387"
+        "tx": "G大调第14号弦乐四重奏，\nK.387"
     },
     {
         "c": 103126,
-        "tx": "Brandenburg Concerto No.3\nin G major, Mov. I"
+        "tx": "G大调第三勃兰登堡协奏曲，\n第一乐章"
     },
     {
         "c": 103127,
-        "tx": "Violin Sonata No.5\nin F major, Op.24 \"Spring\""
+        "tx": "F大调第五小提琴奏鸣曲，\n作品24《春天》"
     },
     {
         "c": 103128,
-        "tx": "Les Barricades\nMysterieuses"
+        "tx": "神秘的障碍"
     },
     {
         "c": 103129,
-        "tx": "A New Ground, Z. T682"
+        "tx": "新大陆，Z. T682"
     },
     {
         "c": 103130,
-        "tx": "Les Petits Moulins a Vent"
+        "tx": "小风车"
     },
     {
         "c": 103131,
-        "tx": "Abdelazer Suite:\nII. Rondeau"
+        "tx": "阿卜杜拉泽尔组曲：\n第二乐章：回旋曲"
     },
     {
         "c": 103132,
-        "tx": "Le Reveil-Matin"
+        "tx": "晨钟"
     },
     {
         "c": 103133,
-        "tx": "String Quintet in E major,\nG.275 \"Minuetto\""
+        "tx": "E大调弦乐五重奏，\nG.275《小步舞曲》"
     },
     {
         "c": 103134,
-        "tx": "Eine Kleine Nachtmusik, Mov. I"
+        "tx": "小夜曲，第一乐章"
     },
     {
         "c": 103135,
-        "tx": "A Midsummer Night's Dream,\nV. Wedding March"
+        "tx": "仲夏夜之梦，\n第五乐章：婚礼进行曲"
     },
     {
         "c": 103136,
-        "tx": "Polonaise in A-flat major,\nOp.53 \"Heroic\""
+        "tx": "降A大调波兰舞曲，\n作品53《英雄》"
     },
     {
         "c": 103137,
-        "tx": "Waltz of the Flowers from\n\"The Nutcracker\""
+        "tx": "《胡桃夹子》中的\n花之圆舞曲"
     },
     {
         "c": 103138,
-        "tx": "Piano Sonata, Op.7"
+        "tx": "钢琴奏鸣曲，作品7"
     },
     {
         "c": 103139,
-        "tx": "Sonata No.20\nin G major, Op.49 No.2"
+        "tx": "G大调第20号奏鸣曲，\n作品49，第2号"
     },
     {
         "c": 103140,
-        "tx": "Fantasie\nin C major, D.760, Mov. IV"
+        "tx": "C大调幻想曲，D.760，\n第四乐章"
     },
     {
         "c": 103141,
-        "tx": "Scherzo\nin B-flat minor Op.31"
+        "tx": "降B小调谐谑曲，作品31"
     },
     {
         "c": 103142,
-        "tx": "Tarantella"
+        "tx": "塔兰泰拉舞曲"
     },
     {
         "c": 103143,
-        "tx": "Concerto for Violin and Oboe\nin C minor, BWV 1060: I. Allegro"
+        "tx": "C小调小提琴与双簧管协奏曲，\n第一乐章：快板"
     },
     {
         "c": 103144,
-        "tx": "Concerto Grosso\nin A minor, Op. 6 No. 4, HWV 322"
+        "tx": "A小调大协奏曲，作品6，第4号"
     },
     {
         "c": 103145,
-        "tx": "Arpeggione Sonata, D. 821"
+        "tx": "阿佩乔尼奏鸣曲，D. 821"
     },
     {
         "c": 103146,
-        "tx": "Symphony No. 9, Op. 125"
+        "tx": "第九交响曲，作品125"
     },
     {
         "c": 103147,
-        "tx": "L'Estro Armonico, Op. 3, No. 10"
+        "tx": "和谐的灵感，作品3，第10号"
     },
     {
         "c": 103148,
-        "tx": "Queen of the Night Aria from\n\"The Magic Flute\""
+        "tx": "夜后咏叹调，选自《魔笛》"
     },
     {
         "c": 103149,
-        "tx": "Can-Can from\n\"Orpheus in the Underworld\""
+        "tx": "康康舞曲，选自\n《地狱中的奥菲欧》"
     },
     {
         "c": 103150,
-        "tx": "Largo Al Factotum from\n\"The Barber of Seville\""
+        "tx": "快给大忙人让路，选自\n《塞维利亚的理发师》"
     },
     {
         "c": 103151,
-        "tx": "Tritsch-Tratsch-Polka, Op. 214"
+        "tx": "闲聊波尔卡，作品214"
     },
     {
         "c": 103152,
-        "tx": "Rondo in A minor, K.511"
+        "tx": "A小调回旋曲，K.511"
     },
     {
         "c": 103153,
-        "tx": "Petite Suite, L. 65: II. Cortege"
+        "tx": "小组曲，L. 65：\n第二乐章：送葬"
     },
     {
         "c": 103154,
-        "tx": "Waltz Op.69 No.2"
+        "tx": "圆舞曲，作品69，第2号"
     },
     {
         "c": 103155,
-        "tx": "Songs Without Words\nOp.67: No.4 in C major"
+        "tx": "无词歌，作品67：第4号，C大调"
     },
     {
         "c": 103156,
-        "tx": "Sonata Pathetique, Mov. I"
+        "tx": "悲怆奏鸣曲，第一乐章"
     },
     {
         "c": 103157,
-        "tx": "Nocturne 'La Separation'"
+        "tx": "夜曲《离别》"
     },
     {
         "c": 103158,
-        "tx": "Etude Op.25 No.11"
+        "tx": "练习曲，作品25，第11号"
     },
     {
         "c": 103159,
-        "tx": "Hungarian Rhapsody No.6"
+        "tx": "匈牙利狂想曲第6号"
     },
     {
         "c": 103160,
-        "tx": "The Seasons,\nOp.37a: December"
+        "tx": "四季，作品37a：十二月"
     },
     {
         "c": 103161,
-        "tx": "March of the Dwarfs,\nOp.54 No.3"
+        "tx": "侏儒进行曲，作品54，第3号"
     },
     {
         "c": 103162,
-        "tx": "The Carnival of the Animals:\nXIII. The Swan"
+        "tx": "动物狂欢节：第十三乐章：\n天鹅"
     },
     {
         "c": 103163,
-        "tx": "Cello Sonata No. 1 in E minor,\nOp.38: II. Allegretto quasi menuetto"
+        "tx": "E小调第一大提琴奏鸣曲，\n第二乐章：小步舞曲"
     },
     {
         "c": 103164,
-        "tx": "Cello Concerto No. 1 in C major,\nHob.VIIb:1: I. Moderato"
+        "tx": "C大调第一大提琴协奏曲，\n第一乐章：中庸"
     },
     {
         "c": 103165,
-        "tx": "Cello Sonata No. 3 in A major,\nOp. 69: II. Scherzo"
+        "tx": "A大调第三大提琴奏鸣曲，\n第二乐章：谐谑曲"
     },
     {
         "c": 103166,
-        "tx": "Cello Sonata in G minor,\nOp. 65: II. Scherzo"
+        "tx": "G小调大提琴奏鸣曲，\n第二乐章：谐谑曲"
     },
     {
         "c": 103167,
-        "tx": "Brandenburg Concerto No. 4\nin G major, Mov. I"
+        "tx": "G大调第四勃兰登堡协奏曲，\n第一乐章"
     },
     {
         "c": 103168,
-        "tx": "L'Estro Armonico,\nOp. 3, No. 8"
+        "tx": "和谐的灵感，\n作品3，第8号"
     },
     {
         "c": 103169,
-        "tx": "Piano Concerto No. 1,\nOp. 23, Mov. III"
+        "tx": "第一钢琴协奏曲，\n作品23，第三乐章"
     },
     {
         "c": 103170,
-        "tx": "Brandenburg Concerto No. 3\nin G major, Mov. III"
+        "tx": "G大调第三勃兰登堡协奏曲，\n第三乐章"
     },
     {
         "c": 103171,
-        "tx": "Piano Concerto in A minor,\nOp. 16, Mov. III"
+        "tx": "A小调钢琴协奏曲，作品16，\n第三乐章"
     },
     {
         "c": 103172,
-        "tx": "Intermezzo in A major,\nOp. 118, No. 2"
+        "tx": "A大调间奏曲，\n作品118，第2号"
     },
     {
         "c": 103173,
-        "tx": "The Carnival of the Animals:\nXII. Fossils"
+        "tx": "动物狂欢节：第十二乐章：\n化石"
     },
     {
         "c": 103174,
-        "tx": "Suite Bergamasque,\nII. Menuet"
+        "tx": "贝加马斯克组曲，第二乐章：\n小步舞曲"
     },
     {
         "c": 103175,
-        "tx": "12 Etudes, Op. 8, No. 6"
+        "tx": "十二首练习曲，作品8，第6号"
     },
     {
         "c": 103176,
-        "tx": "Piano Concerto No.1\nin G minor, Op. 25"
+        "tx": "G小调第一钢琴协奏曲，作品25"
     },
     {
         "c": 103177,
-        "tx": "Piano Trio No. 2\nin E-flat major, Op. 100"
+        "tx": "降E大调第二钢琴三重奏，作品100"
     },
     {
         "c": 103178,
-        "tx": "Piano Trio in G major, Mov. II"
+        "tx": "G大调钢琴三重奏，第二乐章"
     },
     {
         "c": 103179,
-        "tx": "Piano Trio No. 1\nin B major, Op. 8, Mov. II"
+        "tx": "B大调第一钢琴三重奏，\n作品8，第二乐章"
     },
     {
         "c": 103180,
-        "tx": "Piano Trio No. 4,\n\"Dumky\" in E minor, Op. 90, Mov. V"
+        "tx": "E小调第四钢琴三重奏《杜姆卡》，\n第五乐章"
     },
     {
         "c": 103181,
-        "tx": "Piano Trio No. 1\nin D minor, Op. 49"
+        "tx": "D小调第一钢琴三重奏，作品49"
     },
     {
         "c": 103182,
-        "tx": "Prelude Op.28, No.15\nin D-flat major, \"Raindrop\""
+        "tx": "降D大调前奏曲《雨滴》，\n作品28，第15号"
     },
     {
         "c": 103183,
-        "tx": "Suite Bergamasque,\nI. Prelude"
+        "tx": "贝加马斯克组曲，第一乐章：\n前奏曲"
     },
     {
         "c": 103184,
-        "tx": "10 Preludes, Op.23, No.6\nin E-flat major"
+        "tx": "十首前奏曲，作品23，第6号，\n降E大调"
     },
     {
         "c": 103185,
-        "tx": "Prelude and Fugue\nin C minor, BWV 847"
+        "tx": "C小调前奏曲与赋格，BWV 847"
     },
     {
         "c": 103186,
-        "tx": "Prelude in F sharp minor,\nOp.28, No.8"
+        "tx": "升F小调前奏曲，作品28，第8号"
     },
     {
         "c": 103187,
-        "tx": "Piano Quintet in A major,\nD.667, Mov. IV"
+        "tx": "A大调钢琴五重奏，D.667，\n第四乐章"
     },
     {
         "c": 103188,
-        "tx": "Symphony No.5,\nD.485, Mov. III"
+        "tx": "第五交响曲，D.485，第三乐章"
     },
     {
         "c": 103189,
-        "tx": "Fantasie in C major,\nD.760, Mov. I"
+        "tx": "C大调幻想曲，D.760，第一乐章"
     },
     {
         "c": 103190,
-        "tx": "Piano Sonata in B-flat major,\nD.960, Mov. III"
+        "tx": "降B大调钢琴奏鸣曲，D.960，\n第三乐章"
     },
     {
         "c": 103191,
-        "tx": "4 Impromptus No.2\nin E-flat major, D.899"
+        "tx": "四首即兴曲，降E大调，D.899，\n第二号"
     },
     {
         "c": 103192,
-        "tx": "Violin Concerto in A minor,\nBWV 1041"
+        "tx": "A小调小提琴协奏曲，BWV 1041"
     },
     {
         "c": 103193,
-        "tx": "Piano Concerto No.1\nin E minor, Op. 11, Mov. III"
+        "tx": "E小调第一钢琴协奏曲，\n作品11，第三乐章"
     },
     {
         "c": 103194,
-        "tx": "Piano Concerto No.3\nin D minor, Op. 30, Mov. III"
+        "tx": "D小调第三钢琴协奏曲，\n作品30，第三乐章"
     },
     {
         "c": 103195,
-        "tx": "Concerto for 4 Violins and Cello\nin B minor, RV 580"
+        "tx": "B小调四小提琴与大提琴协奏曲"
     },
     {
         "c": 103196,
-        "tx": "Piano Concerto No.2,\nOp. 44, Mov. III"
+        "tx": "第二钢琴协奏曲，\n作品44，第三乐章"
     },
     {
         "c": 103197,
-        "tx": "Oboe Concerto in C major,\nHob. VIIc:1, Mov. I"
+        "tx": "C大调双簧管协奏曲，\n第一乐章"
     },
     {
         "c": 103198,
-        "tx": "Trio for 2 Oboes and\nEnglish Horn, Op. 87, Mov. IV"
+        "tx": "两双簧管与英国管三重奏，\n第四乐章"
     },
     {
         "c": 103199,
-        "tx": "Oboe Concerto in C major,\nK314, Mov. III"
+        "tx": "C大调双簧管协奏曲，K314，\n第三乐章"
     },
     {
         "c": 103200,
-        "tx": "Concerto for Oboe d'Amore,\nBWV 1055, Mov.III"
+        "tx": "D小调双簧管协奏曲，\n第三乐章"
     },
     {
         "c": 103201,
-        "tx": "Oboe Concerto in F major,\nRV 455, Mov. I"
+        "tx": "F大调双簧管协奏曲，\n第一乐章"
     },
     {
         "c": 103202,
-        "tx": "Miniature Overture\nfrom \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的\n小序曲"
     },
     {
         "c": 103203,
-        "tx": "Dance of the Reed Flutes\nfrom \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的\n芦笛舞曲"
     },
     {
         "c": 103204,
-        "tx": "Waltz of the Snowflakes\nfrom \"The Nutcracker\""
+        "tx": "《胡桃夹子》中的\n雪花圆舞曲"
     },
     {
         "c": 103205,
-        "tx": "Symphony No.1,\nOp. 13, Mov. I"
+        "tx": "第一交响曲，\n作品13，第一乐章"
     },
     {
         "c": 103206,
-        "tx": "Symphony No.1,\nOp. 13, Mov. III"
+        "tx": "第一交响曲，\n作品13，第三乐章"
     },
     {
         "c": 103207,
-        "tx": "Divertimento in G major,\nHob.XVI:8, Mov. I"
+        "tx": "G大调嬉游曲，\n第一乐章"
     },
     {
         "c": 103208,
-        "tx": "Piano Sonata No.1,\nOp.1, Mov. I"
+        "tx": "第一钢琴奏鸣曲，\n作品1，第一乐章"
     },
     {
         "c": 103209,
-        "tx": "Piano Sonata,\nOp.7, Mov. IV"
+        "tx": "钢琴奏鸣曲，\n作品7，第四乐章"
     },
     {
         "c": 103210,
-        "tx": "Piano Sonata No.8, Mov. I"
+        "tx": "第八钢琴奏鸣曲，\n第一乐章"
     },
     {
         "c": 103211,
-        "tx": "Piano Sonata No.23,\nOp.57, Mov. III"
+        "tx": "第二十三钢琴奏鸣曲，\n作品57，第三乐章"
     },
     {
         "c": 103212,
-        "tx": "Violin Concerto No.1,\nOp.6, Mov. III"
+        "tx": "第一小提琴协奏曲，\n作品6，第三乐章"
     },
     {
         "c": 103213,
-        "tx": "Violin Concerto,\nOp.61, Mov. III"
+        "tx": "小提琴协奏曲，\n作品61，第三乐章"
     },
     {
         "c": 103214,
-        "tx": "Violin Concerto\nin C major, RV 185, Mov. II"
+        "tx": "C大调小提琴协奏曲，\nRV 185，第二乐章"
     },
     {
         "c": 103215,
-        "tx": "Violin Concerto in C major,\nHob. VIIa:1, Mov. III"
+        "tx": "C大调小提琴协奏曲，\n第三乐章"
     },
     {
         "c": 103216,
-        "tx": "Violin Concerto,\nOp.53, Mov. III"
+        "tx": "小提琴协奏曲，\n作品53，第三乐章"
     },
     {
         "c": 104001,
@@ -3125,123 +3125,123 @@
     },
     {
         "c": 200001,
-        "tx": "BACH"
+        "tx": "巴赫"
     },
     {
         "c": 200002,
-        "tx": "HANDEL"
+        "tx": "亨德尔"
     },
     {
         "c": 200003,
-        "tx": "HAYDN"
+        "tx": "海顿"
     },
     {
         "c": 200004,
-        "tx": "MOZART"
+        "tx": "莫扎特"
     },
     {
         "c": 200005,
-        "tx": "BEETHOVEN"
+        "tx": "贝多芬"
     },
     {
         "c": 200006,
-        "tx": "PAGANINI"
+        "tx": "帕格尼尼"
     },
     {
         "c": 200007,
-        "tx": "SCHUBERT"
+        "tx": "舒伯特"
     },
     {
         "c": 200008,
-        "tx": "CHOPIN"
+        "tx": "肖邦"
     },
     {
         "c": 200009,
-        "tx": "VERDI"
+        "tx": "威尔第"
     },
     {
         "c": 200010,
-        "tx": "BRAHMS"
+        "tx": "勃拉姆斯"
     },
     {
         "c": 200011,
-        "tx": "DVORAK"
+        "tx": "德沃夏克"
     },
     {
         "c": 200012,
-        "tx": "ELGAR"
+        "tx": "埃尔加"
     },
     {
         "c": 200013,
-        "tx": "DEBUSSY"
+        "tx": "德彪西"
     },
     {
         "c": 200014,
-        "tx": "RACHMANINOFF"
+        "tx": "拉赫玛尼诺夫"
     },
     {
         "c": 200015,
-        "tx": "VIVALDI"
+        "tx": "维瓦尔第"
     },
     {
         "c": 200016,
-        "tx": "GLINKA"
+        "tx": "格林卡"
     },
     {
         "c": 200017,
-        "tx": "TCHAIKOVSKY"
+        "tx": "柴可夫斯基"
     },
     {
         "c": 200018,
-        "tx": "SAINT-SAENS"
+        "tx": "圣桑"
     },
     {
         "c": 200019,
-        "tx": "MENDELSSOHN"
+        "tx": "门德尔松"
     },
     {
         "c": 200020,
-        "tx": "BIZET"
+        "tx": "比才"
     },
     {
         "c": 200021,
-        "tx": "LISZT"
+        "tx": "李斯特"
     },
     {
         "c": 200022,
-        "tx": "SARASATE"
+        "tx": "萨拉萨蒂"
     },
     {
         "c": 200023,
-        "tx": "STRAUSS II"
+        "tx": "施特劳斯二世"
     },
     {
         "c": 200024,
-        "tx": "SCRIABIN"
+        "tx": "斯克里亚宾"
     },
     {
         "c": 200025,
-        "tx": "GRIEG"
+        "tx": "格里格"
     },
     {
         "c": 200026,
-        "tx": "ROSSINI"
+        "tx": "罗西尼"
     },
     {
         "c": 200027,
-        "tx": "COUPERIN"
+        "tx": "库普兰"
     },
     {
         "c": 200028,
-        "tx": "PURCELL"
+        "tx": "普赛尔"
     },
     {
         "c": 200029,
-        "tx": "BOCCHERINI"
+        "tx": "博凯里尼"
     },
     {
         "c": 200030,
-        "tx": "OFFENBACH"
+        "tx": "奥芬巴赫"
     },
     {
         "c": 201001,
@@ -3365,271 +3365,271 @@
     },
     {
         "c": 202001,
-        "tx": "Eisenach"
+        "tx": "爱森纳赫 (Eisenach)"
     },
     {
         "c": 202002,
-        "tx": "Halle"
+        "tx": "哈雷 (Halle)"
     },
     {
         "c": 202003,
-        "tx": "Rohrau"
+        "tx": "罗劳 (Rohrau)"
     },
     {
         "c": 202004,
-        "tx": "Salzburg"
+        "tx": "萨尔茨堡 (Salzburg)"
     },
     {
         "c": 202005,
-        "tx": "Bonn"
+        "tx": "波恩 (Bonn)"
     },
     {
         "c": 202006,
-        "tx": "Genoa"
+        "tx": "热那亚 (Genoa)"
     },
     {
         "c": 202007,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 202008,
-        "tx": "Zelazowa Wola"
+        "tx": "泽拉佐瓦 (Zelazowa Wola)"
     },
     {
         "c": 202009,
-        "tx": "Busseto"
+        "tx": "布塞托 (Busseto)"
     },
     {
         "c": 202010,
-        "tx": "Hamburg"
+        "tx": "汉堡 (Hamburg)"
     },
     {
         "c": 202011,
-        "tx": "Nelahozeves"
+        "tx": "内拉霍泽维斯 (Nelahozeves)"
     },
     {
         "c": 202012,
-        "tx": "Broadheath"
+        "tx": "布罗德希斯 (Broadheath)"
     },
     {
         "c": 202013,
-        "tx": "Saint-Germain-en-Laye"
+        "tx": "圣日耳曼昂莱 (Saint-Germain-en-Laye)"
     },
     {
         "c": 202014,
-        "tx": "Onega"
+        "tx": "奥涅加 (Onega)"
     },
     {
         "c": 202015,
-        "tx": "Venice"
+        "tx": "威尼斯 (Venice)"
     },
     {
         "c": 202016,
-        "tx": "Smolensk"
+        "tx": "斯摩棱斯克 (Smolensk)"
     },
     {
         "c": 202017,
-        "tx": "Votkinsk"
+        "tx": "沃特金斯克 (Votkinsk)"
     },
     {
         "c": 202018,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 202019,
-        "tx": "Hamburg"
+        "tx": "汉堡 (Hamburg)"
     },
     {
         "c": 202020,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 202021,
-        "tx": "Raiding"
+        "tx": "赖丁 (Raiding)"
     },
     {
         "c": 202022,
-        "tx": "Pamplona"
+        "tx": "潘普洛纳 (Pamplona)"
     },
     {
         "c": 202023,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 202024,
-        "tx": "Moscow"
+        "tx": "莫斯科 (Moscow)"
     },
     {
         "c": 202025,
-        "tx": "Bergen"
+        "tx": "卑尔根 (Bergen)"
     },
     {
         "c": 202026,
-        "tx": "Pesaro"
+        "tx": "佩萨罗 (Pesaro)"
     },
     {
         "c": 202027,
-        "tx": "France"
+        "tx": "法国 (France)"
     },
     {
         "c": 202028,
-        "tx": "England"
+        "tx": "英国 (England)"
     },
     {
         "c": 202029,
-        "tx": "Italy"
+        "tx": "意大利 (Italy)"
     },
     {
         "c": 202030,
-        "tx": "Cologne"
+        "tx": "科隆 (Cologne)"
     },
     {
         "c": 203001,
-        "tx": "Leipzig"
+        "tx": "莱比锡 (Leipzig)"
     },
     {
         "c": 203002,
-        "tx": "London"
+        "tx": "伦敦 (London)"
     },
     {
         "c": 203003,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 203004,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 203005,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 203006,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 203007,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 203008,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 203009,
-        "tx": "Milano"
+        "tx": "米兰 (Milano)"
     },
     {
         "c": 203010,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 203011,
-        "tx": "Prague"
+        "tx": "布拉格 (Prague)"
     },
     {
         "c": 203012,
-        "tx": "London"
+        "tx": "伦敦 (London)"
     },
     {
         "c": 203013,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 203014,
-        "tx": "New York"
+        "tx": "纽约 (New York)"
     },
     {
         "c": 203015,
-        "tx": "Venice"
+        "tx": "威尼斯 (Venice)"
     },
     {
         "c": 203016,
-        "tx": "Saint Petersburg"
+        "tx": "圣彼得堡 (Saint Petersburg)"
     },
     {
         "c": 203017,
-        "tx": "Russia"
+        "tx": "俄罗斯 (Russia)"
     },
     {
         "c": 203018,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 203019,
-        "tx": "Berlin"
+        "tx": "柏林 (Berlin)"
     },
     {
         "c": 203020,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 203021,
-        "tx": "Budapest"
+        "tx": "布达佩斯 (Budapest)"
     },
     {
         "c": 203022,
-        "tx": "Pamplona"
+        "tx": "潘普洛纳 (Pamplona)"
     },
     {
         "c": 203023,
-        "tx": "Vienna"
+        "tx": "维也纳 (Vienna)"
     },
     {
         "c": 203024,
-        "tx": "Moscow"
+        "tx": "莫斯科 (Moscow)"
     },
     {
         "c": 203025,
-        "tx": "Bergen"
+        "tx": "卑尔根 (Bergen)"
     },
     {
         "c": 203026,
-        "tx": "Naples"
+        "tx": "那不勒斯 (Naples)"
     },
     {
         "c": 203027,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 203028,
-        "tx": "London"
+        "tx": "伦敦 (London)"
     },
     {
         "c": 203029,
-        "tx": "Madrid"
+        "tx": "马德里 (Madrid)"
     },
     {
         "c": 203030,
-        "tx": "Paris"
+        "tx": "巴黎 (Paris)"
     },
     {
         "c": 204001,
-        "tx": "He is generally regarded as one of the greatest composers of all time.\nBach's musical style fits in the conventions of his day, which is the final stage of the baroque style. He enriched established German styles through his mastery of counterpoint, harmonic and motivic organisation, and his adaptation of rhythms, forms, and textures from abroad, particularly from Italy and France. Religious music was at the centre of Bach's output for much of his life. The hundreds of sacred works he created are usually seen as manifesting not just his craft but a truly devout relationship with God.\nFugues are as characteristic to Bach's style, as, for instance, the Sonata form is characteristic to the composers of the Classical period."
+        "tx": "他被公认为有史以来最伟大的作曲家之一。\n巴赫的音乐风格符合当代终期巴洛克风格的传统。他通过对复调、和声和动机组织的掌握，以及对来自国外，特别是意大利和法国的节奏、形式和质感的改编，丰富了既有的德国风格。\n宗教音乐是巴赫一生创作的中心。他创作的数百部圣乐作品通常被认为不仅体现了他的技艺，还体现了他与上帝之间真正虔诚的关系。\n赋格曲是巴赫风格的特征，就像奏鸣曲形式是古典时期作曲家的特征一样。"
     },
     {
         "c": 204002,
-        "tx": "He produced several operas with the Royal Academy of Music in England before forming the New Royal Academy of Music in 1727. He is well known for his operas, oratorios, anthems, and organ concertos.\nHe is regarded as one of the greatest composers of the Baroque era, and composed more than forty operas in over thirty years, and since the late 1960s, with the revival of baroque music and historically informed musical performance, interest in Handel's operas has grown.\nHis funeral was given full state honours, and he was buried in Westminster Abbey in London."
+        "tx": "在 1727 年成立新皇家音乐学院之前，他与英国皇家音乐学院合作创作了多部歌剧。\n他以歌剧、清唱剧、圣歌和管风琴协奏曲闻名于世。\n他被认为是巴洛克时代最伟大的作曲家之一，在三十多年的时间里创作了四十多部歌剧。\n自 20 世纪 60 年代末以来，随着巴洛克音乐的复兴和以历史为依据的音乐表演，人们对亨德尔歌剧的兴趣与日俱增。\n他的葬礼受到国家的隆重礼遇，被安葬在伦敦威斯敏斯特教堂 (Westminster Abbey)。"
     },
     {
         "c": 204003,
-        "tx": "He was an Austrian composer of the Classical period. \nHe helped establish the forms and styles for the string quartet and the symphony. Also, Haydn's work was central to the development of what came to be called sonata form. Haydn wrote 107 symphonies in total, as well as 83 string quartets, 45 piano trios, 62 piano sonatas, 14 masses and 26 operas, amongst countless other scores."
+        "tx": "他是奥地利古典时期的作曲家。\n他帮助确立了弦乐四重奏和交响乐的形式和风格。此外，海顿的作品对后来奏鸣曲形式的发展也起到了核心作用。\n海顿总共创作了 107 部交响曲、83 部弦乐四重奏、45 部钢琴三重奏、62 部钢琴奏鸣曲、14 部弥撒曲和 26 部歌剧，以及数不胜数的其他作品。"
     },
     {
         "c": 204004,
-        "tx": "He showed prodigious ability from his earliest childhood. Already competent on keyboard and violin, he composed from the age of five and performed before European royalty. While Wolfgang was young, his family made several European journeys in which he and Nannerl performed as child prodigies. He composed many of his best-known symphonies, concertos, and operas, and portions of the Requiem, which was largely unfinished at the time of his death."
+        "tx": "他从小就展现出惊人的能力。从五岁起就开始创作，并在欧洲皇室面前表演。莫扎特年幼时，他的家人曾多次出访欧洲，他和纳奈尔作为神童参加了演出。他创作了许多最著名的交响曲、协奏曲、歌剧以及《安魂曲》的部分曲目，但在他去世时，《安魂曲》大部分尚未完成。"
     },
     {
         "c": 204005,
-        "tx": "He was a German composer and pianist. A crucial figure in the transition between the Classical and Romantic eras in Western art music, he remains one of the most famous and influential of all composers. Beethoven is reported to have dated his hearing loss from a fit he suffered in 1798 induced by a rage at the interruption of his work.\nIll health and increasing deafness caused a drop in productivity at the end of Beethoven's life, but he still managed to produce important works like his 'Late Quartets' in 1825, which were wildly inventive for the time. Many of his most admired works come from these last 15 years of his life."
+        "tx": "他是德国作曲家和钢琴家。他是西方艺术音乐从古典主义向浪漫主义过渡的关键人物，至今仍是最著名、最具影响力的作曲家之一。\n据说贝多芬听力丧失的原因是他在 1798 年因工作被打断而大发雷霆。\n健康状况不佳和耳聋的加剧导致贝多芬晚年的工作效率下降，但他仍设法创作了一些重要的作品，如 1825 年的《晚期四重奏》，在当时具有极大的创造性。贝多芬最令人钦佩的许多作品都出自他生命的最后 15 年。"
     },
     {
         "c": 204006,
-        "tx": "He was the most celebrated violin virtuoso of his time, and left his mark as one of the pillars of modern violin technique.\nGenerally speaking, Paganini's compositions were technically imaginative, and the timbre of the instrument was greatly expanded as a result of these works. He was one of the most famous virtuosi of his day, and is considered to be one of the greatest violinists ever, with absolute pitch and perfect intonation, expressive bowing techniques and new uses of staccato and pizzicato techniques."
+        "tx": "他是他当代最著名的小提琴演奏家，并作为现代小提琴技术的支柱之一留下了自己的印记。\n一般来说，帕格尼尼的作品在技术上富有想象力，这些作品极大地扩展了乐器的音色。他是当代最著名的演奏家之一，被认为是有史以来最伟大的小提琴家之一，拥有绝对音准和完美的音调，富有表现力的弓法技术以及对断奏和拨奏技术的新运用。"
     },
     {
         "c": 204007,
-        "tx": "His output consists of over 600 secular vocal works (mainly Lieder), seven complete symphonies, sacred music, operas, incidental music and a large body of chamber and piano music.\nWhile Schubert was still struggling to hold down his full-time teaching post, he not only composed 145 lieder (songs), the Second and Third Symphonies, two sonatas and a series of miniatures for solo piano, two mass settings and other shorter choral works, four stage works, and a string quartet, in addition to various other projects. This period of intense creative activity remains one of the most inexplicable feats of productivity in musical history. "
+        "tx": "他的作品包括600多部世俗声乐作品（主要是歌谣），七部完整的交响曲，圣乐，歌剧，配乐以及大量的室内乐和钢琴曲。\n当舒伯特还在为全职教职而苦苦挣扎时，他不仅创作了 145 首歌谣、第二和第三交响曲、两部奏鸣曲和一系列钢琴独奏小品、两部弥撒曲和其他较短的合唱作品、四部舞台作品和一部弦乐四重奏，此外还有其他各种项目。这段时期的高产创作活动仍然是音乐史上最难以解释的创作壮举之一。"
     },
     {
         "c": 204008,
@@ -3725,43 +3725,43 @@
     },
     {
         "c": 300001,
-        "tx": "BAROQUE ERA"
+        "tx": "巴洛克时期"
     },
     {
         "c": 300002,
-        "tx": "CLASSICAL ERA"
+        "tx": "古典主义时期"
     },
     {
         "c": 300003,
-        "tx": "ROMANTIC ERA"
+        "tx": "浪漫主义时期"
     },
     {
         "c": 300004,
-        "tx": "MODERNIST ERA"
+        "tx": "现代主义时期"
     },
     {
         "c": 401000,
-        "tx": "Classic"
+        "tx": "经典"
     },
     {
         "c": 401001,
-        "tx": "Arrival"
+        "tx": "到来"
     },
     {
         "c": 401002,
-        "tx": "Hammock"
+        "tx": "吊床"
     },
     {
         "c": 401003,
-        "tx": "Vineyards"
+        "tx": "葡萄园"
     },
     {
         "c": 401004,
-        "tx": "Kitten's Recital"
+        "tx": "猫咪朗诵会"
     },
     {
         "c": 401005,
-        "tx": "Grande Jatte"
+        "tx": "大杰特岛"
     },
     {
         "c": 401006,
@@ -3769,23 +3769,23 @@
     },
     {
         "c": 401007,
-        "tx": "Belief"
+        "tx": "坚信"
     },
     {
         "c": 401008,
-        "tx": "Lisbeth"
+        "tx": "丽莎贝丝"
     },
     {
         "c": 401009,
-        "tx": "Dancers in Pink"
+        "tx": "舞女"
     },
     {
         "c": 401010,
-        "tx": "Temeraire"
+        "tx": "无畏号"
     },
     {
         "c": 401011,
-        "tx": "Scream"
+        "tx": "呐喊"
     },
     {
         "c": 401012,
@@ -3793,23 +3793,23 @@
     },
     {
         "c": 401013,
-        "tx": "Parasol"
+        "tx": "阳伞"
     },
     {
         "c": 401014,
-        "tx": "Shipping"
+        "tx": "港口"
     },
     {
         "c": 401015,
-        "tx": "Winter Forest"
+        "tx": "冬日森林"
     },
     {
         "c": 401016,
-        "tx": "Ship Battle"
+        "tx": "海战"
     },
     {
         "c": 401017,
-        "tx": "Oreithyia"
+        "tx": "欧龙泰亚"
     },
     {
         "c": 401018,
@@ -3817,43 +3817,43 @@
     },
     {
         "c": 401019,
-        "tx": "Moulin Rouge"
+        "tx": "红磨坊"
     },
     {
         "c": 401020,
-        "tx": "By Fjord"
+        "tx": "峡湾"
     },
     {
         "c": 401021,
-        "tx": "Rainy Paris"
+        "tx": "雨中巴黎"
     },
     {
         "c": 401022,
-        "tx": "Red Tree"
+        "tx": "红树"
     },
     {
         "c": 401023,
-        "tx": "Gleaners"
+        "tx": "拾穗者"
     },
     {
         "c": 401024,
-        "tx": "Lilies"
+        "tx": "睡莲"
     },
     {
         "c": 401025,
-        "tx": "Kiss"
+        "tx": "吻"
     },
     {
         "c": 401026,
-        "tx": "Starry Night"
+        "tx": "星月夜"
     },
     {
         "c": 401027,
-        "tx": "Song of Angels"
+        "tx": "天使之歌"
     },
     {
         "c": 401028,
-        "tx": "Night Watch"
+        "tx": "夜巡"
     },
     {
         "c": 401029,
@@ -3861,707 +3861,707 @@
     },
     {
         "c": 401030,
-        "tx": "Butterfly Hunter"
+        "tx": "蝴蝶猎人"
     },
     {
         "c": 401031,
-        "tx": "Liberty"
+        "tx": "自由"
     },
     {
         "c": 401900,
-        "tx": "Classic (Black Ver.)"
+        "tx": "经典（黑色版）"
     },
     {
         "c": 401901,
-        "tx": "Sunrise"
+        "tx": "日出"
     },
     {
         "c": 401902,
-        "tx": "Passion"
+        "tx": "激情"
     },
     {
         "c": 401903,
-        "tx": "The Hall of Fame"
+        "tx": "名人堂"
     },
     {
         "c": 401904,
-        "tx": "2nd Anniversary"
+        "tx": "水晶"
     },
     {
         "c": 402000,
-        "tx": "Welcome"
+        "tx": "欢迎"
     },
     {
         "c": 402001,
-        "tx": "Trip I"
+        "tx": "旅程 I"
     },
     {
         "c": 402002,
-        "tx": "Trip II"
+        "tx": "旅程 II"
     },
     {
         "c": 402003,
-        "tx": "Trip III"
+        "tx": "旅程 III"
     },
     {
         "c": 402004,
-        "tx": "Trip IV"
+        "tx": "旅程 IV"
     },
     {
         "c": 402005,
-        "tx": "Trip V"
+        "tx": "旅程 V"
     },
     {
         "c": 402006,
-        "tx": "Trip VI"
+        "tx": "旅程 VI"
     },
     {
         "c": 402007,
-        "tx": "Journey I"
+        "tx": "旅途 I"
     },
     {
         "c": 402008,
-        "tx": "Journey II"
+        "tx": "旅途 II"
     },
     {
         "c": 402009,
-        "tx": "Journey III"
+        "tx": "旅途 III"
     },
     {
         "c": 402010,
-        "tx": "Journey IV"
+        "tx": "旅途 IV"
     },
     {
         "c": 402011,
-        "tx": "Journey V"
+        "tx": "旅途 V"
     },
     {
         "c": 402012,
-        "tx": "Journey VI"
+        "tx": "旅途 VI"
     },
     {
         "c": 402013,
-        "tx": "Odyssey I"
+        "tx": "跋涉 I"
     },
     {
         "c": 402014,
-        "tx": "Odyssey II"
+        "tx": "跋涉 II"
     },
     {
         "c": 402015,
-        "tx": "Odyssey III"
+        "tx": "跋涉 III"
     },
     {
         "c": 402016,
-        "tx": "Odyssey IV"
+        "tx": "跋涉 IV"
     },
     {
         "c": 402017,
-        "tx": "Odyssey V"
+        "tx": "跋涉 V"
     },
     {
         "c": 402018,
-        "tx": "Odyssey VI"
+        "tx": "跋涉 VI"
     },
     {
         "c": 402019,
-        "tx": "Repeat Sign I"
+        "tx": "重复记号 I"
     },
     {
         "c": 402020,
-        "tx": "Repeat Sign II"
+        "tx": "重复记号 II"
     },
     {
         "c": 402021,
-        "tx": "Repeat Sign III"
+        "tx": "重复记号 III"
     },
     {
         "c": 402022,
-        "tx": "Repeat Sign IV"
+        "tx": "重复记号 IV"
     },
     {
         "c": 402023,
-        "tx": "Repeat Sign V"
+        "tx": "重复记号 V"
     },
     {
         "c": 402024,
-        "tx": "Excellence"
+        "tx": "卓越"
     },
     {
         "c": 402025,
-        "tx": "Integrity"
+        "tx": "廉正"
     },
     {
         "c": 402026,
-        "tx": "Superiority"
+        "tx": "优越"
     },
     {
         "c": 402027,
-        "tx": "Piano Lover"
+        "tx": "钢琴爱好者"
     },
     {
         "c": 402028,
-        "tx": "Muster Call"
+        "tx": "集结号"
     },
     {
         "c": 402029,
-        "tx": "A Brave Man"
+        "tx": "勇敢的人"
     },
     {
         "c": 402030,
-        "tx": "Transcendental"
+        "tx": "超脱"
     },
     {
         "c": 402031,
-        "tx": "The Poet of the Piano"
+        "tx": "琴中诗人"
     },
     {
         "c": 402900,
-        "tx": "Pioneer"
+        "tx": "先驱者"
     },
     {
         "c": 402901,
-        "tx": "Impression"
+        "tx": "印象"
     },
     {
         "c": 402902,
-        "tx": "Passion"
+        "tx": "激情"
     },
     {
         "c": 402903,
-        "tx": "Honor"
+        "tx": "荣誉"
     },
     {
         "c": 402904,
-        "tx": "Crystal"
+        "tx": "二周年"
     },
     {
         "c": 402999,
-        "tx": "Hidden"
+        "tx": "隐藏"
     },
     {
         "c": 403000,
-        "tx": "A gift to celebrate a new pianist"
+        "tx": "送给新钢琴家的祝福"
     },
     {
         "c": 403001,
-        "tx": "Clear normal tour stage 10"
+        "tx": "完成NORMAL难度巡演第10关"
     },
     {
         "c": 403002,
-        "tx": "Clear normal tour stage 20"
+        "tx": "完成NORMAL难度巡演第20关"
     },
     {
         "c": 403003,
-        "tx": "Clear normal tour stage 30"
+        "tx": "完成NORMAL难度巡演第30关"
     },
     {
         "c": 403004,
-        "tx": "Clear normal tour stage 40"
+        "tx": "完成NORMAL难度巡演第40关"
     },
     {
         "c": 403005,
-        "tx": "Clear normal tour stage 50"
+        "tx": "完成NORMAL难度巡演第50关"
     },
     {
         "c": 403006,
-        "tx": "Clear normal tour stage 60"
+        "tx": "完成NORMAL难度巡演第60关（！！！！！！！）"
     },
     {
         "c": 403007,
-        "tx": "Clear technical tour stage 10"
+        "tx": "完成TECHNICAL难度巡演第10关"
     },
     {
         "c": 403008,
-        "tx": "Clear technical tour stage 20"
+        "tx": "完成TECHNICAL难度巡演第20关"
     },
     {
         "c": 403009,
-        "tx": "Clear technical tour stage 30"
+        "tx": "完成TECHNICAL难度巡演第30关"
     },
     {
         "c": 403010,
-        "tx": "Clear technical tour stage 40"
+        "tx": "完成TECHNICAL难度巡演第40关"
     },
     {
         "c": 403011,
-        "tx": "Clear technical tour stage 50"
+        "tx": "完成TECHNICAL难度巡演第50关"
     },
     {
         "c": 403012,
-        "tx": "Clear technical tour stage 60"
+        "tx": "完成TECHNICAL难度巡演第60关（！！！！！！！！）"
     },
     {
         "c": 403013,
-        "tx": "Clear master tour stage 10"
+        "tx": "完成MASTER难度巡演第10关"
     },
     {
         "c": 403014,
-        "tx": "Clear master tour stage 20"
+        "tx": "完成MASTER难度巡演第20关"
     },
     {
         "c": 403015,
-        "tx": "Clear master tour stage 30"
+        "tx": "完成MASTER难度巡演第30关"
     },
     {
         "c": 403016,
-        "tx": "Clear master tour stage 40"
+        "tx": "完成MASTER难度巡演第40关"
     },
     {
         "c": 403017,
-        "tx": "Clear master tour stage 50"
+        "tx": "完成MASTER难度巡演第50关"
     },
     {
         "c": 403018,
-        "tx": "Clear master tour stage 60"
+        "tx": "完成MASTER难度巡演第60关（！！！！！！！！）"
     },
     {
         "c": 403019,
-        "tx": "Clear song 30 times in any mode"
+        "tx": "在任何模式下完成歌曲30次"
     },
     {
         "c": 403020,
-        "tx": "Clear song 150 times in any mode"
+        "tx": "在任何模式下完成歌曲150次"
     },
     {
         "c": 403021,
-        "tx": "Clear song 300 times in any mode"
+        "tx": "在任何模式下完成歌曲300次"
     },
     {
         "c": 403022,
-        "tx": "Clear song 500 times in any mode"
+        "tx": "在任何模式下完成歌曲500次"
     },
     {
         "c": 403023,
-        "tx": "Clear song 900 times in any mode"
+        "tx": "在任何模式下完成歌曲900次"
     },
     {
         "c": 403024,
-        "tx": "Collect 250 stars in normal tour"
+        "tx": "在NORMAL难度巡演收集250颗星星"
     },
     {
         "c": 403025,
-        "tx": "Collect 250 stars in technical tour"
+        "tx": "在TECHNICAL难度巡演收集250颗星星"
     },
     {
         "c": 403026,
-        "tx": "Collect 250 stars in master tour"
+        "tx": "在MASTER难度巡演收集250颗星星"
     },
     {
         "c": 403027,
-        "tx": "Collect 18 Pianos"
+        "tx": "收集18架钢琴"
     },
     {
         "c": 403028,
-        "tx": "Find hidden condition to unlock"
+        "tx": "找到隐藏条件来解锁"
     },
     {
         "c": 403029,
-        "tx": "Find hidden condition to unlock"
+        "tx": "找到隐藏条件来解锁"
     },
     {
         "c": 403030,
-        "tx": "Find hidden condition to unlock"
+        "tx": "找到隐藏条件来解锁"
     },
     {
         "c": 403031,
-        "tx": "Find hidden condition to unlock"
+        "tx": "找到隐藏条件来解锁"
     },
     {
         "c": 403900,
-        "tx": "A Special gift to longtime partners"
+        "tx": "给从最开始一直陪伴的忠实玩家的特别礼物"
     },
     {
         "c": 403901,
-        "tx": "A Special gift for grand opening"
+        "tx": "庆祝游戏发布的特别礼物"
     },
     {
         "c": 403902,
-        "tx": "A Special gift for v2.2 update"
+        "tx": "v2.2版本更新的特别礼物"
     },
     {
         "c": 403903,
-        "tx": "A dedicated gift for 'The Hall of Fame'"
+        "tx": "献给名人堂的礼物"
     },
     {
         "c": 403904,
-        "tx": "A Special gift for 2nd Anniversary"
+        "tx": "二周年特别礼物"
     },
     {
         "c": 403999,
-        "tx": "Find hidden condition to unlock"
+        "tx": "找到隐藏条件来解锁"
     },
     {
         "c": 404028,
-        "tx": "Collect 27 Pianos"
+        "tx": "收集27架钢琴"
     },
     {
         "c": 404029,
-        "tx": "Clear \"Der Erlkonig\""
+        "tx": "完成 \"魔王\""
     },
     {
         "c": 404030,
-        "tx": "Clear \"La Campanella\" with speed 3 & Fade in"
+        "tx": "用三倍速和淡入完成 \"钟声\""
     },
     {
         "c": 404031,
-        "tx": "Clear \"Revolutionary Etude\" with combo 1143"
+        "tx": "全连完成 \"练习曲《革命》\" (1143音符)"
     },
     {
         "c": 601001,
-        "tx": "Shield +1"
+        "tx": "盾牌 +1"
     },
     {
         "c": 601002,
-        "tx": "Shield +2"
+        "tx": "盾牌 +2"
     },
     {
         "c": 601003,
-        "tx": "Shield +3"
+        "tx": "盾牌 +3"
     },
     {
         "c": 601004,
-        "tx": "Shield +4"
+        "tx": "盾牌 +4"
     },
     {
         "c": 601005,
-        "tx": "Shield +5"
+        "tx": "盾牌 +5"
     },
     {
         "c": 601006,
-        "tx": "Shield +6"
+        "tx": "盾牌 +6"
     },
     {
         "c": 601007,
-        "tx": "Shield +7"
+        "tx": "盾牌 +7"
     },
     {
         "c": 601008,
-        "tx": "Shield +8"
+        "tx": "盾牌 +8"
     },
     {
         "c": 601009,
-        "tx": "Shield +9"
+        "tx": "盾牌 +9"
     },
     {
         "c": 601010,
-        "tx": "Shield +10"
+        "tx": "盾牌 +10"
     },
     {
         "c": 601101,
-        "tx": "HP MAX +5"
+        "tx": "HP最大值 +5"
     },
     {
         "c": 601102,
-        "tx": "HP MAX +10"
+        "tx": "HP最大值 +10"
     },
     {
         "c": 601103,
-        "tx": "HP MAX +15"
+        "tx": "HP最大值 +15"
     },
     {
         "c": 601104,
-        "tx": "HP MAX +20"
+        "tx": "HP最大值 +20"
     },
     {
         "c": 601105,
-        "tx": "HP MAX +25"
+        "tx": "HHP最大值 +25"
     },
     {
         "c": 601106,
-        "tx": "HP MAX +30"
+        "tx": "HP最大值 +30"
     },
     {
         "c": 601107,
-        "tx": "HP MAX +35"
+        "tx": "HP最大值 +35"
     },
     {
         "c": 601108,
-        "tx": "HP MAX +40"
+        "tx": "HP最大值 +40"
     },
     {
         "c": 601109,
-        "tx": "HP MAX +45"
+        "tx": "HP最大值 +45"
     },
     {
         "c": 601110,
-        "tx": "HP MAX +50"
+        "tx": "HP最大值 +50"
     },
     {
         "c": 1000001,
-        "tx": "Can not use {0} as the first character."
+        "tx": "不能使用 {0} 作为第一位字符。"
     },
     {
         "c": 1000002,
-        "tx": "Can not use two or more {0} continuously."
+        "tx": "不能连续使用 {0}."
     },
     {
         "c": 1000003,
-        "tx": " '{0}' is unsupported character."
+        "tx": " '{0}' 字符不可使用。"
     },
     {
         "c": 1000004,
-        "tx": "Please check the number of characters."
+        "tx": "请检查字符位数。"
     },
     {
         "c": 1000005,
-        "tx": "The 'Pianist' name is already in use."
+        "tx": "此钢琴家名称已被使用。"
     },
     {
         "c": 1000006,
-        "tx": "The 'Pianist' name is not available. Please try again."
+        "tx": "此钢琴家名称不可使用，请重试。"
     },
     {
         "c": 1001001,
-        "tx": "CONNECT WITH FACEBOOK"
+        "tx": "和脸书连接"
     },
     {
         "c": 1001002,
-        "tx": "GUEST"
+        "tx": "游客"
     },
     {
         "c": 1002001,
-        "tx": "BECOME A PIANIST"
+        "tx": "成为一名钢琴家"
     },
     {
         "c": 1002002,
-        "tx": "What is your pianist name?"
+        "tx": "你的钢琴家名称是？"
     },
     {
         "c": 1002003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 1002004,
-        "tx": "{0}~{1} Characters"
+        "tx": "{0}~{1} 字符长"
     },
     {
         "c": 1003001,
-        "tx": "BECOME A PIANIST"
+        "tx": "成为一名钢琴家"
     },
     {
         "c": 1003002,
-        "tx": "Your Pianist name is"
+        "tx": "你的钢琴家名称是"
     },
     {
         "c": 1003003,
-        "tx": "Are you sure?"
+        "tx": "确定吗?"
     },
     {
         "c": 1003004,
-        "tx": "NEXT"
+        "tx": "下一步"
     },
     {
         "c": 1003005,
-        "tx": "BACK"
+        "tx": "返回"
     },
     {
         "c": 1004001,
-        "tx": "IMPORTANT"
+        "tx": "重要"
     },
     {
         "c": 1004002,
-        "tx": "Press \"TERMS OF USE\" button to check the terms and privacy policy.\nIf you agree, press \"AGREE\" button."
+        "tx": "按 \"使用条款\"按钮查看使用条款和隐私政策。"
     },
     {
         "c": 1004003,
-        "tx": "TERMS OF USE"
+        "tx": "使用条款"
     },
     {
         "c": 1004004,
-        "tx": "AGREE"
+        "tx": "同意"
     },
     {
         "c": 1005001,
-        "tx": "NOTICE"
+        "tx": "注意"
     },
     {
         "c": 1005002,
-        "tx": "Login session expired, Please try logging in again."
+        "tx": "登录会话已过期，请尝试重新登录。"
     },
     {
         "c": 1005003,
-        "tx": "OK"
+        "tx": "确认"
     },
     {
         "c": 2002001,
-        "tx": "HOW TO UNLOCK"
+        "tx": "如何解锁"
     },
     {
         "c": 2002002,
-        "tx": "Clear the song on the normal tour."
+        "tx": "在NORMAL难度巡演完成这首歌。"
     },
     {
         "c": 2002003,
-        "tx": "OK"
+        "tx": "确认"
     },
     {
         "c": 2002101,
-        "tx": "HOW TO UNLOCK"
+        "tx": "如何解锁"
     },
     {
         "c": 2002102,
-        "tx": "Clear the song on the technical tour."
+        "tx": "在TECHNICAL难度巡演完成这首歌。"
     },
     {
         "c": 2002103,
-        "tx": "OK"
+        "tx": "确认"
     },
     {
         "c": 2009001,
-        "tx": "PLAY"
+        "tx": "开始"
     },
     {
         "c": 4000001,
-        "tx": "BACK"
+        "tx": "返回"
     },
     {
         "c": 4001001,
-        "tx": "HOW TO PLAY"
+        "tx": "教程"
     },
     {
         "c": 4001002,
-        "tx": "NORMAL NOTE"
+        "tx": "一般音符"
     },
     {
         "c": 4001003,
-        "tx": "NEXT"
+        "tx": "下一页"
     },
     {
         "c": 4001004,
-        "tx": "The note will appear and come down."
+        "tx": "音符会出现，并向下掉落。"
     },
     {
         "c": 4001005,
-        "tx": "When the note is aligned with the line,\ntouch the note."
+        "tx": "当音符与线对齐时，点击音符。"
     },
     {
         "c": 4002001,
-        "tx": "HOW TO PLAY"
+        "tx": "教程"
     },
     {
         "c": 4002002,
-        "tx": "HOLDING NOTE"
+        "tx": "长音符"
     },
     {
         "c": 4002003,
-        "tx": "NEXT"
+        "tx": "下一页"
     },
     {
         "c": 4002004,
-        "tx": "The note with tail line will appear\nand come down."
+        "tx": "有长尾巴的音符会出现，并向下掉落。"
     },
     {
         "c": 4002005,
-        "tx": "Hold it down until it is completed."
+        "tx": "音符与线对齐时，\n按下并按至尾巴消失为止。"
     },
     {
         "c": 4003001,
-        "tx": "HOW TO PLAY"
+        "tx": "教程"
     },
     {
         "c": 4003002,
-        "tx": "GLISSANDO NOTE"
+        "tx": "滑动音符"
     },
     {
         "c": 4003003,
-        "tx": "OK"
+        "tx": "确认"
     },
     {
         "c": 4003004,
-        "tx": "The shiny note will appear\nand come down."
+        "tx": "闪光的音符会出现，并向下掉落。"
     },
     {
         "c": 4003005,
-        "tx": "When the notes appear in a row,\nuse a sliding motion."
+        "tx": "音符以一列的形式出现。\n当音符与线对齐时，滑动手指。"
     },
     {
         "c": 5000000,
-        "tx": "SHOP"
+        "tx": "商店"
     },
     {
         "c": 5000001,
-        "tx": "SHOP"
+        "tx": "商店"
     },
     {
         "c": 5000002,
-        "tx": "Purchase successfully."
+        "tx": "购买成功。"
     },
     {
         "c": 5000003,
-        "tx": "Purchase canceled."
+        "tx": "购买取消。"
     },
     {
         "c": 5000004,
-        "tx": "Not enough {0}."
+        "tx": "{0} 不足。"
     },
     {
         "c": 5000005,
-        "tx": "Network is unstable.\nPlease restart the app."
+        "tx": "网络不稳定。请重启游戏。"
     },
     {
         "c": 5000006,
-        "tx": "Sorry. This item does not exist."
+        "tx": "抱歉，此物品不存在。"
     },
     {
         "c": 5000007,
-        "tx": "Purchase failed.\n(1001007)"
+        "tx": "购买失败。\n(1001007)"
     },
     {
         "c": 5000008,
-        "tx": "Can not purchase."
+        "tx": "无法购买。"
     },
     {
         "c": 5000009,
-        "tx": "Invalid payment method."
+        "tx": "不支持的购买方法。"
     },
     {
         "c": 5000010,
-        "tx": "Puchase failed.\nIf you did not receive properly\nplease e-mail us to support@pianista.io"
+        "tx": "购买失败。\n如果没有收到物品\n请电邮我们：support@pianista.io"
     },
     {
         "c": 5000011,
-        "tx": "Already buy this product. If your membership activate properly\nplease e-mail us to support@pianista.io"
+        "tx": "已经购买了此项内容。如果你的会员没有成功激活\n请电邮我们：support@pianista.io"
     },
     {
         "c": 5000012,
-        "tx": "Purchase canceled.\n(1001012)"
+        "tx": "购买失败。\n(1001012)"
     },
     {
         "c": 5000013,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5000014,
-        "tx": "GO TO SHOP"
+        "tx": "去商店"
     },
     {
         "c": 5000015,
-        "tx": "GET MUSIC POINT"
+        "tx": "获取音乐点数"
     },
     {
         "c": 5001001,
-        "tx": "SHOP"
+        "tx": "商店"
     },
     {
         "c": 5001002,
-        "tx": "Would you like to buy\n{0}?"
+        "tx": "你想要购买吗？\n{0}"
     },
     {
         "c": 5001003,
-        "tx": "BUY"
+        "tx": "购买"
     },
     {
         "c": 5001004,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 5002001,
-        "tx": "PURCHASED"
+        "tx": "已购买"
     },
     {
         "c": 5002002,
-        "tx": "SUCCESSFULLY"
+        "tx": "成功"
     },
     {
         "c": 5002003,
@@ -4569,55 +4569,55 @@
     },
     {
         "c": 5002004,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5003001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 5003002,
-        "tx": "Free gift of the day being out of stock.\nAvailable at 15:00 (GMT)"
+        "tx": "今天的礼物已全部发放。\n将在 15:00 (GMT) 回来。"
     },
     {
         "c": 5003003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5004001,
-        "tx": "SHOP"
+        "tx": "商店"
     },
     {
         "c": 5004002,
-        "tx": "Would you like to watch video ads\nand get a MUSIC POINT?"
+        "tx": "你想要观看视频来获得\n1个音乐点数 吗？"
     },
     {
         "c": 5004003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5004004,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 5005001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 5005002,
-        "tx": "You have enough MUSIC POINT.\nTry again when you have none."
+        "tx": "你已经有足够的音乐点数了。\n等用完了再来吧。"
     },
     {
         "c": 5005003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5006001,
-        "tx": "REWARDS"
+        "tx": "奖励"
     },
     {
         "c": 5006002,
-        "tx": "ADVERTISEMENT"
+        "tx": "广告"
     },
     {
         "c": 5006003,
@@ -4625,111 +4625,111 @@
     },
     {
         "c": 5006004,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5007001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 5007002,
-        "tx": "Unable to complete ad view.\nPlease check your network and try again."
+        "tx": "无法完成广告观看。\n请检查网络并重试。"
     },
     {
         "c": 5007003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5008001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 5008002,
-        "tx": "The Ad network does not send videos.\nPlease try again after a while."
+        "tx": "广告提供商没有发送内容。\n请过段时间再试。"
     },
     {
         "c": 5008003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 5009101,
-        "tx": "PRESTIGE MEMBERSHIP"
+        "tx": "尊贵会员"
     },
     {
         "c": 5009102,
-        "tx": "ALL SONG\nUNLOCK"
+        "tx": "全曲解锁"
     },
     {
         "c": 5009103,
-        "tx": "PLAY\nUNLIMITED"
+        "tx": "无限游玩"
     },
     {
         "c": 5009104,
-        "tx": "DAILY ITEM REWARD"
+        "tx": "每日道具奖励"
     },
     {
         "c": 5009105,
-        "tx": "EXP +100%"
+        "tx": "经验值 +100%"
     },
     {
         "c": 5009106,
-        "tx": "GOLD +100%"
+        "tx": "金币 +100%"
     },
     {
         "c": 5009107,
-        "tx": "Free"
+        "tx": "免费"
     },
     {
         "c": 5009108,
-        "tx": "Prestige"
+        "tx": "尊贵会员"
     },
     {
         "c": 5009109,
-        "tx": "Free to Play"
+        "tx": "免费玩"
     },
     {
         "c": 5009110,
-        "tx": "All Song Unlock"
+        "tx": "全曲解锁"
     },
     {
         "c": 5009111,
-        "tx": "Play Unlimited"
+        "tx": "无限游玩"
     },
     {
         "c": 5009112,
-        "tx": "Daily Item Reward"
+        "tx": "每日道具奖励"
     },
     {
         "c": 5009113,
-        "tx": "Exp +100%"
+        "tx": "经验值 +100%"
     },
     {
         "c": 5009114,
-        "tx": "Gold +100%"
+        "tx": "金币 +100%"
     },
     {
         "c": 6000001,
-        "tx": "PURCHASED"
+        "tx": "已购买"
     },
     {
         "c": 6000002,
-        "tx": "SUCCESSFULLY"
+        "tx": "成功"
     },
     {
         "c": 6000003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 6000004,
-        "tx": "REWARDS"
+        "tx": "奖励"
     },
     {
         "c": 6000005,
-        "tx": "CONGRATULATION"
+        "tx": "祝贺"
     },
     {
         "c": 6000006,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 6000007,
@@ -4741,43 +4741,43 @@
     },
     {
         "c": 6000009,
-        "tx": "Prestige Membership"
+        "tx": "尊贵会员"
     },
     {
         "c": 6001001,
-        "tx": "WELCOME TO PIANISTA"
+        "tx": "欢迎来到Pianista！"
     },
     {
         "c": 6001002,
-        "tx": "We welcome you with the special gift.\nHere are 10 Music Points."
+        "tx": "我们以特别的礼物欢迎您的到来。\n请收下这10个音乐点数。"
     },
     {
         "c": 6001003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 6002001,
-        "tx": "First Clear of the Day"
+        "tx": "今天首次完成"
     },
     {
         "c": 6002002,
-        "tx": "{0} Difficult Clear"
+        "tx": "{0} 难度完成"
     },
     {
         "c": 6002003,
-        "tx": "5 Star Bonus"
+        "tx": "五星奖励"
     },
     {
         "c": 6002004,
-        "tx": "Technical Bonus"
+        "tx": "技术奖励"
     },
     {
         "c": 6002005,
-        "tx": "Fade Bonus"
+        "tx": "淡入淡出奖励"
     },
     {
         "c": 6002006,
-        "tx": "Piano Skin Bonus"
+        "tx": "钢琴属性奖励"
     },
     {
         "c": 6003000,
@@ -4785,27 +4785,27 @@
     },
     {
         "c": 6003001,
-        "tx": "Max Level Bonus"
+        "tx": "最高级奖励"
     },
     {
         "c": 6003002,
-        "tx": "Composer Stat Bonus"
+        "tx": "作曲家等级奖励"
     },
     {
         "c": 6003003,
-        "tx": "Piano Skin Bonus"
+        "tx": "钢琴属性奖励"
     },
     {
         "c": 6003004,
-        "tx": "Straight Win Bonus"
+        "tx": "连胜奖励"
     },
     {
         "c": 6004001,
-        "tx": "STAGE CLEAR"
+        "tx": "演奏完成"
     },
     {
         "c": 6004002,
-        "tx": "REWARDS"
+        "tx": "奖励"
     },
     {
         "c": 6004003,
@@ -4813,211 +4813,211 @@
     },
     {
         "c": 6004004,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 6005001,
-        "tx": "STAGE CLEAR"
+        "tx": "演奏完成"
     },
     {
         "c": 6005002,
-        "tx": "UNLOCK SONG"
+        "tx": "歌曲解锁"
     },
     {
         "c": 6005003,
-        "tx": "You can play this song in \"Collection\" from now on."
+        "tx": "你现在可以在 \"藏品\" 模式游玩这首歌了。"
     },
     {
         "c": 6005004,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 6006001,
-        "tx": "STAGE CLEAR"
+        "tx": "演奏完成"
     },
     {
         "c": 6006002,
-        "tx": "UNLOCK PIANO"
+        "tx": "钢琴解锁"
     },
     {
         "c": 6006003,
-        "tx": "You can equip and upgrade this piano in \"Piano\" from now on."
+        "tx": "你现在可以在 \"钢琴\" 模式升级和使用这架钢琴了。"
     },
     {
         "c": 6006004,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 6007001,
-        "tx": "ACHIEVEMENT SUCCESS"
+        "tx": "成功"
     },
     {
         "c": 6007002,
-        "tx": "UNLOCK PIANO"
+        "tx": "钢琴解锁"
     },
     {
         "c": 6007003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7000000,
-        "tx": "Your Pianist name is"
+        "tx": "你的钢琴家名称是"
     },
     {
         "c": 7000001,
-        "tx": "CHANGE PIANIST NAME"
+        "tx": "修改钢琴家名称"
     },
     {
         "c": 7000002,
-        "tx": "CONNECT WITH FACEBOOK"
+        "tx": "和脸书连接"
     },
     {
         "c": 7000003,
-        "tx": "FACEBOOK CONNECTED"
+        "tx": "脸书已连接"
     },
     {
         "c": 7000004,
-        "tx": "TERMS OF USE"
+        "tx": "使用条款"
     },
     {
         "c": 7000005,
-        "tx": "PRIVACY POLICY"
+        "tx": "隐私政策"
     },
     {
         "c": 7000007,
-        "tx": "TUTORIAL"
+        "tx": "教程"
     },
     {
         "c": 7000008,
-        "tx": "SYNC SETTING"
+        "tx": "偏移值设定"
     },
     {
         "c": 7001001,
-        "tx": "CHANGE PIANIST NAME"
+        "tx": "修改钢琴家名称"
     },
     {
         "c": 7001002,
-        "tx": "What is your pianist name?"
+        "tx": "你的钢琴家名称是？"
     },
     {
         "c": 7001003,
-        "tx": "CHANGE"
+        "tx": "修改"
     },
     {
         "c": 7001004,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 7002001,
-        "tx": "CHANGE PIANIST NAME"
+        "tx": "修改钢琴家名称"
     },
     {
         "c": 7002002,
-        "tx": "Your Pianist name is"
+        "tx": "你的钢琴家名称是"
     },
     {
         "c": 7002003,
-        "tx": "Are you sure?"
+        "tx": "确定吗？"
     },
     {
         "c": 7002004,
-        "tx": "CHANGE"
+        "tx": "修改"
     },
     {
         "c": 7002005,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 7003001,
-        "tx": "CHANGE PIANIST NAME"
+        "tx": "修改钢琴家名称"
     },
     {
         "c": 7003002,
-        "tx": "Pianist name is successfully changed."
+        "tx": "你的钢琴家名称已修改。"
     },
     {
         "c": 7003003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7004001,
-        "tx": "Sign in with FACEBOOK"
+        "tx": "用脸书登录"
     },
     {
         "c": 7004002,
-        "tx": "Successfully Connected."
+        "tx": "连接成功。"
     },
     {
         "c": 7004003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7005001,
-        "tx": "Sign in with FACEBOOK"
+        "tx": "用脸书登录"
     },
     {
         "c": 7005002,
-        "tx": "This Facebook Account already linked with another Pianist.\nGuest Pianist account will be deleted.\nAre you sure you want to sign in?\nif you want to connect with present account to facebook\nplease e-mail us to support@pianista.io."
+        "tx": "此脸书账户已与另一位钢琴家绑定。\n访客钢琴家账户将被删除。\n您确定要登录吗？\n如果您想将现有账户连接到脸书\n请电邮我们：support@pianista.io"
     },
     {
         "c": 7005003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7005004,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 7006001,
-        "tx": "Sign in with FACEBOOK"
+        "tx": "用脸书登录"
     },
     {
         "c": 7006002,
-        "tx": "Your Facebook linked account is\nsuccessfully restored."
+        "tx": "您通过脸书连接的账户已成功还原。"
     },
     {
         "c": 7006003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7004011,
-        "tx": "Sign in with Apple"
+        "tx": "用苹果登录"
     },
     {
         "c": 7004012,
-        "tx": "Successfully Connected."
+        "tx": "连接成功。"
     },
     {
         "c": 7004013,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7005011,
-        "tx": "Sign in with Apple"
+        "tx": "用苹果登录"
     },
     {
         "c": 7005012,
-        "tx": "This Apple Account already linked with another Pianist.\nGuest Pianist account will be deleted.\nAre you sure you want to sign in?\nif you want to connect with present account to Apple\nplease e-mail us to support@pianista.io."
+        "tx": "此苹果账户已与另一位钢琴家绑定。\n访客钢琴家账户将被删除。\n您确定要登录吗？\n如果您想将现有账户连接到苹果\n请电邮我们：support@pianista.io"
     },
     {
         "c": 7005013,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 7005014,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 7006011,
-        "tx": "Sign in with Apple"
+        "tx": "用苹果登录"
     },
     {
         "c": 7006012,
-        "tx": "Your Apple linked account is\nsuccessfully restored."
+        "tx": "您通过苹果连接的账户已成功还原。"
     },
     {
         "c": 7006013,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 8000001,
@@ -5053,23 +5053,23 @@
     },
     {
         "c": 8000009,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 8000010,
-        "tx": "TUTORIAL"
+        "tx": "教程"
     },
     {
         "c": 8000011,
-        "tx": "SHOP"
+        "tx": "商店"
     },
     {
         "c": 8000012,
-        "tx": "RANKING"
+        "tx": "排行榜"
     },
     {
         "c": 8000013,
-        "tx": "RANKING"
+        "tx": "排行榜"
     },
     {
         "c": 8000014,
@@ -5077,11 +5077,11 @@
     },
     {
         "c": 8000015,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 9000000,
-        "tx": "LEVEL"
+        "tx": "Lvl."
     },
     {
         "c": 9000001,
@@ -5093,15 +5093,15 @@
     },
     {
         "c": 9000003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 9001006,
-        "tx": "Already reached max level"
+        "tx": "已到最高级"
     },
     {
         "c": 9002000,
-        "tx": "COMPOSER LEVEL"
+        "tx": "作曲家等级"
     },
     {
         "c": 9002001,
@@ -5109,7 +5109,7 @@
     },
     {
         "c": 9002002,
-        "tx": "EXP"
+        "tx": "经验值"
     },
     {
         "c": 9002003,
@@ -5121,59 +5121,59 @@
     },
     {
         "c": 9002005,
-        "tx": "{0} EXP"
+        "tx": "{0} 经验值"
     },
     {
         "c": 9002006,
-        "tx": "LEVEL UP!"
+        "tx": "升级!"
     },
     {
         "c": 9002007,
-        "tx": "Gained {0} EXP"
+        "tx": "获得 {0} 经验值"
     },
     {
         "c": 9002008,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 9002009,
-        "tx": "+{0}EXP"
+        "tx": "+{0}经验值"
     },
     {
         "c": 9002010,
-        "tx": "MAX"
+        "tx": "最大"
     },
     {
         "c": 9002011,
-        "tx": "LEVEL"
+        "tx": "等级"
     },
     {
         "c": 9003000,
-        "tx": "PIANIST LEVEL UP"
+        "tx": "钢琴师升级"
     },
     {
         "c": 9003001,
-        "tx": "CONGRATULATION"
+        "tx": "祝贺"
     },
     {
         "c": 9003002,
-        "tx": "LEVEL {0}"
+        "tx": "等级 {0}"
     },
     {
         "c": 9003004,
-        "tx": "{0} LEVEL UP +{1}"
+        "tx": "{0} 升级 +{1}"
     },
     {
         "c": 9003005,
-        "tx": "MAX MUSIC POINT"
+        "tx": "最大音乐点数"
     },
     {
         "c": 9003006,
-        "tx": "Increase"
+        "tx": "提升"
     },
     {
         "c": 9003007,
-        "tx": "in {0} PIANIST LEVEL"
+        "tx": "在 {0} 钢琴师等级后"
     },
     {
         "c": 9003008,
@@ -5185,15 +5185,15 @@
     },
     {
         "c": 9003010,
-        "tx": "UPCOMING REWARD"
+        "tx": "接下来的奖励"
     },
     {
         "c": 9004000,
-        "tx": "GOLD BONUS"
+        "tx": "金币奖励"
     },
     {
         "c": 9004001,
-        "tx": "SCORE BONUS"
+        "tx": "分数奖励"
     },
     {
         "c": 9004002,
@@ -5209,43 +5209,43 @@
     },
     {
         "c": 9004005,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 9005001,
-        "tx": "LEVEL BONUS"
+        "tx": "等级奖励"
     },
     {
         "c": 9005002,
-        "tx": "From"
+        "tx": "来自"
     },
     {
         "c": 9005003,
-        "tx": "Active"
+        "tx": "活跃地"
     },
     {
         "c": 9005004,
-        "tx": "Biography"
+        "tx": "传记"
     },
     {
         "c": 12000001,
-        "tx": "SYNC SETTING"
+        "tx": "偏移值设定"
     },
     {
         "c": 12000002,
-        "tx": "DEFAULT"
+        "tx": "默认"
     },
     {
         "c": 12000003,
-        "tx": "APPLY"
+        "tx": "保存"
     },
     {
         "c": 12000101,
-        "tx": "TOUCH TIME"
+        "tx": "触控延迟"
     },
     {
         "c": 12000102,
-        "tx": "Adjust the time between your operation and device reactions."
+        "tx": "调整操作和设备反应之间的时间。"
     },
     {
         "c": 12000103,
@@ -5253,15 +5253,15 @@
     },
     {
         "c": 12000106,
-        "tx": "sec"
+        "tx": "秒"
     },
     {
         "c": 12000201,
-        "tx": "MUSIC TIME"
+        "tx": "音乐延迟"
     },
     {
         "c": 12000202,
-        "tx": "Adjust the time between visual effect and music playing."
+        "tx": "调整视觉效果和音乐播放之间的时间间隔。"
     },
     {
         "c": 12000203,
@@ -5269,83 +5269,83 @@
     },
     {
         "c": 12000206,
-        "tx": "sec"
+        "tx": "秒"
     },
     {
         "c": 12001001,
-        "tx": "SUCCESS"
+        "tx": "成功"
     },
     {
         "c": 12001002,
-        "tx": "Your setting is successfully applied.\nCheck differences through the test play."
+        "tx": "您的设置已成功应用。\n请通过测试游玩来确认。"
     },
     {
         "c": 12001003,
-        "tx": "TEST PLAY"
+        "tx": "测试游玩"
     },
     {
         "c": 12001004,
-        "tx": "SKIP"
+        "tx": "跳过"
     },
     {
         "c": 12002001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 12002002,
-        "tx": "Are you sure you want reset all to default?\nYou may lose your unsaved changes."
+        "tx": "你确定要全部重置为默认设置吗？\n可能会丢失未保存的更改。"
     },
     {
         "c": 12002003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 12002004,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 12003001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 12003002,
-        "tx": "Are you sure you want to exit?\nChanges are not saved yet."
+        "tx": "你确定要退出吗？\n更改尚未保存。"
     },
     {
         "c": 12003003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 12003004,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 12004001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 12004002,
-        "tx": "Test play was completed.\n(Press Retry to repeat the test song)"
+        "tx": "测试游玩已完成。\n(按重试来重复测试歌曲)"
     },
     {
         "c": 12004003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 12004004,
-        "tx": "RETRY"
+        "tx": "重试"
     },
     {
         "c": 12005001,
-        "tx": "TEST SONG"
+        "tx": "测试歌曲"
     },
     {
         "c": 12005002,
-        "tx": "Touch the note when it is aligned with the line.\nAnd check the judge and time."
+        "tx": "当音符与线对齐时，触摸音符。请检查判定和时间。"
     },
     {
         "c": 12006001,
-        "tx": "Average"
+        "tx": "平均"
     },
     {
         "c": 12006002,
@@ -5353,167 +5353,167 @@
     },
     {
         "c": 90000000,
-        "tx": "FATAL"
+        "tx": "致命"
     },
     {
         "c": 90000001,
-        "tx": "EXIT"
+        "tx": "退出"
     },
     {
         "c": 90001000,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 90001001,
-        "tx": "RESTART"
+        "tx": "重试"
     },
     {
         "c": 90002000,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 90002001,
-        "tx": "RETRY"
+        "tx": "重试"
     },
     {
         "c": 90002002,
-        "tx": "RESTART"
+        "tx": "重试"
     },
     {
         "c": 90003000,
-        "tx": "UPDATED"
+        "tx": "已更新"
     },
     {
         "c": 90003001,
-        "tx": "Restart the app."
+        "tx": "重启应用。"
     },
     {
         "c": 90003002,
-        "tx": "RESTART"
+        "tx": "重启"
     },
     {
         "c": 90004000,
-        "tx": "APP UPDATED"
+        "tx": "程序已更新"
     },
     {
         "c": 90004001,
-        "tx": "The new version of the app was released."
+        "tx": "新版应用程序已发布。"
     },
     {
         "c": 90004002,
-        "tx": "DOWNLOAD"
+        "tx": "下载"
     },
     {
         "c": 90005000,
-        "tx": "The server is in maintenance mode.\nPlease connect after a while."
+        "tx": "服务器正处于维护模式。\n请稍后再试。"
     },
     {
         "c": 90005001,
-        "tx": "Connection timed out."
+        "tx": "连接超时。"
     },
     {
         "c": 90005002,
-        "tx": "Network is unstable."
+        "tx": "网络不稳定。"
     },
     {
         "c": 90005003,
-        "tx": "Data download was unsuccessful."
+        "tx": "数据下载失败。"
     },
     {
         "c": 90006001,
-        "tx": "SAVE DATA WITH QUICKLOGIN"
+        "tx": "连接账号来保证数据安全"
     },
     {
         "c": 90006002,
-        "tx": "Guest account can't restore \npurchase and gameplay data \nin cases like reinstall or new device. "
+        "tx": "在重装系统或更换新设备等情况下，\n游客账户无法恢复购买和游戏数据。"
     },
     {
         "c": 90006003,
-        "tx": "Link"
+        "tx": "连接"
     },
     {
         "c": 90006004,
-        "tx": "NO THANKS"
+        "tx": "不，谢谢"
     },
     {
         "c": 90007000,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 90007001,
-        "tx": "Are you sure you want to exit PIANISTA?"
+        "tx": "确定要退出PIANISTA吗?"
     },
     {
         "c": 90007002,
-        "tx": "LEAVE"
+        "tx": "退出"
     },
     {
         "c": 90007003,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 90100000,
-        "tx": "Now Tuning… {0}%"
+        "tx": "正在调音… {0}%"
     },
     {
         "c": 90200001,
-        "tx": "CONTINUE"
+        "tx": "继续"
     },
     {
         "c": 90200002,
-        "tx": "LEAVE"
+        "tx": "离开"
     },
     {
         "c": 13000001,
-        "tx": "TOUR"
+        "tx": "巡演"
     },
     {
         "c": 13000002,
-        "tx": "COLLECTION"
+        "tx": "藏品"
     },
     {
         "c": 13000003,
-        "tx": "PIANO"
+        "tx": "钢琴"
     },
     {
         "c": 13000004,
-        "tx": "SHOP"
+        "tx": "商店"
     },
     {
         "c": 13000005,
-        "tx": "INFO"
+        "tx": "信息"
     },
     {
         "c": 13000006,
-        "tx": "N"
+        "tx": "!"
     },
     {
         "c": 13000007,
-        "tx": "POSTBOX"
+        "tx": "信箱"
     },
     {
         "c": 13000008,
-        "tx": "World Top"
+        "tx": "世界前"
     },
     {
         "c": 13000009,
-        "tx": "League"
+        "tx": "排位赛"
     },
     {
         "c": 13001000,
-        "tx": "TOUR"
+        "tx": "巡演"
     },
     {
         "c": 13001001,
-        "tx": "STAGE {0}"
+        "tx": "第 {0} 关"
     },
     {
         "c": 13002000,
-        "tx": "CONTINUE"
+        "tx": "继续"
     },
     {
         "c": 14000000,
-        "tx": "level of difficulty"
+        "tx": "难度"
     },
     {
         "c": 14000001,
@@ -5529,11 +5529,11 @@
     },
     {
         "c": 14000004,
-        "tx": "MISSION"
+        "tx": "任务"
     },
     {
         "c": 14000005,
-        "tx": "REWARDS"
+        "tx": "奖励"
     },
     {
         "c": 14000006,
@@ -5541,47 +5541,47 @@
     },
     {
         "c": 14000007,
-        "tx": "Unlock"
+        "tx": "解锁"
     },
     {
         "c": 14000008,
-        "tx": "STAGE {0} CLEAR"
+        "tx": "第 {0} 关完成"
     },
     {
         "c": 14000009,
-        "tx": "SELECT"
+        "tx": "选择"
     },
     {
         "c": 14000010,
-        "tx": "TECHNICAL ALL CLEAR"
+        "tx": "TECHNICAL全通过"
     },
     {
         "c": 14001000,
-        "tx": "Complete Song"
+        "tx": "完成歌曲"
     },
     {
         "c": 14001001,
-        "tx": "Miss {0}"
+        "tx": "失误 {0} 次"
     },
     {
         "c": 14001002,
-        "tx": "Combo"
+        "tx": "连击"
     },
     {
         "c": 14001003,
-        "tx": "Accuracy"
+        "tx": "准确度"
     },
     {
         "c": 14001004,
-        "tx": "Scores"
+        "tx": "分数"
     },
     {
         "c": 14001005,
-        "tx": "Fade-"
+        "tx": "淡入淡出"
     },
     {
         "c": 14001006,
-        "tx": "Speed"
+        "tx": "速度"
     },
     {
         "c": 14001007,
@@ -5597,15 +5597,15 @@
     },
     {
         "c": 14001010,
-        "tx": "Off"
+        "tx": "关闭"
     },
     {
         "c": 14001011,
-        "tx": "In"
+        "tx": "入"
     },
     {
         "c": 14001012,
-        "tx": "Out"
+        "tx": "出"
     },
     {
         "c": 14001013,
@@ -5613,39 +5613,39 @@
     },
     {
         "c": 14002000,
-        "tx": "SPEED"
+        "tx": "速度"
     },
     {
         "c": 14002001,
-        "tx": "FADE"
+        "tx": "淡入淡出"
     },
     {
         "c": 14002002,
-        "tx": "PIANO"
+        "tx": "钢琴"
     },
     {
         "c": 14002003,
-        "tx": "ITEMS"
+        "tx": "道具"
     },
     {
         "c": 14002004,
-        "tx": "OFF"
+        "tx": "关闭"
     },
     {
         "c": 14002005,
-        "tx": "IN"
+        "tx": "入"
     },
     {
         "c": 14002006,
-        "tx": "OUT"
+        "tx": "出"
     },
     {
         "c": 14003000,
-        "tx": "LIFE"
+        "tx": "生命"
     },
     {
         "c": 14003001,
-        "tx": "SHIELD"
+        "tx": "盾牌"
     },
     {
         "c": 14003002,
@@ -5657,47 +5657,47 @@
     },
     {
         "c": 14003004,
-        "tx": "PLAY"
+        "tx": "开始"
     },
     {
         "c": 14003005,
-        "tx": "NOT\nAVAILABLE"
+        "tx": "不可用"
     },
     {
         "c": 14004000,
-        "tx": "BONUS\n+{0}"
+        "tx": "奖励\n+{0}"
     },
     {
         "c": 14004001,
-        "tx": "RESULT"
+        "tx": "结果"
     },
     {
         "c": 14004002,
-        "tx": "FAILED..."
+        "tx": "失败..."
     },
     {
         "c": 14004003,
-        "tx": "NEXT"
+        "tx": "下一步"
     },
     {
         "c": 14005001,
-        "tx": "My"
+        "tx": "我的"
     },
     {
         "c": 14005002,
-        "tx": "Goal"
+        "tx": "目标"
     },
     {
         "c": 14006001,
-        "tx": "MUSIC PACK"
+        "tx": "曲包"
     },
     {
         "c": 14006002,
-        "tx": "Pack Collected"
+        "tx": "曲包收集"
     },
     {
         "c": 14006003,
-        "tx": "Clear Rate This Pack"
+        "tx": "此包完成率"
     },
     {
         "c": 14006004,
@@ -5705,115 +5705,115 @@
     },
     {
         "c": 14006005,
-        "tx": "Include"
+        "tx": "包括"
     },
     {
         "c": 14006006,
-        "tx": "Songs"
+        "tx": "歌曲"
     },
     {
         "c": 14006007,
-        "tx": "SELECT"
+        "tx": "选择"
     },
     {
         "c": 14006008,
-        "tx": "UNLOCK"
+        "tx": "解锁"
     },
     {
         "c": 14006009,
-        "tx": "STANDARD TOUR"
+        "tx": "标准巡演"
     },
     {
         "c": 14006101,
-        "tx": "JOIN PRESTIGE"
+        "tx": "加入尊贵会员"
     },
     {
         "c": 14006201,
-        "tx": "PURCHASE"
+        "tx": "购买"
     },
     {
         "c": 14006202,
-        "tx": "Would you like to buy this Music Pack?\n\"{0}\""
+        "tx": "你想要购买此曲包吗?\n\"{0}\""
     },
     {
         "c": 14006203,
-        "tx": "BUY"
+        "tx": "购买"
     },
     {
         "c": 14006204,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 16000000,
-        "tx": "PIANO"
+        "tx": "钢琴"
     },
     {
         "c": 16000001,
-        "tx": "Score Bonus"
+        "tx": "分数奖励"
     },
     {
         "c": 16000002,
-        "tx": "Gold Bonus"
+        "tx": "金币奖励"
     },
     {
         "c": 16000003,
-        "tx": "EXP Bonus"
+        "tx": "经验值奖励"
     },
     {
         "c": 16000004,
-        "tx": "Life Bonus"
+        "tx": "生命奖励"
     },
     {
         "c": 16000005,
-        "tx": "Shield Bonus"
+        "tx": "盾牌奖励"
     },
     {
         "c": 16000101,
-        "tx": "+{0} Score"
+        "tx": "分数 +{0}"
     },
     {
         "c": 16000102,
-        "tx": "+{0} Gold"
+        "tx": "金币 +{0}"
     },
     {
         "c": 16000103,
-        "tx": "+{0} EXP"
+        "tx": "经验值 +{0}"
     },
     {
         "c": 16000104,
-        "tx": "+{0} Life"
+        "tx": "生命值 +{0}"
     },
     {
         "c": 16000105,
-        "tx": "+{0} Shield"
+        "tx": "盾牌 +{0}"
     },
     {
         "c": 16000201,
-        "tx": "Normal Piano"
+        "tx": "常见的钢琴"
     },
     {
         "c": 16000202,
-        "tx": "Rare Piano"
+        "tx": "罕见的钢琴"
     },
     {
         "c": 16000203,
-        "tx": "Epic Piano"
+        "tx": "独一无二的钢琴"
     },
     {
         "c": 16000301,
-        "tx": "NORMAL"
+        "tx": "常见"
     },
     {
         "c": 16000302,
-        "tx": "RARE"
+        "tx": "罕见"
     },
     {
         "c": 16000303,
-        "tx": "EPIC"
+        "tx": "独一无二"
     },
     {
         "c": 16002000,
-        "tx": "LEVEL"
+        "tx": "等级"
     },
     {
         "c": 16002001,
@@ -5833,27 +5833,27 @@
     },
     {
         "c": 16002005,
-        "tx": "CONDITION"
+        "tx": "条件"
     },
     {
         "c": 16002006,
-        "tx": "HIDDEN CONDITION"
+        "tx": "隐藏条件"
     },
     {
         "c": 16002007,
-        "tx": "EQUIP BONUS"
+        "tx": "装备奖励"
     },
     {
         "c": 16002008,
-        "tx": "LOCKED"
+        "tx": "被锁定"
     },
     {
         "c": 16002009,
-        "tx": "TRY"
+        "tx": "尝试"
     },
     {
         "c": 16002010,
-        "tx": "UPGRADE"
+        "tx": "升级"
     },
     {
         "c": 16002011,
@@ -5861,7 +5861,7 @@
     },
     {
         "c": 16002012,
-        "tx": "EQUIP"
+        "tx": "装备"
     },
     {
         "c": 16002013,
@@ -5873,27 +5873,27 @@
     },
     {
         "c": 16002015,
-        "tx": "MAX LEVEL"
+        "tx": "最高级"
     },
     {
         "c": 16001004,
-        "tx": "EQUIPPED"
+        "tx": "已装备"
     },
     {
         "c": 16001005,
-        "tx": "N"
+        "tx": "!"
     },
     {
         "c": 16001006,
-        "tx": "PIANO"
+        "tx": "钢琴"
     },
     {
         "c": 16001007,
-        "tx": "ACHIEVEMENTS"
+        "tx": "成就"
     },
     {
         "c": 16001008,
-        "tx": "REGULAR"
+        "tx": "一般"
     },
     {
         "c": 16001009,
@@ -5905,27 +5905,27 @@
     },
     {
         "c": 16001011,
-        "tx": "SPECIAL"
+        "tx": "特殊"
     },
     {
         "c": 16001012,
-        "tx": "Sort by"
+        "tx": "筛选条件"
     },
     {
         "c": 16001014,
-        "tx": "BASIC"
+        "tx": "基础"
     },
     {
         "c": 16001015,
-        "tx": "OWNED"
+        "tx": "拥有"
     },
     {
         "c": 16001016,
-        "tx": "LOCKED"
+        "tx": "锁定"
     },
     {
         "c": 17000000,
-        "tx": "TOP\n{0}%"
+        "tx": "前\n{0}%"
     },
     {
         "c": 17000001,
@@ -5949,59 +5949,59 @@
     },
     {
         "c": 17000006,
-        "tx": "Tour"
+        "tx": "巡演"
     },
     {
         "c": 17000007,
-        "tx": "Song"
+        "tx": "歌曲"
     },
     {
         "c": 17001000,
-        "tx": "SONG RANKING"
+        "tx": "歌曲排名"
     },
     {
         "c": 17001001,
-        "tx": "Click for Details"
+        "tx": "点击查看详细"
     },
     {
         "c": 17002000,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 17002001,
-        "tx": "PIANIST"
+        "tx": "钢琴家"
     },
     {
         "c": 17002002,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 17002003,
-        "tx": "ACCURACY"
+        "tx": "准确度"
     },
     {
         "c": 17002004,
-        "tx": "Top Rank"
+        "tx": "最高级"
     },
     {
         "c": 17002005,
-        "tx": "My Rank"
+        "tx": "我的排名"
     },
     {
         "c": 17003001,
-        "tx": "RANK UP"
+        "tx": "排名提升"
     },
     {
         "c": 17003002,
-        "tx": "CONGRATULATION"
+        "tx": "祝贺"
     },
     {
         "c": 17003003,
-        "tx": "My Ranking"
+        "tx": "我的排名"
     },
     {
         "c": 17003004,
-        "tx": "Score"
+        "tx": "分数"
     },
     {
         "c": 17003005,
@@ -6009,11 +6009,11 @@
     },
     {
         "c": 17003006,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 17003007,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 17003008,
@@ -6021,15 +6021,15 @@
     },
     {
         "c": 17003009,
-        "tx": "TOP {0}%"
+        "tx": "前 {0}%"
     },
     {
         "c": 17003010,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 17010000,
-        "tx": "TOP\n{0}%"
+        "tx": "前\n{0}%"
     },
     {
         "c": 17010001,
@@ -6053,43 +6053,43 @@
     },
     {
         "c": 17010006,
-        "tx": "Tour"
+        "tx": "巡演"
     },
     {
         "c": 17010007,
-        "tx": "Song"
+        "tx": "歌曲"
     },
     {
         "c": 17011000,
-        "tx": "TOUR RANKING"
+        "tx": "巡演排名"
     },
     {
         "c": 17011001,
-        "tx": "Click for Details"
+        "tx": "点击查看详细"
     },
     {
         "c": 17012000,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 17012001,
-        "tx": "PIANIST"
+        "tx": "钢琴家"
     },
     {
         "c": 17012002,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 17012003,
-        "tx": "ACCURACY"
+        "tx": "准确度"
     },
     {
         "c": 17012004,
-        "tx": "Top Rank"
+        "tx": "最高排名"
     },
     {
         "c": 17012005,
-        "tx": "My Rank"
+        "tx": "我的排名"
     },
     {
         "c": 17012006,
@@ -6105,7 +6105,7 @@
     },
     {
         "c": 17013001,
-        "tx": "TOUR RANKING"
+        "tx": "巡演排名"
     },
     {
         "c": 17013002,
@@ -6121,11 +6121,11 @@
     },
     {
         "c": 17013005,
-        "tx": "My Ranking"
+        "tx": "我的排名"
     },
     {
         "c": 17013006,
-        "tx": "Total Score"
+        "tx": "总分"
     },
     {
         "c": 17013007,
@@ -6133,11 +6133,11 @@
     },
     {
         "c": 17013008,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 17013009,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 17013010,
@@ -6145,15 +6145,15 @@
     },
     {
         "c": 17013011,
-        "tx": "TOP {0}%"
+        "tx": "前 {0}%"
     },
     {
         "c": 17013012,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 18005001,
-        "tx": "Until"
+        "tx": "截至"
     },
     {
         "c": 18005002,
@@ -6161,139 +6161,139 @@
     },
     {
         "c": 19000001,
-        "tx": "POSTBOX"
+        "tx": "信箱"
     },
     {
         "c": 19002001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 19002002,
-        "tx": "The message has expired."
+        "tx": "此信息已过期。"
     },
     {
         "c": 19002003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 19003001,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 19003002,
-        "tx": "Postbox is full"
+        "tx": "信箱已满。"
     },
     {
         "c": 19003003,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 20001000,
-        "tx": "LEAGUE SCORE"
+        "tx": "排位赛分数"
     },
     {
         "c": 20001001,
-        "tx": "PLAY BONUS"
+        "tx": "游玩奖励"
     },
     {
         "c": 20001002,
-        "tx": "DIFFICULTY {0}"
+        "tx": "难度 {0}"
     },
     {
         "c": 20001003,
-        "tx": "ACCURACY {0}%"
+        "tx": "准确度 {0}%"
     },
     {
         "c": 20001004,
-        "tx": "ALL COMBO"
+        "tx": "全连"
     },
     {
         "c": 20001005,
-        "tx": "SPEED {0}"
+        "tx": "速度 {0}"
     },
     {
         "c": 20001006,
-        "tx": "FADE {0}"
+        "tx": "淡{0}"
     },
     {
         "c": 20001007,
-        "tx": "IN"
+        "tx": "入"
     },
     {
         "c": 20001008,
-        "tx": "OUT"
+        "tx": "出"
     },
     {
         "c": 20001009,
-        "tx": "OFF"
+        "tx": "关闭"
     },
     {
         "c": 20001010,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 20002000,
-        "tx": "RANK UP"
+        "tx": "排名提升"
     },
     {
         "c": 20002001,
-        "tx": "COMPOSER {0}"
+        "tx": "作曲家 {0}"
     },
     {
         "c": 20002002,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 20003000,
-        "tx": "RANK UP"
+        "tx": "排名提升"
     },
     {
         "c": 20003001,
-        "tx": "{0} LEAGUE"
+        "tx": "{0} 排位"
     },
     {
         "c": 20003002,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 21008000,
-        "tx": "CHANGE YOUR MESSAGE"
+        "tx": "修改你的留言"
     },
     {
         "c": 21008001,
-        "tx": "You can enter up to {0} characters."
+        "tx": "你可以输入最多 {0} 位字母。"
     },
     {
         "c": 21008002,
-        "tx": "CHANGE"
+        "tx": "修改"
     },
     {
         "c": 21008003,
-        "tx": "CANCEL"
+        "tx": "取消"
     },
     {
         "c": 20005000,
-        "tx": "REWARDS"
+        "tx": "奖励"
     },
     {
         "c": 20005001,
-        "tx": "RANK UP "
+        "tx": "排名提升"
     },
     {
         "c": 20005002,
-        "tx": "{0} HAVE OVERTAKEN YOU"
+        "tx": "{0} 赶超了你"
     },
     {
         "c": 20005003,
-        "tx": "DAILY COMPOSER ALL CLEARED "
+        "tx": "每日作曲家全部完成"
     },
     {
         "c": 20005004,
-        "tx": "LEAGUE RESULT"
+        "tx": "排位赛结果"
     },
     {
         "c": 20005005,
-        "tx": "MARBLE COLLECTED"
+        "tx": "收集的水晶"
     },
     {
         "c": 20006000,
@@ -6301,339 +6301,339 @@
     },
     {
         "c": 20007000,
-        "tx": "RESULT"
+        "tx": "结果"
     },
     {
         "c": 20007001,
-        "tx": "{0} LEAGUE"
+        "tx": "{0} 排位"
     },
     {
         "c": 20007002,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 20008000,
-        "tx": "YOUR GRADE IS"
+        "tx": "你的排位被"
     },
     {
         "c": 20008001,
-        "tx": "PROMOTED"
+        "tx": "提升了"
     },
     {
         "c": 20008002,
-        "tx": "YOUR GRADE IS"
+        "tx": "你的排位被"
     },
     {
         "c": 20008003,
-        "tx": "DEMOTED"
+        "tx": "降低了"
     },
     {
         "c": 20008004,
-        "tx": "OK"
+        "tx": "确定"
     },
     {
         "c": 20010001,
-        "tx": "Today's Composer"
+        "tx": "今天的作曲家"
     },
     {
         "c": 20010002,
-        "tx": "FAVORITE"
+        "tx": "最爱"
     },
     {
         "c": 20010003,
-        "tx": "NEW ARRIVAL"
+        "tx": "新晋"
     },
     {
         "c": 20011001,
-        "tx": "Total Ranking"
+        "tx": "总排名"
     },
     {
         "c": 20011002,
-        "tx": "Composer Ranking - {0}"
+        "tx": "作曲家排名 - {0}"
     },
     {
         "c": 20012000,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 20012001,
-        "tx": "PIANIST"
+        "tx": "钢琴家"
     },
     {
         "c": 20012004,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 20013000,
-        "tx": "TOTAL"
+        "tx": "总分"
     },
     {
         "c": 20013001,
-        "tx": "MY SCORE"
+        "tx": "我的分数"
     },
     {
         "c": 21008100,
-        "tx": "NOTICE"
+        "tx": "提示"
     },
     {
         "c": 21008101,
-        "tx": "Your message has been changed successfully."
+        "tx": "你的留言已成功更新。"
     },
     {
         "c": 21008102,
-        "tx": "OK"
+        "tx": "确认"
     },
     {
         "c": 20014000,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 20014001,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 20014002,
-        "tx": "MY"
+        "tx": "我的"
     },
     {
         "c": 20006001,
-        "tx": "PLAY"
+        "tx": "游玩"
     },
     {
         "c": 20001011,
-        "tx": "Difficulty Bonus +{0}"
+        "tx": "难度奖励 +{0}"
     },
     {
         "c": 20001012,
-        "tx": "Accuracy Bonus +{0}"
+        "tx": "准确度奖励 +{0}"
     },
     {
         "c": 20001013,
-        "tx": "All Combo Bonus +{0}"
+        "tx": "全连奖励 +{0}"
     },
     {
         "c": 20001014,
-        "tx": "Speed Bonus +{0}"
+        "tx": "速度奖励 +{0}"
     },
     {
         "c": 20001015,
-        "tx": "Fade Bonus +{0}"
+        "tx": "淡入淡出奖励 +{0}"
     },
     {
         "c": 20005007,
-        "tx": "MARBLE ALL COLLECTED"
+        "tx": "所有水晶都已收集"
     },
     {
         "c": 20020001,
-        "tx": "RANK"
+        "tx": "排名"
     },
     {
         "c": 20020002,
-        "tx": "PIANIST AND PRINCIPALS"
+        "tx": "钢琴家和专长"
     },
     {
         "c": 20020003,
-        "tx": "SCORE"
+        "tx": "分数"
     },
     {
         "c": 20020004,
-        "tx": "PLACEMENT"
+        "tx": "排位"
     },
     {
         "c": 20020005,
-        "tx": "PROMOTION"
+        "tx": "升级"
     },
     {
         "c": 20020006,
-        "tx": "DEMOTION"
+        "tx": "降级"
     },
     {
         "c": 20020007,
-        "tx": "REWARDS"
+        "tx": "奖励"
     },
     {
         "c": 20020008,
-        "tx": "RANK{0}"
+        "tx": "第{0}名"
     },
     {
         "c": 22000001,
-        "tx": "<color=#FFDD00>@</color>{0} Ranked No.1 in the league."
+        "tx": "<color=#FFDD00>@</color>{0} 取得了排位第一名。"
     },
     {
         "c": 22000002,
-        "tx": "<color=#FFDD00>@</color>{0} Ranked No.2 in the league."
+        "tx": "<color=#FFDD00>@</color>{0} 取得了排位第二名。"
     },
     {
         "c": 22000003,
-        "tx": "<color=#FFDD00>@</color>{0} Ranked No.3 in the league."
+        "tx": "<color=#FFDD00>@</color>{0} 取得了排位第三名。"
     },
     {
         "c": 22000004,
-        "tx": "<color=#FFDD00>@</color>{0} soaring in the ranking."
+        "tx": "<color=#FFDD00>@</color>{0} 排名飙升。"
     },
     {
         "c": 22000005,
-        "tx": "<color=#FFDD00>@</color>{0} best {1} pianist."
+        "tx": "<color=#FFDD00>@</color>{0} 最佳{1}钢琴师。"
     },
     {
         "c": 22000006,
-        "tx": "<color=#FFDD00>@</color>{0} played all composer today."
+        "tx": "<color=#FFDD00>@</color>{0} 游玩了所有作曲家。"
     },
     {
         "c": 22000007,
-        "tx": "<color=#FFDD00>@</color>{0} play 10 times in the league."
+        "tx": "<color=#FFDD00>@</color>{0} 游玩了10次。"
     },
     {
         "c": 22000008,
-        "tx": "<color=#FFDD00>@</color>{0} play 20 times in the league."
+        "tx": "<color=#FFDD00>@</color>{0} 游玩了20次。"
     },
     {
         "c": 22000009,
-        "tx": "<color=#FFDD00>@</color>{0} play 30 times in the league."
+        "tx": "<color=#FFDD00>@</color>{0} 游玩了30次。"
     },
     {
         "c": 20000010,
-        "tx": "Ranked game is in progress fiercely."
+        "tx": "排位赛正在激烈进行中。"
     },
     {
         "c": 20000011,
-        "tx": "Critically close to demotion."
+        "tx": "处于被降级的危险区域。"
     },
     {
         "c": 20000012,
-        "tx": "Today's league is ending soon."
+        "tx": "今天的排位赛即将结束。"
     },
     {
         "c": 20000013,
-        "tx": "Welcome to the league!"
+        "tx": "欢迎来到排位赛！"
     },
     {
         "c": 20000014,
-        "tx": "Piano Bonus +{0}"
+        "tx": "钢琴奖励 +{0}"
     },
     {
         "c": 20000015,
-        "tx": "Composer Level Bonus +{0}"
+        "tx": "作曲家等级奖励 +{0}"
     },
     {
         "c": 20000016,
-        "tx": "Standard"
+        "tx": "标准"
     },
     {
         "c": 20000017,
-        "tx": "Extra"
+        "tx": "额外"
     },
     {
         "c": 20000018,
-        "tx": "Daily Quest"
+        "tx": "每日任务"
     },
     {
         "c": 20000019,
-        "tx": "Clear and Get Music Points"
+        "tx": "完成来获得音乐点数"
     },
     {
         "c": 20000020,
-        "tx": "Marble"
+        "tx": "水晶"
     },
     {
         "c": 20000021,
-        "tx": "Collect All Marble in Today"
+        "tx": "获得所有水晶"
     },
     {
         "c": 20000022,
-        "tx": "Complete Today League"
+        "tx": "完成今天的排位赛"
     },
     {
         "c": 20000023,
-        "tx": "Clear Today Composers"
+        "tx": "完成今天的作曲家"
     },
     {
         "c": 20000024,
-        "tx": "{0} DAYS"
+        "tx": "{0} 天"
     },
     {
         "c": 20000025,
-        "tx": "PRESTIGE MEMBERSHIP"
+        "tx": "尊贵会员"
     },
     {
         "c": 20000026,
-        "tx": "LOCKED"
+        "tx": "已锁定"
     },
     {
         "c": 20000027,
-        "tx": "NEW ARRIVAL"
+        "tx": "新晋"
     },
     {
         "c": 20000030,
-        "tx": "BUY"
+        "tx": "购买"
     },
     {
         "c": 20000035,
-        "tx": "MY"
+        "tx": "我的"
     },
     {
         "c": 20000036,
-        "tx": "POSTBOX"
+        "tx": "信箱"
     },
     {
         "c": 20000037,
-        "tx": "OK"
+        "tx": "确认"
     },
     {
         "c": 20000038,
-        "tx": "CLAIM"
+        "tx": "领取"
     },
     {
         "c": 20000039,
-        "tx": "CLAIM ALL"
+        "tx": "全部领取"
     },
     {
         "c": 20000040,
-        "tx": "You have not received any message."
+        "tx": "你没有收到任何信息。"
     },
     {
         "c": 20000041,
-        "tx": "Messages expires in 7 days."
+        "tx": "信息 7 天后过期。"
     },
     {
         "c": 20000042,
-        "tx": "Attachment"
+        "tx": "附件"
     },
     {
         "c": 20000043,
-        "tx": "Until "
+        "tx": "截至 "
     },
     {
         "c": 20000044,
-        "tx": "{0}D"
+        "tx": "{0}天"
     },
     {
         "c": 20000045,
-        "tx": "{0}H {1}M"
+        "tx": "{0}时 {1}分钟"
     },
     {
         "c": 20000046,
-        "tx": "Benefits"
+        "tx": "福利"
     },
     {
         "c": 20000047,
-        "tx": "PRESTIGE MEMBERSHIP"
+        "tx": "尊贵会员"
     },
     {
         "c": 20000048,
-        "tx": "Already in a Prestige Membership"
+        "tx": "已经是尊贵会员"
     },
     {
         "c": 20000050,
-        "tx": "Purchase Membership and\nenjoy every benefits."
+        "tx": "购买会员资格，享受各种福利。"
     },
     {
         "c": 20000051,
-        "tx": "VIEW BENEFIT"
+        "tx": "查看福利"
     },
     {
         "c": 20000052,
-        "tx": "PRESTIGE"
+        "tx": "尊贵会员"
     },
     {
         "c": 20000053,
@@ -6649,27 +6649,27 @@
     },
     {
         "c": 20000056,
-        "tx": "Access Every Song"
+        "tx": "全曲解锁"
     },
     {
         "c": 20000057,
-        "tx": "Access All Tourpack"
+        "tx": "全部巡演曲包解锁"
     },
     {
         "c": 20000059,
-        "tx": "Play Music\nWithout Music Points"
+        "tx": "无需音乐点数即可游玩"
     },
     {
         "c": 20000060,
-        "tx": "Claim Free Items\nEveryday"
+        "tx": "每天领取免费礼物"
     },
     {
         "c": 20000061,
-        "tx": "Get EXP Bonus\n+100%"
+        "tx": "获得EXP奖励\n+100%"
     },
     {
         "c": 20000062,
-        "tx": "Get Gold Bonus\n+100%"
+        "tx": "获得金币奖励\n+100%"
     },
     {
         "c": 20000063,
@@ -6677,102 +6677,114 @@
     },
     {
         "c": 20000064,
-        "tx": "HOW TO UNLOCK"
+        "tx": "如何解锁"
     },
     {
         "c": 20000065,
-        "tx": "Clear the song on the \"Tour Play\""
+        "tx": "在\"巡演\"完成此音乐"
     },
     {
         "c": 20000066,
-        "tx": "TRY"
+        "tx": "尝试"
     },
     {
         "c": 20000067,
-        "tx": "CLOSE"
+        "tx": "关闭"
     },
     {
         "c": 20000068,
-        "tx": "LEAGUE"
+        "tx": "排位赛"
     },
     {
         "c": 20000069,
-        "tx": "START"
+        "tx": "开始"
     },
     {
         "c": 20000070,
-        "tx": "LEAGUE NEWS"
+        "tx": "排位赛新闻"
     },
     {
         "c": 20000071,
-        "tx": "{1} hours ago"
+        "tx": "{1}小时前"
     },
     {
         "c": 20000072,
-        "tx": "{1} hour ago"
+        "tx": "{1}小时前"
     },
     {
         "c": 20000073,
-        "tx": "{2} minutes ago"
+        "tx": "{2}分钟前"
     },
     {
         "c": 20000074,
-        "tx": "{2} minute ago"
+        "tx": "{2}分钟前"
     },
     {
         "c": 20000075,
-        "tx": "few ago"
+        "tx": "几秒前"
     },
     {
         "c": 30006001,
-        "tx": "Reach Accuracy {0}"
+        "tx": "达到准确度 {0}"
     },
     {
         "c": 30006002,
-        "tx": "Clear Light Difficulty"
+        "tx": "完成LIGHT难度"
     },
     {
         "c": 30006003,
-        "tx": "Play any song 5 times."
+        "tx": "游玩任意歌曲5次。"
     },
     {
         "c": 30006004,
-        "tx": "Play any song 10 times."
+        "tx": "游玩任意歌曲10次。"
     },
     {
         "c": 30006005,
-        "tx": "Play any song 20 times."
+        "tx": "游玩任意歌曲20次。"
     },
     {
         "c": 30006006,
-        "tx": "Clear Normal Difficulty"
+        "tx": "完成NORMAL难度"
     },
     {
         "c": 30006007,
-        "tx": "Clear Technical Difficulty"
+        "tx": "完成TECHNICAL难度"
     },
     {
         "c": 30001000,
-        "tx": "You have been promoted in League!"
+        "tx": "你的排位晋级了！"
     },
     {
         "c": 30001001,
-        "tx": "You have been demoted in League!"
+        "tx": "你的排位降级了！"
     },
     {
         "c": 30001002,
-        "tx": "You stayed in the same League!"
+        "tx": "你的排位没有变动！"
     },
     {
         "c": 30001003,
-        "tx": "Congratulation! You ranked in the {0} place in the league.\nYou have been promoted to the previous league.\nKeep pushing forward!"
+        "tx": "恭喜！您在排位赛中排名第 "
     },
     {
         "c": 30001004,
-        "tx": "Unfortunately, you ranked in the {0}th place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!"
+        "tx": "很遗憾，您在联赛中排名第 "
     },
     {
         "c": 30001005,
-        "tx": "You ranked in the {0} place in the league.\nYour league has remained consistent.\nKeep it going!"
+        "tx": "您在联赛中排名第 "
+    },
+    {
+        "c": 30001006,
+        "tx": " 位。\n您已晋升下一排位。\n请继续努力！"
+    },
+    {
+        "c": 30001007,
+        "tx": " 位。\n您已降级至上一排位。\n下次祝您好运！"
+    },
+    {
+        "c": 30001008,
+        "tx": " 位。\n您的的排位保持稳定。\n请继续努力！"
     }
 ]

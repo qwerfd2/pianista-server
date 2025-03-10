@@ -258,11 +258,11 @@ async def reset_league():
         rank = get_league_rank(leaderboard, user['id'], 0)
 
         tier = user['league']['tier']
-        if (tier == 1):
+        if (rank == 1):
             append = "st"
-        elif (tier == 2):
+        elif (rank == 2):
             append = "nd"
-        elif (tier == 3):
+        elif (rank == 3):
             append = "rd"
         else:
             append = "th"

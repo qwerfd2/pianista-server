@@ -1,51 +1,51 @@
 [
     {
         "c": 0,
-        "tx": "中文"
+        "tx": "English"
     },
     {
         "c": 1001,
-        "tx": "游戏为准备更新正在维护中。感谢您的耐心等待。"
+        "tx": "The game is under maintenance in preparation for an update.\nThanks for your patience."
     },
     {
         "c": 1002,
-        "tx": "无法连接到游戏服务器，请稍后再试。"
+        "tx": "Could not connect to the game server.\nPlease try again later."
     },
     {
         "c": 1003,
-        "tx": "Pianista 目前正在进行必要的维护，请稍后再试。"
+        "tx": "Pianista is currently performing\nneccessary maintenance.\nPlease try again in a few minutes."
     },
     {
         "c": 1004,
-        "tx": "Pianista 正在维护中。请在{0}分钟后重试。"
+        "tx": "Pianista is under maintenance.\nPlease try again after {0} minutes."
     },
     {
         "c": 1005,
-        "tx": "游戏为准备更新正在维护中。感谢您的耐心等待。\n开始时间: {0} (GMT)\n计划结束时间: {1} (GMT)"
+        "tx": "The game is under maintenance for an update.\nThanks for your patience.\nStart time: {0} (GMT)\nScheduled end: {1} (GMT)"
     },
     {
         "c": 10000,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 10001,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 10002,
-        "tx": "下一个"
+        "tx": "NEXT"
     },
     {
         "c": 10003,
-        "tx": "返回"
+        "tx": "BACK"
     },
     {
         "c": 10004,
-        "tx": "详细"
+        "tx": "DETAIL"
     },
     {
         "c": 11000,
-        "tx": "最大值"
+        "tx": "MAX"
     },
     {
         "c": 70000,
@@ -53,323 +53,323 @@
     },
     {
         "c": 70001,
-        "tx": "宝石"
+        "tx": "JEWEL"
     },
     {
         "c": 70002,
-        "tx": "金币"
+        "tx": "GOLD"
     },
     {
         "c": 70003,
-        "tx": "音符"
+        "tx": "MUSIC POINT"
     },
     {
         "c": 70004,
-        "tx": "作曲家经验重置"
+        "tx": "COMPOSER STAT RESET"
     },
     {
         "c": 70005,
-        "tx": "音乐"
+        "tx": "MUSIC"
     },
     {
         "c": 70006,
-        "tx": "随机"
+        "tx": "SHUFFLE"
     },
     {
         "c": 70007,
-        "tx": "更改昵称"
+        "tx": "CHANGE NAME"
     },
     {
         "c": 70008,
-        "tx": "宝箱"
+        "tx": "CHEST"
     },
     {
         "c": 70009,
-        "tx": "作曲家经验"
+        "tx": "COMPOSER STAT"
     },
     {
         "c": 70010,
-        "tx": "钢琴"
+        "tx": "PIANO"
     },
     {
         "c": 70011,
-        "tx": "盾牌"
+        "tx": "SHIELD"
     },
     {
         "c": 70012,
-        "tx": "生命"
+        "tx": "LIFE"
     },
     {
         "c": 71000,
-        "tx": "免费"
+        "tx": "FREE"
     },
     {
         "c": 72000,
-        "tx": "尊贵会员"
+        "tx": "PRESTIGE"
     },
     {
         "c": 73000,
-        "tx": "经典之选"
+        "tx": "THE CLASSIC"
     },
     {
         "c": 73001,
-        "tx": "门德尔松 - 精选集"
+        "tx": "Mendelssohn - The Essential"
     },
     {
         "c": 73002,
-        "tx": "合奏曲精选集"
+        "tx": "Compilation of Ensemble"
     },
     {
         "c": 73003,
-        "tx": "键盘乐精选集"
+        "tx": "Compilation of Keyboard"
     },
     {
         "c": 73004,
-        "tx": "合奏曲精选集 #2"
+        "tx": "Compilation of Ensemble #2"
     },
     {
         "c": 73005,
-        "tx": "音乐剧精选集"
+        "tx": "Compilation of Theatre"
     },
     {
         "c": 73006,
-        "tx": "一周年精选集"
+        "tx": "1st Anniversary"
     },
     {
         "c": 73007,
-        "tx": "键盘乐精选集 #2"
+        "tx": "Compilation of Keyboard #2"
     },
     {
         "c": 73008,
-        "tx": "键盘乐精选集 #3"
+        "tx": "Compilation of Keyboard #3"
     },
     {
         "c": 73009,
-        "tx": "合奏曲精选集 #3"
+        "tx": "Compilation of Ensemble #3"
     },
     {
         "c": 73010,
-        "tx": "键盘乐精选集 #4"
+        "tx": "Compilation of Keyboard #4"
     },
     {
         "c": 73011,
-        "tx": "合奏曲精选集 #4"
+        "tx": "Compilation of Ensemble #4"
     },
     {
         "c": 73012,
-        "tx": "琶音大师"
+        "tx": "Master of Arpeggios"
     },
     {
         "c": 73013,
-        "tx": "键盘乐精选集 #5"
+        "tx": "Compilation of Keyboard #5"
     },
     {
         "c": 73014,
-        "tx": "管弦乐精选集 #1"
+        "tx": "Compilation of Orchestra #1"
     },
     {
         "c": 73015,
-        "tx": "春之声"
+        "tx": "The Sound of Spring"
     },
     {
         "c": 73016,
-        "tx": "醉爱巴洛克"
+        "tx": "The Barocophile"
     },
     {
         "c": 73017,
-        "tx": "二周年精选集"
+        "tx": "Crystal"
     },
     {
         "c": 73018,
-        "tx": "精湛演绎"
+        "tx": "Virtuoso"
     },
     {
         "c": 73019,
-        "tx": "小调旋律"
+        "tx": "Melodia in minor key"
     },
     {
         "c": 73020,
-        "tx": "歌剧艺术"
+        "tx": "The Art of Opera"
     },
     {
         "c": 73021,
-        "tx": "悲喜交加"
+        "tx": "On Joy and Sorrow"
     },
     {
         "c": 73022,
-        "tx": "平安夜"
+        "tx": "The Night Before Christmas"
     },
     {
         "c": 73023,
-        "tx": "大提琴艺术"
+        "tx": "The Art of Cello"
     },
     {
         "c": 73024,
-        "tx": "宏大协奏曲"
+        "tx": "Concerto Grandioso"
     },
     {
         "c": 73025,
-        "tx": "浪漫时代"
+        "tx": "Romantic Times"
     },
     {
         "c": 73026,
-        "tx": "谐音金三角"
+        "tx": "Harmonic Triangle"
     },
     {
         "c": 73027,
-        "tx": "预言家"
+        "tx": "The Harbinger"
     },
     {
         "c": 73028,
-        "tx": "舒伯特 - 精选集"
+        "tx": "Schubert - The Essential"
     },
     {
         "c": 73029,
-        "tx": "宏大协奏曲 #2"
+        "tx": "Concerto Grandioso #2"
     },
     {
         "c": 73030,
-        "tx": "双簧管艺术"
+        "tx": "The Art of Oboe"
     },
     {
         "c": 73031,
-        "tx": "柴可夫斯基 - 精选集"
+        "tx": "Tchaikovsky - The Essential"
     },
     {
         "c": 73032,
-        "tx": "奏鸣曲艺术"
+        "tx": "The Art of Sonata"
     },
     {
         "c": 73033,
-        "tx": "小提琴协奏曲"
+        "tx": "Violin Concerto"
     },
     {
         "c": 80001,
-        "tx": "正常"
+        "tx": "NORMAL"
     },
     {
         "c": 80002,
-        "tx": "高难"
+        "tx": "TECHNICAL"
     },
     {
         "c": 80003,
-        "tx": "大师"
+        "tx": "MASTER"
     },
     {
         "c": 80004,
-        "tx": "轻盈"
+        "tx": "LIGHT"
     },
     {
         "c": 81001,
-        "tx": "完美"
+        "tx": "Marv."
     },
     {
         "c": 81002,
-        "tx": "优良"
+        "tx": "Excl."
     },
     {
         "c": 81003,
-        "tx": "完好"
+        "tx": "Good"
     },
     {
         "c": 81004,
-        "tx": "一般"
+        "tx": "Fair"
     },
     {
         "c": 81005,
-        "tx": "失误"
+        "tx": "Miss"
     },
     {
         "c": 82001,
-        "tx": "准确度"
+        "tx": "Accuracy"
     },
     {
         "c": 82002,
-        "tx": "最高连击"
+        "tx": "Max Combo"
     },
     {
         "c": 90000,
-        "tx": "青铜 I"
+        "tx": "BRONZE I"
     },
     {
         "c": 90001,
-        "tx": "青铜 II"
+        "tx": "BRONZE II"
     },
     {
         "c": 90002,
-        "tx": "青铜 III"
+        "tx": "BRONZE III"
     },
     {
         "c": 90003,
-        "tx": "白银 I"
+        "tx": "SILVER I"
     },
     {
         "c": 90004,
-        "tx": "白银 II"
+        "tx": "SILVER II"
     },
     {
         "c": 90005,
-        "tx": "白银 III"
+        "tx": "SILVER III"
     },
     {
         "c": 90006,
-        "tx": "黄金 I"
+        "tx": "GOLD I"
     },
     {
         "c": 90007,
-        "tx": "黄金 II"
+        "tx": "GOLD II"
     },
     {
         "c": 90008,
-        "tx": "黄金 III"
+        "tx": "GOLD III"
     },
     {
         "c": 90009,
-        "tx": "铂金 I"
+        "tx": "PLATINUM I"
     },
     {
         "c": 90010,
-        "tx": "铂金 II"
+        "tx": "PLATINUM II"
     },
     {
         "c": 90011,
-        "tx": "铂金 III"
+        "tx": "PLATINUM III"
     },
     {
         "c": 90012,
-        "tx": "钻石 I"
+        "tx": "DIAMOND I"
     },
     {
         "c": 90013,
-        "tx": "钻石 II"
+        "tx": "DIAMOND II"
     },
     {
         "c": 90014,
-        "tx": "钻石 III"
+        "tx": "DIAMOND III"
     },
     {
         "c": 90015,
-        "tx": "大师 I"
+        "tx": "MASTER I"
     },
     {
         "c": 90016,
-        "tx": "大师 II"
+        "tx": "MASTER II"
     },
     {
         "c": 90017,
-        "tx": "大师 III"
+        "tx": "MASTER III"
     },
     {
         "c": 90018,
-        "tx": "宗师 I"
+        "tx": "GRANDMASTER I"
     },
     {
         "c": 90019,
-        "tx": "宗师 II"
+        "tx": "GRANDMASTER II"
     },
     {
         "c": 90020,
-        "tx": "宗师 III"
+        "tx": "GRANDMASTER III"
     },
     {
         "c": 101001,
@@ -3125,123 +3125,123 @@
     },
     {
         "c": 200001,
-        "tx": "巴赫"
+        "tx": "BACH"
     },
     {
         "c": 200002,
-        "tx": "亨德尔"
+        "tx": "HANDEL"
     },
     {
         "c": 200003,
-        "tx": "海顿"
+        "tx": "HAYDN"
     },
     {
         "c": 200004,
-        "tx": "莫扎特"
+        "tx": "MOZART"
     },
     {
         "c": 200005,
-        "tx": "贝多芬"
+        "tx": "BEETHOVEN"
     },
     {
         "c": 200006,
-        "tx": "帕格尼尼"
+        "tx": "PAGANINI"
     },
     {
         "c": 200007,
-        "tx": "舒伯特"
+        "tx": "SCHUBERT"
     },
     {
         "c": 200008,
-        "tx": "肖邦"
+        "tx": "CHOPIN"
     },
     {
         "c": 200009,
-        "tx": "威尔第"
+        "tx": "VERDI"
     },
     {
         "c": 200010,
-        "tx": "勃拉姆斯"
+        "tx": "BRAHMS"
     },
     {
         "c": 200011,
-        "tx": "德沃夏克"
+        "tx": "DVORAK"
     },
     {
         "c": 200012,
-        "tx": "埃尔加"
+        "tx": "ELGAR"
     },
     {
         "c": 200013,
-        "tx": "德彪西"
+        "tx": "DEBUSSY"
     },
     {
         "c": 200014,
-        "tx": "拉赫玛尼诺夫"
+        "tx": "RACHMANINOFF"
     },
     {
         "c": 200015,
-        "tx": "维瓦尔第"
+        "tx": "VIVALDI"
     },
     {
         "c": 200016,
-        "tx": "格林卡"
+        "tx": "GLINKA"
     },
     {
         "c": 200017,
-        "tx": "柴可夫斯基"
+        "tx": "TCHAIKOVSKY"
     },
     {
         "c": 200018,
-        "tx": "圣桑"
+        "tx": "SAINT-SAENS"
     },
     {
         "c": 200019,
-        "tx": "门德尔松"
+        "tx": "MENDELSSOHN"
     },
     {
         "c": 200020,
-        "tx": "比才"
+        "tx": "BIZET"
     },
     {
         "c": 200021,
-        "tx": "李斯特"
+        "tx": "LISZT"
     },
     {
         "c": 200022,
-        "tx": "萨拉萨蒂"
+        "tx": "SARASATE"
     },
     {
         "c": 200023,
-        "tx": "施特劳斯二世"
+        "tx": "STRAUSS II"
     },
     {
         "c": 200024,
-        "tx": "斯克里亚宾"
+        "tx": "SCRIABIN"
     },
     {
         "c": 200025,
-        "tx": "格里格"
+        "tx": "GRIEG"
     },
     {
         "c": 200026,
-        "tx": "罗西尼"
+        "tx": "ROSSINI"
     },
     {
         "c": 200027,
-        "tx": "库普兰"
+        "tx": "COUPERIN"
     },
     {
         "c": 200028,
-        "tx": "普赛尔"
+        "tx": "PURCELL"
     },
     {
         "c": 200029,
-        "tx": "博凯里尼"
+        "tx": "BOCCHERINI"
     },
     {
         "c": 200030,
-        "tx": "奥芬巴赫"
+        "tx": "OFFENBACH"
     },
     {
         "c": 201001,
@@ -3365,35 +3365,35 @@
     },
     {
         "c": 202001,
-        "tx": "爱森纳赫 (Eisenach)"
+        "tx": "Eisenach"
     },
     {
         "c": 202002,
-        "tx": "哈雷 (Halle)"
+        "tx": "Halle"
     },
     {
         "c": 202003,
-        "tx": "罗劳 (Rohrau)"
+        "tx": "Rohrau"
     },
     {
         "c": 202004,
-        "tx": "萨尔茨堡 (Salzburg)"
+        "tx": "Salzburg"
     },
     {
         "c": 202005,
-        "tx": "波恩 (Bonn)"
+        "tx": "Bonn"
     },
     {
         "c": 202006,
-        "tx": "热那亚 (Genoa)"
+        "tx": "Genoa"
     },
     {
         "c": 202007,
-        "tx": "维也纳 (Vienna)"
+        "tx": "Vienna"
     },
     {
         "c": 202008,
-        "tx": "泽拉佐瓦 (Zelazowa Wola)"
+        "tx": "Zelazowa Wola"
     },
     {
         "c": 202009,
@@ -3625,7 +3625,7 @@
     },
     {
         "c": 204006,
-        "tx": "He was the most celebrated violin virtuoso of his time, and left his mark as one of the pillars of modern violin technique.\nGenerally speaking, Paganini's compositions were technically imaginative, and the timbre of the instrument was greatly expanded as a result of these works. He was one of the most famous virtuosi of his day, and is considered to be one of the greatest violinists ever, with absolute pitch and perfect intonation, expressive bowing techniques and new uses of staccato and pizzicato techniques."
+        "tx": "He was the most celebrated violin virtuoso of his time, and left his mark as one of the pillars of modern violin technique.\nGenerally speaking, Paganini's compositions were technically imaginative, and the timbre of the instrument was greatly expanded as a result of these works. He was one of the most famous virtuoso of his day, and is considered to be one of the greatest violinists ever, with absolute pitch and perfect intonation, expressive bowing techniques and new uses of staccato and pizzicato techniques."
     },
     {
         "c": 204007,
@@ -3725,43 +3725,43 @@
     },
     {
         "c": 300001,
-        "tx": "巴洛克时期"
+        "tx": "BAROQUE ERA"
     },
     {
         "c": 300002,
-        "tx": "古典主义时期"
+        "tx": "CLASSICAL ERA"
     },
     {
         "c": 300003,
-        "tx": "浪漫主义时期"
+        "tx": "ROMANTIC ERA"
     },
     {
         "c": 300004,
-        "tx": "现代主义时期"
+        "tx": "MODERNIST ERA"
     },
     {
         "c": 401000,
-        "tx": "经典"
+        "tx": "Classic"
     },
     {
         "c": 401001,
-        "tx": "到来"
+        "tx": "Arrival"
     },
     {
         "c": 401002,
-        "tx": "吊床"
+        "tx": "Hammock"
     },
     {
         "c": 401003,
-        "tx": "葡萄园"
+        "tx": "Vineyards"
     },
     {
         "c": 401004,
-        "tx": "猫咪朗诵会"
+        "tx": "Kitten's Recital"
     },
     {
         "c": 401005,
-        "tx": "大杰特岛"
+        "tx": "Grande Jatte"
     },
     {
         "c": 401006,
@@ -3769,23 +3769,23 @@
     },
     {
         "c": 401007,
-        "tx": "坚信"
+        "tx": "Belief"
     },
     {
         "c": 401008,
-        "tx": "丽莎贝丝"
+        "tx": "Lisbeth"
     },
     {
         "c": 401009,
-        "tx": "舞女"
+        "tx": "Dancers in Pink"
     },
     {
         "c": 401010,
-        "tx": "无畏号"
+        "tx": "Temeraire"
     },
     {
         "c": 401011,
-        "tx": "呐喊"
+        "tx": "Scream"
     },
     {
         "c": 401012,
@@ -3793,23 +3793,23 @@
     },
     {
         "c": 401013,
-        "tx": "阳伞"
+        "tx": "Parasol"
     },
     {
         "c": 401014,
-        "tx": "港口"
+        "tx": "Shipping"
     },
     {
         "c": 401015,
-        "tx": "冬日森林"
+        "tx": "Winter Forest"
     },
     {
         "c": 401016,
-        "tx": "海战"
+        "tx": "Ship Battle"
     },
     {
         "c": 401017,
-        "tx": "欧龙泰亚"
+        "tx": "Oreithyia"
     },
     {
         "c": 401018,
@@ -3817,43 +3817,43 @@
     },
     {
         "c": 401019,
-        "tx": "红磨坊"
+        "tx": "Moulin Rouge"
     },
     {
         "c": 401020,
-        "tx": "峡湾"
+        "tx": "By Fjord"
     },
     {
         "c": 401021,
-        "tx": "雨中巴黎"
+        "tx": "Rainy Paris"
     },
     {
         "c": 401022,
-        "tx": "红树"
+        "tx": "Red Tree"
     },
     {
         "c": 401023,
-        "tx": "拾穗者"
+        "tx": "Gleaners"
     },
     {
         "c": 401024,
-        "tx": "睡莲"
+        "tx": "Lilies"
     },
     {
         "c": 401025,
-        "tx": "吻"
+        "tx": "Kiss"
     },
     {
         "c": 401026,
-        "tx": "星月夜"
+        "tx": "Starry Night"
     },
     {
         "c": 401027,
-        "tx": "天使之歌"
+        "tx": "Song of Angels"
     },
     {
         "c": 401028,
-        "tx": "夜巡"
+        "tx": "Night Watch"
     },
     {
         "c": 401029,
@@ -3861,707 +3861,707 @@
     },
     {
         "c": 401030,
-        "tx": "蝴蝶猎人"
+        "tx": "Butterfly Hunter"
     },
     {
         "c": 401031,
-        "tx": "自由"
+        "tx": "Liberty"
     },
     {
         "c": 401900,
-        "tx": "经典（黑色版）"
+        "tx": "Classic (Black Ver.)"
     },
     {
         "c": 401901,
-        "tx": "日出"
+        "tx": "Sunrise"
     },
     {
         "c": 401902,
-        "tx": "激情"
+        "tx": "Passion"
     },
     {
         "c": 401903,
-        "tx": "名人堂"
+        "tx": "The Hall of Fame"
     },
     {
         "c": 401904,
-        "tx": "水晶"
+        "tx": "Crystal"
     },
     {
         "c": 402000,
-        "tx": "欢迎"
+        "tx": "Welcome"
     },
     {
         "c": 402001,
-        "tx": "旅程 I"
+        "tx": "Trip I"
     },
     {
         "c": 402002,
-        "tx": "旅程 II"
+        "tx": "Trip II"
     },
     {
         "c": 402003,
-        "tx": "旅程 III"
+        "tx": "Trip III"
     },
     {
         "c": 402004,
-        "tx": "旅程 IV"
+        "tx": "Trip IV"
     },
     {
         "c": 402005,
-        "tx": "旅程 V"
+        "tx": "Trip V"
     },
     {
         "c": 402006,
-        "tx": "旅程 VI"
+        "tx": "Trip VI"
     },
     {
         "c": 402007,
-        "tx": "旅途 I"
+        "tx": "Journey I"
     },
     {
         "c": 402008,
-        "tx": "旅途 II"
+        "tx": "Journey II"
     },
     {
         "c": 402009,
-        "tx": "旅途 III"
+        "tx": "Journey III"
     },
     {
         "c": 402010,
-        "tx": "旅途 IV"
+        "tx": "Journey IV"
     },
     {
         "c": 402011,
-        "tx": "旅途 V"
+        "tx": "Journey V"
     },
     {
         "c": 402012,
-        "tx": "旅途 VI"
+        "tx": "Journey VI"
     },
     {
         "c": 402013,
-        "tx": "跋涉 I"
+        "tx": "Odyssey I"
     },
     {
         "c": 402014,
-        "tx": "跋涉 II"
+        "tx": "Odyssey II"
     },
     {
         "c": 402015,
-        "tx": "跋涉 III"
+        "tx": "Odyssey III"
     },
     {
         "c": 402016,
-        "tx": "跋涉 IV"
+        "tx": "Odyssey IV"
     },
     {
         "c": 402017,
-        "tx": "跋涉 V"
+        "tx": "Odyssey V"
     },
     {
         "c": 402018,
-        "tx": "跋涉 VI"
+        "tx": "Odyssey VI"
     },
     {
         "c": 402019,
-        "tx": "重复记号 I"
+        "tx": "Repeat Sign I"
     },
     {
         "c": 402020,
-        "tx": "重复记号 II"
+        "tx": "Repeat Sign II"
     },
     {
         "c": 402021,
-        "tx": "重复记号 III"
+        "tx": "Repeat Sign III"
     },
     {
         "c": 402022,
-        "tx": "重复记号 IV"
+        "tx": "Repeat Sign IV"
     },
     {
         "c": 402023,
-        "tx": "重复记号 V"
+        "tx": "Repeat Sign V"
     },
     {
         "c": 402024,
-        "tx": "卓越"
+        "tx": "Excellence"
     },
     {
         "c": 402025,
-        "tx": "廉正"
+        "tx": "Integrity"
     },
     {
         "c": 402026,
-        "tx": "优越"
+        "tx": "Superiority"
     },
     {
         "c": 402027,
-        "tx": "钢琴爱好者"
+        "tx": "Piano Lover"
     },
     {
         "c": 402028,
-        "tx": "集结号"
+        "tx": "Muster Call"
     },
     {
         "c": 402029,
-        "tx": "勇敢的人"
+        "tx": "A Brave Man"
     },
     {
         "c": 402030,
-        "tx": "超脱"
+        "tx": "Transcendental"
     },
     {
         "c": 402031,
-        "tx": "琴中诗人"
+        "tx": "The Poet of the Piano"
     },
     {
         "c": 402900,
-        "tx": "先驱者"
+        "tx": "Pioneer"
     },
     {
         "c": 402901,
-        "tx": "印象"
+        "tx": "Impression"
     },
     {
         "c": 402902,
-        "tx": "激情"
+        "tx": "Passion"
     },
     {
         "c": 402903,
-        "tx": "荣誉"
+        "tx": "Honor"
     },
     {
         "c": 402904,
-        "tx": "二周年"
+        "tx": "2nd Anniversary"
     },
     {
         "c": 402999,
-        "tx": "隐藏"
+        "tx": "Hidden"
     },
     {
         "c": 403000,
-        "tx": "送给新钢琴家的祝福"
+        "tx": "A gift to celebrate a new pianist"
     },
     {
         "c": 403001,
-        "tx": "完成正常难度巡演第10关"
+        "tx": "Clear normal tour stage 10"
     },
     {
         "c": 403002,
-        "tx": "完成正常难度巡演第20关"
+        "tx": "Clear normal tour stage 20"
     },
     {
         "c": 403003,
-        "tx": "完成正常难度巡演第30关"
+        "tx": "Clear normal tour stage 30"
     },
     {
         "c": 403004,
-        "tx": "完成正常难度巡演第40关"
+        "tx": "Clear normal tour stage 40"
     },
     {
         "c": 403005,
-        "tx": "完成正常难度巡演第50关"
+        "tx": "Clear normal tour stage 50"
     },
     {
         "c": 403006,
-        "tx": "完成正常难度巡演第60关（！！！！！！！）"
+        "tx": "Clear normal tour stage 60"
     },
     {
         "c": 403007,
-        "tx": "完成高难难度巡演第10关"
+        "tx": "Clear technical tour stage 10"
     },
     {
         "c": 403008,
-        "tx": "完成高难难度巡演第20关"
+        "tx": "Clear technical tour stage 20"
     },
     {
         "c": 403009,
-        "tx": "完成高难难度巡演第30关"
+        "tx": "Clear technical tour stage 30"
     },
     {
         "c": 403010,
-        "tx": "完成高难难度巡演第40关"
+        "tx": "Clear technical tour stage 40"
     },
     {
         "c": 403011,
-        "tx": "完成高难难度巡演第50关"
+        "tx": "Clear technical tour stage 50"
     },
     {
         "c": 403012,
-        "tx": "完成高难难度巡演第60关（！！！！！！！！）"
+        "tx": "Clear technical tour stage 60"
     },
     {
         "c": 403013,
-        "tx": "完成大师难度巡演第10关"
+        "tx": "Clear master tour stage 10"
     },
     {
         "c": 403014,
-        "tx": "完成大师难度巡演第20关"
+        "tx": "Clear master tour stage 20"
     },
     {
         "c": 403015,
-        "tx": "完成大师难度巡演第30关"
+        "tx": "Clear master tour stage 30"
     },
     {
         "c": 403016,
-        "tx": "完成大师难度巡演第40关"
+        "tx": "Clear master tour stage 40"
     },
     {
         "c": 403017,
-        "tx": "完成大师难度巡演第50关"
+        "tx": "Clear master tour stage 50"
     },
     {
         "c": 403018,
-        "tx": "完成大师难度巡演第60关（！！！！！！！！）"
+        "tx": "Clear master tour stage 60"
     },
     {
         "c": 403019,
-        "tx": "在任何模式下完成歌曲30次"
+        "tx": "Clear song 30 times in any mode"
     },
     {
         "c": 403020,
-        "tx": "在任何模式下完成歌曲150次"
+        "tx": "Clear song 150 times in any mode"
     },
     {
         "c": 403021,
-        "tx": "在任何模式下完成歌曲300次"
+        "tx": "Clear song 300 times in any mode"
     },
     {
         "c": 403022,
-        "tx": "在任何模式下完成歌曲500次"
+        "tx": "Clear song 500 times in any mode"
     },
     {
         "c": 403023,
-        "tx": "在任何模式下完成歌曲900次"
+        "tx": "Clear song 900 times in any mode"
     },
     {
         "c": 403024,
-        "tx": "在正常难度巡演收集250颗星星"
+        "tx": "Collect 250 stars in normal tour"
     },
     {
         "c": 403025,
-        "tx": "在高难难度巡演收集250颗星星"
+        "tx": "Collect 250 stars in technical tour"
     },
     {
         "c": 403026,
-        "tx": "在大师难度巡演收集250颗星星"
+        "tx": "Collect 250 stars in master tour"
     },
     {
         "c": 403027,
-        "tx": "收集18个钢琴"
+        "tx": "Collect 18 Pianos"
     },
     {
         "c": 403028,
-        "tx": "找到隐藏条件来解锁"
+        "tx": "Find hidden condition to unlock"
     },
     {
         "c": 403029,
-        "tx": "找到隐藏条件来解锁"
+        "tx": "Find hidden condition to unlock"
     },
     {
         "c": 403030,
-        "tx": "找到隐藏条件来解锁"
+        "tx": "Find hidden condition to unlock"
     },
     {
         "c": 403031,
-        "tx": "找到隐藏条件来解锁"
+        "tx": "Find hidden condition to unlock"
     },
     {
         "c": 403900,
-        "tx": "给从最开始一直陪伴的忠实玩家的特别礼物"
+        "tx": "A Special gift to longtime partners"
     },
     {
         "c": 403901,
-        "tx": "庆祝游戏发布的特别礼物"
+        "tx": "A Special gift for grand opening"
     },
     {
         "c": 403902,
-        "tx": "v2.2版本更新的特别礼物"
+        "tx": "A Special gift for v2.2 update"
     },
     {
         "c": 403903,
-        "tx": "献给名人堂的礼物"
+        "tx": "A dedicated gift for 'The Hall of Fame'"
     },
     {
         "c": 403904,
-        "tx": "二周年特别礼物"
+        "tx": "A Special gift for 2nd Anniversary"
     },
     {
         "c": 403999,
-        "tx": "找到隐藏条件来解锁"
+        "tx": "Find hidden condition to unlock"
     },
     {
         "c": 404028,
-        "tx": "收集27个钢琴"
+        "tx": "Collect 27 Pianos"
     },
     {
         "c": 404029,
-        "tx": "完成 \"魔王\""
+        "tx": "Clear \"Der Erlkonig\""
     },
     {
         "c": 404030,
-        "tx": "用三倍速和淡入完成 \"钟\""
+        "tx": "Clear \"La Campanella\" with speed 3 & Fade in"
     },
     {
         "c": 404031,
-        "tx": "全连完成 \"革命练习曲\" (1143音符)"
+        "tx": "Clear \"Revolutionary Etude\" with combo 1143"
     },
     {
         "c": 601001,
-        "tx": "盾牌 +1"
+        "tx": "Shield +1"
     },
     {
         "c": 601002,
-        "tx": "盾牌 +2"
+        "tx": "Shield +2"
     },
     {
         "c": 601003,
-        "tx": "盾牌 +3"
+        "tx": "Shield +3"
     },
     {
         "c": 601004,
-        "tx": "盾牌 +4"
+        "tx": "Shield +4"
     },
     {
         "c": 601005,
-        "tx": "盾牌 +5"
+        "tx": "Shield +5"
     },
     {
         "c": 601006,
-        "tx": "盾牌 +6"
+        "tx": "Shield +6"
     },
     {
         "c": 601007,
-        "tx": "盾牌 +7"
+        "tx": "Shield +7"
     },
     {
         "c": 601008,
-        "tx": "盾牌 +8"
+        "tx": "Shield +8"
     },
     {
         "c": 601009,
-        "tx": "盾牌 +9"
+        "tx": "Shield +9"
     },
     {
         "c": 601010,
-        "tx": "盾牌 +10"
+        "tx": "Shield +10"
     },
     {
         "c": 601101,
-        "tx": "HP最大值 +5"
+        "tx": "HP MAX +5"
     },
     {
         "c": 601102,
-        "tx": "HP最大值 +10"
+        "tx": "HP MAX +10"
     },
     {
         "c": 601103,
-        "tx": "HP最大值 +15"
+        "tx": "HP MAX +15"
     },
     {
         "c": 601104,
-        "tx": "HP最大值 +20"
+        "tx": "HP MAX +20"
     },
     {
         "c": 601105,
-        "tx": "HHP最大值 +25"
+        "tx": "HP MAX +25"
     },
     {
         "c": 601106,
-        "tx": "HP最大值 +30"
+        "tx": "HP MAX +30"
     },
     {
         "c": 601107,
-        "tx": "HP最大值 +35"
+        "tx": "HP MAX +35"
     },
     {
         "c": 601108,
-        "tx": "HP最大值 +40"
+        "tx": "HP MAX +40"
     },
     {
         "c": 601109,
-        "tx": "HP最大值 +45"
+        "tx": "HP MAX +45"
     },
     {
         "c": 601110,
-        "tx": "HP最大值 +50"
+        "tx": "HP MAX +50"
     },
     {
         "c": 1000001,
-        "tx": "不能使用 {0} 作为第一位字符。"
+        "tx": "Can not use {0} as the first character."
     },
     {
         "c": 1000002,
-        "tx": "不能连续使用 {0}."
+        "tx": "Can not use two or more {0} continuously."
     },
     {
         "c": 1000003,
-        "tx": " '{0}' 字符不可使用。"
+        "tx": " '{0}' is unsupported character."
     },
     {
         "c": 1000004,
-        "tx": "请检查字符位数。"
+        "tx": "Please check the number of characters."
     },
     {
         "c": 1000005,
-        "tx": "此钢琴家名称已被使用。"
+        "tx": "The 'Pianist' name is already in use."
     },
     {
         "c": 1000006,
-        "tx": "此钢琴家名称不可使用，请重试。"
+        "tx": "The 'Pianist' name is not available. Please try again."
     },
     {
         "c": 1001001,
-        "tx": "和脸书连接"
+        "tx": "CONNECT WITH FACEBOOK"
     },
     {
         "c": 1001002,
-        "tx": "游客"
+        "tx": "GUEST"
     },
     {
         "c": 1002001,
-        "tx": "成为一名钢琴家"
+        "tx": "BECOME A PIANIST"
     },
     {
         "c": 1002002,
-        "tx": "你的钢琴家名称是？"
+        "tx": "What is your pianist name?"
     },
     {
         "c": 1002003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 1002004,
-        "tx": "{0}~{1} 字符长"
+        "tx": "{0}~{1} Characters"
     },
     {
         "c": 1003001,
-        "tx": "成为一名钢琴家"
+        "tx": "BECOME A PIANIST"
     },
     {
         "c": 1003002,
-        "tx": "你的钢琴家名称是"
+        "tx": "Your Pianist name is"
     },
     {
         "c": 1003003,
-        "tx": "确定吗?"
+        "tx": "Are you sure?"
     },
     {
         "c": 1003004,
-        "tx": "下一步"
+        "tx": "NEXT"
     },
     {
         "c": 1003005,
-        "tx": "返回"
+        "tx": "BACK"
     },
     {
         "c": 1004001,
-        "tx": "重要"
+        "tx": "IMPORTANT"
     },
     {
         "c": 1004002,
-        "tx": "按 \"使用条款\"按钮查看使用条款和隐私政策。"
+        "tx": "Press \"TERMS OF USE\" button to check the terms and privacy policy.\nIf you agree, press \"AGREE\" button."
     },
     {
         "c": 1004003,
-        "tx": "使用条款"
+        "tx": "TERMS OF USE"
     },
     {
         "c": 1004004,
-        "tx": "同意"
+        "tx": "AGREE"
     },
     {
         "c": 1005001,
-        "tx": "注意"
+        "tx": "NOTICE"
     },
     {
         "c": 1005002,
-        "tx": "登录会话已过期，请尝试重新登录。"
+        "tx": "Login session expired, Please try logging in again."
     },
     {
         "c": 1005003,
-        "tx": "确认"
+        "tx": "OK"
     },
     {
         "c": 2002001,
-        "tx": "如何解锁"
+        "tx": "HOW TO UNLOCK"
     },
     {
         "c": 2002002,
-        "tx": "在正常难度巡演完成这首歌。"
+        "tx": "Clear the song on the normal tour."
     },
     {
         "c": 2002003,
-        "tx": "确认"
+        "tx": "OK"
     },
     {
         "c": 2002101,
-        "tx": "如何解锁"
+        "tx": "HOW TO UNLOCK"
     },
     {
         "c": 2002102,
-        "tx": "在高难难度巡演完成这首歌。"
+        "tx": "Clear the song on the technical tour."
     },
     {
         "c": 2002103,
-        "tx": "确认"
+        "tx": "OK"
     },
     {
         "c": 2009001,
-        "tx": "开始"
+        "tx": "PLAY"
     },
     {
         "c": 4000001,
-        "tx": "返回"
+        "tx": "BACK"
     },
     {
         "c": 4001001,
-        "tx": "教程"
+        "tx": "HOW TO PLAY"
     },
     {
         "c": 4001002,
-        "tx": "一般音符"
+        "tx": "NORMAL NOTE"
     },
     {
         "c": 4001003,
-        "tx": "下一页"
+        "tx": "NEXT"
     },
     {
         "c": 4001004,
-        "tx": "音符会出现，并向下掉落。"
+        "tx": "The note will appear and come down."
     },
     {
         "c": 4001005,
-        "tx": "当音符与线对齐时，点击音符。"
+        "tx": "When the note is aligned with the line,\ntouch the note."
     },
     {
         "c": 4002001,
-        "tx": "教程"
+        "tx": "HOW TO PLAY"
     },
     {
         "c": 4002002,
-        "tx": "长音符"
+        "tx": "HOLDING NOTE"
     },
     {
         "c": 4002003,
-        "tx": "下一页"
+        "tx": "NEXT"
     },
     {
         "c": 4002004,
-        "tx": "有长尾巴的音符会出现，并向下掉落。"
+        "tx": "The note with tail line will appear\nand come down."
     },
     {
         "c": 4002005,
-        "tx": "音符与线对齐时，\n按下并按至尾巴消失为止。"
+        "tx": "Hold it down until it is completed."
     },
     {
         "c": 4003001,
-        "tx": "教程"
+        "tx": "HOW TO PLAY"
     },
     {
         "c": 4003002,
-        "tx": "滑动音符"
+        "tx": "GLISSANDO NOTE"
     },
     {
         "c": 4003003,
-        "tx": "确认"
+        "tx": "OK"
     },
     {
         "c": 4003004,
-        "tx": "闪光的音符会出现，并向下掉落。"
+        "tx": "The shiny note will appear\nand come down."
     },
     {
         "c": 4003005,
-        "tx": "音符以一列的形式出现。\n当音符与线对齐时，滑动手指。"
+        "tx": "When the notes appear in a row,\nuse a sliding motion."
     },
     {
         "c": 5000000,
-        "tx": "商店"
+        "tx": "SHOP"
     },
     {
         "c": 5000001,
-        "tx": "商店"
+        "tx": "SHOP"
     },
     {
         "c": 5000002,
-        "tx": "购买成功。"
+        "tx": "Purchase successfully."
     },
     {
         "c": 5000003,
-        "tx": "购买取消。"
+        "tx": "Purchase canceled."
     },
     {
         "c": 5000004,
-        "tx": "{0} 不足。"
+        "tx": "Not enough {0}."
     },
     {
         "c": 5000005,
-        "tx": "网络不稳定。请重启游戏。"
+        "tx": "Network is unstable.\nPlease restart the app."
     },
     {
         "c": 5000006,
-        "tx": "抱歉，此物品不存在。"
+        "tx": "Sorry. This item does not exist."
     },
     {
         "c": 5000007,
-        "tx": "购买失败。\n(1001007)"
+        "tx": "Purchase failed.\n(1001007)"
     },
     {
         "c": 5000008,
-        "tx": "无法购买。"
+        "tx": "Can not purchase."
     },
     {
         "c": 5000009,
-        "tx": "不支持的购买方法。"
+        "tx": "Invalid payment method."
     },
     {
         "c": 5000010,
-        "tx": "购买失败。\n如果没有收到物品\n请电邮我们：support@pianista.io"
+        "tx": "Puchase failed.\nIf you did not receive properly\nplease e-mail us to support@pianista.io"
     },
     {
         "c": 5000011,
-        "tx": "已经购买了此项内容。如果你的会员没有成功激活\n请电邮我们：support@pianista.io"
+        "tx": "Already buy this product. If your membership activate properly\nplease e-mail us to support@pianista.io"
     },
     {
         "c": 5000012,
-        "tx": "购买失败。\n(1001012)"
+        "tx": "Purchase canceled.\n(1001012)"
     },
     {
         "c": 5000013,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5000014,
-        "tx": "去商店"
+        "tx": "GO TO SHOP"
     },
     {
         "c": 5000015,
-        "tx": "获取音乐点数"
+        "tx": "GET MUSIC POINT"
     },
     {
         "c": 5001001,
-        "tx": "商店"
+        "tx": "SHOP"
     },
     {
         "c": 5001002,
-        "tx": "你想要购买吗？\n{0}"
+        "tx": "Would you like to buy\n{0}?"
     },
     {
         "c": 5001003,
-        "tx": "购买"
+        "tx": "BUY"
     },
     {
         "c": 5001004,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 5002001,
-        "tx": "已购买"
+        "tx": "PURCHASED"
     },
     {
         "c": 5002002,
-        "tx": "成功"
+        "tx": "SUCCESSFULLY"
     },
     {
         "c": 5002003,
@@ -4569,55 +4569,55 @@
     },
     {
         "c": 5002004,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5003001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 5003002,
-        "tx": "今天的礼物已全部发放。\n将在 15:00 (GMT) 回来。"
+        "tx": "Free gift of the day being out of stock.\nAvailable at 15:00 (GMT)"
     },
     {
         "c": 5003003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5004001,
-        "tx": "商店"
+        "tx": "SHOP"
     },
     {
         "c": 5004002,
-        "tx": "你想要观看视频来获得\n1个音乐点数 吗？"
+        "tx": "Would you like to watch video ads\nand get a MUSIC POINT?"
     },
     {
         "c": 5004003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5004004,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 5005001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 5005002,
-        "tx": "你已经有足够的音乐点数了。\n等用完了再来吧。"
+        "tx": "You have enough MUSIC POINT.\nTry again when you have none."
     },
     {
         "c": 5005003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5006001,
-        "tx": "奖励"
+        "tx": "REWARDS"
     },
     {
         "c": 5006002,
-        "tx": "广告"
+        "tx": "ADVERTISEMENT"
     },
     {
         "c": 5006003,
@@ -4625,111 +4625,111 @@
     },
     {
         "c": 5006004,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5007001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 5007002,
-        "tx": "无法完成广告观看。\n请检查网络并重试。"
+        "tx": "Unable to complete ad view.\nPlease check your network and try again."
     },
     {
         "c": 5007003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5008001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 5008002,
-        "tx": "广告提供商没有发送内容。\n请过段时间再试。"
+        "tx": "The Ad network does not send videos.\nPlease try again after a while."
     },
     {
         "c": 5008003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 5009101,
-        "tx": "尊贵会员"
+        "tx": "PRESTIGE MEMBERSHIP"
     },
     {
         "c": 5009102,
-        "tx": "全曲解锁"
+        "tx": "ALL SONG\nUNLOCK"
     },
     {
         "c": 5009103,
-        "tx": "无限游玩"
+        "tx": "PLAY\nUNLIMITED"
     },
     {
         "c": 5009104,
-        "tx": "每日物品奖励"
+        "tx": "DAILY ITEM REWARD"
     },
     {
         "c": 5009105,
-        "tx": "经验值 +100%"
+        "tx": "EXP +100%"
     },
     {
         "c": 5009106,
-        "tx": "金币 +100%"
+        "tx": "GOLD +100%"
     },
     {
         "c": 5009107,
-        "tx": "免费"
+        "tx": "Free"
     },
     {
         "c": 5009108,
-        "tx": "尊贵会员"
+        "tx": "Prestige"
     },
     {
         "c": 5009109,
-        "tx": "免费玩"
+        "tx": "Free to Play"
     },
     {
         "c": 5009110,
-        "tx": "全曲解锁"
+        "tx": "All Song Unlock"
     },
     {
         "c": 5009111,
-        "tx": "无限游玩"
+        "tx": "Play Unlimited"
     },
     {
         "c": 5009112,
-        "tx": "每日物品奖励"
+        "tx": "Daily Item Reward"
     },
     {
         "c": 5009113,
-        "tx": "经验值 +100%"
+        "tx": "Exp +100%"
     },
     {
         "c": 5009114,
-        "tx": "金币 +100%"
+        "tx": "Gold +100%"
     },
     {
         "c": 6000001,
-        "tx": "已购买"
+        "tx": "PURCHASED"
     },
     {
         "c": 6000002,
-        "tx": "成功"
+        "tx": "SUCCESSFULLY"
     },
     {
         "c": 6000003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 6000004,
-        "tx": "奖励"
+        "tx": "REWARDS"
     },
     {
         "c": 6000005,
-        "tx": "祝贺"
+        "tx": "CONGRATULATION"
     },
     {
         "c": 6000006,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 6000007,
@@ -4741,43 +4741,43 @@
     },
     {
         "c": 6000009,
-        "tx": "尊贵会员"
+        "tx": "Prestige Membership"
     },
     {
         "c": 6001001,
-        "tx": "欢迎来到Pianista！"
+        "tx": "WELCOME TO PIANISTA"
     },
     {
         "c": 6001002,
-        "tx": "我们以特别的礼物欢迎您的到来。\n请收下这10个音乐点数。"
+        "tx": "We welcome you with the special gift.\nHere are 10 Music Points."
     },
     {
         "c": 6001003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 6002001,
-        "tx": "今天首次完成"
+        "tx": "First Clear of the Day"
     },
     {
         "c": 6002002,
-        "tx": "{0} 难度完成"
+        "tx": "{0} Difficult Clear"
     },
     {
         "c": 6002003,
-        "tx": "五星奖励"
+        "tx": "5 Star Bonus"
     },
     {
         "c": 6002004,
-        "tx": "技术奖励"
+        "tx": "Technical Bonus"
     },
     {
         "c": 6002005,
-        "tx": "淡入淡出奖励"
+        "tx": "Fade Bonus"
     },
     {
         "c": 6002006,
-        "tx": "钢琴属性奖励"
+        "tx": "Piano Skin Bonus"
     },
     {
         "c": 6003000,
@@ -4785,27 +4785,27 @@
     },
     {
         "c": 6003001,
-        "tx": "最高级奖励"
+        "tx": "Max Level Bonus"
     },
     {
         "c": 6003002,
-        "tx": "作曲家等级奖励"
+        "tx": "Composer Stat Bonus"
     },
     {
         "c": 6003003,
-        "tx": "钢琴属性奖励"
+        "tx": "Piano Skin Bonus"
     },
     {
         "c": 6003004,
-        "tx": "连胜奖励"
+        "tx": "Straight Win Bonus"
     },
     {
         "c": 6004001,
-        "tx": "演奏完成"
+        "tx": "STAGE CLEAR"
     },
     {
         "c": 6004002,
-        "tx": "奖励"
+        "tx": "REWARDS"
     },
     {
         "c": 6004003,
@@ -4813,211 +4813,211 @@
     },
     {
         "c": 6004004,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 6005001,
-        "tx": "演奏完成"
+        "tx": "STAGE CLEAR"
     },
     {
         "c": 6005002,
-        "tx": "歌曲解锁"
+        "tx": "UNLOCK SONG"
     },
     {
         "c": 6005003,
-        "tx": "你现在可以在 \"藏品\" 模式游玩这首歌了。"
+        "tx": "You can play this song in \"Collection\" from now on."
     },
     {
         "c": 6005004,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 6006001,
-        "tx": "演奏完成"
+        "tx": "STAGE CLEAR"
     },
     {
         "c": 6006002,
-        "tx": "钢琴解锁"
+        "tx": "UNLOCK PIANO"
     },
     {
         "c": 6006003,
-        "tx": "你现在可以在 \"钢琴\" 模式升级和使用这架钢琴了。"
+        "tx": "You can equip and upgrade this piano in \"Piano\" from now on."
     },
     {
         "c": 6006004,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 6007001,
-        "tx": "成功"
+        "tx": "ACHIEVEMENT SUCCESS"
     },
     {
         "c": 6007002,
-        "tx": "钢琴解锁"
+        "tx": "UNLOCK PIANO"
     },
     {
         "c": 6007003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7000000,
-        "tx": "你的钢琴家名称是"
+        "tx": "Your Pianist name is"
     },
     {
         "c": 7000001,
-        "tx": "修改钢琴家名称"
+        "tx": "CHANGE PIANIST NAME"
     },
     {
         "c": 7000002,
-        "tx": "和脸书连接"
+        "tx": "CONNECT WITH FACEBOOK"
     },
     {
         "c": 7000003,
-        "tx": "脸书已连接"
+        "tx": "FACEBOOK CONNECTED"
     },
     {
         "c": 7000004,
-        "tx": "使用条款"
+        "tx": "TERMS OF USE"
     },
     {
         "c": 7000005,
-        "tx": "隐私政策"
+        "tx": "PRIVACY POLICY"
     },
     {
         "c": 7000007,
-        "tx": "教程"
+        "tx": "TUTORIAL"
     },
     {
         "c": 7000008,
-        "tx": "偏移值设定"
+        "tx": "SYNC SETTING"
     },
     {
         "c": 7001001,
-        "tx": "修改钢琴家名称"
+        "tx": "CHANGE PIANIST NAME"
     },
     {
         "c": 7001002,
-        "tx": "你的钢琴家名称是？"
+        "tx": "What is your pianist name?"
     },
     {
         "c": 7001003,
-        "tx": "修改"
+        "tx": "CHANGE"
     },
     {
         "c": 7001004,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 7002001,
-        "tx": "修改钢琴家名称"
+        "tx": "CHANGE PIANIST NAME"
     },
     {
         "c": 7002002,
-        "tx": "你的钢琴家名称是"
+        "tx": "Your Pianist name is"
     },
     {
         "c": 7002003,
-        "tx": "确定吗？"
+        "tx": "Are you sure?"
     },
     {
         "c": 7002004,
-        "tx": "修改"
+        "tx": "CHANGE"
     },
     {
         "c": 7002005,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 7003001,
-        "tx": "修改钢琴家名称"
+        "tx": "CHANGE PIANIST NAME"
     },
     {
         "c": 7003002,
-        "tx": "你的钢琴家名称已修改。"
+        "tx": "Pianist name is successfully changed."
     },
     {
         "c": 7003003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7004001,
-        "tx": "用脸书登录"
+        "tx": "Sign in with FACEBOOK"
     },
     {
         "c": 7004002,
-        "tx": "连接成功。"
+        "tx": "Successfully Connected."
     },
     {
         "c": 7004003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7005001,
-        "tx": "用脸书登录"
+        "tx": "Sign in with FACEBOOK"
     },
     {
         "c": 7005002,
-        "tx": "此脸书账户已与另一位钢琴家绑定。\n访客钢琴家账户将被删除。\n您确定要登录吗？\n如果您想将现有账户连接到脸书\n请电邮我们：support@pianista.io"
+        "tx": "This Facebook Account already linked with another Pianist.\nGuest Pianist account will be deleted.\nAre you sure you want to sign in?\nif you want to connect with present account to facebook\nplease e-mail us to support@pianista.io."
     },
     {
         "c": 7005003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7005004,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 7006001,
-        "tx": "用脸书登录"
+        "tx": "Sign in with FACEBOOK"
     },
     {
         "c": 7006002,
-        "tx": "您通过脸书连接的账户已成功还原。"
+        "tx": "Your Facebook linked account is\nsuccessfully restored."
     },
     {
         "c": 7006003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7004011,
-        "tx": "用苹果登录"
+        "tx": "Sign in with Apple"
     },
     {
         "c": 7004012,
-        "tx": "连接成功。"
+        "tx": "Successfully Connected."
     },
     {
         "c": 7004013,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7005011,
-        "tx": "用苹果登录"
+        "tx": "Sign in with Apple"
     },
     {
         "c": 7005012,
-        "tx": "此苹果账户已与另一位钢琴家绑定。\n访客钢琴家账户将被删除。\n您确定要登录吗？\n如果您想将现有账户连接到苹果\n请电邮我们：support@pianista.io"
+        "tx": "This Apple Account already linked with another Pianist.\nGuest Pianist account will be deleted.\nAre you sure you want to sign in?\nif you want to connect with present account to Apple\nplease e-mail us to support@pianista.io."
     },
     {
         "c": 7005013,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 7005014,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 7006011,
-        "tx": "用苹果登录"
+        "tx": "Sign in with Apple"
     },
     {
         "c": 7006012,
-        "tx": "您通过苹果连接的账户已成功还原。"
+        "tx": "Your Apple linked account is\nsuccessfully restored."
     },
     {
         "c": 7006013,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 8000001,
@@ -5053,23 +5053,23 @@
     },
     {
         "c": 8000009,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 8000010,
-        "tx": "教程"
+        "tx": "TUTORIAL"
     },
     {
         "c": 8000011,
-        "tx": "商店"
+        "tx": "SHOP"
     },
     {
         "c": 8000012,
-        "tx": "排行榜"
+        "tx": "RANKING"
     },
     {
         "c": 8000013,
-        "tx": "排行榜"
+        "tx": "RANKING"
     },
     {
         "c": 8000014,
@@ -5077,11 +5077,11 @@
     },
     {
         "c": 8000015,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 9000000,
-        "tx": "Lvl."
+        "tx": "LEVEL"
     },
     {
         "c": 9000001,
@@ -5093,15 +5093,15 @@
     },
     {
         "c": 9000003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 9001006,
-        "tx": "已到最高级"
+        "tx": "Already reached max level"
     },
     {
         "c": 9002000,
-        "tx": "作曲家等级"
+        "tx": "COMPOSER LEVEL"
     },
     {
         "c": 9002001,
@@ -5109,7 +5109,7 @@
     },
     {
         "c": 9002002,
-        "tx": "经验值"
+        "tx": "EXP"
     },
     {
         "c": 9002003,
@@ -5121,59 +5121,59 @@
     },
     {
         "c": 9002005,
-        "tx": "{0} 经验值"
+        "tx": "{0} EXP"
     },
     {
         "c": 9002006,
-        "tx": "升级!"
+        "tx": "LEVEL UP!"
     },
     {
         "c": 9002007,
-        "tx": "获得 {0} 经验值"
+        "tx": "Gained {0} EXP"
     },
     {
         "c": 9002008,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 9002009,
-        "tx": "+{0}经验值"
+        "tx": "+{0}EXP"
     },
     {
         "c": 9002010,
-        "tx": "最大"
+        "tx": "MAX"
     },
     {
         "c": 9002011,
-        "tx": "等级"
+        "tx": "LEVEL"
     },
     {
         "c": 9003000,
-        "tx": "钢琴师升级"
+        "tx": "PIANIST LEVEL UP"
     },
     {
         "c": 9003001,
-        "tx": "祝贺"
+        "tx": "CONGRATULATION"
     },
     {
         "c": 9003002,
-        "tx": "等级 {0}"
+        "tx": "LEVEL {0}"
     },
     {
         "c": 9003004,
-        "tx": "{0} 升级 +{1}"
+        "tx": "{0} LEVEL UP +{1}"
     },
     {
         "c": 9003005,
-        "tx": "最大音乐点数"
+        "tx": "MAX MUSIC POINT"
     },
     {
         "c": 9003006,
-        "tx": "提升"
+        "tx": "Increase"
     },
     {
         "c": 9003007,
-        "tx": "在 {0} 钢琴师等级后"
+        "tx": "in {0} PIANIST LEVEL"
     },
     {
         "c": 9003008,
@@ -5185,15 +5185,15 @@
     },
     {
         "c": 9003010,
-        "tx": "接下来的奖励"
+        "tx": "UPCOMING REWARD"
     },
     {
         "c": 9004000,
-        "tx": "金币奖励"
+        "tx": "GOLD BONUS"
     },
     {
         "c": 9004001,
-        "tx": "分数奖励"
+        "tx": "SCORE BONUS"
     },
     {
         "c": 9004002,
@@ -5209,43 +5209,43 @@
     },
     {
         "c": 9004005,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 9005001,
-        "tx": "等级奖励"
+        "tx": "LEVEL BONUS"
     },
     {
         "c": 9005002,
-        "tx": "来自"
+        "tx": "From"
     },
     {
         "c": 9005003,
-        "tx": "活跃地"
+        "tx": "Active"
     },
     {
         "c": 9005004,
-        "tx": "传记"
+        "tx": "Biography"
     },
     {
         "c": 12000001,
-        "tx": "偏移值设定"
+        "tx": "SYNC SETTING"
     },
     {
         "c": 12000002,
-        "tx": "默认"
+        "tx": "DEFAULT"
     },
     {
         "c": 12000003,
-        "tx": "保存"
+        "tx": "APPLY"
     },
     {
         "c": 12000101,
-        "tx": "触控延迟"
+        "tx": "TOUCH TIME"
     },
     {
         "c": 12000102,
-        "tx": "调整操作和设备反应之间的时间。"
+        "tx": "Adjust the time between your operation and device reactions."
     },
     {
         "c": 12000103,
@@ -5253,15 +5253,15 @@
     },
     {
         "c": 12000106,
-        "tx": "秒"
+        "tx": "sec"
     },
     {
         "c": 12000201,
-        "tx": "音乐延迟"
+        "tx": "MUSIC TIME"
     },
     {
         "c": 12000202,
-        "tx": "调整视觉效果和音乐播放之间的时间间隔。"
+        "tx": "Adjust the time between visual effect and music playing."
     },
     {
         "c": 12000203,
@@ -5269,83 +5269,83 @@
     },
     {
         "c": 12000206,
-        "tx": "秒"
+        "tx": "sec"
     },
     {
         "c": 12001001,
-        "tx": "成功"
+        "tx": "SUCCESS"
     },
     {
         "c": 12001002,
-        "tx": "您的设置已成功应用。\n请通过测试游玩来确认。"
+        "tx": "Your setting is successfully applied.\nCheck differences through the test play."
     },
     {
         "c": 12001003,
-        "tx": "测试游玩"
+        "tx": "TEST PLAY"
     },
     {
         "c": 12001004,
-        "tx": "跳过"
+        "tx": "SKIP"
     },
     {
         "c": 12002001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 12002002,
-        "tx": "你确定要全部重置为默认设置吗？\n可能会丢失未保存的更改。"
+        "tx": "Are you sure you want reset all to default?\nYou may lose your unsaved changes."
     },
     {
         "c": 12002003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 12002004,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 12003001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 12003002,
-        "tx": "你确定要退出吗？\n更改尚未保存。"
+        "tx": "Are you sure you want to exit?\nChanges are not saved yet."
     },
     {
         "c": 12003003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 12003004,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 12004001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 12004002,
-        "tx": "测试游玩已完成。\n(按重试来重复测试歌曲)"
+        "tx": "Test play was completed.\n(Press Retry to repeat the test song)"
     },
     {
         "c": 12004003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 12004004,
-        "tx": "重试"
+        "tx": "RETRY"
     },
     {
         "c": 12005001,
-        "tx": "测试歌曲"
+        "tx": "TEST SONG"
     },
     {
         "c": 12005002,
-        "tx": "当音符与线对齐时，触摸音符。请检查判定和时间。"
+        "tx": "Touch the note when it is aligned with the line.\nAnd check the judge and time."
     },
     {
         "c": 12006001,
-        "tx": "平均"
+        "tx": "Average"
     },
     {
         "c": 12006002,
@@ -5353,187 +5353,187 @@
     },
     {
         "c": 90000000,
-        "tx": "致命"
+        "tx": "FATAL"
     },
     {
         "c": 90000001,
-        "tx": "退出"
+        "tx": "EXIT"
     },
     {
         "c": 90001000,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 90001001,
-        "tx": "重试"
+        "tx": "RESTART"
     },
     {
         "c": 90002000,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 90002001,
-        "tx": "重试"
+        "tx": "RETRY"
     },
     {
         "c": 90002002,
-        "tx": "重试"
+        "tx": "RESTART"
     },
     {
         "c": 90003000,
-        "tx": "已更新"
+        "tx": "UPDATED"
     },
     {
         "c": 90003001,
-        "tx": "重启应用。"
+        "tx": "Restart the app."
     },
     {
         "c": 90003002,
-        "tx": "重启"
+        "tx": "RESTART"
     },
     {
         "c": 90004000,
-        "tx": "程序已更新"
+        "tx": "APP UPDATED"
     },
     {
         "c": 90004001,
-        "tx": "新版应用程序已发布。"
+        "tx": "The new version of the app was released."
     },
     {
         "c": 90004002,
-        "tx": "下载"
+        "tx": "DOWNLOAD"
     },
     {
         "c": 90005000,
-        "tx": "服务器正处于维护模式。\n请稍后再试。"
+        "tx": "The server is in maintenance mode.\nPlease connect after a while."
     },
     {
         "c": 90005001,
-        "tx": "连接超时。"
+        "tx": "Connection timed out."
     },
     {
         "c": 90005002,
-        "tx": "网络不稳定。"
+        "tx": "Network is unstable."
     },
     {
         "c": 90005003,
-        "tx": "数据下载失败。"
+        "tx": "Data download was unsuccessful."
     },
     {
         "c": 90006001,
-        "tx": "连接账号来保证数据安全"
+        "tx": "SAVE DATA WITH QUICKLOGIN"
     },
     {
         "c": 90006002,
-        "tx": "在重装系统或更换新设备等情况下，\n游客账户无法恢复购买和游戏数据。"
+        "tx": "Guest account can't restore \npurchase and gameplay data \nin cases like reinstall or new device. "
     },
     {
         "c": 90006003,
-        "tx": "连接"
+        "tx": "Link"
     },
     {
         "c": 90006004,
-        "tx": "不，谢谢"
+        "tx": "NO THANKS"
     },
     {
         "c": 90007000,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 90007001,
-        "tx": "确定要退出PIANISTA吗?"
+        "tx": "Are you sure you want to exit PIANISTA?"
     },
     {
         "c": 90007002,
-        "tx": "退出"
+        "tx": "LEAVE"
     },
     {
         "c": 90007003,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 90100000,
-        "tx": "正在调音… {0}%"
+        "tx": "Now Tuning… {0}%"
     },
     {
         "c": 90200001,
-        "tx": "继续"
+        "tx": "CONTINUE"
     },
     {
         "c": 90200002,
-        "tx": "离开"
+        "tx": "LEAVE"
     },
     {
         "c": 13000001,
-        "tx": "巡演"
+        "tx": "TOUR"
     },
     {
         "c": 13000002,
-        "tx": "藏品"
+        "tx": "COLLECTION"
     },
     {
         "c": 13000003,
-        "tx": "钢琴"
+        "tx": "PIANO"
     },
     {
         "c": 13000004,
-        "tx": "商店"
+        "tx": "SHOP"
     },
     {
         "c": 13000005,
-        "tx": "信息"
+        "tx": "INFO"
     },
     {
         "c": 13000006,
-        "tx": "!"
+        "tx": "N"
     },
     {
         "c": 13000007,
-        "tx": "信箱"
+        "tx": "POSTBOX"
     },
     {
         "c": 13000008,
-        "tx": "世界前"
+        "tx": "World Top"
     },
     {
         "c": 13000009,
-        "tx": "排位赛"
+        "tx": "League"
     },
     {
         "c": 13001000,
-        "tx": "巡演"
+        "tx": "TOUR"
     },
     {
         "c": 13001001,
-        "tx": "第 {0} 关"
+        "tx": "STAGE {0}"
     },
     {
         "c": 13002000,
-        "tx": "继续"
+        "tx": "CONTINUE"
     },
     {
         "c": 14000000,
-        "tx": "难度"
+        "tx": "level of difficulty"
     },
     {
         "c": 14000001,
-        "tx": "正常"
+        "tx": "NORMAL"
     },
     {
         "c": 14000002,
-        "tx": "高难"
+        "tx": "TECHNICAL"
     },
     {
         "c": 14000003,
-        "tx": "大师"
+        "tx": "MASTER"
     },
     {
         "c": 14000004,
-        "tx": "任务"
+        "tx": "MISSION"
     },
     {
         "c": 14000005,
-        "tx": "奖励"
+        "tx": "REWARDS"
     },
     {
         "c": 14000006,
@@ -5541,47 +5541,47 @@
     },
     {
         "c": 14000007,
-        "tx": "解锁"
+        "tx": "Unlock"
     },
     {
         "c": 14000008,
-        "tx": "第 {0} 关完成"
+        "tx": "STAGE {0} CLEAR"
     },
     {
         "c": 14000009,
-        "tx": "选择"
+        "tx": "SELECT"
     },
     {
         "c": 14000010,
-        "tx": "高难全通过"
+        "tx": "TECHNICAL ALL CLEAR"
     },
     {
         "c": 14001000,
-        "tx": "完成歌曲"
+        "tx": "Complete Song"
     },
     {
         "c": 14001001,
-        "tx": "失误 {0} 次"
+        "tx": "Miss {0}"
     },
     {
         "c": 14001002,
-        "tx": "连击"
+        "tx": "Combo"
     },
     {
         "c": 14001003,
-        "tx": "准确度"
+        "tx": "Accuracy"
     },
     {
         "c": 14001004,
-        "tx": "分数"
+        "tx": "Scores"
     },
     {
         "c": 14001005,
-        "tx": "淡入淡出"
+        "tx": "Fade-"
     },
     {
         "c": 14001006,
-        "tx": "速度"
+        "tx": "Speed"
     },
     {
         "c": 14001007,
@@ -5597,15 +5597,15 @@
     },
     {
         "c": 14001010,
-        "tx": "关闭"
+        "tx": "Off"
     },
     {
         "c": 14001011,
-        "tx": "入"
+        "tx": "In"
     },
     {
         "c": 14001012,
-        "tx": "出"
+        "tx": "Out"
     },
     {
         "c": 14001013,
@@ -5613,39 +5613,39 @@
     },
     {
         "c": 14002000,
-        "tx": "速度"
+        "tx": "SPEED"
     },
     {
         "c": 14002001,
-        "tx": "淡入淡出"
+        "tx": "FADE"
     },
     {
         "c": 14002002,
-        "tx": "钢琴"
+        "tx": "PIANO"
     },
     {
         "c": 14002003,
-        "tx": "物品"
+        "tx": "ITEMS"
     },
     {
         "c": 14002004,
-        "tx": "关闭"
+        "tx": "OFF"
     },
     {
         "c": 14002005,
-        "tx": "入"
+        "tx": "IN"
     },
     {
         "c": 14002006,
-        "tx": "出"
+        "tx": "OUT"
     },
     {
         "c": 14003000,
-        "tx": "生命"
+        "tx": "LIFE"
     },
     {
         "c": 14003001,
-        "tx": "盾牌"
+        "tx": "SHIELD"
     },
     {
         "c": 14003002,
@@ -5657,47 +5657,47 @@
     },
     {
         "c": 14003004,
-        "tx": "开始"
+        "tx": "PLAY"
     },
     {
         "c": 14003005,
-        "tx": "不可用"
+        "tx": "NOT\nAVAILABLE"
     },
     {
         "c": 14004000,
-        "tx": "奖励\n+{0}"
+        "tx": "BONUS\n+{0}"
     },
     {
         "c": 14004001,
-        "tx": "结果"
+        "tx": "RESULT"
     },
     {
         "c": 14004002,
-        "tx": "失败..."
+        "tx": "FAILED..."
     },
     {
         "c": 14004003,
-        "tx": "下一步"
+        "tx": "NEXT"
     },
     {
         "c": 14005001,
-        "tx": "我的"
+        "tx": "My"
     },
     {
         "c": 14005002,
-        "tx": "目标"
+        "tx": "Goal"
     },
     {
         "c": 14006001,
-        "tx": "曲包"
+        "tx": "MUSIC PACK"
     },
     {
         "c": 14006002,
-        "tx": "曲包收集"
+        "tx": "Pack Collected"
     },
     {
         "c": 14006003,
-        "tx": "此包完成率"
+        "tx": "Clear Rate This Pack"
     },
     {
         "c": 14006004,
@@ -5705,115 +5705,115 @@
     },
     {
         "c": 14006005,
-        "tx": "包括"
+        "tx": "Include"
     },
     {
         "c": 14006006,
-        "tx": "歌曲"
+        "tx": "Songs"
     },
     {
         "c": 14006007,
-        "tx": "选择"
+        "tx": "SELECT"
     },
     {
         "c": 14006008,
-        "tx": "解锁"
+        "tx": "UNLOCK"
     },
     {
         "c": 14006009,
-        "tx": "标准巡演"
+        "tx": "STANDARD TOUR"
     },
     {
         "c": 14006101,
-        "tx": "加入尊贵会员"
+        "tx": "JOIN PRESTIGE"
     },
     {
         "c": 14006201,
-        "tx": "购买"
+        "tx": "PURCHASE"
     },
     {
         "c": 14006202,
-        "tx": "你想要购买此曲包吗?\n\"{0}\""
+        "tx": "Would you like to buy this Music Pack?\n\"{0}\""
     },
     {
         "c": 14006203,
-        "tx": "购买"
+        "tx": "BUY"
     },
     {
         "c": 14006204,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 16000000,
-        "tx": "钢琴"
+        "tx": "PIANO"
     },
     {
         "c": 16000001,
-        "tx": "分数奖励"
+        "tx": "Score Bonus"
     },
     {
         "c": 16000002,
-        "tx": "金币奖励"
+        "tx": "Gold Bonus"
     },
     {
         "c": 16000003,
-        "tx": "经验值奖励"
+        "tx": "EXP Bonus"
     },
     {
         "c": 16000004,
-        "tx": "生命奖励"
+        "tx": "Life Bonus"
     },
     {
         "c": 16000005,
-        "tx": "盾牌奖励"
+        "tx": "Shield Bonus"
     },
     {
         "c": 16000101,
-        "tx": "分数 +{0}"
+        "tx": "+{0} Score"
     },
     {
         "c": 16000102,
-        "tx": "金币 +{0}"
+        "tx": "+{0} Gold"
     },
     {
         "c": 16000103,
-        "tx": "经验值 +{0}"
+        "tx": "+{0} EXP"
     },
     {
         "c": 16000104,
-        "tx": "生命值 +{0}"
+        "tx": "+{0} Life"
     },
     {
         "c": 16000105,
-        "tx": "盾牌 +{0}"
+        "tx": "+{0} Shield"
     },
     {
         "c": 16000201,
-        "tx": "常见的钢琴"
+        "tx": "Normal Piano"
     },
     {
         "c": 16000202,
-        "tx": "罕见的钢琴"
+        "tx": "Rare Piano"
     },
     {
         "c": 16000203,
-        "tx": "独一无二的钢琴"
+        "tx": "Epic Piano"
     },
     {
         "c": 16000301,
-        "tx": "常见"
+        "tx": "NORMAL"
     },
     {
         "c": 16000302,
-        "tx": "罕见"
+        "tx": "RARE"
     },
     {
         "c": 16000303,
-        "tx": "独一无二"
+        "tx": "EPIC"
     },
     {
         "c": 16002000,
-        "tx": "等级"
+        "tx": "LEVEL"
     },
     {
         "c": 16002001,
@@ -5833,27 +5833,27 @@
     },
     {
         "c": 16002005,
-        "tx": "条件"
+        "tx": "CONDITION"
     },
     {
         "c": 16002006,
-        "tx": "隐藏条件"
+        "tx": "HIDDEN CONDITION"
     },
     {
         "c": 16002007,
-        "tx": "装备奖励"
+        "tx": "EQUIP BONUS"
     },
     {
         "c": 16002008,
-        "tx": "被锁定"
+        "tx": "LOCKED"
     },
     {
         "c": 16002009,
-        "tx": "尝试"
+        "tx": "TRY"
     },
     {
         "c": 16002010,
-        "tx": "升级"
+        "tx": "UPGRADE"
     },
     {
         "c": 16002011,
@@ -5861,7 +5861,7 @@
     },
     {
         "c": 16002012,
-        "tx": "装备"
+        "tx": "EQUIP"
     },
     {
         "c": 16002013,
@@ -5873,27 +5873,27 @@
     },
     {
         "c": 16002015,
-        "tx": "最高级"
+        "tx": "MAX LEVEL"
     },
     {
         "c": 16001004,
-        "tx": "已装备"
+        "tx": "EQUIPPED"
     },
     {
         "c": 16001005,
-        "tx": "!"
+        "tx": "N"
     },
     {
         "c": 16001006,
-        "tx": "钢琴"
+        "tx": "PIANO"
     },
     {
         "c": 16001007,
-        "tx": "成就"
+        "tx": "ACHIEVEMENTS"
     },
     {
         "c": 16001008,
-        "tx": "一般"
+        "tx": "REGULAR"
     },
     {
         "c": 16001009,
@@ -5905,27 +5905,27 @@
     },
     {
         "c": 16001011,
-        "tx": "特殊"
+        "tx": "SPECIAL"
     },
     {
         "c": 16001012,
-        "tx": "筛选条件"
+        "tx": "Sort by"
     },
     {
         "c": 16001014,
-        "tx": "基础"
+        "tx": "BASIC"
     },
     {
         "c": 16001015,
-        "tx": "拥有"
+        "tx": "OWNED"
     },
     {
         "c": 16001016,
-        "tx": "锁定"
+        "tx": "LOCKED"
     },
     {
         "c": 17000000,
-        "tx": "前\n{0}%"
+        "tx": "TOP\n{0}%"
     },
     {
         "c": 17000001,
@@ -5949,59 +5949,59 @@
     },
     {
         "c": 17000006,
-        "tx": "巡演"
+        "tx": "Tour"
     },
     {
         "c": 17000007,
-        "tx": "歌曲"
+        "tx": "Song"
     },
     {
         "c": 17001000,
-        "tx": "歌曲排名"
+        "tx": "SONG RANKING"
     },
     {
         "c": 17001001,
-        "tx": "点击查看详细"
+        "tx": "Click for Details"
     },
     {
         "c": 17002000,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 17002001,
-        "tx": "钢琴家"
+        "tx": "PIANIST"
     },
     {
         "c": 17002002,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 17002003,
-        "tx": "准确度"
+        "tx": "ACCURACY"
     },
     {
         "c": 17002004,
-        "tx": "最高级"
+        "tx": "Top Rank"
     },
     {
         "c": 17002005,
-        "tx": "我的排名"
+        "tx": "My Rank"
     },
     {
         "c": 17003001,
-        "tx": "排名提升"
+        "tx": "RANK UP"
     },
     {
         "c": 17003002,
-        "tx": "祝贺"
+        "tx": "CONGRATULATION"
     },
     {
         "c": 17003003,
-        "tx": "我的排名"
+        "tx": "My Ranking"
     },
     {
         "c": 17003004,
-        "tx": "分数"
+        "tx": "Score"
     },
     {
         "c": 17003005,
@@ -6009,11 +6009,11 @@
     },
     {
         "c": 17003006,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 17003007,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 17003008,
@@ -6021,15 +6021,15 @@
     },
     {
         "c": 17003009,
-        "tx": "前 {0}%"
+        "tx": "TOP {0}%"
     },
     {
         "c": 17003010,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 17010000,
-        "tx": "前\n{0}%"
+        "tx": "TOP\n{0}%"
     },
     {
         "c": 17010001,
@@ -6053,79 +6053,79 @@
     },
     {
         "c": 17010006,
-        "tx": "巡演"
+        "tx": "Tour"
     },
     {
         "c": 17010007,
-        "tx": "歌曲"
+        "tx": "Song"
     },
     {
         "c": 17011000,
-        "tx": "巡演排名"
+        "tx": "TOUR RANKING"
     },
     {
         "c": 17011001,
-        "tx": "点击查看详细"
+        "tx": "Click for Details"
     },
     {
         "c": 17012000,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 17012001,
-        "tx": "钢琴家"
+        "tx": "PIANIST"
     },
     {
         "c": 17012002,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 17012003,
-        "tx": "准确度"
+        "tx": "ACCURACY"
     },
     {
         "c": 17012004,
-        "tx": "最高排名"
+        "tx": "Top Rank"
     },
     {
         "c": 17012005,
-        "tx": "我的排名"
+        "tx": "My Rank"
     },
     {
         "c": 17012006,
-        "tx": "正常"
+        "tx": "NORMAL"
     },
     {
         "c": 17012007,
-        "tx": "高难"
+        "tx": "TECHNICAL"
     },
     {
         "c": 17012008,
-        "tx": "大师"
+        "tx": "MASTER"
     },
     {
         "c": 17013001,
-        "tx": "巡演排名"
+        "tx": "TOUR RANKING"
     },
     {
         "c": 17013002,
-        "tx": "正常"
+        "tx": "NORMAL"
     },
     {
         "c": 17013003,
-        "tx": "高难"
+        "tx": "TECHNICAL"
     },
     {
         "c": 17013004,
-        "tx": "大师"
+        "tx": "MASTER"
     },
     {
         "c": 17013005,
-        "tx": "我的排名"
+        "tx": "My Ranking"
     },
     {
         "c": 17013006,
-        "tx": "总分"
+        "tx": "Total Score"
     },
     {
         "c": 17013007,
@@ -6133,11 +6133,11 @@
     },
     {
         "c": 17013008,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 17013009,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 17013010,
@@ -6145,15 +6145,15 @@
     },
     {
         "c": 17013011,
-        "tx": "前 {0}%"
+        "tx": "TOP {0}%"
     },
     {
         "c": 17013012,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 18005001,
-        "tx": "截至"
+        "tx": "Until"
     },
     {
         "c": 18005002,
@@ -6161,139 +6161,139 @@
     },
     {
         "c": 19000001,
-        "tx": "信箱"
+        "tx": "POSTBOX"
     },
     {
         "c": 19002001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 19002002,
-        "tx": "此信息已过期。"
+        "tx": "The message has expired."
     },
     {
         "c": 19002003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 19003001,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 19003002,
-        "tx": "信箱已满。"
+        "tx": "Postbox is full"
     },
     {
         "c": 19003003,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 20001000,
-        "tx": "排位赛分数"
+        "tx": "LEAGUE SCORE"
     },
     {
         "c": 20001001,
-        "tx": "游玩奖励"
+        "tx": "PLAY BONUS"
     },
     {
         "c": 20001002,
-        "tx": "难度 {0}"
+        "tx": "DIFFICULTY {0}"
     },
     {
         "c": 20001003,
-        "tx": "准确度 {0}%"
+        "tx": "ACCURACY {0}%"
     },
     {
         "c": 20001004,
-        "tx": "全连"
+        "tx": "ALL COMBO"
     },
     {
         "c": 20001005,
-        "tx": "速度 {0}"
+        "tx": "SPEED {0}"
     },
     {
         "c": 20001006,
-        "tx": "淡{0}"
+        "tx": "FADE {0}"
     },
     {
         "c": 20001007,
-        "tx": "入"
+        "tx": "IN"
     },
     {
         "c": 20001008,
-        "tx": "出"
+        "tx": "OUT"
     },
     {
         "c": 20001009,
-        "tx": "关闭"
+        "tx": "OFF"
     },
     {
         "c": 20001010,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 20002000,
-        "tx": "排名提升"
+        "tx": "RANK UP"
     },
     {
         "c": 20002001,
-        "tx": "作曲家 {0}"
+        "tx": "COMPOSER {0}"
     },
     {
         "c": 20002002,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 20003000,
-        "tx": "排名提升"
+        "tx": "RANK UP"
     },
     {
         "c": 20003001,
-        "tx": "{0} 排位"
+        "tx": "{0} LEAGUE"
     },
     {
         "c": 20003002,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 21008000,
-        "tx": "修改你的留言"
+        "tx": "CHANGE YOUR MESSAGE"
     },
     {
         "c": 21008001,
-        "tx": "你可以输入最多 {0} 位字母。"
+        "tx": "You can enter up to {0} characters."
     },
     {
         "c": 21008002,
-        "tx": "修改"
+        "tx": "CHANGE"
     },
     {
         "c": 21008003,
-        "tx": "取消"
+        "tx": "CANCEL"
     },
     {
         "c": 20005000,
-        "tx": "奖励"
+        "tx": "REWARDS"
     },
     {
         "c": 20005001,
-        "tx": "排名提升"
+        "tx": "RANK UP "
     },
     {
         "c": 20005002,
-        "tx": "{0} 赶超了你"
+        "tx": "{0} HAVE OVERTAKEN YOU"
     },
     {
         "c": 20005003,
-        "tx": "每日作曲家全部完成"
+        "tx": "DAILY COMPOSER ALL CLEARED "
     },
     {
         "c": 20005004,
-        "tx": "排位赛结果"
+        "tx": "LEAGUE RESULT"
     },
     {
         "c": 20005005,
-        "tx": "收集的水晶"
+        "tx": "MARBLE COLLECTED"
     },
     {
         "c": 20006000,
@@ -6301,339 +6301,339 @@
     },
     {
         "c": 20007000,
-        "tx": "结果"
+        "tx": "RESULT"
     },
     {
         "c": 20007001,
-        "tx": "{0} 排位"
+        "tx": "{0} LEAGUE"
     },
     {
         "c": 20007002,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 20008000,
-        "tx": "你的排位被"
+        "tx": "YOUR GRADE IS"
     },
     {
         "c": 20008001,
-        "tx": "提升了"
+        "tx": "PROMOTED"
     },
     {
         "c": 20008002,
-        "tx": "你的排位被"
+        "tx": "YOUR GRADE IS"
     },
     {
         "c": 20008003,
-        "tx": "降低了"
+        "tx": "DEMOTED"
     },
     {
         "c": 20008004,
-        "tx": "确定"
+        "tx": "OK"
     },
     {
         "c": 20010001,
-        "tx": "今天的作曲家"
+        "tx": "Today's Composer"
     },
     {
         "c": 20010002,
-        "tx": "最爱"
+        "tx": "FAVORITE"
     },
     {
         "c": 20010003,
-        "tx": "新晋"
+        "tx": "NEW ARRIVAL"
     },
     {
         "c": 20011001,
-        "tx": "总排名"
+        "tx": "Total Ranking"
     },
     {
         "c": 20011002,
-        "tx": "作曲家排名 - {0}"
+        "tx": "Composer Ranking - {0}"
     },
     {
         "c": 20012000,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 20012001,
-        "tx": "钢琴家"
+        "tx": "PIANIST"
     },
     {
         "c": 20012004,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 20013000,
-        "tx": "总分"
+        "tx": "TOTAL"
     },
     {
         "c": 20013001,
-        "tx": "我的分数"
+        "tx": "MY SCORE"
     },
     {
         "c": 21008100,
-        "tx": "提示"
+        "tx": "NOTICE"
     },
     {
         "c": 21008101,
-        "tx": "你的留言已成功更新。"
+        "tx": "Your message has been changed successfully."
     },
     {
         "c": 21008102,
-        "tx": "确认"
+        "tx": "OK"
     },
     {
         "c": 20014000,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 20014001,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 20014002,
-        "tx": "我的"
+        "tx": "MY"
     },
     {
         "c": 20006001,
-        "tx": "游玩"
+        "tx": "PLAY"
     },
     {
         "c": 20001011,
-        "tx": "难度奖励 +{0}"
+        "tx": "Difficulty Bonus +{0}"
     },
     {
         "c": 20001012,
-        "tx": "准确度奖励 +{0}"
+        "tx": "Accuracy Bonus +{0}"
     },
     {
         "c": 20001013,
-        "tx": "全连奖励 +{0}"
+        "tx": "All Combo Bonus +{0}"
     },
     {
         "c": 20001014,
-        "tx": "速度奖励 +{0}"
+        "tx": "Speed Bonus +{0}"
     },
     {
         "c": 20001015,
-        "tx": "淡入淡出奖励 +{0}"
+        "tx": "Fade Bonus +{0}"
     },
     {
         "c": 20005007,
-        "tx": "所有水晶都已收集"
+        "tx": "MARBLE ALL COLLECTED"
     },
     {
         "c": 20020001,
-        "tx": "排名"
+        "tx": "RANK"
     },
     {
         "c": 20020002,
-        "tx": "钢琴家和专长"
+        "tx": "PIANIST AND PRINCIPALS"
     },
     {
         "c": 20020003,
-        "tx": "分数"
+        "tx": "SCORE"
     },
     {
         "c": 20020004,
-        "tx": "排位"
+        "tx": "PLACEMENT"
     },
     {
         "c": 20020005,
-        "tx": "升级"
+        "tx": "PROMOTION"
     },
     {
         "c": 20020006,
-        "tx": "降级"
+        "tx": "DEMOTION"
     },
     {
         "c": 20020007,
-        "tx": "奖励"
+        "tx": "REWARDS"
     },
     {
         "c": 20020008,
-        "tx": "第{0}名"
+        "tx": "RANK{0}"
     },
     {
         "c": 22000001,
-        "tx": "<color=#FFDD00>@</color>{0} 取得了排位第一名。"
+        "tx": "<color=#FFDD00>@</color>{0} Ranked No.1 in the league."
     },
     {
         "c": 22000002,
-        "tx": "<color=#FFDD00>@</color>{0} 取得了排位第二名。"
+        "tx": "<color=#FFDD00>@</color>{0} Ranked No.2 in the league."
     },
     {
         "c": 22000003,
-        "tx": "<color=#FFDD00>@</color>{0} 取得了排位第三名。"
+        "tx": "<color=#FFDD00>@</color>{0} Ranked No.3 in the league."
     },
     {
         "c": 22000004,
-        "tx": "<color=#FFDD00>@</color>{0} 排名飙升。"
+        "tx": "<color=#FFDD00>@</color>{0} soaring in the ranking."
     },
     {
         "c": 22000005,
-        "tx": "<color=#FFDD00>@</color>{0} 最佳{1}钢琴师。"
+        "tx": "<color=#FFDD00>@</color>{0} best {1} pianist."
     },
     {
         "c": 22000006,
-        "tx": "<color=#FFDD00>@</color>{0} 游玩了所有作曲家。"
+        "tx": "<color=#FFDD00>@</color>{0} played all composer today."
     },
     {
         "c": 22000007,
-        "tx": "<color=#FFDD00>@</color>{0} 游玩了10次。"
+        "tx": "<color=#FFDD00>@</color>{0} play 10 times in the league."
     },
     {
         "c": 22000008,
-        "tx": "<color=#FFDD00>@</color>{0} 游玩了20次。"
+        "tx": "<color=#FFDD00>@</color>{0} play 20 times in the league."
     },
     {
         "c": 22000009,
-        "tx": "<color=#FFDD00>@</color>{0} 游玩了30次。"
+        "tx": "<color=#FFDD00>@</color>{0} play 30 times in the league."
     },
     {
         "c": 20000010,
-        "tx": "排位赛正在激烈进行中。"
+        "tx": "Ranked game is in progress fiercely."
     },
     {
         "c": 20000011,
-        "tx": "处于被降级的危险区域。"
+        "tx": "Critically close to demotion."
     },
     {
         "c": 20000012,
-        "tx": "今天的排位赛即将结束。"
+        "tx": "Today's league is ending soon."
     },
     {
         "c": 20000013,
-        "tx": "欢迎来到排位赛！"
+        "tx": "Welcome to the league!"
     },
     {
         "c": 20000014,
-        "tx": "钢琴奖励 +{0}"
+        "tx": "Piano Bonus +{0}"
     },
     {
         "c": 20000015,
-        "tx": "作曲家等级奖励 +{0}"
+        "tx": "Composer Level Bonus +{0}"
     },
     {
         "c": 20000016,
-        "tx": "标准"
+        "tx": "Standard"
     },
     {
         "c": 20000017,
-        "tx": "额外"
+        "tx": "Extra"
     },
     {
         "c": 20000018,
-        "tx": "每日任务"
+        "tx": "Daily Quest"
     },
     {
         "c": 20000019,
-        "tx": "完成来获得音乐点数"
+        "tx": "Clear and Get Music Points"
     },
     {
         "c": 20000020,
-        "tx": "水晶"
+        "tx": "Marble"
     },
     {
         "c": 20000021,
-        "tx": "获得所有水晶"
+        "tx": "Collect All Marble in Today"
     },
     {
         "c": 20000022,
-        "tx": "完成今天的排位赛"
+        "tx": "Complete Today League"
     },
     {
         "c": 20000023,
-        "tx": "完成今天的作曲家"
+        "tx": "Clear Today Composers"
     },
     {
         "c": 20000024,
-        "tx": "{0} 天"
+        "tx": "{0} DAYS"
     },
     {
         "c": 20000025,
-        "tx": "尊贵会员"
+        "tx": "PRESTIGE MEMBERSHIP"
     },
     {
         "c": 20000026,
-        "tx": "已锁定"
+        "tx": "LOCKED"
     },
     {
         "c": 20000027,
-        "tx": "新晋"
+        "tx": "NEW ARRIVAL"
     },
     {
         "c": 20000030,
-        "tx": "购买"
+        "tx": "BUY"
     },
     {
         "c": 20000035,
-        "tx": "我的"
+        "tx": "MY"
     },
     {
         "c": 20000036,
-        "tx": "信箱"
+        "tx": "POSTBOX"
     },
     {
         "c": 20000037,
-        "tx": "确认"
+        "tx": "OK"
     },
     {
         "c": 20000038,
-        "tx": "领取"
+        "tx": "CLAIM"
     },
     {
         "c": 20000039,
-        "tx": "全部领取"
+        "tx": "CLAIM ALL"
     },
     {
         "c": 20000040,
-        "tx": "你没有收到任何信息。"
+        "tx": "You have not received any message."
     },
     {
         "c": 20000041,
-        "tx": "信息 7 天后过期。"
+        "tx": "Messages expires in 7 days."
     },
     {
         "c": 20000042,
-        "tx": "附件"
+        "tx": "Attachment"
     },
     {
         "c": 20000043,
-        "tx": "截至 "
+        "tx": "Until "
     },
     {
         "c": 20000044,
-        "tx": "{0}天"
+        "tx": "{0}D"
     },
     {
         "c": 20000045,
-        "tx": "{0}时 {1}分钟"
+        "tx": "{0}H {1}M"
     },
     {
         "c": 20000046,
-        "tx": "福利"
+        "tx": "Benefits"
     },
     {
         "c": 20000047,
-        "tx": "尊贵会员"
+        "tx": "PRESTIGE MEMBERSHIP"
     },
     {
         "c": 20000048,
-        "tx": "已经是尊贵会员"
+        "tx": "Already in a Prestige Membership"
     },
     {
         "c": 20000050,
-        "tx": "购买会员资格，享受各种福利。"
+        "tx": "Purchase Membership and\nenjoy every benefits."
     },
     {
         "c": 20000051,
-        "tx": "查看福利"
+        "tx": "VIEW BENEFIT"
     },
     {
         "c": 20000052,
-        "tx": "尊贵会员"
+        "tx": "PRESTIGE"
     },
     {
         "c": 20000053,
@@ -6649,27 +6649,27 @@
     },
     {
         "c": 20000056,
-        "tx": "全曲解锁"
+        "tx": "Access Every Song"
     },
     {
         "c": 20000057,
-        "tx": "全部巡演曲包解锁"
+        "tx": "Access All Tourpack"
     },
     {
         "c": 20000059,
-        "tx": "无需音乐点数即可游玩"
+        "tx": "Play Music\nWithout Music Points"
     },
     {
         "c": 20000060,
-        "tx": "每天领取免费礼物"
+        "tx": "Claim Free Items\nEveryday"
     },
     {
         "c": 20000061,
-        "tx": "获得EXP奖励\n+100%"
+        "tx": "Get EXP Bonus\n+100%"
     },
     {
         "c": 20000062,
-        "tx": "获得金币奖励\n+100%"
+        "tx": "Get Gold Bonus\n+100%"
     },
     {
         "c": 20000063,
@@ -6677,102 +6677,114 @@
     },
     {
         "c": 20000064,
-        "tx": "如何解锁"
+        "tx": "HOW TO UNLOCK"
     },
     {
         "c": 20000065,
-        "tx": "在\"巡演\"完成此音乐"
+        "tx": "Clear the song on the \"Tour Play\""
     },
     {
         "c": 20000066,
-        "tx": "尝试"
+        "tx": "TRY"
     },
     {
         "c": 20000067,
-        "tx": "关闭"
+        "tx": "CLOSE"
     },
     {
         "c": 20000068,
-        "tx": "排位赛"
+        "tx": "LEAGUE"
     },
     {
         "c": 20000069,
-        "tx": "开始"
+        "tx": "START"
     },
     {
         "c": 20000070,
-        "tx": "排位赛新闻"
+        "tx": "LEAGUE NEWS"
     },
     {
         "c": 20000071,
-        "tx": "{1}小时前"
+        "tx": "{1} hours ago"
     },
     {
         "c": 20000072,
-        "tx": "{1}小时前"
+        "tx": "{1} hour ago"
     },
     {
         "c": 20000073,
-        "tx": "{2}分钟前"
+        "tx": "{2} minutes ago"
     },
     {
         "c": 20000074,
-        "tx": "{2}分钟前"
+        "tx": "{2} minute ago"
     },
     {
         "c": 20000075,
-        "tx": "几秒前"
+        "tx": "few ago"
     },
     {
         "c": 30006001,
-        "tx": "达到准确度 {0}"
+        "tx": "Reach Accuracy {0}"
     },
     {
         "c": 30006002,
-        "tx": "完成轻盈难度"
+        "tx": "Clear Light Difficulty"
     },
     {
         "c": 30006003,
-        "tx": "游玩任意歌曲5次。"
+        "tx": "Play any song 5 times."
     },
     {
         "c": 30006004,
-        "tx": "游玩任意歌曲10次。"
+        "tx": "Play any song 10 times."
     },
     {
         "c": 30006005,
-        "tx": "游玩任意歌曲20次。"
+        "tx": "Play any song 20 times."
     },
     {
         "c": 30006006,
-        "tx": "完成正常难度"
+        "tx": "Clear Normal Difficulty"
     },
     {
         "c": 30006007,
-        "tx": "完成高难难度"
+        "tx": "Clear Technical Difficulty"
     },
     {
         "c": 30001000,
-        "tx": "你的排位晋级了！"
+        "tx": "You have been promoted in League!"
     },
     {
         "c": 30001001,
-        "tx": "你的排位降级了！"
+        "tx": "You have been demoted in League!"
     },
     {
         "c": 30001002,
-        "tx": "你的排位没有变动！"
+        "tx": "You stayed in the same League!"
     },
     {
         "c": 30001003,
-        "tx": "恭喜！您在排位赛中排名第 {0} 位。\n您已晋升下一排位。\n请继续努力！"
+        "tx": "Congratulation! You ranked in the "
     },
     {
         "c": 30001004,
-        "tx": "很遗憾，您在联赛中排名第 {0} 位。\n您已降级至上一排位。\n下次祝您好运！"
+        "tx": "Unfortunately, you ranked in the "
     },
     {
         "c": 30001005,
-        "tx": "您在联赛中排名第 {0} 位。\n您的的排位保持稳定。\n请继续努力！"
+        "tx": "You ranked in the "
+    },
+    {
+        "c": 30001006,
+        "tx": " place in the league.\nYou have been promoted to the next league.\nKeep pushing forward!"
+    },
+    {
+        "c": 30001007,
+        "tx": " place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!"
+    },
+    {
+        "c": 30001008,
+        "tx": " place in the league.\nYour league has remained consistent.\nKeep it going!"
     }
 ]
