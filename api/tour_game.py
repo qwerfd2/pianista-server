@@ -121,13 +121,13 @@ async def complete_the_game(request):
     if len(decrypted_data) != 10:
         response_data = {"code": -100}
     else:
-        response_field = await complete_game(0, user, decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[7], decrypted_data[8], decrypted_data[9])
+        response_field, invoke = await complete_game(0, user, decrypted_data[0], decrypted_data[1], decrypted_data[2], decrypted_data[3], decrypted_data[4], decrypted_data[5], decrypted_data[6], decrypted_data[7], decrypted_data[8], decrypted_data[9])
         response_code = 100
         response_code = response_field.get('code', 100)
         response_data = {
             "result": response_field,
             "code": response_code,
-            "invoke": []
+            "invoke": invoke
         }
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)      

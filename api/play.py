@@ -5,13 +5,10 @@ import math
 import time
 import random
 
-from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA
+from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, MARBLE_DATA
 from api.database import database, results, users
-from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_piano_bonus, get_fc, get_piano_unlock, add_feed
+from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_piano_bonus, get_fc, get_piano_unlock, add_feed, check_marble_achieve
 from api.cache import league_count, league_id
-
-# ------------------------------------------
-# Play session
 
 play_sessions = {}
 lock = Lock()
@@ -136,6 +133,8 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     return_obj = get_play_session(objectId)
     if return_obj == None:
         return {"code": -400}
+    
+    invoke = []
     
     pattern = next((pattern for pattern in PATTERN_DATA if pattern["c"] == return_obj["patternId"]), None)
     musicID = pattern["m"]
@@ -435,6 +434,31 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         user['league']['updatedAt'] = int(time.time() * 1000)
         user['league']['playCount'] += 1
 
+        # TODO: Check marble completion, return result reward object, add reward.
+        marble_1 = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['marbleId1'])
+        marble_2 = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['marbleId2'])
+        marble_3 = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['marbleId3'])
+        marble_bonus = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['bonusMarbleId'])
+        if not user['league']['marbleAchieve1'] and check_marble_achieve(marble_1, accuracy, pattern["pty"], user['league']['playCount']):
+            user['league']['marbleAchieve1'] = True
+            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
+
+        if not user['league']['marbleAchieve2'] and check_marble_achieve(marble_2, accuracy, pattern["pty"], user['league']['playCount']):
+            user['league']['marbleAchieve2'] = True
+            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
+
+        if not user['league']['marbleAchieve3'] and check_marble_achieve(marble_3, accuracy, pattern["pty"], user['league']['playCount']):
+            user['league']['marbleAchieve3'] = True
+            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
+
+        if not user['league']['bonusMarbleAchieve'] and check_marble_achieve(marble_bonus, accuracy, pattern["pty"], user['league']['playCount']):
+            user['league']['bonusMarbleAchieve'] = True
+            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
+
+        if not user['league']['extraMarbleAchieve'] and user['league']['score1'] and user['league']['score2'] and user['league']['score3']:
+            user['league']['extraMarbleAchieve'] = True
+            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
+
         if is_best:
             field_list = ["", "score1", "score2", "score3"]
             score_list = [entry[field_list[is_best]] for entry in user['league']['leaderboardCache'] if entry[field_list[is_best]] is not None]
@@ -504,4 +528,4 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     # Keep temporary queue clean
     delete_play_session(objectId)
 
-    return return_obj
+    return return_obj, invoke

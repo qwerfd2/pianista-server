@@ -271,3 +271,12 @@ def add_feed(user, id, param1, league_id):
 
     user['league']['feed'].append({"objectId":len(user['league']['feed']) + 1,"createdAt":int(time.time() * 1000),"leagueId":league_id,"userObjectId":user["id"], 'feedId': id, "args": args_object})
     return user
+
+def check_marble_achieve(marble, accuracy, difficulty, play_count):
+    if marble['ic'] == 1 and accuracy >= marble['v']:
+        return True
+    elif marble['ic'] == 2 and difficulty == marble['v']:
+        return True
+    elif marble['ic'] == 3 and play_count >= marble['v']:
+        return True
+    return False
