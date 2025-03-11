@@ -126,11 +126,13 @@ async def generate_tour_leaderboard(packId, patternType):
             owner_data[owner]["updatedAt"] = result["updatedAt"]
 
     leaderboard = []
+    i = 0
     for owner, data in owner_data.items():
+        i += 1
         sum_score = data["score"]
         sum_accuracy = data["accuracy"] / data["count"]
         leaderboard.append({
-            "objectId": random.randint(1, 99999999),
+            "objectId": i,
             "owner": owner,
             "patternType": patternType,
             "packId": packId,
@@ -199,11 +201,13 @@ async def generate_collection_leaderboard(patternId):
             owner_data[owner]["updatedAt"] = result["updatedAt"]
 
     leaderboard = []
+    i = 0
     for owner, data in owner_data.items():
+        i += 1
         sum_score = data["score"]
         sum_accuracy = data["accuracy"] / data["count"]
         leaderboard.append({
-            "objectId": random.randint(1, 99999999),
+            "objectId": i,
             "owner": owner,
             "patternId": patternId,
             "score": sum_score,
@@ -309,7 +313,8 @@ def generate_league_session():
 
     for rank in range(1, 22):
         rank_object = []
-        for player in range(9):
+        for i in range(9):
+            j = i + 1
             score1 = get_random_score(rank)
             score2 = get_random_score(rank)
             score3 = get_random_score(rank)
@@ -322,8 +327,8 @@ def generate_league_session():
 
             total_score = score1 + score2 + score3
             rank_object.append({
-                "objectId": random.randint(1, 999999),
-                "owner": random.randint(10000000, 99999999),
+                "objectId": j,
+                "owner": 999999 - j,
                 "tier": rank,
                 "nextTier": None,
                 "leagueId":league_id,
@@ -361,7 +366,7 @@ def get_league_leaderboard(user):
     score2 = user['league']['score2'] or 0
     score3 = user['league']['score3'] or 0
     leaderboard.append({
-        "objectId": random.randint(1, 999999),
+        "objectId": 10,
         "owner": user['id'],
         "tier": user['league']['tier'],
         "nextTier": None,

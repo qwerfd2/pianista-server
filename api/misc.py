@@ -62,10 +62,6 @@ def get_fc(miss, fine, good, excellent, marvelous, totalCombo):
     total = miss + fine + good + excellent + marvelous
     return totalCombo == total
 
-def get_fc(miss, fine, good, excellent, marvelous, totalCombo):
-    total = miss + fine + good + excellent + marvelous
-    return totalCombo == total
-
 def get_accuracy(miss, fine, good, excellent, marvelous):
     total = miss + fine + good + excellent + marvelous
     accuracy = ((marvelous) + (excellent * 0.75) + (good * 0.5) + (fine * 0.25)) / total

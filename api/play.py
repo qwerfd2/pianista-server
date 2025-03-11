@@ -66,8 +66,13 @@ async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
 
 async def start_game(user, patternId, mode, master, items, var1, var2):
+    while True:
+        objectId = random.randint(1, 999999)
+        if str(objectId) not in play_sessions:
+            break
+
     obj = {
-            "objectId": random.randint(1, 99999999),
+            "objectId": objectId,
             "owner": user["id"],
             "patternId": patternId,
             "type": 1,
@@ -186,7 +191,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             accuracy_score += 10000
 
         difficulty_score = difficulty_bonus[pattern["d"]]
-
         return_obj["score"] = orig_score + statScore + pianoScore + accuracy_score + difficulty_score
     
     totalEXP = 0
@@ -210,7 +214,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     if (fade):
         expContext.append([6002005, 10])
         totalEXP += 10
-
 
     expBoost = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 2), 0)
     if expBoost:
@@ -434,7 +437,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         user['league']['updatedAt'] = int(time.time() * 1000)
         user['league']['playCount'] += 1
 
-        # TODO: Check marble completion, return result reward object, add reward.
+        # Check marble completion, return result reward object, add reward.
         marble_1 = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['marbleId1'])
         marble_2 = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['marbleId2'])
         marble_3 = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['marbleId3'])

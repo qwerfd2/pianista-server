@@ -147,7 +147,7 @@ async def season_off(request):
     user_level = get_user_level(user)
     piano_id, piano_level = get_user_piano(user)
     
-    result_object["objectId"] = random.randint(1,99999)
+    result_object["objectId"] = 10
     result_object['owner'] = user['id']
     result_object['tier'] = user['league']['tier']
     result_object['nextTier'] = user_tier
