@@ -145,9 +145,16 @@ async def generate_tour_leaderboard(packId, patternType):
 
     leaderboard.sort(key=lambda x: x["score"], reverse=True)
 
-    query = tour_cache.insert().values(data=leaderboard, patternType=patternType, packId=packId)
-    await cache_database.execute(query)
+    existing_entry = await cache_database.fetch_one(
+        tour_cache.select().where(tour_cache.c.packId == packId, tour_cache.c.patternType == patternType)
+    )
 
+    if existing_entry:
+        query = tour_cache.update().where(tour_cache.c.packId == packId, tour_cache.c.patternType == patternType).values(data=leaderboard)
+    else:
+        query = tour_cache.insert().values(data=leaderboard, patternType=patternType, packId=packId)
+
+    await cache_database.execute(query)
     return leaderboard
 
 # ------------------------------------------
@@ -219,9 +226,16 @@ async def generate_collection_leaderboard(patternId):
 
     leaderboard.sort(key=lambda x: x["score"], reverse=True)
 
-    query = collection_cache.insert().values(data=leaderboard, patternId=patternId)
-    await cache_database.execute(query)
+    existing_entry = await cache_database.fetch_one(
+        collection_cache.select().where(collection_cache.c.patternId == patternId)
+    )
 
+    if existing_entry:
+        query = collection_cache.update().where(collection_cache.c.patternId == patternId).values(data=leaderboard)
+    else:
+        query = collection_cache.insert().values(data=leaderboard, patternId = patternId)
+
+    await cache_database.execute(query)
     return leaderboard
 
 # ------------------------------------------
