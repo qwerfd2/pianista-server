@@ -11,7 +11,7 @@ import random
 
 from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, LEAGUE_SCHEDULE_DATA, LOCALIZATION_DATA
 from api.database import database, results, users
-from api.misc import get_user_level, get_user_level, get_user_piano, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_league_rank
+from api.misc import get_user_level, get_user_level, get_user_piano, get_random_score, random_public_info, all_songs_from_composer, get_user_piano, add_mail, get_rank_reward, get_league_rank, get_league_gem_reward
 
 # ------------------------------------------
 # Init
@@ -288,30 +288,37 @@ async def reset_league():
         if (rank < 4 and user['league']['tier'] <= 20):
             str_title = 30001000
             str_body_start = 30001003
-            str_body_end = 30001006
+            str_body_mid = 30001006
+            str_body_end = 30001009
             reward = get_rank_reward(tier, 2)
             tier += 1
             
         elif (rank > 7 and user['league']['tier'] > 0):
             str_title = 30001001
             str_body_start = 30001004
-            str_body_end = 30001007
+            str_body_mid = 30001007
+            str_body_end = 30001010
             reward = 1
             tier -= 1
 
         else:
             str_title = 30001002
             str_body_start = 30001005
-            str_body_end = 30001008
+            str_body_mid = 30001008
+            str_body_end = 300010011
             reward = get_rank_reward(tier, 1)
 
         rank_str = str(rank) + append
 
         str_title = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_title), "LOCALE_MISSING")
         str_body_start = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_body_start), "LOCALE_MISSING")
+        str_body_mid = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_body_mid), "LOCALE_MISSING")
         str_body_end = next((loc["tx"] for loc in LOCALIZATION_DATA if loc["c"] == str_body_end), "LOCALE_MISSING")
 
-        user['mail'] = add_mail(user['mail'], str_title, str_body_start + rank_str + str_body_end, 7, 1, reward)
+        gem_reward = get_league_gem_reward(user['league'])
+        reward += gem_reward
+
+        user['mail'] = add_mail(user['mail'], str_title, str_body_start + rank_str + str_body_mid + str(gem_reward) + str_body_end, 7, 1, reward)
 
         query = users.update().where(users.c.id == user['id']).values(mail=user['mail'], daily=user['daily'])
         await database.execute(query)

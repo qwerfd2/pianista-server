@@ -22,7 +22,7 @@ Install all dependencies, run `python 11000.py`.
 
 ## Features that are supported
 
-Config files and CDN (unused) delivery
+Config files and CDN delivery
 
 Collection game play
 
@@ -55,5 +55,7 @@ Certain PostBox rewards (patterns, debug, music points), since they are either h
 Apple and Facebook login methods, since there's no way to get the tokens.
 
 League lobbies that contains more than 1 real player, since this is a server meant to run locally.
+
+Various useless functionalities such as ToS agreement and welcome music point reward
 
 Security and efficiency (I mean it)
