@@ -7,7 +7,8 @@ import random
 from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
 from api.misc import get_user_level, get_user_piano, get_end_of_day, get_league_rank, add_feed
-from api.cache import league_count, league_id, get_league_leaderboard, load_league_session
+from api.cache import get_league_leaderboard, load_league_session
+import api.cache
 from api.play import start_game, complete_game
 from api.templates import START_LEAGUE
 
@@ -16,7 +17,7 @@ async def get_group_status(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
 
-    response_data = {"result":{"objectId":user['league']['leagueId'],"tier":user['league']['tier'],"count":league_count,"endAt":user['league']['endAt'],"seasonOff":False},"code":100,"invoke":[]}
+    response_data = {"result":{"objectId":user['league']['leagueId'],"tier":user['league']['tier'],"count":api.cache.league_count,"endAt":user['league']['endAt'],"seasonOff":False},"code":100,"invoke":[]}
 
     if (user['league']['endAt'] < int(time.time() * 1000)):
         await load_league_session()
@@ -36,7 +37,7 @@ async def join(request):
     user['league'] = START_LEAGUE
     user['league']['updatedAt'] = int(time.time() * 1000)
     user['league']['endAt'] = get_end_of_day()
-    user['league']['leagueId'] = league_id
+    user['league']['leagueId'] = api.cache.league_id
     user['league']['tier'] = tier
 
     user['league']['marbleId1'] = (tier * 5) + 3
@@ -60,11 +61,11 @@ async def get_status(request):
     result_object = []
 
     if (user['league']['score1']):
-        result_object.append({"objectId":1,"owner":user['id'],"leagueId":league_id,"patternId":user['league']['patternId1'],"score":user['league']['score1'],"updatedAt":user['league']['updatedAt']})
+        result_object.append({"objectId":1,"owner":user['id'],"leagueId":api.cache.league_id,"patternId":user['league']['patternId1'],"score":user['league']['score1'],"updatedAt":user['league']['updatedAt']})
     if (user['league']['score2']):
-        result_object.append({"objectId":2,"owner":user['id'],"leagueId":league_id,"patternId":user['league']['patternId2'],"score":user['league']['score2'],"updatedAt":user['league']['updatedAt']})
+        result_object.append({"objectId":2,"owner":user['id'],"leagueId":api.cache.league_id,"patternId":user['league']['patternId2'],"score":user['league']['score2'],"updatedAt":user['league']['updatedAt']})
     if (user['league']['score3']):
-        result_object.append({"objectId":3,"owner":user['id'],"leagueId":league_id,"patternId":user['league']['patternId3'],"score":user['league']['score3'],"updatedAt":user['league']['updatedAt']})
+        result_object.append({"objectId":3,"owner":user['id'],"leagueId":api.cache.league_id,"patternId":user['league']['patternId3'],"score":user['league']['score3'],"updatedAt":user['league']['updatedAt']})
 
     response_data = {"result":result_object,"code":100,"invoke":[]}
 
@@ -76,7 +77,7 @@ async def get_group_players(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    if league_id != user['league']['leagueId']:
+    if api.cache.league_id != user['league']['leagueId']:
         # This is an old league
         leaderboard = user['league']['leaderboardCache']
 
@@ -92,26 +93,26 @@ async def get_group_players(request):
         all_played = next((feed for feed in user['league']['feed'] if feed["feedId"] == 6), None)
 
         if (user['league']['score1'] and user['league']['score2'] and user['league']['score3']) and all_played == None:
-            user = add_feed(user, 6, None, league_id)
+            user = add_feed(user, 6, None, api.cache.league_id)
 
         old_leaderboard_rank = get_league_rank(old_leaderboard, user['id'], 0)
         new_leaderboard_rank = get_league_rank(leaderboard, user['id'], 0)
         soaring = next((feed for feed in user['league']['feed'] if feed["feedId"] == 4), None)
 
         if (old_leaderboard_rank - new_leaderboard_rank > 5) and (soaring == None):
-            user = add_feed(user, 4, None, league_id)
+            user = add_feed(user, 4, None, api.cache.league_id)
         
         third = next((feed for feed in user['league']['feed'] if feed["feedId"] == 3), None)
         if (new_leaderboard_rank == 3) and (third == None):
-            user = add_feed(user, 3, None, league_id)
+            user = add_feed(user, 3, None, api.cache.league_id)
 
         second = next((feed for feed in user['league']['feed'] if feed["feedId"] == 2), None)
         if (new_leaderboard_rank == 2) and (second == None):
-            user = add_feed(user, 2, None, league_id)
+            user = add_feed(user, 2, None, api.cache.league_id)
 
         first = next((feed for feed in user['league']['feed'] if feed["feedId"] == 1), None)
         if (new_leaderboard_rank == 1) and (first == None):
-            user = add_feed(user, 1, None, league_id)
+            user = add_feed(user, 1, None, api.cache.league_id)
 
         query = users.update().where(users.c.id == user['id']).values(league=user['league'])
         await database.execute(query)
@@ -184,7 +185,7 @@ async def season_off(request):
 
 async def take_comfort_ticket(request):
     
-    response_data = {"result":[],"code":100,"invoke":[{"name":"itemTradeReceipt","params":[{"itemId":3,"quantity":0,"tag":"leagueComfortTicketBenefit"}]}]}
+    response_data = {"result":[],"code":100,"invoke":[{"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":0,"tag":"leagueComfortTicketBenefit"}]}]}
 
     encrypted_response = encrypt(response_data)
 
