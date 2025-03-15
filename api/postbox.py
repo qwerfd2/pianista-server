@@ -66,7 +66,7 @@ async def get_item(request):
             if mail["objectId"] == mail_id and mail["status"] == 0:
                 item = mail["item"]
                 quantity = mail["quantity"]
-                mail["status"] = 1
+                user['mail'].remove(mail)
                 break
         
         if not item:
@@ -110,6 +110,8 @@ async def get_item_all(request):
                 "quantity": quantity
             })
             mail["status"] = 1
+
+    user["mail"] = [mail for mail in user["mail"] if mail['status']  == 0]
     
     for items in end_params:
         user = add_gift(user, items['itemId'], items['quantity'])
