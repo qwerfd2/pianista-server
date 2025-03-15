@@ -3877,7 +3877,7 @@
     },
     {
         "c": 401902,
-        "tx": "Passion"
+        "tx": "Classic (Burgundy)"
     },
     {
         "c": 401903,
@@ -4665,15 +4665,15 @@
     },
     {
         "c": 5009104,
-        "tx": "DAILY ITEM REWARD"
+        "tx": "ITEM DISCOUNT"
     },
     {
         "c": 5009105,
-        "tx": "EXP +100%"
+        "tx": "EXP +50%"
     },
     {
         "c": 5009106,
-        "tx": "GOLD +100%"
+        "tx": "GOLD +50%"
     },
     {
         "c": 5009107,
@@ -4697,15 +4697,15 @@
     },
     {
         "c": 5009112,
-        "tx": "Daily Item Reward"
+        "tx": "Item Discount"
     },
     {
         "c": 5009113,
-        "tx": "Exp +100%"
+        "tx": "Exp +50%"
     },
     {
         "c": 5009114,
-        "tx": "Gold +100%"
+        "tx": "Gold +50%"
     },
     {
         "c": 6000001,
@@ -4877,11 +4877,11 @@
     },
     {
         "c": 7000004,
-        "tx": "TERMS OF USE"
+        "tx": "PRIVATE SERVER"
     },
     {
         "c": 7000005,
-        "tx": "PRIVACY POLICY"
+        "tx": "PRIVATE SERVER"
     },
     {
         "c": 7000007,
@@ -6529,7 +6529,7 @@
     },
     {
         "c": 20000019,
-        "tx": "Clear and Get Music Points"
+        "tx": "Get gems via mail tomorrow"
     },
     {
         "c": 20000020,
@@ -6661,15 +6661,15 @@
     },
     {
         "c": 20000060,
-        "tx": "Claim Free Items\nEveryday"
+        "tx": "Removed"
     },
     {
         "c": 20000061,
-        "tx": "Get EXP Bonus\n+100%"
+        "tx": "Get EXP Bonus\n+50%"
     },
     {
         "c": 20000062,
-        "tx": "Get Gold Bonus\n+100%"
+        "tx": "Get Gold Bonus\n+50%"
     },
     {
         "c": 20000063,
@@ -6777,14 +6777,26 @@
     },
     {
         "c": 30001006,
-        "tx": " place in the league.\nYou have been promoted to the next league.\nKeep pushing forward!"
+        "tx": " place in the league.\nYou have been promoted to the next league.\nIn addition, you got "
     },
     {
         "c": 30001007,
-        "tx": " place in the league.\nYou have been demoted to the previous league.\nBetter luck next time!"
+        "tx": " place in the league.\nYou have been demoted to the previous league.\nIn addition, you got "
     },
     {
         "c": 30001008,
-        "tx": " place in the league.\nYour league has remained consistent.\nKeep it going!"
+        "tx": " place in the league.\nYour league has remained consistent.\nIn addition, you got "
+    },
+    {
+        "c": 30001009,
+        "tx": " Gem(s) for completing daily missions.\nKeep pushing forward!"
+    },
+    {
+        "c": 30001010,
+        "tx": " Gem(s) for completing daily missions.\nBetter luck next time!"
+    },
+    {
+        "c": 30001011,
+        "tx": " Gem(s) for completing daily missions.\nKeep it going!"
     }
 ]

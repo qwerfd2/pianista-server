@@ -40,7 +40,7 @@ Limited PostBox support (messages, attachment gems, coins, pianos, and items)
 
 League reimplementation with bots, limited set of news feed, daily reward which rewards gems.
 
-renaming (which is actually free)
+nickname change
 
 ## Features that will not be supported
 

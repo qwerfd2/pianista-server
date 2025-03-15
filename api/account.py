@@ -6,7 +6,7 @@ import time
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt
 from api.misc import generate_random_string
-from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE
+from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE, RESET_DATA
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -157,7 +157,7 @@ async def login(request):
                                     "nicknameReset": 0,
                                     "diamond": user["diamond"],
                                     "gold": user["gold"],
-                                    "ticket": 10,
+                                    "ticket": 0,
                                     "lastTicketCharge": 0,
                                     "lastOnetimeBonus": 0,
                                     "termsAgree": True,
@@ -177,7 +177,7 @@ async def login(request):
     return Response(encrypted_response)
     
 async def get_ad_count(request):
-    response_data = {"result":[1,int(time.time() * 1000) - 9900000],"code":100,"invoke":[]}
+    response_data = {"result":[0,0],"code":100,"invoke":[]}
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -187,7 +187,6 @@ async def get_game_item_list(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    body = await request.body()
     item_object = []
     i = 0
     for item in user["item"]:
@@ -211,7 +210,7 @@ async def get_subscription(request):
             "objectId": 11805,
             "owner": user["id"],
             "holdDays": 0,
-            "remainDays": 365,
+            "remainDays": 90,
             "referenceDate": int(time.time() * 1000) - 100000,
             "pastDays": 0
         },
@@ -257,10 +256,13 @@ async def change_nickname_commit(request):
             exist_user = await database.fetch_one(query)
 
             if exist_user is None:
-                query = users.update().where(users.c.id == user["id"]).values(nickname=nickname)
-                await database.execute(query)
-                response_data = {"result": None, "code": 100, "invoke": []}
-
+                reset_gem_count = user['diamond'] - RESET_DATA[0]['n']
+                if reset_gem_count >= 0:
+                    query = users.update().where(users.c.id == user["id"]).values(nickname=nickname, diamond=reset_gem_count)
+                    await database.execute(query)
+                    response_data = {"result": None, "code": 100, "invoke": []}
+                else:
+                    response_data = {"code": -206}
             else:
                 response_data = {"code": -207}
         else:
