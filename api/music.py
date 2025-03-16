@@ -5,7 +5,7 @@ import time
 
 from api.database import get_user_and_validate_session
 from api.crypt import encrypt
-from api.cache import league_session
+import api.cache
 
 async def get_rotation_list(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -16,9 +16,9 @@ async def get_rotation_list(request):
         "result": {
             "objectId": 11805,
             "owner": user["id"],
-            "music1":league_session[0][0]['musicId1'],
-            "music2":league_session[0][0]['musicId2'],
-            "music3":league_session[0][0]['musicId3'],
+            "music1":api.cache.league_session[0][0]['musicId1'],
+            "music2":api.cache.league_session[0][0]['musicId2'],
+            "music3":api.cache.league_session[0][0]['musicId3'],
             "resetCount":0,
             "expiredAt":int(time.time() * 1000) +9900000,
         },

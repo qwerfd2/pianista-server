@@ -9,10 +9,12 @@ def add_gift(user, item, quantity):
     # you can actually gift pretty much everything. Currencies, charts, pianos, vip time, items, etc. But I will not add all of them here since most are rendered obsolete.
 
     if item == 1: # gem
-        user["diamond"] += quantity
+        user['diamond'] += quantity
+        user['diamond'] = min(user['diamond'], 99999999)
 
     elif item == 2: # gold
-        user["gold"] += quantity
+        user['gold'] += quantity
+        user['gold'] = min(user['gold'], 99999999)
 
     elif item > 500000 and item < 700000: # items
         user_item = next((i for i in user['item'] if i["itemId"] == item), None)

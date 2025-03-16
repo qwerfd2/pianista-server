@@ -8,7 +8,7 @@ import random
 from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, MARBLE_DATA
 from api.database import database, results, users
 from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_piano_bonus, get_fc, get_piano_unlock, add_feed, check_marble_achieve
-from api.cache import league_count, league_id
+import api.cache
 
 play_sessions = {}
 lock = Lock()
@@ -236,7 +236,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         totalEXP += first_clear_bonus
 
     bonus = math.floor(totalEXP / 2)
-    expContext.append([6002007, bonus])
+    expContext.append([20000052, bonus])
     totalEXP += bonus
 
     takeGold = 0
@@ -358,7 +358,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             takeGold += first_clear_bonus
 
         bonus = math.floor(takeGold / 2)
-        goldContext.append([6002007, bonus])
+        goldContext.append([20000052, bonus])
         takeGold += bonus
 
     return_obj["goldContext"] = goldContext
@@ -412,24 +412,27 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
 
     else:
         # do league specific saving
-        schedule = next((sched for sched in LEAGUE_SCHEDULE_DATA if sched["c"] == league_count), None)
+        schedule = next((sched for sched in LEAGUE_SCHEDULE_DATA if sched["c"] == api.cache.league_count), None)
         is_best = 0
-
+        
         if music['cps'] == schedule['ci1']:
             if return_obj['score'] > (user['league']['score1'] or 0):
                 is_best = 1
+                print("trig 1")
                 user['league']['musicId1'] = music['c']
                 user['league']['score1'] = return_obj['score']
                 user['league']['patternId1'] = return_obj['patternId']
         if music['cps'] == schedule['ci2']:
             if return_obj['score'] > (user['league']['score2'] or 0):
                 is_best = 2
+                print("trig 2")
                 user['league']['musicId2'] = music['c']
                 user['league']['score2'] = return_obj['score']
                 user['league']['patternId2'] = return_obj['patternId']
         if music['cps'] == schedule['ci3']:
             if return_obj['score'] > (user['league']['score3'] or 0):
                 is_best = 3
+                print("trig 3")
                 user['league']['musicId3'] = music['c']
                 user['league']['score3'] = return_obj['score']
                 user['league']['patternId3'] = return_obj['patternId']
@@ -444,33 +447,27 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         marble_bonus = next(marble for marble in MARBLE_DATA if marble['c'] == user['league']['bonusMarbleId'])
         if not user['league']['marbleAchieve1'] and check_marble_achieve(marble_1, accuracy, pattern["pty"], user['league']['playCount']):
             user['league']['marbleAchieve1'] = True
-            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
 
         if not user['league']['marbleAchieve2'] and check_marble_achieve(marble_2, accuracy, pattern["pty"], user['league']['playCount']):
             user['league']['marbleAchieve2'] = True
-            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
 
         if not user['league']['marbleAchieve3'] and check_marble_achieve(marble_3, accuracy, pattern["pty"], user['league']['playCount']):
             user['league']['marbleAchieve3'] = True
-            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
+            # invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
 
         if not user['league']['bonusMarbleAchieve'] and check_marble_achieve(marble_bonus, accuracy, pattern["pty"], user['league']['playCount']):
             user['league']['bonusMarbleAchieve'] = True
-            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
-
-        if not user['league']['extraMarbleAchieve'] and user['league']['score1'] and user['league']['score2'] and user['league']['score3']:
-            user['league']['extraMarbleAchieve'] = True
-            invoke.append({"name":"itemTradeReceipt","params":[{"itemId":1,"quantity":1,"tag":"marbleCollect"}]})
 
         if is_best:
             field_list = ["", "score1", "score2", "score3"]
             score_list = [entry[field_list[is_best]] for entry in user['league']['leaderboardCache'] if entry[field_list[is_best]] is not None]
 
             if return_obj['score'] > max(score_list):
-                user = add_feed(user, 5, music['cps'], league_id)
+                user = add_feed(user, 5, music['cps'], api.cache.league_id)
 
     # Add user gold and diamond
     user['gold'] += takeGold
+
     if (mode == 0):
         user['gold'] += tour_award_gold
         user['diamond'] += tour_award_gem
@@ -489,6 +486,9 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 if collection['patternId'] in chart_ids:
                     if not collection['clear']:
                         collection['clear'] = True
+    
+    user['gold'] = min(user['gold'], 99999999)
+    user['diamond'] = min(user['diamond'], 99999999)
 
     # Increment composer level
     for composer in user["composer"]:
