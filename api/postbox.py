@@ -8,6 +8,9 @@ from api.crypt import encrypt
 def add_gift(user, item, quantity):
     # you can actually gift pretty much everything. Currencies, charts, pianos, vip time, items, etc. But I will not add all of them here since most are rendered obsolete.
 
+    if item == None or quantity == None:
+        return user
+    
     if item == 1: # gem
         user['diamond'] += quantity
         user['diamond'] = min(user['diamond'], 99999999)
@@ -71,7 +74,8 @@ async def get_item(request):
                 user['mail'].remove(mail)
                 break
         
-        if not item:
+        invoke = []
+        if item:
             response_data = {"code": -101}
         else:
 
@@ -85,12 +89,13 @@ async def get_item(request):
                 piano=user["piano"]
             )
             await database.execute(query)
+            invoke = [{"name": "itemTradeReceipt","params":[{"itemId": item,"quantity": quantity}]}]
 
-            response_data = {
-                "result": None,
-                "code": 100,
-                "invoke": [{"name": "itemTradeReceipt","params": [{"itemId": item,"quantity": quantity}]}]
-            }
+        response_data = {
+            "result": None,
+            "code": 100,
+            "invoke": invoke
+        }
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -107,13 +112,15 @@ async def get_item_all(request):
         if mail["status"] == 0:
             item = mail["item"]
             quantity = mail["quantity"]
-            end_params.append({
-                "itemId": item,
-                "quantity": quantity
-            })
-            mail["status"] = 1
 
-    user["mail"] = [mail for mail in user["mail"] if mail['status']  == 0]
+            if (item and quantity):
+                end_params.append({
+                    "itemId": item,
+                    "quantity": quantity
+                })
+                mail["status"] = 1
+
+    user["mail"] = [mail for mail in user["mail"] if mail['status'] == 0]
     
     for items in end_params:
         user = add_gift(user, items['itemId'], items['quantity'])
