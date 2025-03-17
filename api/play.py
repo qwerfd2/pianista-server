@@ -105,7 +105,8 @@ async def start_game(user, patternId, mode, master, items, var1, var2):
         obj["stageId"] = var1
 
     user = dict(user)
-    cost = 0
+    gold_cost = 0
+    gem_cost = 0
     for item_code in items:
         found = False
         # Check if the user owns the item
@@ -117,16 +118,22 @@ async def start_game(user, patternId, mode, master, items, var1, var2):
                 if user_item["quantity"] <= 0:
                     user['item'].remove(user_item)
         if not found:
-            # Only support coins (why would you need to buy with gem?)
             item = next((item for item in STORE_GAME_ITEM_DATA if item["c"] == item_code), None)
             if item:
-                cost += item["p"]
+                if item["pm"] == 1:
+                    gem_cost += item["p"]
+                else:
+                    gold_cost += item["p"]
 
-    if cost:
-        user['gold'] -= cost
+    if gold_cost:
+        user['gold'] -= gold_cost
+
+    if gem_cost:
+        user['diamond'] -= gem_cost
 
     query = users.update().where(users.c.id == user["id"]).values(
         gold=user["gold"],
+        diamond=user["diamond"],
         item=user["item"]
     )
     await database.execute(query)
