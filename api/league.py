@@ -7,7 +7,6 @@ import random
 from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
 from api.misc import get_user_level, get_user_piano, get_end_of_day, get_league_rank, add_feed
-from api.cache import get_league_leaderboard, load_league_session
 import api.cache
 from api.play import start_game, complete_game
 from api.templates import START_LEAGUE
@@ -17,10 +16,16 @@ async def get_group_status(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
 
-    response_data = {"result":{"objectId":user['league']['leagueId'],"tier":user['league']['tier'],"count":api.cache.league_count,"endAt":user['league']['endAt'],"seasonOff":False},"code":100,"invoke":[]}
+    response_data = {"result":{
+        "objectId":user['league']['leagueId'],
+        "tier":user['league']['tier'],
+        "count":api.cache.league_count,
+        "endAt":user['league']['endAt'],
+        "seasonOff":False
+        },"code":100,"invoke":[]}
 
     if (user['league']['endAt'] < int(time.time() * 1000)):
-        await load_league_session()
+        await api.cache.load_league_session()
         response_data["result"]["seasonOff"] = True
         response_data["invoke"] = [{"name":"availableSeasonOff","params":[]}]
 
@@ -82,7 +87,7 @@ async def get_group_players(request):
         leaderboard = user['league']['leaderboardCache']
 
     else:
-        leaderboard = get_league_leaderboard(user)
+        leaderboard = api.cache.get_league_leaderboard(user)
 
         user = dict(user)
 

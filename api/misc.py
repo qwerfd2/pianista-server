@@ -77,7 +77,7 @@ def get_star(trackid, accuracy):
             return 5
         elif accuracy >= 0.93:
             return 4
-        elif accuracy >= 0.72:
+        elif accuracy >= 0.73:
             return 3
         elif accuracy >= 0.51:
             return 2
@@ -276,3 +276,17 @@ def check_marble_achieve(marble, accuracy, difficulty, play_count):
     elif marble['ic'] == 3 and play_count >= marble['v']:
         return True
     return False
+
+def get_league_gem_reward(league):
+    reward = 0
+    if league['marbleAchieve1']:
+        reward += 1
+    if league['marbleAchieve2']:
+        reward += 1
+    if league['marbleAchieve3']:
+        reward += 1
+    if league['bonusMarbleAchieve']:
+        reward += 1
+    if league['score1'] and league['score2'] and league['score3']:
+        reward += 1
+    return reward
