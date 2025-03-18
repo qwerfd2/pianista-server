@@ -7,12 +7,7 @@ from starlette.routing import Route
 import os
 import asyncio
 
-config = Config("config.env")
-HOST = config("HOST", default="192.168.0.106")
-PORT = int(config("PORT", default=9069))
-DEBUG = config("DEBUG", cast=bool, default=False)
-SSL_CERT = config("SSL_CERT", default=None)
-SSL_KEY = config("SSL_KEY", default=None)
+from config import HOST, PORT, DEBUG, SSL_CERT, SSL_KEY
 
 #server_url = f"http://{HOST}:{PORT}/"
 #server_url = f"https://pianista-cdn.pianista.io"
@@ -85,3 +80,5 @@ if __name__ == "__main__":
     import uvicorn
     ssl_context = (SSL_CERT, SSL_KEY) if SSL_CERT and SSL_KEY else None
     uvicorn.run(app, host=HOST, port=PORT, ssl_certfile=SSL_CERT, ssl_keyfile=SSL_KEY, headers=[("server", "AmazonS3"), ("Content-Type", "application/json;charset=utf-8")])
+
+# Made By Tony  2025.2.25

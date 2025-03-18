@@ -9,6 +9,7 @@ from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HAR
 from api.database import database, results, users
 from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_piano_bonus, get_fc, get_piano_unlock, add_feed, check_marble_achieve
 import api.cache
+from config import CLEAN_SCORE
 
 play_sessions = {}
 lock = Lock()
@@ -170,14 +171,17 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     pianoScore = math.floor(pianoScore)
     accuracy = get_accuracy(miss, fine, good, excellent, marvelous)
     return_obj["accuracy"] = accuracy
-    return_obj["pianoScore"] = pianoScore
     starCount = get_star(return_obj["patternId"], accuracy)
-    return_obj["statScore"] = statScore
 
     all_combo = get_fc(miss, fine, good, excellent, marvelous, maxCombo)
 
     if (mode != 2):
-        return_obj["score"] = orig_score + statScore + pianoScore
+        if CLEAN_SCORE:
+            return_obj["score"] = orig_score
+        else:
+            return_obj["score"] = orig_score + statScore + pianoScore
+            return_obj["pianoScore"] = pianoScore
+            return_obj["statScore"] = statScore
     else:
         difficulty_bonus = [0,2000,5000,10000,30000,60000,90000,120000,150000,180000,210000]
 
@@ -198,7 +202,10 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             accuracy_score += 10000
 
         difficulty_score = difficulty_bonus[pattern["d"]]
-        return_obj["score"] = orig_score + statScore + pianoScore + accuracy_score + difficulty_score
+        if CLEAN_SCORE:
+            return_obj["score"] = orig_score + accuracy_score + difficulty_score
+        else:
+            return_obj["score"] = orig_score + statScore + pianoScore + accuracy_score + difficulty_score
     
     totalEXP = 0
     expContext = []
