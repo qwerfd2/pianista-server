@@ -1,0 +1,6 @@
+databases
+pycryptodome
+Requests
+SQLAlchemy
+starlette
+uvicorn
