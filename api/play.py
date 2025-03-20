@@ -164,7 +164,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     if (orig_score < 0):
         return {"code": orig_score}
     
-    orig_score = math.floor(orig_score)
+    print(orig_score)
     pianoContext = get_user_piano_bonus(user)
     pianoScore = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 0), 0)
     statScore = math.floor(curComposer['stat'] * 0.001 * orig_score)
@@ -432,21 +432,19 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         if music['cps'] == schedule['ci1']:
             if return_obj['score'] > (user['league']['score1'] or 0):
                 is_best = 1
-                print("trig 1")
+
                 user['league']['musicId1'] = music['c']
                 user['league']['score1'] = return_obj['score']
                 user['league']['patternId1'] = return_obj['patternId']
         if music['cps'] == schedule['ci2']:
             if return_obj['score'] > (user['league']['score2'] or 0):
                 is_best = 2
-                print("trig 2")
                 user['league']['musicId2'] = music['c']
                 user['league']['score2'] = return_obj['score']
                 user['league']['patternId2'] = return_obj['patternId']
         if music['cps'] == schedule['ci3']:
             if return_obj['score'] > (user['league']['score3'] or 0):
                 is_best = 3
-                print("trig 3")
                 user['league']['musicId3'] = music['c']
                 user['league']['score3'] = return_obj['score']
                 user['league']['patternId3'] = return_obj['patternId']

@@ -75,10 +75,9 @@ async def get_item(request):
                 break
         
         invoke = []
-        if item:
+        if not item:
             response_data = {"code": -101}
         else:
-
             user = add_gift(user, item, quantity)
 
             query = users.update().where(users.c.id == user["id"]).values(

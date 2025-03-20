@@ -5,6 +5,7 @@ import time
 
 from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, PUBLIC_USER_DATA, MUSIC_DATA
 from api.database import database, results
+from config import CLEAN_SCORE
 
 def generate_random_string(length: int) -> str:
     return ''.join(secrets.choice('abcdefghijklmnopqrstuvwxyz0123456789') for _ in range(length))
@@ -55,7 +56,7 @@ def get_score(trackid, miss, fine, good, excellent, marvelous):
         return -2
 
     ind = 1000000 / total
-    score = math.floor((marvelous * ind) + (excellent * (1/3) * ind) + (good * (0.042) * ind))
+    score = round((marvelous * ind) + (excellent * (1/3) * ind) + (good * (0.042) * ind))
     return score
 
 def get_fc(miss, fine, good, excellent, marvelous, totalCombo):
@@ -193,6 +194,8 @@ async def get_piano_unlock(user, play_session, difficulty, is_master, is_challen
 
 def get_random_score(rank):
     config = [[100000,680000], [150000,700000], [200000,720000], [250000,740000], [300000,760000], [350000,780000], [400000,800000], [450000,820000], [500000,840000], [550000,860000], [600000,880000], [650000,900000], [700000,920000], [750000,940000], [800000,960000], [850000,980000], [900000,1000000], [950000,1100000], [1000000,1200000], [1050000,1300000], [1100000,1310000]]
+    if CLEAN_SCORE:
+        config = [[100000,500000], [150000,550000], [200000,600000], [250000,650000], [300000,700000], [350000,720000], [400000,740000], [450000,780000], [500000,810000], [550000,840000], [600000,870000], [650000,900000], [700000,920000], [750000,940000], [800000,960000], [850000,980000], [900000,1000000], [950000,1000000], [980000,1000000], [990000,1000000], [995000,1000000]]
 
     rank -= 1
     min_score, max_score = config[rank]
