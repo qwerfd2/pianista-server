@@ -2,7 +2,7 @@ from starlette.responses import Response
 from starlette.routing import Route
 import json
 import time
-import random
+import datetime
 
 from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
@@ -25,7 +25,8 @@ async def get_group_status(request):
         },"code":100,"invoke":[]}
 
     if (user['league']['endAt'] < int(time.time() * 1000)):
-        await api.cache.load_league_session()
+        if api.cache.league_count != datetime.datetime.now().day:
+            await api.cache.load_league_session()
         response_data["result"]["seasonOff"] = True
         response_data["invoke"] = [{"name":"availableSeasonOff","params":[]}]
 
@@ -82,7 +83,7 @@ async def get_group_players(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    if api.cache.league_id != user['league']['leagueId']:
+    if api.cache.league_id != user['league']['leagueId'] and user['league']['leagueId'] != 1:
         # This is an old league
         leaderboard = user['league']['leaderboardCache']
 
