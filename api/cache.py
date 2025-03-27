@@ -270,8 +270,6 @@ async def reset_league():
     for user in all_users:
         user = dict(user)
 
-        user['daily'] = 0
-
         leaderboard = get_league_leaderboard(user)
         rank = get_league_rank(leaderboard, user['id'], 0)
 
@@ -285,7 +283,7 @@ async def reset_league():
         else:
             append = "th"
 
-        if (rank < 4 and user['league']['tier'] <= 20):
+        if (rank < 4 and user['league']['tier'] <= 19):
             str_title = 30001000
             str_body_start = 30001003
             str_body_mid = 30001006
@@ -320,7 +318,7 @@ async def reset_league():
 
         user['mail'] = add_mail(user['mail'], str_title, str_body_start + rank_str + str_body_mid + str(gem_reward) + str_body_end, 7, 1, reward)
 
-        query = users.update().where(users.c.id == user['id']).values(mail=user['mail'], daily=user['daily'])
+        query = users.update().where(users.c.id == user['id']).values(mail=user['mail'])
         await database.execute(query)
 
     generate_league_session()

@@ -141,7 +141,7 @@ async def season_off(request):
 
     if rank < 4:
         # promote
-        if (user_tier <= 20):
+        if (user_tier <= 19):
             user_tier += 1
     elif rank > 7:
         # demote
