@@ -4,6 +4,7 @@ from threading import Lock
 import math
 import time
 import random
+import datetime
 
 from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, PATTERN_DATA, MUSIC_DATA, COMPOSER_STAT_DATA, STORE_GAME_ITEM_DATA, LEAGUE_SCHEDULE_DATA, MARBLE_DATA
 from api.database import database, results, users
@@ -164,7 +165,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     if (orig_score < 0):
         return {"code": orig_score}
     
-    print(orig_score)
     pianoContext = get_user_piano_bonus(user)
     pianoScore = next((context["advantageValue"] for context in pianoContext if context["advantageType"] == 0), 0)
     statScore = math.floor(curComposer['stat'] * 0.001 * orig_score)
@@ -240,12 +240,11 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     user = dict(user)
 
     first_clear_bonus = 0
-    if user['daily'] == 0:
+    days_since_epoch = int((datetime.datetime.now() - datetime.datetime(1970, 1, 1)).days)
+    if user['daily'] != days_since_epoch:
         # first clear of the day
         first_clear_bonus = 10
-        user['daily'] = 1
-
-    if first_clear_bonus:
+        user['daily'] = days_since_epoch
         expContext.append([6002001, first_clear_bonus])
         totalEXP += first_clear_bonus
 
