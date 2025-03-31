@@ -303,7 +303,7 @@ async def reset_league():
             str_title = 30001002
             str_body_start = 30001005
             str_body_mid = 30001008
-            str_body_end = 300010011
+            str_body_end = 30001011
             reward = get_rank_reward(tier, 1)
 
         rank_str = str(rank) + append
