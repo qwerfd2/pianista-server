@@ -504,12 +504,13 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     # Increment composer level
     for composer in user["composer"]:
         if composer['composerId'] == composerID:
-            if (composer['stat'] < 20):
+            while composer['stat'] < 20:
                 composer['exp'] += totalEXP
                 if composer['exp'] >= COMPOSER_STAT_DATA[composer['stat'] + 1]['e']:
                     composer['exp'] -= COMPOSER_STAT_DATA[composer['stat'] + 1]['e']
                     composer['stat'] += 1
-                break
+                else:
+                    break
 
     # increment user clear count
     user['clearCount'] += 1

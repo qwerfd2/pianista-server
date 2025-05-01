@@ -59,3 +59,24 @@ League lobbies that contains more than 1 real player, since this is a server mea
 Various useless functionalities such as ToS agreement and welcome music point reward
 
 Security and efficiency (I mean it)
+
+## Config file documentation
+
+### composerdata
+
+`c`: Composer ID
+
+### composerstatdata
+
+`c`: Composer ID
+
+`e`: EXP required to level up
+
+### itemdata
+
+`c`: Item ID
+
+`ct`: Item type
+
+`o`: Entitlement list
+

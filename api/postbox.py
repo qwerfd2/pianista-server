@@ -6,7 +6,8 @@ from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
 
 def add_gift(user, item, quantity):
-    # you can actually gift pretty much everything. Currencies, charts, pianos, vip time, items, etc. But I will not add all of them here since most are rendered obsolete.
+    # you can actually gift pretty much everything. Currencies, charts, pianos, vip time, items, etc. 
+    # But I will not add all of them here since most are rendered obsolete.
 
     if item == None or quantity == None:
         return user
