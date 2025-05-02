@@ -206,7 +206,7 @@ async def start_the_game(request):
         response_data = {"code": -100}
     else:
         patternId = decrypted_data[0]
-        items_used = decrypted_data[2]
+        items_used = decrypted_data[1]
 
         response_data = {
             "result": {},

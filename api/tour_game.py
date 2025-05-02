@@ -87,7 +87,8 @@ async def start_the_game(request):
     else:
         tour_diff = decrypted_data[0]
         tour_id = decrypted_data[1]
-        items_used = decrypted_data[3]
+        items_used = decrypted_data[2]
+        print(decrypted_data)
         is_master = 1
         if tour_diff == 0:
             stage_data = TOUR_NORMAL_STAGE_DATA

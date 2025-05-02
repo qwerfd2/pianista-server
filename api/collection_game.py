@@ -87,8 +87,9 @@ async def start_the_game(request):
     if len(decrypted_data) != 3:
         response_data = {"code": -100}
     else:
+        print(decrypted_data)
         patternId = decrypted_data[0]
-        items_used = decrypted_data[2]
+        items_used = decrypted_data[1]
 
         response_data = {
             "result": {},
