@@ -7,6 +7,8 @@ from api.crypt import encrypt
 from api.cache import get_my_collection_leaderboard_ranking, get_collection_leaderboard
 from api.play import start_game, complete_game
 from api.database import database, results
+from api.templates import FULL_COLLECTION_STATUS
+from config import FULL_UNLOCK
 
 async def get_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -131,7 +133,11 @@ async def get_collection(request):
         "invoke": []
     }
     i = 1
-    for collection in user["collection"]:
+    if FULL_UNLOCK:
+        user_collection = FULL_COLLECTION_STATUS
+    else:
+        user_collection = user['collection']
+    for collection in user_collection:
         i += 1
         collection["objectId"] = i
         collection["owner"] = user["id"]

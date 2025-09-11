@@ -21,7 +21,7 @@ init_templates()
 from api.cache import load_league_session
 from api.play import load_play_session
 load_play_session()
-asyncio.run(load_league_session())
+#asyncio.run()
 
 from api.database import database, init_db
 from api.cache import cache_database, init_cache_db, generate_league_session
@@ -67,6 +67,7 @@ app = Starlette(debug=DEBUG, routes=routes)
 async def startup():
     await database.connect()
     await init_db()
+    await load_league_session()
     await cache_database.connect()
     await init_cache_db()
     await start_cleanup_task()

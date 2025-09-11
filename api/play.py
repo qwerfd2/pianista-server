@@ -10,7 +10,7 @@ from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HAR
 from api.database import database, results, users
 from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_piano_bonus, get_fc, get_piano_unlock, add_feed, check_marble_achieve
 import api.cache
-from config import CLEAN_SCORE
+from config import CLEAN_SCORE, FULL_UNLOCK
 
 play_sessions = {}
 lock = Lock()
@@ -68,6 +68,16 @@ async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
 
 async def start_game(user, patternId, mode, master, items, var1, var2):
+    if mode == 1 and FULL_UNLOCK == False:
+        # check if player owns the song
+        owned = False
+        for collection in user["collection"]:
+            if collection["patternId"] == patternId :
+                owned = True
+                break
+        if not owned:
+            return {"code": -300}
+
     while True:
         objectId = random.randint(1, 999999)
         if str(objectId) not in play_sessions:
@@ -182,7 +192,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             return_obj["score"] = orig_score + statScore + pianoScore
             return_obj["pianoScore"] = pianoScore
             return_obj["statScore"] = statScore
-    else:
+    else: # league mode
         difficulty_bonus = [0,2000,5000,10000,30000,60000,90000,120000,150000,180000,210000]
 
         accuracy_score = 0
@@ -206,6 +216,21 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             return_obj["score"] = orig_score + accuracy_score + difficulty_score
         else:
             return_obj["score"] = orig_score + statScore + pianoScore + accuracy_score + difficulty_score
+
+    if mode == 0:
+        #tour mode, add song and lower difficulties to user collection
+        pattern_id = return_obj["patternId"]
+        song_id = int(str(pattern_id)[:-1])
+        difficulty = int(str(pattern_id)[-1])
+        pattern_ids = [int(f"{song_id}{d}") for d in range(1, difficulty + 1)]
+
+        for p in pattern_ids:
+            if not any(c["patternId"] == p for c in user["collection"]):
+                user["collection"].append({
+                    "patternId": p,
+                    "clear": False,
+                })
+
     
     totalEXP = 0
     expContext = []
@@ -350,7 +375,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             base = 30
 
         takeGold += base
-        if (starCount == 5): # 5 star bonus
+        if (starCount == 5): # 5 star bonus (the numbers below are localization ids in the json file)
             goldContext.append([6002003, 20])
             takeGold += 20
 

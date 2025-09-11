@@ -1,10 +1,9 @@
-from starlette.config import Config
+HOST = "192.168.3.237"
+PORT = 9072
 
-config = Config("config.env")
+CLEAN_SCORE = False
+FULL_UNLOCK = False
 
-HOST = config("HOST", default="192.168.0.106")
-PORT = int(config("PORT", default=9069))
-DEBUG = config("DEBUG", cast=bool, default=False)
-SSL_CERT = config("SSL_CERT", default=None)
-SSL_KEY = config("SSL_KEY", default=None)
-CLEAN_SCORE = config("CLEAN_SCORE", cast=bool, default=False)
+DEBUG = True
+SSL_CERT = None
+SSL_KEY = None

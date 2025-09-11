@@ -4,7 +4,8 @@ import json
 
 from api.database import database, users, get_user_and_validate_session
 from api.crypt import encrypt
-from api.templates import PIANO_UPGRADE_DATA
+from api.templates import PIANO_UPGRADE_DATA, FULL_PIANO_STATUS
+from config import FULL_UNLOCK
 
 async def get_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -13,7 +14,12 @@ async def get_status(request):
     
     result_object = []
     i = 0
-    for piano in user["piano"]:
+    if FULL_UNLOCK:
+        user_piano = FULL_PIANO_STATUS
+    else:
+        user_piano = user['piano']
+
+    for piano in user_piano:
         i += 1
         piano["objectId"] = i
         piano["owner"] = user["id"]

@@ -2,23 +2,16 @@ from starlette.responses import Response
 from starlette.routing import Route
 import json
 import time
+import httpx
 
+from config import FULL_UNLOCK
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt
 from api.misc import generate_random_string
 from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE, RESET_DATA
 
-async def create_authentication(request):
-    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
-
-    if decrypted_data != []:
-        response_data = {"code": -100}
-    else:
-        # processing
-        userId = generate_random_string(32)
-        password = generate_random_string(32)
-
-        query = users.insert().values(
+async def create_insert_user(userId, password):
+    query = users.insert().values(
             userid=userId,
             password=password,
             diamond=0, 
@@ -35,7 +28,19 @@ async def create_authentication(request):
             mail = START_MAIL,
             league = START_LEAGUE,
         )
-        await database.execute(query)
+    await database.execute(query)
+
+async def create_authentication(request):
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+
+    if decrypted_data != []:
+        response_data = {"code": -100}
+    else:
+        # processing
+        userId = generate_random_string(32)
+        password = generate_random_string(32)
+
+        await create_insert_user(userId, password)
 
         response_data = {
             "result": {
@@ -114,6 +119,51 @@ async def create_user_commit(request):
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
+
+async def obtain_user_data(user, userId):
+    query = sessions.select().where(sessions.c.userid == userId)
+    session = await database.fetch_one(query)
+
+    session_token = generate_random_string(200)
+
+    if session:
+        query = sessions.update().where(sessions.c.userid == userId).values(session=session_token)
+        await database.execute(query)
+    else:
+        query = sessions.insert().values(userid=userId, session=session_token)
+        await database.execute(query)
+
+        query = sessions.select().where(sessions.c.userid == userId)
+        session = await database.fetch_one(query)
+
+    response_data = {"result": {
+                        "shardedUser": {
+                            "objectId": user["id"],
+                            "shardId": 2,
+                            "authObjectId": session["id"],
+                            "nickname": user["nickname"],
+                            "channel": 2
+                        },
+                        "unlockTourPack": [],
+                        "user": {
+                            "objectId": user["id"],
+                            "nicknameReset": 0,
+                            "diamond": user["diamond"],
+                            "gold": user["gold"],
+                            "ticket": 0,
+                            "lastTicketCharge": 0,
+                            "lastOnetimeBonus": 0,
+                            "termsAgree": True,
+                            "welcomeGift": True,
+                            "freeTicketEndAt": True,
+                            "createdAt": 1740232040429,
+                            "blocked": 0,
+                            "clearCount": user['clearCount']
+                        }
+                    },
+                    "code": 100,
+                    "invoke": [{"name": "newAccessToken", "params":[session_token]}]}
+    return response_data
     
 async def login(request):
     decrypted_data, user_unused, session_unused, error_response = await get_user_and_validate_session(request)
@@ -121,6 +171,8 @@ async def login(request):
     if len(decrypted_data) != 5:
         response_data = {"code": -100}
     else:
+        # For facebook, these matches as well (uid, token (after graph check))
+        type = decrypted_data[0]
         userId = decrypted_data[1]
         password = decrypted_data[2]
 
@@ -128,48 +180,33 @@ async def login(request):
         user = await database.fetch_one(query)
 
         if user:
-            query = sessions.select().where(sessions.c.userid == userId)
-            session = await database.fetch_one(query)
-
-            session_token = generate_random_string(200)
-
-            if session:
-                query = sessions.update().where(sessions.c.userid == userId).values(session=session_token)
-                await database.execute(query)
+            response_data = await obtain_user_data(user, userId)
+        elif type in [1, 2]:
+            # do oauth create user
+            # Check user creds first
+            if type == 1:
+                # Facebook
+                verification_success = await check_facebook_creds(userId, password)
+                if verification_success:
+                    # SUCCESS, Insert user and return object. Check if token is new (wrong password)
+                    query = users.select().where(users.c.userid == userId)
+                    user = await database.fetch_one(query)
+                    if user is None:
+                        await create_insert_user(userId, password)
+                        query = users.select().where(users.c.userid == userId, users.c.password == password)
+                        user = await database.fetch_one(query)
+                    else:
+                        # update password to the user's token
+                        query = users.update().where(users.c.id == user["id"]).values(password=password)
+                        await database.execute(query)
+                    
+                    response_data = await obtain_user_data(user, userId)
+                else:
+                    response_data = {"code": -201}
             else:
-                query = sessions.insert().values(userid=userId, session=session_token)
-                await database.execute(query)
+                print("Apple not supported yet")
+                response_data = {"code": -101}
 
-                query = sessions.select().where(sessions.c.userid == userId)
-                session = await database.fetch_one(query)
-
-            response_data = {"result": {
-                                "shardedUser": {
-                                    "objectId": user["id"],
-                                    "shardId": 2,
-                                    "authObjectId": session["id"],
-                                    "nickname": user["nickname"],
-                                    "channel": 2
-                                },
-                                "unlockTourPack": [],
-                                "user": {
-                                    "objectId": user["id"],
-                                    "nicknameReset": 0,
-                                    "diamond": user["diamond"],
-                                    "gold": user["gold"],
-                                    "ticket": 0,
-                                    "lastTicketCharge": 0,
-                                    "lastOnetimeBonus": 0,
-                                    "termsAgree": True,
-                                    "welcomeGift": True,
-                                    "freeTicketEndAt": True,
-                                    "createdAt": 1740232040429,
-                                    "blocked": 0,
-                                    "clearCount": user['clearCount']
-                                }
-                            },
-                            "code": 100,
-                            "invoke": [{"name": "newAccessToken", "params":[session_token]}]}
         else:
             response_data = {"code": -101}
 
@@ -205,12 +242,17 @@ async def get_subscription(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
+    if FULL_UNLOCK:
+        remain_days = 90
+    else:
+        remain_days = 0
+    
     response_data = {
         "result": {
             "objectId": 11805,
             "owner": user["id"],
             "holdDays": 0,
-            "remainDays": 90,
+            "remainDays": remain_days,
             "referenceDate": int(time.time() * 1000) - 100000,
             "pastDays": 0
         },
@@ -271,6 +313,37 @@ async def change_nickname_commit(request):
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
 
+async def apple_extend_token(request):
+    # Simply skips apple server check and return success. Need to check jwt
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+
+    if len(decrypted_data) != 1:
+        response_data = {"code": -100}
+    else:
+        token = decrypted_data[0]
+
+    return_object = {
+        "result": token,
+        "code": 100,
+        "invoke": []
+    }
+    encrypted_response = encrypt(return_object)
+    return Response(encrypted_response)
+
+async def check_facebook_creds(username, token):
+    url = "https://graph.facebook.com/me?access_token=" + token
+    async with httpx.AsyncClient() as client:
+        response = await client.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            if data.get("id") == username:
+                return True
+            else:
+                return False
+        else:
+            return False
+
+
 routes = [
     Route('/Account/createAuthentication', create_authentication, methods=["POST"]),
     Route('/Account/createUserBegin', create_user_begin, methods=["POST"]),
@@ -281,4 +354,5 @@ routes = [
     Route('/Account/getSubscription', get_subscription, methods=["POST"]),
     Route('/Account/changeNicknameBegin', change_nickname_begin, methods=["POST"]),
     Route('/Account/changeNicknameCommit', change_nickname_commit, methods=["POST"]),
+    Route('/Apple/extendToken', apple_extend_token, methods=["POST"]),
 ]

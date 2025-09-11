@@ -42,17 +42,21 @@ League reimplementation with bots, limited set of news feed, daily reward which 
 
 nickname change
 
+Full unlock mode (all packs, patterns, and piano unlocked) and normal unlock mode.
+
+Facebook OAuth (beta testing...)
+
 ## Features that will not be supported
 
 Music point related functions (consume, recovery, reward), since the currency has no use.
 
-Most gem related functions (IAP, music pack purchases, music point purchases), since the currency has no use when it comes to the above functions.
+Some gem related functions (IAP, music point purchases), since the currency has no use when it comes to the above functions.
 
-Prestige related function (IAP, time accumulation/decrement, item daily provision), since it is unlocked by default.
+Prestige related function (IAP, time accumulation/decrement, item daily provision), since it is either unlocked by default on full unlock mode or off.
 
 Certain PostBox rewards (patterns, debug, music points), since they are either have no use or is unlocked by default.
 
-Apple and Facebook login methods, since there's no way to get the tokens.
+Apple login, since there's no way to get the tokens.
 
 League lobbies that contains more than 1 real player, since this is a server meant to run locally.
 
