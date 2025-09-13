@@ -34,13 +34,14 @@ from api.tour_game import routes as tour_routes
 from api.postbox import routes as postbox_routes
 from api.shop import routes as shop_routes
 from api.league import routes as league_routes
+from api.web import routes as web_routes
 
 from api.play import start_cleanup_task
 
 #generate_league_session()
 
 root_folder = os.path.dirname(os.path.abspath(__file__))
-allowed_folders = ["bundle", "resource", "data", "manifest"]
+allowed_folders = ["bundle", "resource", "data", "manifest", "web"]
 
 async def serve_file(request):
     path = request.path_params['path']
@@ -57,7 +58,7 @@ async def serve_file(request):
 
 routes = []
 
-routes = routes + platform_routes + account_routes + music_routes + collection_routes + piano_routes + tour_routes + postbox_routes + shop_routes + league_routes
+routes = routes + platform_routes + account_routes + music_routes + collection_routes + piano_routes + tour_routes + postbox_routes + shop_routes + league_routes + web_routes
 
 routes.append(Route("/{path:path}", serve_file))
 

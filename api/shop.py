@@ -30,6 +30,7 @@ async def buy_gold(request):
             user["diamond"] -= cost
             user["gold"] += sku_item["q"]
             user["gold"] += sku_item["bq"]
+            user['gold'] = min(user['gold'], 99999999)
             query = users.update().where(users.c.id == user["id"]).values(
                 diamond=user["diamond"],
                 gold=user["gold"]

@@ -7,10 +7,14 @@ import httpx
 from config import FULL_UNLOCK
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt
-from api.misc import generate_random_string
+from api.misc import generate_random_string, add_mail
 from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE, RESET_DATA
 
-async def create_insert_user(userId, password):
+async def create_insert_user(userId, password, is_oauth):
+    user_mail = START_MAIL.copy()
+    if not is_oauth:
+        user_mail = add_mail(user_mail, "Please Read: Your Account's Backup Key", "Your account was created in Guest Mode.\nIf you change your device or reinstall the game in the future, you would need to migrate your profile.\nTo do so, the Access Key (AK) below is necessary.\nGo to the website provided by the admin, and enter this as the old AK.\nYou will receive the same mail for the new account. Enter this as the new AK.\nBelow is your AK:\n\n" + userId + password + "\n\nTake a screenshot of this message. For security, this mail is only available for 30 days.\nWhen migrating, Existing device will lose their progress.\nThus, do not share the AK with anyone.", 31, None, None)
+
     query = users.insert().values(
             userid=userId,
             password=password,
@@ -25,7 +29,7 @@ async def create_insert_user(userId, password):
             piano = START_PIANO_STATUS,
             tour = START_TOUR_STATUS,
             item = [],
-            mail = START_MAIL,
+            mail = user_mail,
             league = START_LEAGUE,
         )
     await database.execute(query)
@@ -40,7 +44,7 @@ async def create_authentication(request):
         userId = generate_random_string(32)
         password = generate_random_string(32)
 
-        await create_insert_user(userId, password)
+        await create_insert_user(userId, password, False)
 
         response_data = {
             "result": {
@@ -156,7 +160,7 @@ async def obtain_user_data(user, userId):
                             "termsAgree": True,
                             "welcomeGift": True,
                             "freeTicketEndAt": True,
-                            "createdAt": 1740232040429,
+                            "createdAt": user["created_at"],
                             "blocked": 0,
                             "clearCount": user['clearCount']
                         }
@@ -192,7 +196,7 @@ async def login(request):
                     query = users.select().where(users.c.userid == userId)
                     user = await database.fetch_one(query)
                     if user is None:
-                        await create_insert_user(userId, password)
+                        await create_insert_user(userId, password, True)
                         query = users.select().where(users.c.userid == userId, users.c.password == password)
                         user = await database.fetch_one(query)
                     else:

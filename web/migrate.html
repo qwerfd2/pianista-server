@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Migration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/web/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+        }
+        .migration-card {
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 400px;
+            margin: 5% auto;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="migration-card">
+        <h3 class="mb-4 text-center">Profile Migration</h3>
+        <form id="migrationForm">
+            <div class="mb-3">
+                <label for="oldAk" class="form-label">Old Account AK</label>
+                <input type="text" class="form-control" id="oldAk" name="old_ak" required>
+            </div>
+            <div class="mb-3">
+                <label for="newAk" class="form-label">New Account AK</label>
+                <input type="text" class="form-control" id="newAk" name="new_ak" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+        <div id="result" class="mt-3"></div>
+    </div>
+    <script>
+        document.getElementById('migrationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const old_ak = document.getElementById('oldAk').value;
+            const new_ak = document.getElementById('newAk').value;
+            const response = await fetch('/Migrate/Do', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({old_ak, new_ak})
+            });
+            const result = await response.json();
+            alert(`[${result.status.toUpperCase()}] ${result.message}`);
+            if (result.status === "success") {
+                document.getElementById('oldAk').value = "";
+                document.getElementById('newAk').value = "";
+            }
+        });
+</script>
+</body>
+</html>

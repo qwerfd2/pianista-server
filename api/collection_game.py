@@ -17,13 +17,11 @@ async def get_status(request):
     
     result_object = []
 
-    # Find all rows in 'results' table with column 'owner' == user['id']
     query = results.select().where(results.c.owner == user["id"])
     user_results = await database.fetch_all(query)
 
-    # Add the results to result_object
     for i, result in enumerate(user_results, start=0):
-        result_dict = dict(result)  # Convert the Record object to a dictionary
+        result_dict = dict(result)
         result_dict['owner'] = user['id']
         result_object.append(result_dict)
         

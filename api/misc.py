@@ -217,7 +217,7 @@ def add_mail(mail_object, subject, description, expire_days, item, amount):
         "objectId": len(mail_object) + 1,
         "subject": subject,
         "description": description,
-        "expire": int((time.time() + (expire_days * 86400)) * 1000),
+        "expiredAt": int((time.time() + (expire_days * 86400)) * 1000),
         "status": 0,
         "item": item,
         "quantity": amount
