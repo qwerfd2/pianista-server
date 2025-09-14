@@ -44,7 +44,9 @@ nickname change
 
 Full unlock mode (all packs, patterns, and piano unlocked) and normal unlock mode.
 
-Facebook OAuth (beta testing...)
+Facebook OAuth (beta testing, not recommended for use (guest account is migratable))
+
+Guest Account Migration via url/Migrate page.
 
 ## Features that will not be supported
 
