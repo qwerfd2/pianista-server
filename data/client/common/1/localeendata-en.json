@@ -4361,15 +4361,15 @@
     },
     {
         "c": 1004002,
-        "tx": "Press \"TERMS OF USE\" button to check the terms and privacy policy.\nIf you agree, press \"AGREE\" button."
+        "tx": "This private server is free to play. If you payed for it, you've been scammed."
     },
     {
         "c": 1004003,
-        "tx": "TERMS OF USE"
+        "tx": "Discord"
     },
     {
         "c": 1004004,
-        "tx": "AGREE"
+        "tx": "OKAY"
     },
     {
         "c": 1005001,
@@ -4605,7 +4605,7 @@
     },
     {
         "c": 5005002,
-        "tx": "You have enough MUSIC POINT.\nTry again when you have none."
+        "tx": "Private server does not require\nMUSIC POINT to play."
     },
     {
         "c": 5005003,
@@ -4877,11 +4877,11 @@
     },
     {
         "c": 7000004,
-        "tx": "PRIVATE SERVER"
+        "tx": "Discord"
     },
     {
         "c": 7000005,
-        "tx": "PRIVATE SERVER"
+        "tx": "Server Repo"
     },
     {
         "c": 7000007,

@@ -62,7 +62,7 @@ Apple login, since there's no way to get the tokens.
 
 League lobbies that contains more than 1 real player, since this is a server meant to run locally.
 
-Various useless functionalities such as ToS agreement and welcome music point reward
+Various useless functionalities such as welcome music point reward
 
 Security and efficiency (I mean it)
 

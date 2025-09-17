@@ -43,7 +43,7 @@
     },
     {
         "c": 8,
-        "i": 1800,
+        "i": 1,
         "d": null,
         "s": null
     },
@@ -795,7 +795,7 @@
         "c": 9000000,
         "i": null,
         "d": null,
-        "s": "https://github.com/qwerfd2/pianista-server"
+        "s": "https://discord.gg/invite/your-invite-code"
     },
     {
         "c": 9000001,
@@ -807,7 +807,7 @@
         "c": 9000002,
         "i": null,
         "d": null,
-        "s": "https://github.com/qwerfd2/pianista-server"
+        "s": "https://discord.gg/invite/your-invite-code"
     },
     {
         "c": 3000000,

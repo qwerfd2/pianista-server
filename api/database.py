@@ -33,8 +33,8 @@ users = Table(
     Column("piano", JSON, default='[]'),
     Column("tour", JSON, default='[]'),
     Column("item", JSON, default='[]'),
-    Column("mail", JSON, default='[]'),
     Column("league", JSON, default='[]'),
+    Column("termsAgree", Boolean, default=False),
 )
 
 sessions = Table(
@@ -58,6 +58,20 @@ results = Table(
     Column("allCombo", Boolean, nullable=False),
     Column("updatedAt", Integer, default=(time.time() * 1000)),
     Column("master", Boolean, nullable=False)
+)
+
+mails = Table(
+    "mails",
+    metadata,
+    Column("objectId", Integer, primary_key=True, autoincrement=True),
+    Column("owner", Integer, nullable=False),
+    Column("expiredAt", Integer, nullable=True),
+    Column("subject", String, nullable=False),
+    Column("description", String, nullable=False),
+    Column("noticeId", Integer, nullable=True),
+    Column("item", Integer, nullable=True),
+    Column("quantity", Integer, nullable=True),
+    Column("status", Integer, default=0),
 )
 
 async def init_db():

@@ -11,9 +11,6 @@ from api.misc import generate_random_string, add_mail
 from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE, RESET_DATA
 
 async def create_insert_user(userId, password, is_oauth):
-    user_mail = START_MAIL.copy()
-    if not is_oauth:
-        user_mail = add_mail(user_mail, "Please Read: Your Account's Backup Key", "Your account was created in Guest Mode.\nIf you change your device or reinstall the game in the future, you would need to migrate your profile.\nTo do so, the Access Key (AK) below is necessary.\nGo to the website provided by the admin, and enter this as the old AK.\nYou will receive the same mail for the new account. Enter this as the new AK.\nBelow is your AK:\n\n" + userId + password + "\n\nTake a screenshot of this message. For security, this mail is only available for 30 days.\nWhen migrating, Existing device will lose their progress.\nThus, do not share the AK with anyone.", 31, None, None)
 
     query = users.insert().values(
             userid=userId,
@@ -29,10 +26,19 @@ async def create_insert_user(userId, password, is_oauth):
             piano = START_PIANO_STATUS,
             tour = START_TOUR_STATUS,
             item = [],
-            mail = user_mail,
             league = START_LEAGUE,
+            termsAgree = False
         )
-    await database.execute(query)
+    user_id = await database.execute(query)
+
+    user_mail = START_MAIL.copy()
+    if not is_oauth:
+        await add_mail(user_id, "Please Read: Your Account's Backup Key", "Your account was created in Guest Mode.\nIf you change your device or reinstall the game in the future, you would need to migrate your profile.\nTo do so, the Access Key (AK) below is necessary.\nGo to the website provided by the admin, and enter this as the old AK.\nYou will receive the same mail for the new account. Enter this as the new AK.\nBelow is your AK:\n\n" + userId + password + "\n\nTake a screenshot of this message. For security, this mail is only available for 30 days.\nWhen migrating, Existing device will lose their progress.\nThus, do not share the AK with anyone.", 31, None, None, None)
+
+
+
+    for mail in user_mail:
+        await add_mail(user_id, mail["subject"], mail["description"], 99999, mail["item"], mail["quantity"], None)
 
 async def create_authentication(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -157,7 +163,7 @@ async def obtain_user_data(user, userId):
                             "ticket": 0,
                             "lastTicketCharge": 0,
                             "lastOnetimeBonus": 0,
-                            "termsAgree": True,
+                            "termsAgree": user['termsAgree'],
                             "welcomeGift": True,
                             "freeTicketEndAt": True,
                             "createdAt": user["created_at"],
@@ -188,7 +194,7 @@ async def login(request):
         elif type in [1, 2]:
             # do oauth create user
             # Check user creds first
-            if type == 1:
+            if type == 1 and False:
                 # Facebook
                 verification_success = await check_facebook_creds(userId, password)
                 if verification_success:
@@ -207,6 +213,9 @@ async def login(request):
                     response_data = await obtain_user_data(user, userId)
                 else:
                     response_data = {"code": -201}
+            elif type == 1:
+                print("Facebook not supported yet")
+                response_data = {"code": -101}
             else:
                 print("Apple not supported yet")
                 response_data = {"code": -101}
@@ -269,6 +278,8 @@ async def get_subscription(request):
 
 async def change_nickname_begin(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+    if error_response:
+        return Response(encrypt(json.dumps(error_response)))
 
     if len(decrypted_data) != 1:
         response_data = {"code": -100}
@@ -291,6 +302,8 @@ async def change_nickname_begin(request):
     
 async def change_nickname_commit(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+    if error_response:
+        return Response(encrypt(json.dumps(error_response)))
 
     if len(decrypted_data) != 1:
         response_data = {"code": -100}
@@ -313,6 +326,20 @@ async def change_nickname_commit(request):
                 response_data = {"code": -207}
         else:
             response_data = {"code": -102}
+
+    encrypted_response = encrypt(response_data)
+    return Response(encrypted_response)
+
+async def agree_terms(request):
+    decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
+    if error_response:
+        return Response(encrypt(json.dumps(error_response)))
+
+
+    query = users.update().where(users.c.id == user["id"]).values(termsAgree=True)
+    await database.execute(query)
+    response_data = {"result": None, "code": 100, "invoke": []}
+
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -352,6 +379,7 @@ routes = [
     Route('/Account/createAuthentication', create_authentication, methods=["POST"]),
     Route('/Account/createUserBegin', create_user_begin, methods=["POST"]),
     Route('/Account/createUserCommit', create_user_commit, methods=["POST"]),
+    Route('/Account/agreeTerms', agree_terms, methods=["POST"]),
     Route('/Account/login', login, methods=["POST"]),
     Route('/Account/getAdCount', get_ad_count, methods=["POST"]),
     Route('/Account/getGameItemList', get_game_item_list, methods=["POST"]),

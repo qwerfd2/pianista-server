@@ -316,10 +316,8 @@ async def reset_league():
         gem_reward = get_league_gem_reward(user['league'])
         reward += gem_reward
 
-        user['mail'] = add_mail(user['mail'], str_title, str_body_start + rank_str + str_body_mid + str(gem_reward) + str_body_end, 7, 1, reward)
-
-        query = users.update().where(users.c.id == user['id']).values(mail=user['mail'])
-        await database.execute(query)
+        if reward:
+            await add_mail(user['id'], str_title, str_body_start + rank_str + str_body_mid + str(gem_reward) + str_body_end, 7, 1, reward, None)
 
     generate_league_session()
 

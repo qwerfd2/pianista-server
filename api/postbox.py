@@ -1,8 +1,9 @@
 from starlette.responses import Response
 from starlette.routing import Route
 import json
+import time
 
-from api.database import database, users, get_user_and_validate_session
+from api.database import database, users, get_user_and_validate_session, mails
 from api.crypt import encrypt
 
 def add_gift(user, item, quantity):
@@ -37,6 +38,7 @@ def add_gift(user, item, quantity):
             piano_object = {"pianoId": item, "level": 1, "equip": False}
             user["piano"].append(piano_object)
 
+
     return user
 
 async def get_status(request):
@@ -45,9 +47,13 @@ async def get_status(request):
         return Response(encrypt(json.dumps(error_response)))
     
     response_object = []
-    for msg in user['mail']:
-        if (msg['status'] == 0):
-            msg["owner"] = user["id"]
+    query = mails.select().where(mails.c.owner == user["id"])
+    user_mail = await database.fetch_all(query)
+    now_time = int(time.time() * 1000)
+
+    for msg in user_mail:
+        msg = dict(msg)
+        if (msg['status'] != 2 and (msg['expiredAt'] == None or msg['expiredAt'] > now_time)):
             response_object.append(msg)
 
     response_data = {"result":{"over":False,"msg":response_object},"code":100,"invoke":[]}
@@ -67,35 +73,41 @@ async def get_item(request):
 
         item = None
         quantity = None
-        user = dict(user)
-        for mail in user['mail']:
-            if mail["objectId"] == mail_id and mail["status"] == 0:
-                item = mail["item"]
-                quantity = mail["quantity"]
-                user['mail'].remove(mail)
-                break
-        
-        invoke = []
-        if not item:
-            response_data = {"code": -101}
+
+        query = mails.select().where((mails.c.owner == user["id"]) & (mails.c.objectId == mail_id) & (mails.c.status == 0))
+        mail = await database.fetch_one(query)
+        if not mail:
+            response_data = {"code": -100}
+
         else:
-            user = add_gift(user, item, quantity)
+            item = mail["item"]
+            quantity = mail["quantity"]
 
-            query = users.update().where(users.c.id == user["id"]).values(
-                diamond=user["diamond"],
-                gold=user["gold"],
-                item=user["item"],
-                mail=user["mail"],
-                piano=user["piano"]
-            )
-            await database.execute(query)
-            invoke = [{"name": "itemTradeReceipt","params":[{"itemId": item,"quantity": quantity}]}]
+            invoke = []
+            user = dict(user)
+            if item and quantity:
+                user = add_gift(user, item, quantity)
 
-        response_data = {
-            "result": None,
-            "code": 100,
-            "invoke": invoke
-        }
+                query = users.update().where(users.c.id == user["id"]).values(
+                    diamond=user["diamond"],
+                    gold=user["gold"],
+                    item=user["item"],
+                    piano=user["piano"]
+                )
+                await database.execute(query)
+                invoke = [{"name": "itemTradeReceipt","params":[{"itemId": item,"quantity": quantity}]}]
+
+                mail_update = mails.update().where(mails.c.objectId == mail_id).values(status=2)
+                await database.execute(mail_update)
+            else:
+                mail_update = mails.update().where(mails.c.objectId == mail_id).values(status=1)
+                await database.execute(mail_update)
+
+            response_data = {
+                "result": None,
+                "code": 100,
+                "invoke": invoke
+            }
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -105,10 +117,12 @@ async def get_item_all(request):
     if error_response:
         return Response(encrypt(json.dumps(error_response)))
     
-    user = dict(user)
-    end_params = []
+    query = mails.select().where((mails.c.owner == user["id"]) & (mails.c.status == 0))
+    user_mail = await database.fetch_all(query)
     
-    for mail in user['mail']:
+    end_params = []
+
+    for mail in user_mail:
         if mail["status"] == 0:
             item = mail["item"]
             quantity = mail["quantity"]
@@ -118,10 +132,9 @@ async def get_item_all(request):
                     "itemId": item,
                     "quantity": quantity
                 })
-                mail["status"] = 1
-
-    user["mail"] = [mail for mail in user["mail"] if mail['status'] == 0]
-    
+                mail_update = mails.update().where(mails.c.objectId == mail["id"]).values(status=2)
+                await database.execute(mail_update)
+    user = dict(user)
     for items in end_params:
         user = add_gift(user, items['itemId'], items['quantity'])
 
@@ -129,7 +142,6 @@ async def get_item_all(request):
         diamond=user["diamond"],
         gold=user["gold"],
         item=user["item"],
-        mail=user["mail"],
         piano=user["piano"]
     )
     await database.execute(query)

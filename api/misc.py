@@ -4,7 +4,7 @@ import random
 import time
 
 from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, PUBLIC_USER_DATA, MUSIC_DATA
-from api.database import database, results
+from api.database import database, results, mails
 from config import CLEAN_SCORE
 
 def generate_random_string(length: int) -> str:
@@ -212,17 +212,18 @@ def get_rank_reward(rank, status):
     else:
         return config[rank]
     
-def add_mail(mail_object, subject, description, expire_days, item, amount):
-    mail_object.append({
-        "objectId": len(mail_object) + 1,
-        "subject": subject,
-        "description": description,
-        "expiredAt": int((time.time() + (expire_days * 86400)) * 1000),
-        "status": 0,
-        "item": item,
-        "quantity": amount
-    })
-    return mail_object
+async def add_mail(user_id, subject, description, expire_days, item, amount, notice_id):
+    query = mails.insert().values(
+        owner=user_id,
+        subject=subject,
+        description=description,
+        expiredAt=int((time.time() + (expire_days * 86400)) * 1000),
+        status=0,
+        item=item,
+        quantity=amount,
+        noticeId=notice_id
+    )
+    await database.execute(query)
 
 def random_public_info(rank):
 

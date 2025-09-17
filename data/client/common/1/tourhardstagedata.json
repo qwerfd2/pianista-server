@@ -10,7 +10,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 1212,
         "pr": null
     },
@@ -25,7 +25,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 312,
         "pr": null
     },
@@ -40,7 +40,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 812,
         "pr": null
     },
@@ -55,7 +55,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 212,
         "pr": null
     },
@@ -70,7 +70,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 512,
         "pr": null
     },
@@ -85,7 +85,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 912,
         "pr": null
     },
@@ -100,7 +100,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 1112,
         "pr": null
     },
@@ -115,7 +115,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 1712,
         "pr": null
     },
@@ -130,7 +130,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 1512,
         "pr": null
     },
@@ -145,7 +145,7 @@
         "mt2": 1,
         "mv2": 150,
         "gr": 1500,
-        "jr": null,
+        "jr": 1,
         "ptr": 122,
         "pr": 400007
     },
@@ -160,7 +160,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 222,
         "pr": null
     },
@@ -175,7 +175,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 112,
         "pr": null
     },
@@ -190,7 +190,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1322,
         "pr": null
     },
@@ -205,7 +205,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 922,
         "pr": null
     },
@@ -220,7 +220,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1612,
         "pr": null
     },
@@ -235,7 +235,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 322,
         "pr": null
     },
@@ -250,7 +250,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1122,
         "pr": null
     },
@@ -265,7 +265,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1012,
         "pr": null
     },
@@ -280,7 +280,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1722,
         "pr": null
     },
@@ -295,7 +295,7 @@
         "mt2": 1,
         "mv2": 390,
         "gr": 2000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1812,
         "pr": 400008
     },
@@ -310,7 +310,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 722,
         "pr": null
     },
@@ -325,7 +325,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1032,
         "pr": null
     },
@@ -340,7 +340,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1312,
         "pr": null
     },
@@ -355,7 +355,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1022,
         "pr": null
     },
@@ -370,7 +370,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1222,
         "pr": null
     },
@@ -385,7 +385,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1332,
         "pr": null
     },
@@ -400,7 +400,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1822,
         "pr": null
     },
@@ -415,7 +415,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1732,
         "pr": null
     },
@@ -430,7 +430,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 412,
         "pr": null
     },
@@ -445,7 +445,7 @@
         "mt2": 1,
         "mv2": 338,
         "gr": 2500,
-        "jr": null,
+        "jr": 1,
         "ptr": 1522,
         "pr": 400009
     },
@@ -460,7 +460,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1622,
         "pr": null
     },
@@ -475,7 +475,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1132,
         "pr": null
     },
@@ -490,7 +490,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 132,
         "pr": null
     },
@@ -505,7 +505,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 932,
         "pr": null
     },
@@ -520,7 +520,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 712,
         "pr": null
     },
@@ -535,7 +535,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 332,
         "pr": null
     },
@@ -550,7 +550,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 522,
         "pr": null
     },
@@ -565,7 +565,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 432,
         "pr": null
     },
@@ -580,7 +580,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 822,
         "pr": null
     },
@@ -595,7 +595,7 @@
         "mt2": 1,
         "mv2": 350,
         "gr": 3200,
-        "jr": null,
+        "jr": 1,
         "ptr": 622,
         "pr": 400010
     },
@@ -610,7 +610,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1200,
-        "jr": null,
+        "jr": 1,
         "ptr": 232,
         "pr": null
     },
@@ -625,7 +625,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1200,
-        "jr": null,
+        "jr": 1,
         "ptr": 422,
         "pr": null
     },
@@ -640,7 +640,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1200,
-        "jr": null,
+        "jr": 1,
         "ptr": 1632,
         "pr": null
     },
@@ -655,7 +655,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1200,
-        "jr": null,
+        "jr": 1,
         "ptr": 1422,
         "pr": null
     },
@@ -670,7 +670,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1200,
-        "jr": null,
+        "jr": 1,
         "ptr": 1532,
         "pr": null
     },
@@ -685,7 +685,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1200,
-        "jr": null,
+        "jr": 1,
         "ptr": 532,
         "pr": null
     },
@@ -700,7 +700,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1432,
         "pr": null
     },
@@ -715,7 +715,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1700,
-        "jr": null,
+        "jr": 1,
         "ptr": 832,
         "pr": null
     },
@@ -730,7 +730,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1700,
-        "jr": null,
+        "jr": 1,
         "ptr": 612,
         "pr": null
     },
@@ -745,7 +745,7 @@
         "mt2": 1,
         "mv2": 200,
         "gr": 4000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1412,
         "pr": 400011
     },
@@ -760,7 +760,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 1912,
         "pr": null
     },
@@ -775,7 +775,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1942,
         "pr": null
     },
@@ -790,7 +790,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1922,
         "pr": null
     },
@@ -805,7 +805,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1952,
         "pr": null
     },
@@ -820,7 +820,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1932,
         "pr": null
     },
@@ -835,7 +835,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2012,
         "pr": null
     },
@@ -850,7 +850,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1142,
         "pr": null
     },
@@ -865,7 +865,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 542,
         "pr": null
     },
@@ -880,7 +880,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 442,
         "pr": null
     },
@@ -895,7 +895,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2022,
         "pr": null
     },
@@ -910,7 +910,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2122,
         "pr": null
     },
@@ -925,7 +925,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 852,
         "pr": null
     },
@@ -940,7 +940,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 2112,
         "pr": null
     },
@@ -955,7 +955,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 842,
         "pr": null
     },
@@ -970,7 +970,7 @@
         "mt2": 1,
         "mv2": 500,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2132,
         "pr": null
     },
@@ -985,7 +985,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2332,
         "pr": null
     },
@@ -1000,7 +1000,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 2222,
         "pr": null
     },
@@ -1015,7 +1015,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 2322,
         "pr": null
     },
@@ -1030,7 +1030,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2312,
         "pr": null
     },
@@ -1045,7 +1045,7 @@
         "mt2": 1,
         "mv2": 650,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2212,
         "pr": null
     },
@@ -1060,7 +1060,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2032
     },
     {
@@ -1074,7 +1074,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1742
     },
     {
@@ -1088,7 +1088,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 452
     },
     {
@@ -1102,7 +1102,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1752
     },
     {
@@ -1116,7 +1116,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2232,
         "pr": null
     },
@@ -1131,7 +1131,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 142
     },
     {
@@ -1145,7 +1145,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 242
     },
     {
@@ -1159,7 +1159,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1542
     },
     {
@@ -1173,7 +1173,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 462
     },
     {
@@ -1187,7 +1187,7 @@
         "mt2": 1,
         "mv2": 550,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 552,
         "pr": null
     },
@@ -1202,7 +1202,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2412
     },
     {
@@ -1216,7 +1216,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 2432
     },
     {
@@ -1230,7 +1230,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 2522
     },
     {
@@ -1244,7 +1244,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2422
     },
     {
@@ -1258,7 +1258,7 @@
         "mt2": 1,
         "mv2": 500,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2512
     },
     {
@@ -1272,7 +1272,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 562
     },
     {
@@ -1286,7 +1286,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1442
     },
     {
@@ -1300,7 +1300,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 342
     },
     {
@@ -1314,7 +1314,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1832
     },
     {
@@ -1328,7 +1328,7 @@
         "mt2": 1,
         "mv2": 300,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 862
     },
     {
@@ -1342,7 +1342,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2532
     },
     {
@@ -1356,7 +1356,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 252
     },
     {
@@ -1370,7 +1370,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1642
     },
     {
@@ -1384,7 +1384,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1552
     },
     {
@@ -1398,7 +1398,7 @@
         "mt2": 1,
         "mv2": 500,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1452
     },
     {
@@ -1412,7 +1412,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 1342
     },
     {
@@ -1426,7 +1426,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 742
     },
     {
@@ -1440,7 +1440,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 472
     },
     {
@@ -1454,7 +1454,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1042
     },
     {
@@ -1468,7 +1468,7 @@
         "mt2": 1,
         "mv2": 500,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 872
     },
     {
@@ -1482,7 +1482,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2342
     },
     {
@@ -1496,7 +1496,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 2052
     },
     {
@@ -1510,7 +1510,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 942
     },
     {
@@ -1524,7 +1524,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2042
     },
     {
@@ -1538,7 +1538,7 @@
         "mt2": 1,
         "mv2": 1000,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1842
     },
     {
@@ -1552,7 +1552,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 152
     },
     {
@@ -1566,7 +1566,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 482
     },
     {
@@ -1580,7 +1580,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 1762
     },
     {
@@ -1594,7 +1594,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1232
     },
     {
@@ -1608,7 +1608,7 @@
         "mt2": 1,
         "mv2": 400,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1962
     },
     {
@@ -1622,7 +1622,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 162
     },
     {
@@ -1636,7 +1636,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 572
     },
     {
@@ -1650,7 +1650,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 2142
     },
     {
@@ -1664,7 +1664,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 1462
     },
     {
@@ -1678,7 +1678,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 882
     },
     {
@@ -1692,7 +1692,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2612
     },
     {
@@ -1706,7 +1706,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 352
     },
     {
@@ -1720,7 +1720,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 2542
     },
     {
@@ -1734,7 +1734,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2622
     },
     {
@@ -1748,7 +1748,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2632
     },
     {
@@ -1762,7 +1762,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 362
     },
     {
@@ -1776,7 +1776,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 1152
     },
     {
@@ -1790,7 +1790,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 492
     },
     {
@@ -1804,7 +1804,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 172
     },
     {
@@ -1818,7 +1818,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 582
     },
     {
@@ -1832,7 +1832,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 2712
     },
     {
@@ -1846,7 +1846,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 2812
     },
     {
@@ -1860,7 +1860,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 2722
     },
     {
@@ -1874,7 +1874,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2822
     },
     {
@@ -1888,7 +1888,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 2732
     },
     {
@@ -1902,7 +1902,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100133002
     },
     {
@@ -1916,7 +1916,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100134002
     },
     {
@@ -1930,7 +1930,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100135002
     },
     {
@@ -1944,7 +1944,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100136002
     },
     {
@@ -1958,7 +1958,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100137002
     },
     {
@@ -1972,7 +1972,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100138002
     },
     {
@@ -1986,7 +1986,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100139002
     },
     {
@@ -2000,7 +2000,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100140002
     },
     {
@@ -2014,7 +2014,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100141002
     },
     {
@@ -2028,7 +2028,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100142002
     },
     {
@@ -2042,7 +2042,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100143002
     },
     {
@@ -2056,7 +2056,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100144002
     },
     {
@@ -2070,7 +2070,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100145002
     },
     {
@@ -2084,7 +2084,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100146002
     },
     {
@@ -2098,7 +2098,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100147002
     },
     {
@@ -2112,7 +2112,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100148002
     },
     {
@@ -2126,7 +2126,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100149002
     },
     {
@@ -2140,7 +2140,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100150002
     },
     {
@@ -2154,7 +2154,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100151002
     },
     {
@@ -2168,7 +2168,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 732
     },
     {
@@ -2182,7 +2182,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100152002
     },
     {
@@ -2196,7 +2196,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100153002
     },
     {
@@ -2210,7 +2210,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100154002
     },
     {
@@ -2224,7 +2224,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100155002
     },
     {
@@ -2238,7 +2238,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100156002
     },
     {
@@ -2252,7 +2252,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100160002
     },
     {
@@ -2266,7 +2266,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100157002
     },
     {
@@ -2280,7 +2280,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100159002
     },
     {
@@ -2294,7 +2294,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100161002
     },
     {
@@ -2308,7 +2308,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100158002
     },
     {
@@ -2322,7 +2322,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100162002
     },
     {
@@ -2336,7 +2336,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100163002
     },
     {
@@ -2350,7 +2350,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100164002
     },
     {
@@ -2364,7 +2364,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100165002
     },
     {
@@ -2378,7 +2378,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100166002
     },
     {
@@ -2392,7 +2392,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100167002
     },
     {
@@ -2406,7 +2406,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100168002
     },
     {
@@ -2420,7 +2420,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100169002
     },
     {
@@ -2434,7 +2434,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100170002
     },
     {
@@ -2448,7 +2448,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100171002
     },
     {
@@ -2462,7 +2462,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100172002
     },
     {
@@ -2476,7 +2476,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100173002
     },
     {
@@ -2490,7 +2490,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100174002
     },
     {
@@ -2504,7 +2504,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100175002
     },
     {
@@ -2518,7 +2518,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100176002
     },
     {
@@ -2532,7 +2532,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100177002
     },
     {
@@ -2546,7 +2546,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100178002
     },
     {
@@ -2560,7 +2560,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100179002
     },
     {
@@ -2574,7 +2574,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100180002
     },
     {
@@ -2588,7 +2588,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100181002
     },
     {
@@ -2602,7 +2602,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100182002
     },
     {
@@ -2616,7 +2616,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100183002
     },
     {
@@ -2630,7 +2630,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100184002
     },
     {
@@ -2644,7 +2644,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100185002
     },
     {
@@ -2658,7 +2658,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100186002
     },
     {
@@ -2672,7 +2672,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100187002
     },
     {
@@ -2686,7 +2686,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100188002
     },
     {
@@ -2700,7 +2700,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100189002
     },
     {
@@ -2714,7 +2714,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100190002
     },
     {
@@ -2728,7 +2728,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100191002
     },
     {
@@ -2742,7 +2742,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100192002
     },
     {
@@ -2756,7 +2756,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100193002
     },
     {
@@ -2770,7 +2770,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100194002
     },
     {
@@ -2784,7 +2784,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100195002
     },
     {
@@ -2798,7 +2798,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100196002
     },
     {
@@ -2812,7 +2812,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100197002
     },
     {
@@ -2826,7 +2826,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100198002
     },
     {
@@ -2840,7 +2840,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100199002
     },
     {
@@ -2854,7 +2854,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100200002
     },
     {
@@ -2868,7 +2868,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100201002
     },
     {
@@ -2882,7 +2882,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100202002
     },
     {
@@ -2896,7 +2896,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100203002
     },
     {
@@ -2910,7 +2910,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100204002
     },
     {
@@ -2924,7 +2924,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100205002
     },
     {
@@ -2938,7 +2938,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100206002
     },
     {
@@ -2952,7 +2952,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100207002
     },
     {
@@ -2966,7 +2966,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100208002
     },
     {
@@ -2980,7 +2980,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100209002
     },
     {
@@ -2994,7 +2994,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100210002
     },
     {
@@ -3008,7 +3008,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100211002
     },
     {
@@ -3022,7 +3022,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 600,
-        "jr": null,
+        "jr": 1,
         "ptr": 100212002
     },
     {
@@ -3036,7 +3036,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 800,
-        "jr": null,
+        "jr": 1,
         "ptr": 100213002
     },
     {
@@ -3050,7 +3050,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 1000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100214002
     },
     {
@@ -3064,7 +3064,7 @@
         "mt2": null,
         "mv2": null,
         "gr": 700,
-        "jr": null,
+        "jr": 1,
         "ptr": 100215002
     },
     {
@@ -3078,7 +3078,7 @@
         "mt2": 1,
         "mv2": 700,
         "gr": 3000,
-        "jr": null,
+        "jr": 1,
         "ptr": 100216002
     }
 ]
