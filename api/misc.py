@@ -204,7 +204,7 @@ def get_random_score(rank):
 
 def get_rank_reward(rank, status):
     rank += 1
-    config = [0,1,2,3,4,6,8,10,12,15,18,21,24,28,32,36,40,45,50,56,62,68]
+    config = [0,1,2,3,5,7,9,12,15,18,22,26,30,35,40,45,51,57,63,70,77,84]
     if status == 0:
         return 0
     elif status == 1:

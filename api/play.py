@@ -10,7 +10,7 @@ from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HAR
 from api.database import database, results, users
 from api.misc import get_score, get_accuracy, get_star, get_fc, get_user_piano_bonus, get_fc, get_piano_unlock, add_feed, check_marble_achieve
 import api.cache
-from config import CLEAN_SCORE, FULL_UNLOCK
+from config import CLEAN_SCORE
 
 play_sessions = {}
 lock = Lock()
@@ -68,7 +68,7 @@ async def start_cleanup_task():
     asyncio.create_task(cleanup_expired_sessions())
 
 async def start_game(user, patternId, mode, master, items, var1, var2):
-    if mode == 1 and FULL_UNLOCK == False:
+    if mode == 1:
         # check if player owns the song
         owned = False
         for collection in user["collection"]:

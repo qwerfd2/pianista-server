@@ -74,6 +74,15 @@ mails = Table(
     Column("status", Integer, default=0),
 )
 
+admins = Table(
+    "admins",
+    metadata,
+    Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("username", String(32), unique=True, nullable=False),
+    Column("password", String(64), nullable=False),
+    Column("token", String(256), unique=True, nullable=True)
+)
+
 async def init_db():
     if not os.path.exists(DB_PATH):
         print("[DB] Creating new database:", DB_PATH)

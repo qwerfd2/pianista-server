@@ -4,10 +4,9 @@ import json
 
 from api.database import get_user_and_validate_session, database, users
 from api.crypt import encrypt
-from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, FULL_TOUR_STATUS, TOUR_PACK_DATA, MUSIC_DATA
+from api.templates import TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, TOUR_PACK_DATA, MUSIC_DATA
 from api.cache import get_my_tour_leaderboard_ranking, get_tour_leaderboard
 from api.play import start_game, complete_game
-from config import FULL_UNLOCK
 
 async def get_status(request):
     decrypted_data, user, session, error_response = await get_user_and_validate_session(request)
@@ -17,12 +16,7 @@ async def get_status(request):
     result_object = []
     i = 0
 
-    if FULL_UNLOCK:
-        user_tour = FULL_TOUR_STATUS
-    else:
-        user_tour = user['tour']
-
-    for tour in user_tour:
+    for tour in user['tour']:
         i += 1
         tour["objectId"] = i
         tour["owner"] = user["id"]

@@ -56,7 +56,7 @@ Some gem related functions (IAP, music point purchases), since the currency has 
 
 Prestige related function (IAP, time accumulation/decrement, item daily provision), since it is either unlocked by default on full unlock mode or off.
 
-Certain PostBox rewards (patterns, debug, music points), since they are either have no use or is unlocked by default.
+Certain PostBox rewards (debug and music points), since they have no use.
 
 Apple login, since there's no way to get the tokens.
 

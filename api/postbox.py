@@ -4,6 +4,7 @@ import json
 import time
 
 from api.database import database, users, get_user_and_validate_session, mails
+from api.templates import ITEM_DATA
 from api.crypt import encrypt
 
 def add_gift(user, item, quantity):
@@ -13,31 +14,52 @@ def add_gift(user, item, quantity):
     if item == None or quantity == None:
         return user
     
-    if item == 1: # gem
+    item_object = next((i for i in ITEM_DATA if i["c"] == item), None)
+
+    if not item_object:
+        print(f"reward invalid: item {item} not found in ITEM_DATA")
+        return user
+    
+    if item_object['ct'] == 0: # gem
         user['diamond'] += quantity
         user['diamond'] = min(user['diamond'], 99999999)
-
-    elif item == 2: # gold
+    
+    elif item_object['ct'] == 1: # gold
         user['gold'] += quantity
         user['gold'] = min(user['gold'], 99999999)
+        
+    elif item_object['ct'] == 2: # music point
+        print("reward invalid: music point not supported")
 
-    elif item > 500000 and item < 700000: # items
-        user_item = next((i for i in user['item'] if i["itemId"] == item), None)
-        if user_item:
-            for u_item in user["item"]:
-                if u_item["itemId"] == item:
-                    u_item["quantity"] += 1
+    elif item_object['ct'] == 3: # chart
+        chart_object = next((chart for chart in user['collection'] if chart["patternId"] == item), None)
+        if chart_object == None:
+            chart_object = {"patternId": item, "clear": False}
+            user["collection"].append(chart_object)
 
-        else:
-            item_object = {"itemId": item, "quantity": quantity}
-            user["item"].append(item_object)
-
-    elif item >= 400000 and item < 500000: # pianos
+    elif item_object['ct'] == 4: # piano
         piano_object = next((piano for piano in user['piano'] if piano["pianoId"] == item), None)
         if piano_object == None:
             piano_object = {"pianoId": item, "level": 1, "equip": False}
             user["piano"].append(piano_object)
 
+    elif item_object['ct'] in [5, 6]: # shield and hp, tools
+        user_item = next((i for i in user['item'] if i["itemId"] == item), None)
+        if user_item:
+            for u_item in user["item"]:
+                if u_item["itemId"] == item:
+                    u_item["quantity"] += quantity
+
+        else:
+            item_object = {"itemId": item, "quantity": quantity}
+            user["item"].append(item_object)
+
+    elif item_object['ct'] == 7: # vip time
+        print("reward invalid: vip time not supported")
+
+    else:
+        print(f"reward invalid: item {item} has unknown ct {item_object['ct']}")
+        return user
 
     return user
 
@@ -92,6 +114,7 @@ async def get_item(request):
                     diamond=user["diamond"],
                     gold=user["gold"],
                     item=user["item"],
+                    collection=user["collection"],
                     piano=user["piano"]
                 )
                 await database.execute(query)

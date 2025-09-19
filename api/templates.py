@@ -1,6 +1,8 @@
 import json
 import os
 
+from sqlalchemy import true
+
 MUSIC_DATA = []
 PATTERN_DATA = []
 PIANO_DATA = []
@@ -114,14 +116,31 @@ def init_templates():
         with open(os.path.join(start_base_path, 'start_mail.json'), 'r', encoding='utf-8') as f:
             START_MAIL = json.load(f)
 
-        with open(os.path.join(start_base_path, 'full_tour_status.json'), 'r', encoding='utf-8') as f:
-            FULL_TOUR_STATUS = json.load(f)
+        for item in ITEM_DATA:
+            if item['ct'] == 3: # patterns
+                FULL_COLLECTION_STATUS.append({
+                    "patternId": item['c'],
+                    "clear": False
+                })
 
-        with open(os.path.join(start_base_path, 'full_collection_status.json'), 'r', encoding='utf-8') as f:
-            FULL_COLLECTION_STATUS = json.load(f)
+        for piano in PIANO_DATA:
+            FULL_PIANO_STATUS.append({
+                "pianoId": piano['c'],
+                "level": 30,
+                "equip": False
+            })
+        FULL_PIANO_STATUS[0]['equip'] = True
 
-        with open(os.path.join(start_base_path, 'full_piano_status.json'), 'r', encoding='utf-8') as f:
-            FULL_PIANO_STATUS = json.load(f)
+        for tour in TOUR_PACK_DATA:
+            FULL_TOUR_STATUS.append({
+                "packId": tour['c'],
+                "unlocked": True,
+                "easyLastStage": 0,
+                "normalLastStage": 0,
+                "hardLastStage": 0,
+                "masterLastStage": 0,
+                "totalClearStage": 0
+            })
 
         print("[TEMPLATES] Templates initialized successfully.")
 

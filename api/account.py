@@ -8,9 +8,12 @@ from config import FULL_UNLOCK
 from api.database import database, users, sessions, get_user_and_validate_session
 from api.crypt import encrypt
 from api.misc import generate_random_string, add_mail
-from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE, RESET_DATA
+from api.templates import START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL, START_LEAGUE, RESET_DATA, FULL_COLLECTION_STATUS, FULL_PIANO_STATUS, FULL_TOUR_STATUS
 
 async def create_insert_user(userId, password, is_oauth):
+    collection_status = FULL_COLLECTION_STATUS if FULL_UNLOCK else START_COLLECTION_STATUS
+    piano_status = FULL_PIANO_STATUS if FULL_UNLOCK else START_PIANO_STATUS
+    tour_status = FULL_TOUR_STATUS if FULL_UNLOCK else START_TOUR_STATUS
 
     query = users.insert().values(
             userid=userId,
@@ -21,23 +24,20 @@ async def create_insert_user(userId, password, is_oauth):
             clearCount = 0,
             daily = 0,
             composer = START_COMPOSER_STATUS,
-            collection = START_COLLECTION_STATUS,
+            collection = collection_status,
             clear = [],
-            piano = START_PIANO_STATUS,
-            tour = START_TOUR_STATUS,
+            piano = piano_status,
+            tour = tour_status,
             item = [],
             league = START_LEAGUE,
             termsAgree = False
         )
     user_id = await database.execute(query)
 
-    user_mail = START_MAIL.copy()
     if not is_oauth:
         await add_mail(user_id, "Please Read: Your Account's Backup Key", "Your account was created in Guest Mode.\nIf you change your device or reinstall the game in the future, you would need to migrate your profile.\nTo do so, the Access Key (AK) below is necessary.\nGo to the website provided by the admin, and enter this as the old AK.\nYou will receive the same mail for the new account. Enter this as the new AK.\nBelow is your AK:\n\n" + userId + password + "\n\nTake a screenshot of this message. For security, this mail is only available for 30 days.\nWhen migrating, Existing device will lose their progress.\nThus, do not share the AK with anyone.", 31, None, None, None)
 
-
-
-    for mail in user_mail:
+    for mail in START_MAIL:
         await add_mail(user_id, mail["subject"], mail["description"], 99999, mail["item"], mail["quantity"], None)
 
 async def create_authentication(request):
@@ -215,13 +215,13 @@ async def login(request):
                     response_data = {"code": -201}
             elif type == 1:
                 print("Facebook not supported yet")
-                response_data = {"code": -101}
+                response_data = {"code": -103}
             else:
                 print("Apple not supported yet")
-                response_data = {"code": -101}
+                response_data = {"code": -102}
 
         else:
-            response_data = {"code": -101}
+            response_data = {"code": -200}
 
     encrypted_response = encrypt(response_data)
     return Response(encrypted_response)
@@ -373,7 +373,6 @@ async def check_facebook_creds(username, token):
                 return False
         else:
             return False
-
 
 routes = [
     Route('/Account/createAuthentication', create_authentication, methods=["POST"]),
