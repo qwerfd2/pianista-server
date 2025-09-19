@@ -44,9 +44,11 @@ nickname change
 
 Full unlock mode (all packs, patterns, and piano unlocked) and normal unlock mode.
 
-Facebook OAuth (beta testing, not recommended for use (guest account is migratable, server must have access to facebook, etc.))
+Facebook OAuth (beta testing, not recommended for use, disabled in code now (guest account is migratable, server must have access to facebook, etc.))
 
-Guest Account Migration via url/Migrate page.
+Guest Account Migration via webpage /Migrate.
+
+Admin database management page /Login. Create admin account in the `admins` table - generate your own `bcrypt` hash for password.
 
 ## Features that will not be supported
 
@@ -56,7 +58,7 @@ Some gem related functions (IAP, music point purchases), since the currency has 
 
 Prestige related function (IAP, time accumulation/decrement, item daily provision), since it is either unlocked by default on full unlock mode or off.
 
-Certain PostBox rewards (debug and music points), since they have no use.
+Certain PostBox rewards (debug, prestige time, music points), since they have no use.
 
 Apple login, since there's no way to get the tokens.
 
