@@ -40,7 +40,9 @@ async def web_login_page(request: Request):
 async def web_admin_page(request: Request):
     adm = await is_admin(request)
     if not adm:
-        return RedirectResponse(url="/Login")
+        response = RedirectResponse(url="/Login")
+        response.delete_cookie("token")
+        return response
     with open("web/admin.html", "r", encoding="utf-8") as file:
         html_template = file.read()
     return HTMLResponse(content=html_template)
@@ -155,10 +157,16 @@ async def web_admin_get_table(request: Request):
     if sort in allowed_fields:
         col = getattr(table.c, sort, None)
         if col is not None:
-            if dir_ == "desc":
-                query = query.order_by(col.desc())
+            if isinstance(col.type, sqlalchemy.types.String):
+                if dir_ == "desc":
+                    query = query.order_by(sqlalchemy.func.lower(col).desc())
+                else:
+                    query = query.order_by(sqlalchemy.func.lower(col).asc())
             else:
-                query = query.order_by(col.asc())
+                if dir_ == "desc":
+                    query = query.order_by(col.desc())
+                else:
+                    query = query.order_by(col.asc())
 
     # Pagination
     offset = (page - 1) * size

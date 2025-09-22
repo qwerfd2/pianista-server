@@ -68,6 +68,10 @@ Various useless functionalities such as welcome music point reward
 
 Security and efficiency (I mean it)
 
+## Known issues
+
+Tour easy/normal/technical stage will not be unlocked after previous stage pass until game restart. (database object is clearly correctly written, packet is the same format as well, so I don't really know why)
+
 ## Config file documentation
 
 ### composerdata

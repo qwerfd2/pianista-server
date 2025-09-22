@@ -106,13 +106,14 @@ async def start_game(user, patternId, mode, master, items, var1, var2):
             "tier3": None,
             "tier4": None,
             "status": 0,
-            "master": master,
             "startAt": int(time.time() * 1000),
             "endAt": None
         }
-    if mode == 0:
+    if mode == 0: # tour
         obj["type"] = var1
         obj["stageId"] = var2
+        if var1 == 2:
+            obj["master"] = master
     else:
         obj["stageId"] = var1
 
@@ -217,21 +218,6 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         else:
             return_obj["score"] = orig_score + statScore + pianoScore + accuracy_score + difficulty_score
 
-    if mode == 0:
-        #tour mode, add song and lower difficulties to user collection
-        pattern_id = return_obj["patternId"]
-        song_id = int(str(pattern_id)[:-1])
-        difficulty = int(str(pattern_id)[-1])
-        pattern_ids = [int(f"{song_id}{d}") for d in range(1, difficulty + 1)]
-
-        for p in pattern_ids:
-            if not any(c["patternId"] == p for c in user["collection"]):
-                user["collection"].append({
-                    "patternId": p,
-                    "clear": False,
-                })
-
-    
     totalEXP = 0
     expContext = []
 
@@ -285,7 +271,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     is_challenge_done = True
     isMaster = return_obj["type"] == 2
 
-    if mode == 0:
+    if mode == 0: # tour mode
         tour_award_gold = 0
         tour_award_gem = 0
         
@@ -307,13 +293,14 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
             if data_object and is_challenge_done and not is_already_completed:
                 tour_award_gold = data_object["gr"] if data_object["gr"] else 0
                 tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+                
                 # Increment tour clear count
 
                 for tour in user["tour"]:
                     if tour["packId"] == data_object['pid']:
                         if tour['masterLastStage'] < data_object['s']:
                             tour['masterLastStage'] = data_object['s']
-                            tour["totalClearStage"] = data_object['s']
+                            tour["totalClearStage"] = tour['masterLastStage'] + tour['normalLastStage'] + tour['easyLastStage'] + tour['hardLastStage']
                             break
 
             elif data_object and (is_challenge_done != True or is_already_completed):
@@ -321,11 +308,11 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
         else:
 
             do_normal = False
-            do_hard = True
-            if pattern["pty"] == 0:
+            do_hard = False
+            if pattern["pty"] == 0: # normal
                 do_normal = True
                 use_data = TOUR_NORMAL_STAGE_DATA
-            elif pattern["pty"] == 1:
+            elif pattern["pty"] == 1: # hard
                 do_normal = True
                 do_hard = True
                 use_data = TOUR_HARD_STAGE_DATA
@@ -343,26 +330,63 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
                 if (data_object['mt2'] == 3 and return_obj["score"] < data_object['mv2']):
                     is_challenge_done = False
 
-            tour_object = next(tour for tour in user["collection"] if tour["patternId"] == return_obj["patternId"])
-            is_already_completed = False
-            if tour_object['clear']:
-                is_already_completed = True
+            is_already_completed = True
+            for tour in user["tour"]:
+                    if tour["packId"] == data_object['pid']:
+                        if do_hard:
+                            if tour['hardLastStage'] < data_object['s']:
+                                is_already_completed = False
+                        elif do_normal:
+                            if tour['normalLastStage'] < data_object['s']:
+                                is_already_completed = False
+                        else:
+                            if tour['easyLastStage'] < data_object['s']:
+                                is_already_completed = False
 
             if data_object and is_challenge_done and not is_already_completed:
 
-                tour_award_gold = data_object["gr"] if data_object["gr"] else 0
-                tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+                diff_object = next((obj for obj in TOUR_EASY_STAGE_DATA if obj["c"] == data_object["c"]), None)
+
+                tour_award_gold = diff_object["gr"] if diff_object["gr"] else 0
+                tour_award_gem = diff_object["jr"] if diff_object["jr"] else 0
+
+                if do_normal:
+                    diff_object = next((obj for obj in TOUR_NORMAL_STAGE_DATA if obj["c"] == data_object["c"]), None)
+                    if diff_object:
+                        tour_award_gold += diff_object["gr"] if diff_object["gr"] else 0
+                        tour_award_gem += diff_object["jr"] if diff_object["jr"] else 0
 
                 if do_hard:
-                    data_object = next((obj for obj in TOUR_HARD_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-                    if data_object:
-                        tour_award_gold = data_object["gr"] if data_object["gr"] else 0
-                        tour_award_gem = data_object["jr"] if data_object["jr"] else 0
-                if do_normal:
-                    data_object = next((obj for obj in TOUR_NORMAL_STAGE_DATA if obj["pi"] == return_obj["patternId"]), None)
-                    if data_object:
-                        tour_award_gold = data_object["gr"] if data_object["gr"] else 0
-                        tour_award_gem = data_object["jr"] if data_object["jr"] else 0
+                    diff_object = next((obj for obj in TOUR_HARD_STAGE_DATA if obj["c"] == data_object["c"]), None)
+                    if diff_object:
+                        tour_award_gold += diff_object["gr"] if diff_object["gr"] else 0
+                        tour_award_gem += diff_object["jr"] if diff_object["jr"] else 0
+                
+                # Increment tour clear count
+                for tour in user["tour"]:
+                    if tour["packId"] == diff_object['pid']:
+                        if tour['hardLastStage'] < diff_object['s'] and do_hard:
+                            tour['hardLastStage'] = diff_object['s']
+                        if tour['normalLastStage'] < diff_object['s'] and do_normal:
+                            tour['normalLastStage'] = diff_object['s']
+                        if tour['easyLastStage'] < diff_object['s']:
+                            tour['easyLastStage'] = diff_object['s']
+                        tour["totalClearStage"] = tour['masterLastStage'] + tour['normalLastStage'] + tour['easyLastStage'] + tour['hardLastStage']
+                        break
+
+                #tour mode, add song and lower difficulties to user collection
+                pattern_id = return_obj["patternId"]
+                song_id = int(str(pattern_id)[:-1])
+                difficulty = int(str(pattern_id)[-1])
+                pattern_ids = [int(f"{song_id}{d}") for d in range(1, difficulty + 1)]
+
+                for p in pattern_ids:
+                    if not any(c["patternId"] == p for c in user["collection"]):
+                        user["collection"].append({
+                            "patternId": p,
+                            "clear": True,
+                        })
+
             elif data_object and (is_challenge_done != True or is_already_completed):
                 pity_give = True
     
@@ -504,7 +528,7 @@ async def complete_game(mode, user, objectId, miss, fine, good, excellent, marve
     # Add user gold and diamond
     user['gold'] += takeGold
 
-    if (mode == 0):
+    if (mode == 0): # tour mode
         user['gold'] += tour_award_gold
         user['diamond'] += tour_award_gem
 

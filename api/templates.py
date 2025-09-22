@@ -22,6 +22,7 @@ LOCALIZATION_DATA = []
 MARBLE_DATA = []
 RESET_DATA = []
 TOUR_PACK_DATA = []
+GAME_CONFIG_DATA = []
 
 FULL_TOUR_STATUS = []
 FULL_COLLECTION_STATUS = []
@@ -35,7 +36,7 @@ START_MAIL = []
 START_LEAGUE = {"leagueId":1, "endAt":0,"tier":0,"musicId1":None,"score1":None,"patternId1": None,"musicId2":None,"score2":None,"patternId2": None,"musicId3":None,"score3":None,"marbleId1":3,"patternId3": None,"marbleAchieve1":False,"marbleId2":4,"marbleAchieve2":False,"marbleId3":5,"marbleAchieve3":False,"bonusMarbleId":2,"bonusMarbleAchieve":False,"updatedAt":0,"playCount":0,"leaderboardCache":[],"feed":[]}
 
 def init_templates():
-    global MUSIC_DATA, PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, STORE_GAME_ITEM_DATA, STORE_GOLD_DATA, STORE_TICKET_DATA, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, COMPOSER_STAT_DATA, ITEM_DATA, PUBLIC_USER_DATA, LEAGUE_SCHEDULE_DATA, LOCALIZATION_DATA, MARBLE_DATA, RESET_DATA, TOUR_PACK_DATA
+    global MUSIC_DATA, PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, STORE_GAME_ITEM_DATA, STORE_GOLD_DATA, STORE_TICKET_DATA, TOUR_EASY_STAGE_DATA, TOUR_NORMAL_STAGE_DATA, TOUR_HARD_STAGE_DATA, TOUR_MASTER_STAGE_DATA, COMPOSER_STAT_DATA, ITEM_DATA, PUBLIC_USER_DATA, LEAGUE_SCHEDULE_DATA, LOCALIZATION_DATA, MARBLE_DATA, RESET_DATA, TOUR_PACK_DATA, GAME_CONFIG_DATA
     global START_TOUR_STATUS, START_COMPOSER_STATUS, START_COLLECTION_STATUS, START_PIANO_STATUS, START_MAIL
     global FULL_TOUR_STATUS, FULL_COLLECTION_STATUS, FULL_PIANO_STATUS
     
@@ -100,6 +101,9 @@ def init_templates():
 
         with open(os.path.join(base_path, 'tourpackdata.json'), 'r', encoding='utf-8') as f:
             TOUR_PACK_DATA = json.load(f)
+
+        with open(os.path.join(base_path, 'gameconfigdata.json'), 'r', encoding='utf-8') as f:
+            GAME_CONFIG_DATA = json.load(f)
 
         with open(os.path.join(start_base_path, 'start_tour_status.json'), 'r', encoding='utf-8') as f:
             START_TOUR_STATUS = json.load(f)

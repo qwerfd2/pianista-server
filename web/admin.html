@@ -80,75 +80,29 @@
                 <li class="nav-item"><a class="nav-link" href="#" id="sessionsTab">Sessions</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="adminsTab">Admins</a></li>
             </ul>
-            <button class="btn btn-success" id="addRowBtn">
-                <i class="bi bi-plus-lg"></i> Insert Row
-            </button>
-            <button class="btn btn-outline-danger ms-auto" id="logoutBtn">
-                <i class="bi bi-box-arrow-right"></i> Log Out
-            </button>
+            <div class="d-flex ms-auto">
+                <button class="btn btn-primary me-2" id="searchBtn">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button class="btn btn-success me-2" id="addRowBtn">
+                    <i class="bi bi-plus-lg"></i>
+                </button>
+                <button class="btn btn-outline-danger" id="logoutBtn">
+                    <i class="bi bi-box-arrow-right"></i>
+                </button>
+            </div>
         </div>
         </div>
     </div>
 </nav>
 
-    <div class="container">
-    <!-- Tabulator tables -->
-        <div id="tabulatorTable" class="mt-4"></div>
-    </div>
+<div class="container">
+<!-- Tabulator tables -->
+    <div id="tabulatorTable" class="mt-4"></div>
+</div>
 
-    <!-- Leaderboard Modal -->
-    <div class="modal fade" id="leaderboardModal" tabindex="-1" aria-labelledby="leaderboardModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="leaderboardModalLabel">Leaderboard Cache</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="leaderboardModalBody"></div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- League Modal -->
-    <div class="modal fade" id="leagueModal" tabindex="-1" aria-labelledby="leagueModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="leagueModalLabel">League Cache</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="leagueModalBody"></div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Config Modal -->
-    <div class="modal fade" id="configModal" tabindex="-1" aria-labelledby="configModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="configModalLabel">Config Management</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="configModalBody"></div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Change Modal -->
-    <div class="modal fade" id="changeModal" tabindex="-1" aria-labelledby="changeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+<!-- Change Modal -->
+<div class="modal fade" id="changeModal" tabindex="-1" aria-labelledby="changeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -182,8 +136,28 @@
         </div>
     </div>
 </div>
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">Search</h5>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="searchInput" class="form-control" placeholder="Enter search term">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="searchModalBtn">Search</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+window.currentTableName = null;
 function showTable(tabName) {
+    window.currentTableName = tabName;
     // Remove previous table if exists
     if (window.currentTable) {
         window.currentTable.destroy();
@@ -192,16 +166,35 @@ function showTable(tabName) {
 
     window.currentTable = new Tabulator("#tabulatorTable", {
     ajaxURL: "/Admin/Table",
-    ajaxParams: { table: tabName},
     ajaxConfig: "GET",
-    pagination: "remote",
+    pagination: true,
+    paginationMode:"remote",
     paginationSize: 25,
     paginationSizeSelector: [25, 50, 100],
     layout: "fitColumns",
     height: window.innerHeight * 0.9 + "px",
     autoColumns: true,
     responsiveLayout: "collapse",
+    sortMode: "remote",
     autoColumnsDefinitions: function(definitions){
+        if (tabName === "users") {
+            definitions.push({
+                title: "data",
+                field: "__data",
+                hozAlign: "center",
+                formatter: function(cell, formatterParams, onRendered){
+                    const rowData = cell.getRow().getData();
+                    const userId = rowData.id;
+                    return `<button class="btn btn-sm btn-info">View</button>`;
+                },
+                cellClick: function(e, cell){
+                    const rowData = cell.getRow().getData();
+                    const userId = rowData.id;
+                    console.log("clicked", userId);
+                    window.open(`/usercenter?user=${userId}`, "_blank");
+                }
+            });
+        }
         definitions.push({
         title: "Delete",
         field: "__delete",
@@ -212,9 +205,8 @@ function showTable(tabName) {
         cellClick: function(e, cell){
             const rowData = cell.getRow().getData();
             const idValue = rowData.id !== undefined ? rowData.id : rowData.objectId;
-            const tableName = window.currentTable.options.ajaxParams.table;
+            const tableName = window.currentTableName;
 
-            // Show confirmation modal
             document.getElementById('changeModalLabel').innerText = "Confirm Delete";
             document.getElementById('changeModalBody').innerHTML =
                 `<strong>ID:</strong> ${idValue}<br>
@@ -255,7 +247,6 @@ function showTable(tabName) {
         }
     });
         definitions.forEach(function(col){
-            // Abbreviate long JSON objects/arrays to one line
             col.formatter = function(cell){
                 const value = cell.getValue();
                 if (typeof value === "object" && value !== null) {
@@ -267,13 +258,12 @@ function showTable(tabName) {
                 }
                 return value;
             };
-            // Custom editor for object fields
+
             if (col.field !== "id" && col.field !== "objectId" && col.field !== "__delete") {
                 col.editor = function(cell, onRendered, success, cancel){
                     const value = cell.getValue();
                     let input;
 
-                    // Use textarea for objects and strings with line breaks
                     if ((typeof value === "object" && value !== null) ||
                         (typeof value === "string" && value.includes('\n'))) {
                         input = document.createElement("textarea");
@@ -359,20 +349,20 @@ function showTable(tabName) {
         query.push(`table=${tabName.toLowerCase()}`);
         if (params.page) query.push(`page=${params.page}`);
         if (params.size) query.push(`size=${params.size}`);
-        if (params.sorters && params.sorters.length) {
-            query.push(`sort=${params.sorters[0].field}`);
-            query.push(`dir=${params.sorters[0].dir}`);
+        if (params.sort && params.sort.length) {
+            query.push(`sort=${params.sort[0].field}`);
+            query.push(`dir=${params.sort[0].dir}`);
         }
         if (params.filters && params.filters.length) {
             query.push(`filter=${params.filters.map(f => `${f.field}:${f.value}`).join(",")}`);
         }
-        if (params.search) {
-            query.push(`search=${encodeURIComponent(params.search)}`);
+        if (searchTerm) {
+            query.push(`search=${encodeURIComponent(searchTerm)}`);
         }
         return url + "?" + query.join("&");
     },
     ajaxResponse: function(url, params, response) {
-        return response.data;
+        return response;
     },
     paginationDataReceived: {
         last_page: "last_page",
@@ -391,11 +381,9 @@ window.currentTable.on('cellEdited', (cell) => {
     window.pendingUpdateCell = cell;
     window.pendingOldValue = cell.getOldValue();
 
-    // Print data types for debugging
     const oldType = typeof window.pendingOldValue;
     const newType = typeof newValue;
 
-    // Update modal content
     document.getElementById('changeModalLabel').innerText = "Confirm Update";
     document.getElementById('changeModalBody').innerHTML =
         `<strong>ID:</strong> ${idValue}<br>
@@ -406,7 +394,6 @@ window.currentTable.on('cellEdited', (cell) => {
         <strong>New Type:</strong> ${newType}<br>
         <p>Do you want to update this cell?</p>`;
 
-    // Replace modal footer with confirm/cancel BEFORE showing modal
     const modalFooter = document.querySelector("#changeModal .modal-footer");
     modalFooter.innerHTML = "";
     const confirmBtn = document.createElement('button');
@@ -426,7 +413,6 @@ window.currentTable.on('cellEdited', (cell) => {
         if (result.status === "failed") {
             alert(result.message || "Update failed.");
         } else {
-            // Success: refresh table
             showTable(window.pendingUpdateTable);
         }
     };
@@ -436,35 +422,53 @@ window.currentTable.on('cellEdited', (cell) => {
     cancelBtn.textContent = "Cancel";
     cancelBtn.setAttribute("data-bs-dismiss", "modal");
     cancelBtn.onclick = function() {
-        // Revert cell value if cancelled
         window.pendingUpdateCell.setValue(window.pendingOldValue, true);
     };
     modalFooter.appendChild(cancelBtn);
 
-    // Show modal AFTER updating footer
     const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('changeModal'));
     modal.show();
 });
 }
 
-// Tab click handlers
 document.getElementById('usersTab').onclick = () => showTable("users");
 document.getElementById('mailsTab').onclick = () => showTable("mails");
 document.getElementById('resultsTab').onclick = () => showTable("results");
 document.getElementById('sessionsTab').onclick = () => showTable("sessions");
 document.getElementById('adminsTab').onclick = () => showTable("admins");
 
-// Log out button
 document.getElementById('logoutBtn').addEventListener('click', function() {
     document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     window.location.href = "/Login";
 });
 
-// Add Row Button Handler
+let searchTerm = "";
+
+document.getElementById('searchBtn').onclick = function() {
+    const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('searchModal'));
+    document.getElementById('searchInput').value = searchTerm;
+    modal.show();
+};
+
+document.getElementById('searchModalBtn').onclick = function() {
+    searchTerm = document.getElementById('searchInput').value.trim();
+    const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('searchModal'));
+    modal.hide();
+    showTable(window.currentTableName);
+
+    // Highlight searchBtn if search is active
+    const searchBtn = document.getElementById('searchBtn');
+    if (searchTerm) {
+        searchBtn.style.backgroundColor = "yellow";
+        searchBtn.style.color = "black";
+    } else {
+        searchBtn.style.backgroundColor = "";
+        searchBtn.style.color = "";
+    }
+};
+
 document.getElementById('addRowBtn').onclick = async function() {
-    // Get current table name
-    const tableName = window.currentTable.options.ajaxParams.table;
-    // Fetch schema from API
+    const tableName = window.currentTableName;
     const schemaResp = await fetch(`/Admin/Table?table=${tableName}&schema=1`);
     const schema = await schemaResp.json();
 
@@ -487,14 +491,13 @@ document.getElementById('addRowBtn').onclick = async function() {
             </div>
         `;
     });
-    // Show modal
     const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('insertModal'));
     modal.show();
 };
-// Handle Insert Row Form Submission
+
 document.getElementById('insertRowForm').onsubmit = async function(e) {
     e.preventDefault();
-    const tableName = window.currentTable.options.ajaxParams.table;
+    const tableName = window.currentTableName;
     const form = e.target;
     const data = {};
     Array.from(form.elements).forEach(el => {
@@ -508,7 +511,6 @@ document.getElementById('insertRowForm').onsubmit = async function(e) {
         }
     });
 
-    // Send insert request
     const response = await fetch("/Admin/Table/Insert", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
@@ -527,7 +529,7 @@ document.getElementById('insertRowForm').onsubmit = async function(e) {
     }
 };
 
-const validTabs = ["users", "mails", "results", "sessions"];
+const validTabs = ["users", "mails", "results", "sessions", "admins"];
 const lastTab = getCookie("lastTab");
 if (validTabs.includes(lastTab)) {
     showTable(lastTab);

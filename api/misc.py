@@ -3,7 +3,7 @@ import math
 import random
 import time
 
-from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, PUBLIC_USER_DATA, MUSIC_DATA
+from api.templates import PATTERN_DATA, PIANO_DATA, PIANO_UPGRADE_DATA, PUBLIC_USER_DATA, MUSIC_DATA, GAME_CONFIG_DATA
 from api.database import database, results, mails
 from config import CLEAN_SCORE
 
