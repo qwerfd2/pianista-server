@@ -1,938 +1,1094 @@
 [
-    {
-        "c": 1,
-        "i": 2,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2,
-        "i": 12,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 3,
-        "i": 600000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 4,
-        "i": null,
-        "d": null,
-        "s": "^[^.|^\\-|^_]([a-z]+|[A-Z]+|[0-9]+|.?){1,}[^\\-|^_]$"
-    },
-    {
-        "c": 5,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 6,
-        "i": 10000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 7,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 8,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 9,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 10,
-        "i": 25,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 11,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 12,
-        "i": 50,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 13,
-        "i": null,
-        "d": 7.0,
-        "s": null
-    },
-    {
-        "c": 14,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 15,
-        "i": 500,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 16,
-        "i": 100000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 17,
-        "i": 30,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 18,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 19,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 20,
-        "i": 10,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 21,
-        "i": 100,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 22,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 23,
-        "i": 10,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 24,
-        "i": 7,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 25,
-        "i": 3,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 26,
-        "i": null,
-        "d": 1.0,
-        "s": null
-    },
-    {
-        "c": 27,
-        "i": null,
-        "d": 1.0,
-        "s": null
-    },
-    {
-        "c": 1000000,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1000001,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1000002,
-        "i": 42000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1000003,
-        "i": 333000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1000004,
-        "i": 1000000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1000010,
-        "i": null,
-        "d": 0.1,
-        "s": null
-    },
-    {
-        "c": 1000011,
-        "i": null,
-        "d": 0.001,
-        "s": null
-    },
-    {
-        "c": 1000012,
-        "i": 10,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1000013,
-        "i": null,
-        "d": 0.1,
-        "s": null
-    },
-    {
-        "c": 1000014,
-        "i": null,
-        "d": 0.01,
-        "s": null
-    },
-    {
-        "c": 1006000,
-        "i": null,
-        "d": 0.334,
-        "s": null
-    },
-    {
-        "c": 1007000,
-        "i": null,
-        "d": 5.0,
-        "s": null
-    },
-    {
-        "c": 1008000,
-        "i": null,
-        "d": 0.1,
-        "s": null
-    },
-    {
-        "c": 1008001,
-        "i": null,
-        "d": 0.1,
-        "s": null
-    },
-    {
-        "c": 1008002,
-        "i": null,
-        "d": 0.5,
-        "s": null
-    },
-    {
-        "c": 1008003,
-        "i": null,
-        "d": 0.4,
-        "s": null
-    },
-    {
-        "c": 1010000,
-        "i": null,
-        "d": 0.5,
-        "s": null
-    },
-    {
-        "c": 1010001,
-        "i": null,
-        "d": 0.6,
-        "s": null
-    },
-    {
-        "c": 1010002,
-        "i": null,
-        "d": 0.7,
-        "s": null
-    },
-    {
-        "c": 1010003,
-        "i": null,
-        "d": 0.8,
-        "s": null
-    },
-    {
-        "c": 1010004,
-        "i": null,
-        "d": 0.9,
-        "s": null
-    },
-    {
-        "c": 1010005,
-        "i": null,
-        "d": 0.2,
-        "s": null
-    },
-    {
-        "c": 1010006,
-        "i": null,
-        "d": 0.51,
-        "s": null
-    },
-    {
-        "c": 1010007,
-        "i": null,
-        "d": 0.73,
-        "s": null
-    },
-    {
-        "c": 1010008,
-        "i": null,
-        "d": 0.93,
-        "s": null
-    },
-    {
-        "c": 1010009,
-        "i": null,
-        "d": 0.96,
-        "s": null
-    },
-    {
-        "c": 1010010,
-        "i": null,
-        "d": 0.2,
-        "s": null
-    },
-    {
-        "c": 1010011,
-        "i": null,
-        "d": 0.51,
-        "s": null
-    },
-    {
-        "c": 1010012,
-        "i": null,
-        "d": 0.73,
-        "s": null
-    },
-    {
-        "c": 1010013,
-        "i": null,
-        "d": 0.93,
-        "s": null
-    },
-    {
-        "c": 1010014,
-        "i": null,
-        "d": 0.96,
-        "s": null
-    },
-    {
-        "c": 1010015,
-        "i": null,
-        "d": 0.5,
-        "s": null
-    },
-    {
-        "c": 1010016,
-        "i": null,
-        "d": 0.6,
-        "s": null
-    },
-    {
-        "c": 1010017,
-        "i": null,
-        "d": 0.7,
-        "s": null
-    },
-    {
-        "c": 1010018,
-        "i": null,
-        "d": 0.8,
-        "s": null
-    },
-    {
-        "c": 1010019,
-        "i": null,
-        "d": 0.9,
-        "s": null
-    },
-    {
-        "c": 1010101,
-        "i": null,
-        "d": 0.0,
-        "s": null
-    },
-    {
-        "c": 1010102,
-        "i": null,
-        "d": 0.25,
-        "s": null
-    },
-    {
-        "c": 1010103,
-        "i": null,
-        "d": 0.5,
-        "s": null
-    },
-    {
-        "c": 1010104,
-        "i": null,
-        "d": 0.75,
-        "s": null
-    },
-    {
-        "c": 1010105,
-        "i": null,
-        "d": 1.0,
-        "s": null
-    },
-    {
-        "c": 1011000,
-        "i": null,
-        "d": 0.05,
-        "s": null
-    },
-    {
-        "c": 1011001,
-        "i": null,
-        "d": 0.03,
-        "s": null
-    },
-    {
-        "c": 1011002,
-        "i": null,
-        "d": 0.03,
-        "s": null
-    },
-    {
-        "c": 1011003,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1011004,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1011005,
-        "i": null,
-        "d": 0.005,
-        "s": null
-    },
-    {
-        "c": 1011006,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1013000,
-        "i": null,
-        "d": 1.0,
-        "s": null
-    },
-    {
-        "c": 1013001,
-        "i": null,
-        "d": 1.0,
-        "s": null
-    },
-    {
-        "c": 1013002,
-        "i": null,
-        "d": 0.5,
-        "s": null
-    },
-    {
-        "c": 1013003,
-        "i": null,
-        "d": 0.5,
-        "s": null
-    },
-    {
-        "c": 1013004,
-        "i": null,
-        "d": 2.0,
-        "s": null
-    },
-    {
-        "c": 1014000,
-        "i": null,
-        "d": 1200.0,
-        "s": null
-    },
-    {
-        "c": 1014001,
-        "i": null,
-        "d": 10.0,
-        "s": null
-    },
-    {
-        "c": 1025000,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1025001,
-        "i": 9,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1026000,
-        "i": 20,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1026001,
-        "i": null,
-        "d": 0.01,
-        "s": null
-    },
-    {
-        "c": 1026100,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1026101,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1026200,
-        "i": null,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1026201,
-        "i": null,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1027000,
-        "i": 20,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1027001,
-        "i": null,
-        "d": 0.01,
-        "s": null
-    },
-    {
-        "c": 1027100,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1027101,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1052001,
-        "i": 11,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1052002,
-        "i": 21,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1050000,
-        "i": null,
-        "d": 0.1,
-        "s": null
-    },
-    {
-        "c": 1553000,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1553001,
-        "i": null,
-        "d": 0.0,
-        "s": null
-    },
-    {
-        "c": 1553002,
-        "i": null,
-        "d": 1.0,
-        "s": null
-    },
-    {
-        "c": 1553003,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/shop/v1.1/musicpoint_01.png?v=220"
-    },
-    {
-        "c": 1553004,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/shop/v1.1/musicpoint_00.png?v=220"
-    },
-    {
-        "c": 1553005,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1553006,
-        "i": 1500,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1554001,
-        "i": 3002,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1554002,
-        "i": 3001,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1555001,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1555002,
-        "i": 3600,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1555003,
-        "i": 3600,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1556001,
-        "i": 50,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1556002,
-        "i": 50,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1556003,
-        "i": 10,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1557000,
-        "i": 100,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1557001,
-        "i": 60,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1558000,
-        "i": 3600,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 1558001,
-        "i": 90,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000101,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000102,
-        "i": 1000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000201,
-        "i": 32400000,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000301,
-        "i": 1,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000401,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000501,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000601,
-        "i": 3,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000602,
-        "i": 3,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000701,
-        "i": null,
-        "d": null,
-        "s": "#FFDD00"
-    },
-    {
-        "c": 2000703,
-        "i": 5,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000704,
-        "i": 30,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000705,
-        "i": 180,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000706,
-        "i": 30,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000707,
-        "i": 10,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 2000702,
-        "i": 10,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 8000001,
-        "i": 0,
-        "d": null,
-        "s": null
-    },
-    {
-        "c": 9000000,
-        "i": null,
-        "d": null,
-        "s": "https://discord.gg/invite/your-invite-code"
-    },
-    {
-        "c": 9000001,
-        "i": null,
-        "d": null,
-        "s": "https://github.com/qwerfd2/pianista-server"
-    },
-    {
-        "c": 9000002,
-        "i": null,
-        "d": null,
-        "s": "https://discord.gg/invite/your-invite-code"
-    },
-    {
-        "c": 3000000,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_01.png?v=223"
-    },
-    {
-        "c": 3000001,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_02.png?v=223"
-    },
-    {
-        "c": 3000002,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_03.png?v=223"
-    },
-    {
-        "c": 3000003,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_04.png?v=223"
-    },
-    {
-        "c": 3000004,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_05.png?v=223"
-    },
-    {
-        "c": 3000005,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_06.png?v=223"
-    },
-    {
-        "c": 3000006,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_07.png?v=223"
-    },
-    {
-        "c": 3000007,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_08.png?v=223"
-    },
-    {
-        "c": 3000008,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_09.png?v=223"
-    },
-    {
-        "c": 3000009,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_10.png?v=223"
-    },
-    {
-        "c": 3000010,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_11.png?v=223"
-    },
-    {
-        "c": 3000011,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_12.png?v=223"
-    },
-    {
-        "c": 3000012,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_13.png?v=223"
-    },
-    {
-        "c": 3000013,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_14.png?v=223"
-    },
-    {
-        "c": 3000014,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_15.png?v=223"
-    },
-    {
-        "c": 3000015,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_16.png?v=223"
-    },
-    {
-        "c": 3000016,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_17.png?v=223"
-    },
-    {
-        "c": 3000017,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_18.png?v=223"
-    },
-    {
-        "c": 3000018,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_19.png?v=223"
-    },
-    {
-        "c": 3000019,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_20.png?v=223"
-    },
-    {
-        "c": 3000020,
-        "i": null,
-        "d": null,
-        "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_21.png?v=223"
-    }
+  {
+    "desc": "NICKNAME_MIN_LENGTH",
+    "c": 1,
+    "i": 2,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "NICKNAME_MAX_LENGTH",
+    "c": 2,
+    "i": 12,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "NICKNAME_HOLDER_TIMEOUT",
+    "c": 3,
+    "i": 600000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "NICKNAME_REGULAR_EXPRESSION",
+    "c": 4,
+    "i": null,
+    "d": null,
+    "s": "^[^.|^\\-|^_]([a-z]+|[A-Z]+|[0-9]+|.?){1,}[^\\-|^_]$"
+  },
+  {
+    "desc": "INIT_DIAMOND",
+    "c": 5,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "INIT_GOLD",
+    "c": 6,
+    "i": 10000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "INIT_TICKET",
+    "c": 7,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "TICKET_CHARGE_PERIOD_IN_SECONDS",
+    "c": 8,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "EXPERIENCE_TECHNICAL_BONUS",
+    "c": 9,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "EXPERIENCE_FIVESTAR_BONUS",
+    "c": 10,
+    "i": 25,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "EXPERIENCE_FADE_BONUS",
+    "c": 11,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "EXPERIENCE_TODAY_ONTIME_BONUS",
+    "c": 12,
+    "i": 50,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "EXPERIENCE_PATTERN_DIFFICULT_FACTOR",
+    "c": 13,
+    "i": null,
+    "d": 7.0,
+    "s": null
+  },
+  {
+    "desc": "STRICT_GAME_COMPLETE",
+    "c": 14,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "RANKING_LIST_SIZE",
+    "c": 15,
+    "i": 500,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "RANKING_CALCULATE_SIZE",
+    "c": 16,
+    "i": 100000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "AD_MAX_REWARD",
+    "c": 17,
+    "i": 30,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 18,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 19,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "WELCOME_GIFT_QUANTITY",
+    "c": 20,
+    "i": 10,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "RANKING_MAX_RESULT",
+    "c": 21,
+    "i": 100,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 22,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 23,
+    "i": 10,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 24,
+    "i": 7,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 25,
+    "i": 3,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 26,
+    "i": null,
+    "d": 1.0,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 27,
+    "i": null,
+    "d": 1.0,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 1000000,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 1000001,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 1000002,
+    "i": 42000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 1000003,
+    "i": 333000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 1000004,
+    "i": 1000000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 1000010,
+    "i": null,
+    "d": 0.1,
+    "s": null
+  },
+  {
+    "desc": "SCORE_COMPOSER_STAT_BONUSRATE",
+    "c": 1000011,
+    "i": null,
+    "d": 0.001,
+    "s": null
+  },
+  {
+    "desc": "BATTLE_GOLD_DIFFICULT_BONUS",
+    "c": 1000012,
+    "i": 10,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SCORE_COMPOSER_STAT_VIEW_BONUSRATE",
+    "c": 1000013,
+    "i": null,
+    "d": 0.1,
+    "s": null
+  },
+  {
+    "desc": "GOLD_COMPOSER_STAT_BONUS_RATE",
+    "c": 1000014,
+    "i": null,
+    "d": 0.01,
+    "s": null
+  },
+  {
+    "desc": "DANGER_RATE",
+    "c": 1006000,
+    "i": null,
+    "d": 0.334,
+    "s": null
+  },
+  {
+    "desc": "MISS_SFX_WAIT",
+    "c": 1007000,
+    "i": null,
+    "d": 999.0,
+    "s": null
+  },
+  {
+    "desc": "MUSIC_STUTTER_VOLUME",
+    "c": 1008000,
+    "i": null,
+    "d": 0.0,
+    "s": null
+  },
+  {
+    "desc": "MUSIC_STUTTER_DOWN_TIME",
+    "c": 1008001,
+    "i": null,
+    "d": 0.0,
+    "s": null
+  },
+  {
+    "desc": "MUSIC_STUTTER_UP_DELAY",
+    "c": 1008002,
+    "i": null,
+    "d": 0.0,
+    "s": null
+  },
+  {
+    "desc": "MUSIC_STUTTER_UP_TIME",
+    "c": 1008003,
+    "i": null,
+    "d": 0.0,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (1 star) (normal)",
+    "c": 1010000,
+    "i": null,
+    "d": 0.01,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (2 star) (normal) (editing these does nothing client-side)",
+    "c": 1010001,
+    "i": null,
+    "d": 0.6,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (3 star) (normal)",
+    "c": 1010002,
+    "i": null,
+    "d": 0.7,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (4 star) (normal)",
+    "c": 1010003,
+    "i": null,
+    "d": 0.8,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (5 star) (normal)",
+    "c": 1010004,
+    "i": null,
+    "d": 0.9,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (1 star) (hard)",
+    "c": 1010005,
+    "i": null,
+    "d": 0.2,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (2 star) (hard)",
+    "c": 1010006,
+    "i": null,
+    "d": 0.51,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (3 star) (hard)",
+    "c": 1010007,
+    "i": null,
+    "d": 0.73,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (4 star) (hard)",
+    "c": 1010008,
+    "i": null,
+    "d": 0.93,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (5 star) (hard)",
+    "c": 1010009,
+    "i": null,
+    "d": 0.96,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (1 star) (master)",
+    "c": 1010010,
+    "i": null,
+    "d": 0.2,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (2 star) (master)",
+    "c": 1010011,
+    "i": null,
+    "d": 0.51,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (3 star) (master)",
+    "c": 1010012,
+    "i": null,
+    "d": 0.73,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (4 star) (master)",
+    "c": 1010013,
+    "i": null,
+    "d": 0.93,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (5 star) (master)",
+    "c": 1010014,
+    "i": null,
+    "d": 0.96,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (1 star) (easy)",
+    "c": 1010015,
+    "i": null,
+    "d": 0.5,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (2 star) (easy)",
+    "c": 1010016,
+    "i": null,
+    "d": 0.6,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (3 star) (easy)",
+    "c": 1010017,
+    "i": null,
+    "d": 0.7,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (4 star) (easy)",
+    "c": 1010018,
+    "i": null,
+    "d": 0.8,
+    "s": null
+  },
+  {
+    "desc": "Star count accuracy threshold (5 star) (easy)",
+    "c": 1010019,
+    "i": null,
+    "d": 0.9,
+    "s": null
+  },
+  {
+    "desc": "Accuracy calculation (loss)",
+    "c": 1010101,
+    "i": null,
+    "d": 0.0,
+    "s": null
+  },
+  {
+    "desc": "Accuracy calculation (fine)",
+    "c": 1010102,
+    "i": null,
+    "d": 0.25,
+    "s": null
+  },
+  {
+    "desc": "Accuracy calculation (good)",
+    "c": 1010103,
+    "i": null,
+    "d": 0.5,
+    "s": null
+  },
+  {
+    "desc": "Accuracy calculation (excellent)",
+    "c": 1010104,
+    "i": null,
+    "d": 0.75,
+    "s": null
+  },
+  {
+    "desc": "Accuracy calculation (marvelous)",
+    "c": 1010105,
+    "i": null,
+    "d": 1.0,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_PRIORITY_LOW",
+    "c": 1011000,
+    "i": null,
+    "d": 0.05,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_PRIORITY_HIGH",
+    "c": 1011001,
+    "i": null,
+    "d": 0.03,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_PRIORITY_HIGHEST",
+    "c": 1011002,
+    "i": null,
+    "d": 0.03,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_PRIORITY_RESET_COUNT",
+    "c": 1011003,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_MISSING_LIMIT",
+    "c": 1011004,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_RELAX",
+    "c": 1011005,
+    "i": null,
+    "d": 0.005,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_SYNC_RELAX_COUNT",
+    "c": 1011006,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_VOLUME_PREVIEW",
+    "c": 1013000,
+    "i": null,
+    "d": 1.0,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_VOLUME_BGM",
+    "c": 1013001,
+    "i": null,
+    "d": 1.0,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_TIME_BGM_STOP_FO",
+    "c": 1013002,
+    "i": null,
+    "d": 0.5,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_TIME_BGM_PAUSE_FO",
+    "c": 1013003,
+    "i": null,
+    "d": 0.5,
+    "s": null
+  },
+  {
+    "desc": "AUDIO_TIME_BGM_RESUME_FI",
+    "c": 1013004,
+    "i": null,
+    "d": 2.0,
+    "s": null
+  },
+  {
+    "desc": "AUTO_RESET_THRESHOLDS",
+    "c": 1014000,
+    "i": null,
+    "d": 1200.0,
+    "s": null
+  },
+  {
+    "desc": "AUTO_TIMESYNC_THRESHOLDS",
+    "c": 1014001,
+    "i": null,
+    "d": 10.0,
+    "s": null
+  },
+  {
+    "desc": "DISPLAY_PATTERN_LEVEL_MIN",
+    "c": 1025000,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "DISPLAY_PATTERN_LEVEL_MAX",
+    "c": 1025001,
+    "i": 9,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_TOUCH_NUM_OF_STPES",
+    "c": 1026000,
+    "i": 20,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_TOUCH_UNIT",
+    "c": 1026001,
+    "i": null,
+    "d": 0.01,
+    "s": null
+  },
+  {
+    "desc": "SYNC_TOUCH_DEFAULT_STABLE_DEVICE",
+    "c": 1026100,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_TOUCH_DEFAULT_UNSTABLE_DEVICE",
+    "c": 1026101,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_TOUCH_CONDITION_SUCCESSFULLY_COUNT",
+    "c": 1026200,
+    "i": null,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_TOUCH_CONDITION_LIMIT_DISTANCE",
+    "c": 1026201,
+    "i": null,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_MUSIC_NUM_OF_STPES",
+    "c": 1027000,
+    "i": 20,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_MUSIC_UNIT",
+    "c": 1027001,
+    "i": null,
+    "d": 0.01,
+    "s": null
+  },
+  {
+    "desc": "SYNC_MUSIC_DEFAULT_STABLE_DEVICE",
+    "c": 1027100,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_MUSIC_DEFAULT_UNSTABLE_DEVICE",
+    "c": 1027101,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "called in pianoItem, 1886C24",
+    "c": 1052001,
+    "i": 11,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "called in pianoItem, 1886C24",
+    "c": 1052002,
+    "i": 21,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "MEDLEY_CROSSFADE_TIMING",
+    "c": 1050000,
+    "i": null,
+    "d": 0.1,
+    "s": null
+  },
+  {
+    "desc": "AD_APPEAR_READY_TIME",
+    "c": 1553000,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "AD_APPEAR_TYPE1",
+    "c": 1553001,
+    "i": null,
+    "d": 0.0,
+    "s": null
+  },
+  {
+    "desc": "AD_APPEAR_TYPE2",
+    "c": 1553002,
+    "i": null,
+    "d": 1.0,
+    "s": null
+  },
+  {
+    "desc": "AD_GOODS_BUTTON_IMG",
+    "c": 1553003,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/shop/v1.1/musicpoint_01.png?v=220"
+  },
+  {
+    "desc": "AD_GOODS_BUTTON_IMG_OFF",
+    "c": 1553004,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/shop/v1.1/musicpoint_00.png?v=220"
+  },
+  {
+    "desc": "AD_REWARD_NETWORK_RETRY_TIME",
+    "c": 1553005,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "AD_REWARD_NETWORK_RETRY_INTERVAL",
+    "c": 1553006,
+    "i": 1500,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "COLLECTION_ITEM1",
+    "c": 1554001,
+    "i": 3002,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "COLLECTION_ITEM2",
+    "c": 1554002,
+    "i": 3001,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "RANKING_CACHE_ENABLED",
+    "c": 1555001,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "RANKING_CACHE_RELOAD_MUSIC",
+    "c": 1555002,
+    "i": 3600,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "RANKING_CACHE_RELOAD_TOTAL",
+    "c": 1555003,
+    "i": 3600,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_ADJUST_RANGE_MAX",
+    "c": 1556001,
+    "i": 50,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_ADJUST_RANGE_MIN",
+    "c": 1556002,
+    "i": 50,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "SYNC_ADJUST_RANGE_UNIT",
+    "c": 1556003,
+    "i": 10,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "MESSAGE_LIMIT_QUANTITY",
+    "c": 1557000,
+    "i": 100,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "MESSAGE_CACHE_SECONDS",
+    "c": 1557001,
+    "i": 60,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "USER_INFORMATION_CACHE_TIME",
+    "c": 1558000,
+    "i": 3600,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "USER_INFORMATION_MESSAGE_MAX_LENGTH",
+    "c": 1558001,
+    "i": 90,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "OPTIMIZE_NUM_OF_CALL_GC",
+    "c": 2000101,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "OPTIMIZE_WAIT_MS",
+    "c": 2000102,
+    "i": 1000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "TIME_UTC_OFFSET_MS",
+    "c": 2000201,
+    "i": 32400000,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "TIME_LEAGUE_PREVDAY_MAGIC_MINUTE",
+    "c": 2000301,
+    "i": 1,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_CACHE_RELOAD",
+    "c": 2000401,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_TICKET_CALL_LOOP_LIMIT",
+    "c": 2000501,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_PROMOTE_RANK",
+    "c": 2000601,
+    "i": 3,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_DEMOTE_RANK",
+    "c": 2000602,
+    "i": 3,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_FEED_USERNAME_COLOR",
+    "c": 2000701,
+    "i": null,
+    "d": null,
+    "s": "#FFDD00"
+  },
+  {
+    "desc": "LEAGUE_FEED_TYPE_RANK_CHANGE_TIME",
+    "c": 2000703,
+    "i": 5,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_FEED_TYPE_RANK_LIMIT_TIME",
+    "c": 2000704,
+    "i": 30,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_FEED_TYPE_ENDRANK_TIME1",
+    "c": 2000705,
+    "i": 180,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_FEED_TYPE_ENDRANK_TIME2",
+    "c": 2000706,
+    "i": 30,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "LEAGUE_FEED_TYPE_ENDRANK_TIME3",
+    "c": 2000707,
+    "i": 10,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 2000702,
+    "i": 10,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "",
+    "c": 8000001,
+    "i": 0,
+    "d": null,
+    "s": null
+  },
+  {
+    "desc": "Startup TOS hyperlink URL_TERMS_OF_USE",
+    "c": 9000000,
+    "i": null,
+    "d": null,
+    "s": "https://discord.gg/invite/your-invite-code"
+  },
+  {
+    "desc": "Setting menu privacy policy hyperlink URL_PRIVACY_POLICY",
+    "c": 9000001,
+    "i": null,
+    "d": null,
+    "s": "https://github.com/qwerfd2/pianista-server"
+  },
+  {
+    "desc": "Setting menu TOS hyperlink URL_TERMS_AND_POLICY",
+    "c": 9000002,
+    "i": null,
+    "d": null,
+    "s": "https://discord.gg/invite/your-invite-code"
+  },
+  {
+    "desc": "League medals",
+    "c": 3000000,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_01.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000001,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_02.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000002,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_03.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000003,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_04.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000004,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_05.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000005,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_06.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000006,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_07.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000007,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_08.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000008,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_09.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000009,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_10.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000010,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_11.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000011,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_12.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000012,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_13.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000013,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_14.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000014,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_15.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000015,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_16.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000016,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_17.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000017,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_18.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000018,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_19.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000019,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_20.png?v=223"
+  },
+  {
+    "desc": "",
+    "c": 3000020,
+    "i": null,
+    "d": null,
+    "s": "https://pianista-cdn.pianista.io/resource/image/medal/n_medal_21.png?v=223"
+  }
 ]

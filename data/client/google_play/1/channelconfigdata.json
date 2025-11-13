@@ -1,11 +1,13 @@
 [
     {
+        "desc": "CHANNEL_VERSION",
         "c": 19000001,
         "i": null,
         "d": null,
         "s": "2.4.1"
     },
     {
+        "desc": "CHANNEL_STORE_URL",
         "c": 19000002,
         "i": null,
         "d": null,

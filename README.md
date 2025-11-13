@@ -2,23 +2,35 @@
 
 A local server for mobile rhythm game `Pianista`, implemented using `starlette`.
 
-This project is for game preservation purposes only. Therefore, it is the author `qwerfd2`'s policy to only release them after the game's official server has shut down and no adiquate offline support has been provided to the players.
+~~This project is for game preservation purposes only. Therefore, it is the author `qwerfd2`'s policy to only release them after the game's official server has shut down and no adiquate offline support has been provided to the players.~~
 
-For redundancy sake, various trusted members from the game community should be invited to test, or at least posess, the repository to eliminate single point of failure.
+~~For redundancy sake, various trusted members from the game community should be invited to test, or at least posess, the repository to eliminate single point of failure.~~
 
-It is the `author`'s expectation that these members do not use this repo to harm the game developer or reap personal gains from this work.
+~~It is the `author`'s expectation that these members do not use this repo to harm the game developer or reap personal gains from this work.~~
+
+I've decided to release it early for the following reasons.
+
+1) The developer is dead. It no longer exists.
+
+2) No support is available from them. Email goes unanswered, ios app delisted for months.
+
+3) No one cares about this game - I do my research on the game community during and after development, and this game in particular is all but dead.
+
+For these reasons, I deem the impact of releasing this early minimal.
 
 ## Setup:
 
 Sites to proxy: `https://pianista-cdn.pianista.io`
 
-Simply install official `apk` and set up proxy.
+Simply install official `apk` and set up proxy using charles or similar app.
 
 Modify `config.env` to local IP:port.
 
 Install all dependencies, run `python 11000.py`.
 
-(client has `build` textAsset in `570e46b0868640144a2e9beacd712c93` but https is enforced)
+If you wish to direct connect (trusted SSL required):
+
+client has `build` textAsset in `570e46b0868640144a2e9beacd712c93` containing server url.
 
 ## Features that are supported
 
@@ -91,4 +103,8 @@ Tour easy/normal/technical stage will not be unlocked after previous stage pass 
 `ct`: Item type
 
 `o`: Entitlement list
+
+## gameconfig
+
+everything is commented
 

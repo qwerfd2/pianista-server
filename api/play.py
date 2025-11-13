@@ -112,7 +112,7 @@ async def start_game(user, patternId, mode, master, items, var1, var2):
     if mode == 0: # tour
         obj["type"] = var1
         obj["stageId"] = var2
-        if var1 == 2:
+        if var1 == 2 and master:
             obj["master"] = master
     else:
         obj["stageId"] = var1

@@ -41,20 +41,22 @@ from api.play import start_cleanup_task
 #generate_league_session()
 
 root_folder = os.path.dirname(os.path.abspath(__file__))
-allowed_folders = ["bundle", "resource", "data", "manifest", "web"]
+allowed_folders = ["bundle", "resource", "data", "manifest"]
 
 async def serve_file(request):
     path = request.path_params['path']
-    for folder in allowed_folders:
-        if path.startswith(folder):
-            file_path = os.path.join(root_folder, path)
-            if os.path.isfile(file_path):
-                response = FileResponse(file_path)
-                response.headers["accepted-ranges"] = "bytes"
-                response.headers["x-amz-cf-pop"] = "NRT57-P3"
-                response.headers["x-amz-cf-id"] = "V2yGNNXOlpw0r5LurepznExa1wyh5bAAyJzMfpTJc-SoO1oFGnKViQ=="
-                return response
-    return Response("", status_code=404)
+    first_level_folder = path.split('/')[0]
+    if first_level_folder in allowed_folders:
+        file_path = os.path.realpath(os.path.join(os.getcwd(), path))
+        print(file_path)
+        if os.path.isfile(file_path):
+            response = FileResponse(file_path)
+            response.headers["accepted-ranges"] = "bytes"
+            response.headers["x-amz-cf-pop"] = "NRT57-P3"
+            response.headers["x-amz-cf-id"] = "V2yGNNXOlpw0r5LurepznExa1wyh5bAAyJzMfpTJc-SoO1oFGnKViQ=="
+            return response
+
+    return Response("File not found", status_code=404)
 
 routes = []
 
