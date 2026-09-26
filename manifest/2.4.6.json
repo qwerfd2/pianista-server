@@ -1,0 +1,9 @@
+{
+    "not": null,
+    "cdns": [
+        "AmazonS3"
+    ],
+    "api": "https://pianista-cdn.pianista.io",
+    "ws": null,
+    "cdn": "https://pianista-cdn.pianista.io"
+}
